@@ -1,0 +1,92 @@
+{
+  "id": "gordes",
+  "nom": "Gordes",
+  "guide": { "nom": "Guide Gordes", "id": "gordes" },
+  "parkings": [
+    { "nom": "Place Charles de Gaulle", "maps": "https://maps.app.goo.gl/pKCYRSWDL4pHxtpr5?g_st=ic" },
+    { "nom": "Parking alternatif", "maps": "https://maps.app.goo.gl/N8Hbd6CrQmYzTsFZA?g_st=ic" }
+  ],
+  "boucle": {
+    "distance_m": 1000,
+    "marche_min": 18,
+    "itineraire_maps": "https://maps.app.goo.gl/EJjyjkAKZyvfv1rS8?g_st=ic",
+    "points": [
+      {
+        "nom": "Château de Gordes",
+        "emoji": "🏰",
+        "maps": "https://maps.app.goo.gl/cWfmJiC2gQGc9unG9?g_st=ic",
+        "aide_memoire": [
+          "16세기 르네상스 · 중세 성채 위 건설 · 7세기 동안 다구-시미안 가문 영지",
+          "두 얼굴: 북쪽 중세 요새(총안·망루) · 남쪽 르네상스(교차형 창문·당당한 정문)",
+          "내부 대형 르네상스 벽난로 — 유럽 최대급 · 가로 7.2m·높이 4.5m · 1541 완공",
+          "예술가들의 성채: 샤갈·앙드레 로트 · 헝가리 화가 바자렐리가 1970 자비로 복원, 옵 아트 박물관",
+          "현재 폴 마라(벨기에 팝 아트) 박물관 약 200점"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Mémorial des Enfants",
+        "emoji": "🕯️",
+        "maps": "https://maps.app.goo.gl/YpC4oFCkvSCfVjqJ6?g_st=ic",
+        "aide_memoire": [
+          "2차 대전 중 비시 정권 협력 하에 나치에 색출·이송된 유대인 약 76,000명 · 그중 어린이 11,000명 이상",
+          "이 추모비는 그 아이들을 위한 공간 · 설명보다 침묵이 더 강한 곳"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Fontaine · Place Genty Pantaly",
+        "emoji": "⛲",
+        "maps": "https://maps.app.goo.gl/ZsoDMPx69pVh28VXA?g_st=ic",
+        "aide_memoire": [
+          "광장 이름은 20세기 초 식당 운영 요리사 장티 팡탈리에서 유래",
+          "1826~1957 130년간 이 분수가 고르드 윗마을 유일 식수원 · 빨래 금지 · 상수도는 1957년에야",
+          "광장 본래 이름 '라 사라스' — 프로방스어 '나의 문은 닫혀 있다'"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Passages voûtés du vieux village",
+        "emoji": "👣",
+        "maps": "https://maps.app.goo.gl/AkQGwrNCzCMdqLdB6?g_st=ic",
+        "aide_memoire": [ "프로방스 산악 마을의 좁고 어두운 아치형 골목 '패사쥬 부테' — 미적 선택 아닌 실용적 필요" ],
+        "texte_original": [],
+        "photo": "📸 아치 터널 안에서 밖을 향한 역광 구도",
+        "recits": ["passage-voute"]
+      },
+      {
+        "nom": "Rue du Belvédère · Calades",
+        "emoji": "📸",
+        "maps": "https://maps.app.goo.gl/uuTaSB9uPF8944nz7?g_st=ic",
+        "aide_memoire": [
+          "뤼베롱 산맥·칼라봉 계곡 파노라마",
+          "'칼라드' — 경사진 돌포장 골목 · 납작한 석회암을 손으로 골라 박음 · 빗물 안 고이고 노새 발굽 안 미끄러지도록"
+        ],
+        "texte_original": [],
+        "photo": "📸 경사진 칼라드를 아래에서 올려다보는 구도"
+      },
+      {
+        "nom": "Caves & Jardins du Palais Saint-Firmin",
+        "emoji": "🪨",
+        "maps": "https://maps.app.goo.gl/B5Z3MVZtzWPqaHTo6?g_st=ic",
+        "aide_memoire": [
+          "1961 복원 중 발견된 지하 공간 · 총 7개 층·높이차 18m·55개 이상 방 · 아직 다 발굴 안 됨",
+          "중세 주민들이 집·성벽 지으려 발밑 바위 파서 돌 캠 → 지하 작업장 · 착유기·저장고·빵 화덕",
+          "❗️'생 피르맹' 성인이 건물명 유래인지 확인 불가"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Rue André Lhote",
+        "emoji": "🎨",
+        "maps": "https://maps.app.goo.gl/xUpM8wx6sbFS6cRi8?g_st=ic",
+        "aide_memoire": [
+          "앙드레 로트(1885–1962) — 20세기 입체파 화가·이론가",
+          "입체파 = 사물을 여러 시점에서 분해해 평면에 재구성",
+          "1930년대 고르드 정착 · 그의 영향으로 전위 예술가들이 모여 '예술가들의 마을'로"
+        ],
+        "texte_original": []
+      }
+    ]
+  }
+}

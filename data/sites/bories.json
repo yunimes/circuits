@@ -1,0 +1,22 @@
+{
+  "id": "bories",
+  "nom": "Village des Bories",
+  "guide": { "nom": "Guide Village des Bories", "id": "senanque-bories" },
+  "billet": { "ref": "Paiement sur place · Confirmé par mail" },
+  "parkings": [ { "nom": "Parking Village des Bories", "maps": "https://maps.app.goo.gl/pVUomcNLx97MSLw47?g_st=ic" } ],
+  "points": [
+    {
+      "nom": "Village des Bories",
+      "emoji": "🏘️",
+      "maps": "https://maps.app.goo.gl/pVUomcNLx97MSLw47?g_st=ic",
+      "aide_memoire": [
+        "보리(Borie) = 모르타르 없이 오직 돌과 돌 사이 균형만으로 쌓은 원형 석조 오두막",
+        "건축: 납작한 돌을 안쪽으로 기울여 쌓으면 원이 좁아지다 마지막 돌 하나로 꼭대기 닫힘 — 열쇠돌 없이",
+        "왜 둥근가: 네모는 모서리에서 약함 · 원형은 압력 고르게 분산 — 시멘트 없이 짓는 데 가장 합리적",
+        "이 마을에만 20여 채 · 주거·창고·농기구 다용도 · 신석기~18세기 사용 · 정확한 기원 불명 ❗️"
+      ],
+      "texte_original": [],
+      "photo": "🎙️ 시멘트도 접착제도 없이 균형만으로 수백 년 버텨온 건축물"
+    }
+  ]
+}

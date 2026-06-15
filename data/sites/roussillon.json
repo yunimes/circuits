@@ -1,0 +1,59 @@
+{
+  "id": "roussillon",
+  "nom": "Roussillon",
+  "guide": { "nom": "Guide Roussillon", "id": "roussillon" },
+  "parkings": [ { "nom": "Parking des Ocres (payant)", "maps": "https://maps.app.goo.gl/b1PwLf5KGCNP1H5D8?g_st=ic" } ],
+  "boucle": {
+    "distance_m": 1200,
+    "marche_min": 18,
+    "itineraire_maps": "https://maps.app.goo.gl/97dsuSQWoYErFyMg6?g_st=ic",
+    "points": [
+      {
+        "nom": "Rue de la Poste · Point de vue",
+        "emoji": "📸",
+        "aide_memoire": [
+          "황토(Ocre) = 철 산화물 섞인 자연 점토 · 철이 산화하면 붉어짐",
+          "철 함량·열에 따라 색: 약하면 노랑 → 강할수록 주황 → 빨강 → 보라 · 17가지 이상 색조",
+          "약 1억 1천만 년 전 바다 밑 철분 퇴적층이 오늘날 이 절벽"
+        ],
+        "texte_original": [],
+        "recits": ["ocre"]
+      },
+      {
+        "nom": "Beffroi de Roussillon",
+        "emoji": "🏛️",
+        "aide_memoire": [
+          "18세기 시계탑 · 마을 중심 랜드마크",
+          "루시용은 건물 외벽 색깔이 법령으로 규제 — 황토 팔레트 색만 허용 · 마을 전체가 살아있는 황토 팔레트"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Église Saint-Michel",
+        "emoji": "⛪",
+        "aide_memoire": [ "12세기 로마네스크 · 황토색 종탑 · 종탑이 마을 지붕 위로 솟아 루시용 실루엣 완성" ],
+        "texte_original": []
+      },
+      {
+        "nom": "Retour parking · Petites ruelles",
+        "emoji": "👣",
+        "aide_memoire": [
+          "노랑·주황·빨강 물든 집 외벽 · 빛 방향따라 색이 달라 보임",
+          "황토 채굴은 고대~20세기 루시용 경제 근간 · 최전성기 전 세계 황토 40% · 1950년대 화학 안료로 몰락"
+        ],
+        "texte_original": []
+      }
+    ]
+  },
+  "note_pratique": {
+    "titre": "🥾 Sentier des Ocres — Infos pratiques",
+    "lignes": [
+      "옛 채석장 부지 유료 야외 탐방로 · 주차장에서 도보 5분 · 마을 산책과 별도 시간 필요",
+      "6월 운영: 09h00 개장 · 18h30 입장 마감",
+      "입장료: 개인 3,50€ · 단체(15인+) 2,50€ · 10세 미만 무료",
+      "두 코스: 단코스 약 30분 · 장코스 약 50분",
+      "❗️황토 모래 옷에 묻으면 잘 안 지워짐 → 밝은 옷 피할 것 · 운동화 필수",
+      "⚠️ 당일 일정(14h15 도착, 1h)상 마을 부클과 Sentier 모두 소화하기 빠듯 — 현장 판단"
+    ]
+  }
+}

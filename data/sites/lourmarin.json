@@ -1,0 +1,96 @@
+{
+  "id": "lourmarin",
+  "nom": "Lourmarin",
+  "guide": { "nom": "Guide Lourmarin", "id": "lacoste-lourmarin" },
+  "parkings": [ { "nom": "Parking Calinou", "maps": "https://maps.app.goo.gl/w41iCA4qpqgw2uBe9?g_st=ic" } ],
+  "boucle": {
+    "distance_m": 1100,
+    "marche_min": 15,
+    "itineraire_maps": "https://maps.app.goo.gl/xuq8Ngq7vydZitZN8?g_st=ic",
+    "points": [
+      {
+        "nom": "Fontaine aux Trois Masques",
+        "emoji": "⛲️",
+        "maps": "https://maps.app.goo.gl/KTYp7UAgcXYW9tBq6?g_st=ic",
+        "aide_memoire": [
+          "1937년 라우렌-비베르(Laurent-Vibert) 재단이 마을에 기증 · 마을 여러 분수 중 가장 최근",
+          "세 얼굴 의미: 작가 앙리 보스코에 따르면 세 자연 요소 — 론·뒤랑스·뤼베롱 · 다른 설은 세 신 넵튠·아폴론·판",
+          "❗️어느 해석도 문헌으로 확인되지 않음 (전승)"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Rue du Temple",
+        "emoji": "👣",
+        "maps": "https://maps.app.goo.gl/w4GHauQuomSCoSJw6?g_st=ic",
+        "aide_memoire": [ "구마을 중심 거리 · 황금빛 석조 가옥 늘어선 전형적 프로방스 골목" ],
+        "texte_original": []
+      },
+      {
+        "nom": "Église Saint-André et Saint-Trophime",
+        "emoji": "⛪",
+        "maps": "https://maps.app.goo.gl/2dov9oZMH97Pkg5z7?g_st=ic",
+        "aide_memoire": [
+          "11세기 건설 · 원래 루르마랭 계곡 입구를 지키기 위함 — 당시 가장 위험한 통행로 중 하나",
+          "로마네스크와 고딕 혼합 · 종탑은 19세기 재건",
+          "내부 성모·성 앙드레·성 트로핌 제단화 · 15세기 스테인드글라스"
+        ],
+        "texte_original": [],
+        "recits": ["clocher-octogonal"]
+      },
+      {
+        "nom": "Rue Albert Camus",
+        "emoji": "🪦",
+        "maps": "https://maps.app.goo.gl/uhAHiVgs2wMrZHP56?g_st=ic",
+        "aide_memoire": [
+          "알베르 카뮈(1913–1960) — 알제리 출신 작가·철학자 · 1957 노벨문학상",
+          "『이방인』『페스트』『시지프 신화』 — '부조리' 철학 · '삶은 의미가 없다 — 그럼에도 살아야 한다'",
+          "루르마랭 첫눈에 반함 · 노벨상 상금으로 이 마을에 집 · 이 마을 묘지에 잠듦",
+          "🏠 카뮈의 집 — 초록 덧창·둥근 테라스·사이프러스 · 현재 딸 카트린 거주 · 외관만",
+          "🪦 카뮈의 묘 — 보스코 거리 공동묘지 · 소박한 '1913–1960' · 장례식 날 마을 축구팀이 관을 듦 · 2009 팡테옹 이장 시도했으나 아들 거부"
+        ],
+        "texte_original": [],
+        "recits": ["camus-mort"]
+      },
+      {
+        "nom": "Chemin des étoiles · Rue Henri de Savornin",
+        "emoji": "👣",
+        "maps": "https://maps.app.goo.gl/md7rAabTKRi2tTQY7?g_st=ic",
+        "aide_memoire": [ "라벤더·색채 창문·돌담 · 프로방스 마을의 정수가 담긴 골목" ],
+        "texte_original": []
+      },
+      {
+        "nom": "Monument aux morts · Maison de Girard",
+        "emoji": "🕊️",
+        "maps": "https://maps.app.goo.gl/Uuuu9a6tNJcww4dX7?g_st=ic",
+        "aide_memoire": [
+          "1914–1918 전몰자 위령비 · 'Aux enfants de Lourmarin morts pour la France'",
+          "조각: 승리의 여신(Victoire) — 큰 날개, 한 손에 월계관",
+          "마을 중심 '지라르의 집(Maison de Girard)' 앞 · 옆 건물은 옛 학교·박물관"
+        ],
+        "texte_original": [],
+        "photo": "📸 날개 펼친 여신상 + 뒤 프로방스풍 파사드(하늘색 덧창)",
+        "recits": ["philippe-girard"]
+      },
+      {
+        "nom": "Place Henri-Barthélémy · Office de Tourisme",
+        "emoji": "☕",
+        "maps": "https://maps.app.goo.gl/96xThp2JxpHbqHGn8?g_st=ic",
+        "aide_memoire": [ "그늘진 중심 광장 · 테라스 카페 · 카페나 아페리티프로 휴식 옵션 (30분)" ],
+        "texte_original": []
+      },
+      {
+        "nom": "Château de Lourmarin",
+        "emoji": "🏰",
+        "maps": "https://maps.app.goo.gl/b6X2Y2UnZM2zi3fG6?g_st=ic",
+        "aide_memoire": [
+          "프로방스 최초의 르네상스 양식 성 · 15~16세기 건설",
+          "이탈리아 르네상스가 알프스 넘어 프로방스에 처음 도달한 흔적 — 앙주 가문이 이탈리아 양식 직접 이식",
+          "카뮈는 이 성 재단 장학금 받아 집필 · 루르마랭은 그에게 생의 마지막 선택"
+        ],
+        "texte_original": []
+      }
+    ]
+  },
+  "option": { "texte": "☕ Option pause · Place Henri-Barthélémy — 30 min de plus (café/apéro) · ⚠️ décale départ à 18h10 → arrivée Pierrevert 19h00" }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "lacoste",
+  "nom": "Lacoste",
+  "guide": { "nom": "Guide Lacoste", "id": "lacoste-lourmarin" },
+  "parkings": [ { "nom": "Parking Château Lacoste", "maps": "https://maps.app.goo.gl/L7fYx7iM1cJzmPLk7?g_st=ic" } ],
+  "points": [
+    {
+      "nom": "Château du Marquis de Sade",
+      "emoji": "🏰",
+      "maps": "https://maps.app.goo.gl/ZFkURJmcBCoyY7B88?g_st=ic",
+      "aide_memoire": [
+        "11세기 건설 · 17세기 사드 가문 인수 · 프랑스 혁명 때 주민들이 흉벽 허묾 · 이후 폐허",
+        "현 소유자는 패션 디자이너 피에르 카르댕 · 매년 여름 폐허에서 음악·예술 축제"
+      ],
+      "texte_original": [],
+      "recits": ["marquis-sade", "pierre-cardin"]
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "🗿 \"Divin Marquis\" — Sculpture de Bourganov",
+      "lignes": [
+        "성 입구 현대 조각 · 러시아 조각가 알렉상드르 부르가노프 작품 · 제목 '신성한 마르키'",
+        "사드의 두상이 새장 안에 갇힘 — 머리는 감금, 새장 밖으로 뻗은 두 팔은 자유",
+        "사드의 삶 자체 — 몸은 평생 감옥, 정신은 끝내 가두지 못함",
+        "❗️때로 일본 조각가 야스오 미즈이 작품으로 잘못 알려짐 — 실제 작가는 부르가노프"
+      ]
+    },
+    {
+      "titre": "📸 Vue panoramique",
+      "lignes": [
+        "뤼베롱 산맥, 북쪽 몽 방투, 칼라봉 계곡 전경 · 보니외·메네르브 등 산악 마을 능선 위에",
+        "📸 성터 폐허와 뤼베롱 능선을 한 프레임에"
+      ]
+    }
+  ]
+}
