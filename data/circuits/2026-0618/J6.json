@@ -1,0 +1,29 @@
+{
+  "jour": "J6",
+  "date": "Mardi 23 juin 2026",
+  "titre": "Eze · Nice · Aéroport",
+  "obsidian": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FCircuit%2FFeuilles%20de%20Route%2FJ6%20%E2%80%94%20Eze%20%C2%B7%20Nice%20%C2%B7%20A%C3%A9roport",
+  "abstract": [
+    { "emoji": "🎟️", "texte": "Jardin Exotique d'Eze", "heure_cle": "10h20", "ref": "Réservé 10p", "billet": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FJardin_Eze_1122389_sYAICeeO.pdf" },
+    { "emoji": "✈️", "texte": "BA335 · Nice T1", "heure_cle": "17h15", "ref": "Arrivée aéroport avant 14h45 (international)", "alerte": true }
+  ],
+  "creneaux": [
+    { "heure": "08h00", "type": "checkin", "titre": "Check-out · Domaine Baccia Donna", "texte": "Chargement des bagages", "duree": "30 min" },
+    { "heure": "08h30", "type": "visite", "site": "eze",
+      "trajet": { "depuis": "La Trinité", "duree": "20 min", "km": 18 },
+      "visite": { "duree": "1h50" } },
+    { "heure": "10h20", "type": "visite", "site": "jardin-eze",
+      "visite": { "duree": "50 min" } },
+    { "heure": "11h10", "type": "boucle", "site": "nice-vieux",
+      "trajet": { "depuis": "Eze", "duree": "20 min", "km": 11 },
+      "visite": { "duree": "30 min" } },
+    { "heure": "12h00", "type": "repas", "restaurant": "la-voglia", "duree": "1h30" },
+    { "heure": "14h00", "type": "courses", "titre": "Dépôt bagages & Restitution véhicule · Aéroport Nice T1", "duree": "45 min",
+      "segments": [
+        "🚗 10 min · 2,2km — Parking → Gare de Nice-Ville",
+        "🧳 15 min — Check-in & Dépôt de bagages",
+        "🚗 20 min · 8km — Gare de Nice-Ville → Aéroport T1 (restitution véhicule)"
+      ] },
+    { "heure": "14h45", "type": "checkin", "titre": "✈️ Aéroport Nice T1 · BA335", "texte": "Enregistrement international · Décollage 17h15 · Bon voyage !" }
+  ]
+}
