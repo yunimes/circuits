@@ -1,0 +1,65 @@
+{
+  "id": "nimes",
+  "nom": "Nîmes · Maison Carrée & Arènes",
+  "guides": [
+    { "nom": "Guide Nîmes", "id": "nimes" },
+    { "nom": "Guide Maison Carrée", "id": "maison-carree" },
+    { "nom": "Guide Arènes", "id": "arenes-de-nimes" }
+  ],
+  "billet": { "ref": "Billet N° 6655896348 · Nîmes 3 monuments", "obsidian": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FN%C3%AEmes%203%20monuments.pdf" },
+  "parkings": [
+    { "nom": "Indigo Maison Carrée", "maps": "https://maps.app.goo.gl/Btg5LYPpA6ZC3zb76?g_st=ic" },
+    { "nom": "Interparking Les Halles", "maps": "https://maps.app.goo.gl/RJYikhSFrcY6Dta8A?g_st=ic" }
+  ],
+  "boucle": {
+    "distance_m": 1150,
+    "marche_min": 16,
+    "itineraire_maps": "https://maps.app.goo.gl/LDNZZaemP5JoEGY3A?g_st=ic",
+    "points": [
+      {
+        "nom": "Maison Carrée",
+        "emoji": "🏛️",
+        "maps": "https://maps.app.goo.gl/dDpZNYCTA2ZaHDQT7?g_st=ic",
+        "aide_memoire": [
+          "기원전 1세기 초 신전 · 아우구스투스 사위·최측근 아그리파(Agrippa) 건립 추정 → 황제 손자·양자 카이우스·루키우스 카이사르에게 헌정",
+          "두 왕자 모두 20대 초반 요절 → 황실의 슬픔 담은 추모 건축물",
+          "정면 청동 헌정 글씨 중세에 사라짐 → 18세기 님 학자 세기에(Séguier)가 나사못 구멍 배열만으로 원문 복원",
+          "현존 로마 신전 중 외관 장식까지 거의 완전 보존된 극히 드문 사례 (판테온과 함께) · 2023 유네스코 등재"
+        ],
+        "texte_original": [],
+        "photo": "📸 전면 코린트식 기둥 · 뒤로 님 구시가지 지붕선",
+        "recits": ["jefferson-maison-carree"]
+      },
+      {
+        "nom": "Arènes de Nîmes",
+        "emoji": "🏟️",
+        "maps": "https://maps.app.goo.gl/wSnnWPVjGPVE4YzHA?g_st=ic",
+        "aide_memoire": [
+          "기원후 1세기 말, 콜로세움 30년 뒤 건설 · 133m × 101m · 높이 21m · 약 24,000명 수용",
+          "콜로세움보다 작지만 보존 더 우수 · 최상부 2층까지 온전한 전 세계 유일 원형경기장",
+          "정문 삼각 박공에 황소 두 마리 두상 · 내부에 🐺 암늑대와 로물루스·레무스 부조",
+          "관중석 신분따라 4구역 · 상단 거대 천막 벨룸(velum) → 해군 수병 전담 · 방사형 통로 보미투아르(vomitoires)로 수분 내 입퇴장",
+          "주요 경기 = 검투사 대결 + 맹수 사냥 · ❗️수중 해전설은 지하 구조상 불가, 학계 부정적",
+          "중세: 약 220채 가옥 요새 마을 → 19세기 복원 · 현재 투우·콘서트·역사 재현"
+        ],
+        "texte_original": [],
+        "photo": "📸 1층 아케이드 아치 앞 · 내부 계단에서 전경",
+        "recits": ["romulus-remus"]
+      },
+      {
+        "nom": "Place de l'horloge",
+        "emoji": "🕰️",
+        "maps": "https://maps.app.goo.gl/cc4B3ghdYvwcmxy2A?g_st=ic",
+        "aide_memoire": [
+          "시계탑(Tour de l'Horloge) 높이 31m · 15세기 최초, 18세기 재건 · 꼭대기 철제 종",
+          "이 종 두고 대성당 참사회(종교 권력) vs 시 당국(세속 권력) 분쟁 — 도시 지배권의 상징적 싸움",
+          "이 광장 일대에서 장 니코(Jean Nicot, 1530–1600) 출생 ❗️(전승, 문헌 확인 불가)",
+          "포르투갈 주재 프랑스 대사 · 리스본서 담배 접하고 왕실 소개 → 카트린 드 메디치 편두통 효과 알려지며 귀족 사회 확산 · '여왕의 풀'",
+          "nicotiana · 니코틴(nicotine)이 모두 그의 이름에서 유래",
+          "진짜 유산: 《프랑스어 보고》 편찬 = 프랑스 최초 현대식 사전 중 하나 · 본인은 사전 편찬자이길 원함"
+        ],
+        "texte_original": []
+      }
+    ]
+  }
+}
