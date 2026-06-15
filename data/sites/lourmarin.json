@@ -1,7 +1,7 @@
 {
   "id": "lourmarin",
   "nom": "Lourmarin",
-  "guide": { "nom": "Guide Lourmarin", "id": "lacoste-lourmarin" },
+  "guide": { "nom": "Guide Lourmarin", "id": "lourmarin" },
   "parkings": [ { "nom": "Parking Calinou", "maps": "https://maps.app.goo.gl/w41iCA4qpqgw2uBe9?g_st=ic" } ],
   "boucle": {
     "distance_m": 1100,
