@@ -1,1 +1,12 @@
-
+{
+  "id": "le-roucas",
+  "nom": "Le Roucas",
+  "maps": "https://maps.app.goo.gl/NUHxh17SqtE2TALb6?g_st=ic",
+  "reservation": { "statut": "Réservé 11p", "heure": "12h30", "tel": "04 84 84 93 62" },
+  "aide_memoire": [
+    "레보 마을 중심 중세 골목 · 알피유 산맥 로컬 식재료로 만든 프로방스 가정식",
+    "대표: 양고기 12시간 콩피 28,50€ · 소고기 타르타르 24€ · 통다랑어 스테이크 24,50€"
+  ],
+  "prix_indicatif": "메인 19–28,50€ (음료 별도) · 목요일 휴무",
+  "adresse": "6 Rue du Trencat, 13520 Les Baux-de-Provence"
+}
