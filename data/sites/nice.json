@@ -1,0 +1,22 @@
+{
+  "id": "nice",
+  "nom": "Nice · Promenade des Anglais",
+  "guides": [
+    { "nom": "Guide Nice", "id": "nice" },
+    { "nom": "Guide Nice Matisse", "id": "nice-matisse" },
+    { "nom": "Guide Nice Garibaldi", "id": "nice-garibaldi" }
+  ],
+  "parkings": [ { "nom": "Parking Sulzer", "maps": "https://maps.app.goo.gl/35bcC4yJztPZwEQn9?g_st=ic" } ],
+  "point": {
+    "nom": "Promenade des Anglais",
+    "emoji": "🌊",
+    "aide_memoire": [
+      "총 길이 7km · 1820년대 영국인 부유층이 겨울 산책로로 조성 · 이름이 '영국인들의 산책로'",
+      "🪑 파란 의자(Chaises Bleues) — 1948 설계 · 파란색은 지중해와 하늘 상징 · 앉아 바다 보는 것이 니스 경험의 핵심",
+      "🏨 오텔 네그레스코 — 1912 개장 · 분홍 돔·벨 에포크 양식 · 코트다쥐르 가장 상징적 호텔",
+      "니스는 1860년에야 프랑스 영토 — 그전엔 이탈리아 사보이 왕국 · 구시가지가 이탈리아 바로크인 이유"
+    ],
+    "texte_original": [],
+    "recits": ["promenade-anglais", "belle-epoque-negresco", "nice-italienne"]
+  }
+}

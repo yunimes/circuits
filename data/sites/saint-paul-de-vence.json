@@ -1,0 +1,56 @@
+{
+  "id": "saint-paul-de-vence",
+  "nom": "Saint-Paul-de-Vence",
+  "guide": { "nom": "Guide Saint-Paul-de-Vence", "id": "saint-paul-de-vence" },
+  "parkings": [ { "nom": "Parking Chemin des Gardettes", "maps": "https://maps.app.goo.gl/hzNNEcg23ACnpBxy8?g_st=ic" } ],
+  "boucle": {
+    "distance_m": 1500,
+    "marche_min": 25,
+    "itineraire_maps": "https://maps.app.goo.gl/LLBFuLpbnpzGnm417?g_st=ic",
+    "points": [
+      { "nom": "La Colombe d'Or", "emoji": "🎨", "maps": "https://maps.app.goo.gl/W4DXytsccXQ9aDai7?g_st=ic",
+        "aide_memoire": [
+          "1920 폴 루가 카페바로 시작 · 1932 여관으로 '황금 비둘기' 개명",
+          "돈 없는 예술가들이 그림으로 식사값 냄 → 오늘날 180점 이상 거장 작품 · 4대손 운영",
+          "이브 몽탕·시뇨레가 1951 여기서 결혼"
+        ], "texte_original": [], "recits": ["colombe-or"] },
+      { "nom": "Place du Jeu de Boules", "emoji": "📸", "maps": "https://maps.app.goo.gl/kVngEedVCpLw34UE7?g_st=ic",
+        "aide_memoire": [
+          "100년 플라타너스 · 이브 몽탕·리노 방투라·페르낭델 단골 페탕크 선수",
+          "세자르의 조각 『파니』 — 0-13 패배 시 엉덩이에 입맞추는 페탕크 전통"
+        ], "texte_original": [], "recits": ["fanny-petanque"] },
+      { "nom": "Porte de Vence", "emoji": "🏛️", "maps": "https://maps.app.goo.gl/VgVzPB67Yc3ACdna7?g_st=ic",
+        "aide_memoire": [
+          "마을 정문 · 14세기 탑 + 프랑수아 1세가 1538–1547 건설한 성벽 원형 보존",
+          "이탈리아 전쟁 맥락: 1536 카를 5세가 프로방스 침공 → 프랑수아 1세가 방어 요새 마을 구축",
+          "성벽 위해 주민 500명 강제 이주, 가옥 75-80채 철거"
+        ], "texte_original": [] },
+      { "nom": "Place de l'Église · Collégiale Saint-Paul", "emoji": "🏛️", "maps": "https://maps.app.goo.gl/Ri5DnvtohpAjvX9k8?g_st=ic",
+        "aide_memoire": ["12세기 돈존 — 중세 성채 유일 흔적 · 현재 시청사", "콜레지알 생폴: 티치아노 화파 추정 작품 ❗️확인 권장"], "texte_original": [] },
+      { "nom": "Chapelle Folon · Pénitents Blancs", "emoji": "🎨", "maps": "https://maps.app.goo.gl/sQNnSVVqzoz8p6Zu8?g_st=ic",
+        "aide_memoire": [
+          "17세기 흰 참회 형제단 예배당 · 2008 벨기에 예술가 폴롱이 장식",
+          "주제 '나눔'과 '베푸는 손' · 캔버스 8점·스테인드글라스·106m² 모자이크",
+          "폴롱이 사망 직전 완성한 마지막 프로젝트 · 외부 통과로도 의미 · 내부 4€"
+        ], "texte_original": [], "recits": ["folon-chapelle"] },
+      { "nom": "Maison de Jacques Prévert · La Miette", "emoji": "🏠", "maps": "https://maps.app.goo.gl/LcKQvTGw5NjSZnWt7?g_st=ic",
+        "aide_memoire": [
+          "자크 프레베르(1900–1977) — 시인·영화 시나리오 작가 · 『파롤』『천국의 아이들』",
+          "이브 몽탕이 부른 「낙엽(Les Feuilles mortes)」이 그의 시 · 재즈 표준 「Autumn Leaves」가 됨",
+          "1942부터 거주 → 생폴이 예술가 메카가 된 계기"
+        ], "texte_original": [], "recits": ["prevert-feuilles-mortes"] },
+      { "nom": "Remparts · Chemin de ronde", "emoji": "📸", "maps": "https://maps.app.goo.gl/xsFV44PguXpuwhPu7?g_st=ic",
+        "aide_memoire": ["성벽 위 순찰로 · 포도밭·올리브 농원·지중해·바우 산맥 전망 · 샤갈 만년 작품 배경 풍경"], "texte_original": [],
+        "photo": "📸 성벽 위에서 지중해와 마을 지붕 광각" },
+      { "nom": "Cimetière · Tombe de Marc Chagall", "emoji": "🎭", "maps": "https://maps.app.goo.gl/Gm5nVXtnZq328z8Q9?g_st=ic",
+        "aide_memoire": [
+          "마르크 샤갈(1887–1985) — 비텝스크 유대인 출생 · 20세기 색채 거장 · 묘는 입구 오른쪽",
+          "1966 생폴 정착 · 사랑의 찬가 그림 · 우리가 걸어온 성벽이 그 배경 · 아내 바바와 함께 묻힘"
+        ], "texte_original": [], "recits": ["chagall"] },
+      { "nom": "Rue Grande", "emoji": "👣", "maps": "https://maps.app.goo.gl/Kt1qmco5Th9WzBV59?g_st=ic",
+        "aide_memoire": ["마을 가로지르는 중심 거리 · 화랑·아틀리에 · 중세 외관 그대로"], "texte_original": [] },
+      { "nom": "Dolphin Bastion", "emoji": "🏛️", "maps": "https://maps.app.goo.gl/nXBNzTtfvHRQgq4a8?g_st=ic",
+        "aide_memoire": ["프랑수아 1세가 이탈리아 전쟁 기간 건설한 4개 포루 중 하나 · 북서쪽 포루"], "texte_original": [] }
+    ]
+  }
+}

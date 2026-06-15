@@ -1,0 +1,53 @@
+{
+  "id": "antibes",
+  "nom": "Antibes",
+  "guide": { "nom": "Guide Antibes", "id": "antibes" },
+  "parkings": [ { "nom": "Parking Port Vauban", "maps": "https://maps.app.goo.gl/4MsCaTxQUYcDPDAn6?g_st=ic" } ],
+  "boucle": {
+    "distance_m": 2000,
+    "marche_min": 30,
+    "itineraire_maps": "https://maps.app.goo.gl/vqxL8LzXpihSH4Cq6?g_st=ic",
+    "points": [
+      { "nom": "Place Nationale", "emoji": "🏛️", "maps": "https://maps.app.goo.gl/cJfUQazwuHeoc7qm9?g_st=ic",
+        "aide_memoire": ["앙티브 구시가지 중심 광장 · 실내 시장과 분수 · 테라스"], "texte_original": [] },
+      { "nom": "Cours Masséna · Marché provençal", "emoji": "🛒", "maps": "https://maps.app.goo.gl/3p7oEviecZy7DPjH7?g_st=ic",
+        "aide_memoire": [
+          "아케이드 아래 프로방스 시장 · 제철 과일·채소·꽃·특산품 · 코트다쥐르에서 가장 아름다운 시장 중 하나 · 오전 운영(~13h)",
+          "피살라디에르(양파 타르트)·소카(병아리콩 크레페)·신선한 허브 등 니스-앙티브 특산"
+        ], "texte_original": [] },
+      { "nom": "Jardin des Poètes", "emoji": "🌿", "maps": "https://maps.app.goo.gl/2oKWpNpq1hzGThMq9?g_st=ic",
+        "aide_memoire": [
+          "2022 조성 성벽 위 공원 · 선인장·다육식물 등 지중해 식물 · 영감받은 예술가·작가 인용구 패널",
+          "빅토르 위고 흉상 · 성벽 끝에서 지중해와 앙티브 만 전망"
+        ], "texte_original": [], "photo": "📸 선인장 너머로 바다가 보이는 구도" },
+      { "nom": "Promenade Amiral de Grasse", "emoji": "🌊", "maps": "https://maps.app.goo.gl/17tqEkqSEaXY4yYX9?g_st=ic",
+        "aide_memoire": ["성벽 위 산책로 · 지중해와 눈높이가 같아지는 경험 · 맑은 날 알프스 설산 배경"], "texte_original": [],
+        "photo": "📸 성벽 난간과 바다 배경 수평선 구도" },
+      { "nom": "Musée Picasso · Château de Grimaldi", "emoji": "🎨", "maps": "https://maps.app.goo.gl/XV4DW7eTNzsigQMDA?g_st=ic",
+        "aide_memoire": [
+          "피카소가 1946 이 성 작업실에서 두 달 창작 · 떠나며 그 작품 전부를 앙티브 시에 기증 · 「삶의 기쁨」이 대표작",
+          "중세 그리말디 성 위 건물 · 바다 내려다보이는 웅장한 외관"
+        ], "texte_original": [] },
+      { "nom": "Cathédrale Notre-Dame · Tour Sarrazine", "emoji": "⛪️", "maps": "https://maps.app.goo.gl/3uTEJAvh6WsmfgdU8?g_st=ic",
+        "aide_memoire": [
+          "5세기 성 아르망테르 주교가 로마 신전 터에 세운 것이 기원 · 현재 모습은 주로 17세기 이후",
+          "내부 핵심: 루이 브레아가 1515년경 제작한 제단화 「로사리오의 성모」 — 현존 유일 완전한 형태",
+          "옆 높이 40m 사라센 탑은 11세기 그리말디 성 방어탑 · 현재 종탑"
+        ], "texte_original": [] },
+      { "nom": "Plage de la Gravette", "emoji": "🏖️", "maps": "https://maps.app.goo.gl/tBnzMHuA1RCgpRRs7?g_st=ic",
+        "aide_memoire": [
+          "구시가지 성벽 아래 아담한 모래 해변 · 성벽이 바람 막아 파도 잔잔 · 현지인이 더 즐기는 숨은 해변",
+          "화가 니콜라 드 스탈(1914–1955)이 이 해변 위 아틀리에서 작업하다 생을 마감 · 지중해 빛 담은 추상 풍경화가 마지막 작품"
+        ], "texte_original": [] },
+      { "nom": "Le Nomade", "emoji": "🗿", "maps": "https://maps.app.goo.gl/RNG3Z5xyzf6VUoAC7?g_st=ic",
+        "aide_memoire": ["카탈루냐 조각가 하우메 플렌사 대형 조각 · 스테인리스 격자 인체 실루엣 · 바다를 바라보며 서 있는 형상"],
+        "texte_original": [], "photo": "📸 조각 뒤로 지중해와 쥐앙레팽 해안선 (4 min · 300m)" },
+      { "nom": "Fort Carré", "emoji": "🏯", "maps": "https://maps.app.goo.gl/fbc4qvAoFf5CrNF28?g_st=ic",
+        "aide_memoire": [
+          "16세기 능보식 별 모양 요새 · 4개 바스티옹이 별처럼 돌출 · 17세기 보방이 보강",
+          "1794 공포정치 직후 25세 나폴레옹이 자코뱅파 의심으로 10일간 투옥된 곳"
+        ], "texte_original": [], "photo": "📸 산책로 끝에서 요새 전체와 앙티브 만 원경",
+        "recits": ["fort-carre-vauban"] }
+    ]
+  }
+}
