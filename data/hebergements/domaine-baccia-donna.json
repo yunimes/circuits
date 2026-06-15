@@ -4,6 +4,14 @@
   "sous": "La Trinité · ❗️ contact à compléter",
   "maps": "https://maps.app.goo.gl/r8fMuLkVu59nJkYU8?g_st=ic",
   "parking": "🅿️ Parking privé",
-  "aide_memoire": [ "(à compléter)" ],
-  "texte_original": [ "(à compléter)" ]
+  "aide_memoire": [
+    "(à compléter)"
+  ],
+  "texte_original": [
+    "(à compléter)"
+  ],
+  "guide": {
+    "nom": "Guide La Trinité",
+    "id": "la-trinite"
+  }
 }
