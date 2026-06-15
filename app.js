@@ -168,7 +168,10 @@ async function cr_portion(c, idx) {
   if (c.depart || c.arrivee) {
     const km = c.trajet_km ? ' · ' + c.trajet_km + 'km' : '';
     const td = c.trajet_duree ? c.trajet_duree : '';
-    entete = `<div class="segment">🚗 ${td}${km} — ${c.depart||''} → ${c.arrivee||''}</div>`;
+    const itin = p.itineraire_maps ? ' ' + mapBtn(p.itineraire_maps) : '';
+    entete = `<div class="segment">🚗 ${td}${km} — ${c.depart||''} → ${c.arrivee||''}${itin}</div>`;
+  } else if (p.itineraire_maps) {
+    entete = `<div class="segment">🏁 Itinéraire ${mapBtn(p.itineraire_maps)}</div>`;
   }
   let arr = '';
   for (let i=0;i<arrets.length;i++) {
