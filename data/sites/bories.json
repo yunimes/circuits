@@ -1,9 +1,19 @@
 {
   "id": "bories",
   "nom": "Village des Bories",
-  "guide": { "nom": "Guide Village des Bories", "id": "senanque-bories" },
-  "billet": { "ref": "Paiement sur place · Confirmé par mail" },
-  "parkings": [ { "nom": "Parking Village des Bories", "maps": "https://maps.app.goo.gl/pVUomcNLx97MSLw47?g_st=ic" } ],
+  "guide": {
+    "nom": "Guide Village des Bories",
+    "id": "bories"
+  },
+  "billet": {
+    "ref": "Paiement sur place · Confirmé par mail"
+  },
+  "parkings": [
+    {
+      "nom": "Parking Village des Bories",
+      "maps": "https://maps.app.goo.gl/pVUomcNLx97MSLw47?g_st=ic"
+    }
+  ],
   "points": [
     {
       "nom": "Village des Bories",
