@@ -1,0 +1,49 @@
+{
+  "jour": "J3",
+  "date": "Samedi 20 juin 2026",
+  "titre": "Sénanque · Gordes · Roussillon · Lacoste · Lourmarin · Pierrevert",
+  "obsidian": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FCircuit%2FFeuilles%20de%20Route%2FJ3%20%E2%80%94%20S%C3%A9nanque%20%C2%B7%20Gordes%20%C2%B7%20Roussillon%20%C2%B7%20Lacoste%20%C2%B7%20Lourmarin%20%C2%B7%20Pierrevert",
+  "abstract": [
+    { "emoji": "🎟️", "texte": "Abbaye de Sénanque", "heure_cle": "10h00", "ref": "Réservé 11p · Confirmé par mail", "billet": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FAbbaye%20S%C3%A9nanque.pdf" },
+    { "emoji": "🎟️", "texte": "Village des Bories", "ref": "Paiement sur place · Confirmé" },
+    { "emoji": "🍽️", "texte": "La Grappe de Raisin — Roussillon", "heure_cle": "13h00", "ref": "Réservé 11p" },
+    { "emoji": "⚠️", "texte": "Départ à 8h30", "alerte": true }
+  ],
+  "hebergement": "villa-pierrevert",
+  "creneaux": [
+    { "heure": "09h40", "type": "visite", "site": "senanque",
+      "trajet": { "depuis": "Beaucaire", "duree": "1h10", "km": 69 },
+      "visite": { "duree": "1h05" } },
+    { "heure": "11h00", "type": "boucle", "site": "gordes",
+      "trajet": { "depuis": "Sénanque", "duree": "15 min", "km": 4.5 },
+      "visite": { "duree": "45 min" } },
+    { "heure": "11h45", "type": "portion", "titre": "Gordes → Point de vue", "duree": "15 min",
+      "arrets": [
+        { "nom": "Point de vue sur Gordes", "emoji": "⛰️📸", "duree": "10 min",
+          "aide_memoire": [
+            "고르드 하면 떠오르는 바로 그 사진 · 석회암 절벽 위 황금빛 돌집들·꼭대기 성채·아래 뤼베롱 계곡",
+            "프로방스 관광 브로셔마다 등장하는 구도"
+          ],
+          "texte_original": [],
+          "photo": "📸 성채를 프레임 중앙, 마을이 아래로 흘러내리는 구도 · 오후 빛이 가장 따뜻",
+          "detail": "🚗 5 min · 1,6km",
+          "parking_maps": "https://maps.app.goo.gl/gFJ8ErrqsBj1xvJx9?g_st=ic" }
+      ] },
+    { "heure": "12h10", "type": "visite", "site": "bories",
+      "trajet": { "depuis": "Point de vue", "duree": "10 min", "km": 2.8 },
+      "visite": { "duree": "20 min" } },
+    { "heure": "13h00", "type": "repas", "restaurant": "la-grappe-de-raisin", "duree": "1h15",
+      "trajet": { "depuis": "Bories", "duree": "25 min", "km": 13 } },
+    { "heure": "14h15", "type": "boucle", "site": "roussillon",
+      "visite": { "duree": "1h" } },
+    { "heure": "15h15", "type": "visite", "site": "lacoste",
+      "trajet": { "depuis": "Roussillon", "duree": "25 min", "km": 13 },
+      "visite": { "duree": "30 min" } },
+    { "heure": "16h10", "type": "boucle", "site": "lourmarin",
+      "trajet": { "depuis": "Lacoste", "duree": "40 min", "km": 19 },
+      "visite": { "duree": "50 min" } },
+    { "heure": "17h40", "type": "trajet", "titre": "Lourmarin → Villa Pierrevert", "duree": "50 min", "km": 37,
+      "parkings": [ { "nom": "Villa Pierrevert", "maps": "https://maps.app.goo.gl/gYbfGM6mhTqqnwCm6?g_st=ic" } ] },
+    { "heure": "18h30", "type": "checkin", "titre": "Check-in · Villa Pierrevert", "texte": "Attribution des logements & Installation" }
+  ]
+}
