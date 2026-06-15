@@ -24,16 +24,7 @@
     }
   ],
   "alerte": "‼️ Départ à 8h30",
-  "hebergement": {
-    "nom": "Domaine des Clos",
-    "sous": "Beaucaire · ☎️ +33 4 66 01 14 61",
-    "maps": "https://maps.app.goo.gl/1vWfiX3XXQnhVPxU7?g_st=ic",
-    "parking": "🅿️ Parking sur place",
-    "guide": {
-      "nom": "Guide Beaucaire",
-      "id": "beaucaire"
-    }
-  },
+  "hebergement": "domaine-des-clos",
   "creneaux": [
     {
       "heure": "11h30",

@@ -8,9 +8,30 @@
     "guide": "Yun ZO"
   },
   "transports": [
-    { "type": "🛬", "label": "Arrivée Paris", "ref": "KE901", "date": "16/06 Mar", "heure": "18h30", "lieu": "CDG Terminal 1" },
-    { "type": "🚄", "label": "Départ Paris", "ref": "TGV inOui", "date": "18/06 Jeu", "heure": "10h35", "lieu": "Nîmes Pont-du-Gard" },
-    { "type": "🛫", "label": "Départ Nice", "ref": "BA335", "date": "23/06 Mar", "heure": "17h15", "lieu": "Nice Terminal 1" }
+    {
+      "type": "🛬",
+      "label": "Arrivée Paris",
+      "ref": "KE901",
+      "date": "16/06 Mar",
+      "heure": "18h30",
+      "lieu": "CDG Terminal 1"
+    },
+    {
+      "type": "🚄",
+      "label": "Départ Paris",
+      "ref": "TGV inOui",
+      "date": "18/06 Jeu",
+      "heure": "10h35",
+      "lieu": "Nîmes Pont-du-Gard"
+    },
+    {
+      "type": "🛫",
+      "label": "Départ Nice",
+      "ref": "BA335",
+      "date": "23/06 Mar",
+      "heure": "17h15",
+      "lieu": "Nice Terminal 1"
+    }
   ],
   "alerte_transport": {
     "titre": "✈️ BA335 international",
@@ -20,35 +41,183 @@
     ]
   },
   "hebergements": [
-    { "nuits": "J1–J2 (18–19/06)", "nom": "Domaine des Clos", "maps": "https://maps.app.goo.gl/1vWfiX3XXQnhVPxU7?g_st=ic", "contact": "☎️ +33 4 66 01 14 61", "parking": "Sur place" },
-    { "nuits": "J3–J4 (20–21/06)", "nom": "Villa Pierrevert", "maps": "https://maps.app.goo.gl/gYbfGM6mhTqqnwCm6?g_st=ic", "contact": "Robin ☎️ 06 51 72 87 83", "parking": "Privé", "note": "1 Avenue de l'Houme, 04860 Pierrevert" },
-    { "nuits": "J5 (22/06)", "nom": "Domaine Baccia Donna", "maps": "https://maps.app.goo.gl/r8fMuLkVu59nJkYU8?g_st=ic", "contact": "❗️ à compléter", "parking": "Privé" }
+    {
+      "nuits": "J1–J2 (18–19/06)",
+      "ref": "domaine-des-clos"
+    },
+    {
+      "nuits": "J3–J4 (20–21/06)",
+      "ref": "villa-pierrevert"
+    },
+    {
+      "nuits": "J5 (22/06)",
+      "ref": "domaine-baccia-donna"
+    }
   ],
   "reservations": [
-    { "ok": true, "jour": "J1 · 18/06", "heure": "(12h00)", "site": "Arènes de Nîmes + Maison Carrée", "pers": "10p", "ref": "Billet N° 6655896348", "pdf": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FN%C3%AEmes%203%20monuments.pdf" },
-    { "ok": true, "jour": "J1 · 18/06", "heure": "13h00", "site": "🍽️ L'imprev' — Nîmes", "pers": "11p", "ref": "Réservé" },
-    { "ok": true, "jour": "J1 · 18/06", "heure": "19h00", "site": "Domaine de la Tour — Dégustation", "pers": "10p", "ref": "Confirmé · 12€/pers · Acompte 30€ payé · 90€ sur place" },
-    { "ok": true, "jour": "J1 · 18/06", "heure": "20h30", "site": "🍽️ Dîner Domaine des Clos", "pers": "—", "ref": "Confirmé" },
-    { "ok": true, "jour": "J2 · 19/06", "heure": "12h30", "site": "🍽️ Le Roucas — Les Baux", "pers": "11p", "ref": "Confirmé ☎️ 04 84 84 93 62" },
-    { "ok": true, "jour": "J2 · 19/06", "heure": "16h00", "site": "Palais des Papes — Avignon", "pers": "—", "ref": "Billet", "pdf": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FPalais%20des%20papes.pdf" },
-    { "ok": true, "jour": "J3 · 20/06", "heure": "10h00", "site": "Abbaye Notre-Dame de Sénanque", "pers": "11p", "ref": "Confirmé par mail" },
-    { "ok": true, "jour": "J3 · 20/06", "heure": "(12h00)", "site": "Village des Bories", "pers": "—", "ref": "Confirmé par mail · Paiement sur place" },
-    { "ok": true, "jour": "J3 · 20/06", "heure": "13h00", "site": "🍽️ La Grappe de Raisin — Roussillon", "pers": "11p", "ref": "Confirmé par mail" },
-    { "ok": true, "jour": "J5 · 22/06", "heure": "19h00", "site": "🍽️ Les Mimosas du Cours — Nice", "pers": "11p", "ref": "Confirmé via Google · mail iCloud" },
-    { "ok": true, "jour": "J6 · 23/06", "heure": "10h20", "site": "Jardin Exotique d'Eze", "pers": "10p", "ref": "Billet", "pdf": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FJardin_Eze_1122389_sYAICeeO.pdf" },
-    { "ok": false, "jour": "J4 · 21/06", "heure": "(13h15)", "site": "Bateaux / Pédalos — Lac Ste-Croix", "pers": "—", "ref": "À réserver ou accès libre ?" }
+    {
+      "ok": true,
+      "jour": "J1 · 18/06",
+      "heure": "(12h00)",
+      "site": "Arènes de Nîmes + Maison Carrée",
+      "pers": "10p",
+      "ref": "Billet N° 6655896348",
+      "pdf": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FN%C3%AEmes%203%20monuments.pdf"
+    },
+    {
+      "ok": true,
+      "jour": "J1 · 18/06",
+      "heure": "13h00",
+      "site": "🍽️ L'imprev' — Nîmes",
+      "pers": "11p",
+      "ref": "Réservé"
+    },
+    {
+      "ok": true,
+      "jour": "J1 · 18/06",
+      "heure": "19h00",
+      "site": "Domaine de la Tour — Dégustation",
+      "pers": "10p",
+      "ref": "Confirmé · 12€/pers · Acompte 30€ payé · 90€ sur place"
+    },
+    {
+      "ok": true,
+      "jour": "J1 · 18/06",
+      "heure": "20h30",
+      "site": "🍽️ Dîner Domaine des Clos",
+      "pers": "—",
+      "ref": "Confirmé"
+    },
+    {
+      "ok": true,
+      "jour": "J2 · 19/06",
+      "heure": "12h30",
+      "site": "🍽️ Le Roucas — Les Baux",
+      "pers": "11p",
+      "ref": "Confirmé ☎️ 04 84 84 93 62"
+    },
+    {
+      "ok": true,
+      "jour": "J2 · 19/06",
+      "heure": "16h00",
+      "site": "Palais des Papes — Avignon",
+      "pers": "—",
+      "ref": "Billet",
+      "pdf": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FPalais%20des%20papes.pdf"
+    },
+    {
+      "ok": true,
+      "jour": "J3 · 20/06",
+      "heure": "10h00",
+      "site": "Abbaye Notre-Dame de Sénanque",
+      "pers": "11p",
+      "ref": "Confirmé par mail"
+    },
+    {
+      "ok": true,
+      "jour": "J3 · 20/06",
+      "heure": "(12h00)",
+      "site": "Village des Bories",
+      "pers": "—",
+      "ref": "Confirmé par mail · Paiement sur place"
+    },
+    {
+      "ok": true,
+      "jour": "J3 · 20/06",
+      "heure": "13h00",
+      "site": "🍽️ La Grappe de Raisin — Roussillon",
+      "pers": "11p",
+      "ref": "Confirmé par mail"
+    },
+    {
+      "ok": true,
+      "jour": "J5 · 22/06",
+      "heure": "19h00",
+      "site": "🍽️ Les Mimosas du Cours — Nice",
+      "pers": "11p",
+      "ref": "Confirmé via Google · mail iCloud"
+    },
+    {
+      "ok": true,
+      "jour": "J6 · 23/06",
+      "heure": "10h20",
+      "site": "Jardin Exotique d'Eze",
+      "pers": "10p",
+      "ref": "Billet",
+      "pdf": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FJardin_Eze_1122389_sYAICeeO.pdf"
+    },
+    {
+      "ok": false,
+      "jour": "J4 · 21/06",
+      "heure": "(13h15)",
+      "site": "Bateaux / Pédalos — Lac Ste-Croix",
+      "pers": "—",
+      "ref": "À réserver ou accès libre ?"
+    }
   ],
   "jours": [
-    { "id": "J1", "date": "Jeu 18/06", "titre": "Nîmes · Aigues-Mortes · Camargue · Beaucaire", "etapes": "🚄 Nîmes · Arènes · Maison Carrée → Aigues-Mortes → Camargue · Scamandre", "hebergement": "Domaine des Clos · Beaucaire" },
-    { "id": "J2", "date": "Ven 19/06", "titre": "Arles · Les Baux · Avignon · Beaucaire", "etapes": "Arles · Van Gogh → Les Baux → Avignon · Palais des Papes", "hebergement": "Domaine des Clos · Beaucaire" },
-    { "id": "J3", "date": "Sam 20/06", "titre": "Sénanque · Gordes · Roussillon · Lacoste · Lourmarin · Pierrevert", "etapes": "Sénanque → Gordes → Bories → Roussillon → Lacoste → Lourmarin", "hebergement": "Villa Pierrevert" },
-    { "id": "J4", "date": "Dim 21/06", "titre": "Valensole · Moustiers · Verdon · Pierrevert", "etapes": "Valensole → Moustiers → Lac Ste-Croix → Route des Crêtes", "hebergement": "Villa Pierrevert" },
-    { "id": "J5", "date": "Lun 22/06", "titre": "Antibes · Saint-Paul-de-Vence · Nice · La Trinité", "etapes": "Antibes → Saint-Paul-de-Vence → Nice · Promenade → Dîner Vieux-Nice", "hebergement": "Domaine Baccia Donna · La Trinité" },
-    { "id": "J6", "date": "Mar 23/06", "titre": "Eze · Nice · Aéroport", "etapes": "Eze (split) → Nice · Cours Saleya → Déjeuner → ✈️ BA335 17h15", "hebergement": "—" }
+    {
+      "id": "J1",
+      "date": "Jeu 18/06",
+      "titre": "Nîmes · Aigues-Mortes · Camargue · Beaucaire",
+      "etapes": "🚄 Nîmes · Arènes · Maison Carrée → Aigues-Mortes → Camargue · Scamandre",
+      "hebergement": "Domaine des Clos · Beaucaire"
+    },
+    {
+      "id": "J2",
+      "date": "Ven 19/06",
+      "titre": "Arles · Les Baux · Avignon · Beaucaire",
+      "etapes": "Arles · Van Gogh → Les Baux → Avignon · Palais des Papes",
+      "hebergement": "Domaine des Clos · Beaucaire"
+    },
+    {
+      "id": "J3",
+      "date": "Sam 20/06",
+      "titre": "Sénanque · Gordes · Roussillon · Lacoste · Lourmarin · Pierrevert",
+      "etapes": "Sénanque → Gordes → Bories → Roussillon → Lacoste → Lourmarin",
+      "hebergement": "Villa Pierrevert"
+    },
+    {
+      "id": "J4",
+      "date": "Dim 21/06",
+      "titre": "Valensole · Moustiers · Verdon · Pierrevert",
+      "etapes": "Valensole → Moustiers → Lac Ste-Croix → Route des Crêtes",
+      "hebergement": "Villa Pierrevert"
+    },
+    {
+      "id": "J5",
+      "date": "Lun 22/06",
+      "titre": "Antibes · Saint-Paul-de-Vence · Nice · La Trinité",
+      "etapes": "Antibes → Saint-Paul-de-Vence → Nice · Promenade → Dîner Vieux-Nice",
+      "hebergement": "Domaine Baccia Donna · La Trinité"
+    },
+    {
+      "id": "J6",
+      "date": "Mar 23/06",
+      "titre": "Eze · Nice · Aéroport",
+      "etapes": "Eze (split) → Nice · Cours Saleya → Déjeuner → ✈️ BA335 17h15",
+      "hebergement": "—"
+    }
   ],
   "alertes": [
-    { "titre": "J3 — Samedi haute saison", "lignes": ["Gordes et Roussillon très fréquentés. Parking des Ocres saturé dès 11h en saison estivale."] },
-    { "titre": "J4 — Dimanche + Fête de la Musique (21/06)", "lignes": ["Pont du Galetas et Gorges du Verdon très chargés. Prévoir +15–20 min sur les trajets de l'après-midi."] },
-    { "titre": "J6 — Split groupe à Eze", "lignes": ["Team SIXT → Eze village libre · Team Fragonard → visite guidée 1h", "RV commun : Toilettes publiques avant jardin exotique · 10h20"] }
+    {
+      "titre": "J3 — Samedi haute saison",
+      "lignes": [
+        "Gordes et Roussillon très fréquentés. Parking des Ocres saturé dès 11h en saison estivale."
+      ]
+    },
+    {
+      "titre": "J4 — Dimanche + Fête de la Musique (21/06)",
+      "lignes": [
+        "Pont du Galetas et Gorges du Verdon très chargés. Prévoir +15–20 min sur les trajets de l'après-midi."
+      ]
+    },
+    {
+      "titre": "J6 — Split groupe à Eze",
+      "lignes": [
+        "Team SIXT → Eze village libre · Team Fragonard → visite guidée 1h",
+        "RV commun : Toilettes publiques avant jardin exotique · 10h20"
+      ]
+    }
   ]
 }
