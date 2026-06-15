@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>Circuit — Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .dash-head { padding: 4px 4px 14px; }
+  .dash-titre { font-size: 22px; font-weight: 800; line-height: 1.15; }
+  .dash-sous { font-size: 13px; color: var(--ink-soft); margin-top: 4px; }
+
+  .section-bloc { background: var(--card); border: 1px solid var(--card-line); border-radius: 12px; margin-bottom: 8px; overflow: hidden; }
+  .section-bloc-header { padding: 12px 14px; display: flex; align-items: center; gap: 10px; cursor: pointer; user-select: none; }
+  .section-bloc-titre { flex: 1; font-size: 14px; font-weight: 700; }
+  .section-bloc-body { display: none; padding: 0 14px 14px; }
+  .section-bloc.ouvert .section-bloc-body { display: block; }
+  .section-bloc.ouvert .chev { transform: rotate(180deg); }
+
+  /* Boutons jour */
+  .jour-btn { display: flex; align-items: center; gap: 11px; padding: 12px 14px; background: var(--card); border: 1px solid var(--card-line); border-left: 4px solid var(--terra); border-radius: 11px; margin-bottom: 7px; text-decoration: none; color: var(--ink); }
+  .jour-btn:active { background: #F6F1E8; }
+  .jour-id { font-size: 17px; font-weight: 800; color: var(--terra); min-width: 38px; }
+  .jour-info { flex: 1; }
+  .jour-date { font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.05em; }
+  .jour-titre { font-size: 13.5px; font-weight: 600; line-height: 1.3; margin-top: 1px; }
+  .jour-etapes { font-size: 11.5px; color: var(--ink-soft); margin-top: 3px; line-height: 1.4; }
+  .jour-arrow { color: var(--ink-faint); font-size: 16px; }
+
+  /* Réservations */
+  .resa { border-top: 1px solid var(--card-line); padding: 9px 0; font-size: 12.5px; }
+  .resa:first-child { border-top: none; }
+  .resa-l1 { display: flex; align-items: baseline; gap: 6px; }
+  .resa-ok { font-size: 13px; }
+  .resa-jour { color: var(--ink-faint); font-size: 11px; white-space: nowrap; }
+  .resa-heure { color: var(--terra); font-weight: 700; font-variant-numeric: tabular-nums; }
+  .resa-site { font-weight: 600; margin-top: 2px; }
+  .resa-ref { color: var(--ink-soft); font-size: 11.5px; margin-top: 1px; }
+  .resa-ref a { color: var(--terra); text-decoration: none; font-weight: 600; }
+  .resa-pers { color: var(--ink-faint); font-size: 11px; }
+  .resa.alerte { background: #FBEEEA; margin: 0 -14px; padding: 9px 14px; border-radius: 6px; }
+
+  /* Tables génériques */
+  .kv { display: flex; padding: 6px 0; border-top: 1px solid var(--card-line); font-size: 13px; }
+  .kv:first-child { border-top: none; }
+  .kv-k { font-weight: 600; min-width: 90px; color: var(--ink-soft); }
+  .kv-v { flex: 1; }
+
+  .transport { border-top: 1px solid var(--card-line); padding: 8px 0; font-size: 12.5px; }
+  .transport:first-child { border-top: none; }
+  .transport-l1 { font-weight: 600; }
+  .transport-l2 { color: var(--ink-soft); font-size: 11.5px; margin-top: 2px; }
+
+  .heb { border-top: 1px solid var(--card-line); padding: 9px 0; font-size: 12.5px; }
+  .heb:first-child { border-top: none; }
+  .heb-nuits { font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.04em; }
+  .heb-nom { font-weight: 700; margin-top: 1px; }
+  .heb-info { color: var(--ink-soft); font-size: 11.5px; margin-top: 2px; }
+  .heb-info a { color: var(--terra); text-decoration: none; font-weight: 600; }
+
+  .alerte-op { background: #FBEEEA; border: 1px solid #E6C4B8; border-left: 4px solid var(--alert); border-radius: 8px; padding: 9px 11px; margin-bottom: 7px; }
+  .alerte-op-titre { font-weight: 700; color: var(--alert); font-size: 12.5px; margin-bottom: 3px; }
+  .alerte-op-l { font-size: 12px; color: #6A4038; line-height: 1.5; }
+
+  .warn-transport { background: #FBEEEA; border: 1px solid #E6C4B8; border-radius: 8px; padding: 9px 11px; margin-top: 10px; }
+  .warn-transport .t { font-weight: 700; color: var(--alert); font-size: 12.5px; margin-bottom: 3px; }
+  .warn-transport .l { font-size: 12px; color: #6A4038; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div id="app">Chargement…</div>
+
+<script>
+async function loadJSON(path) {
+  const res = await fetch(`data/${path}`);
+  if (!res.ok) throw new Error(`Introuvable: ${path}`);
+  return res.json();
+}
+function mapLink(url, label) { return url ? `<a href="${url}">${label || 'Maps'}</a>` : ''; }
+
+function renderDash(c) {
+  const jours = c.jours.map(j => `
+    <a class="jour-btn" href="jour.html?j=${j.id}">
+      <div class="jour-id">${j.id}</div>
+      <div class="jour-info">
+        <div class="jour-date">${j.date}</div>
+        <div class="jour-titre">${j.titre}</div>
+        <div class="jour-etapes">${j.etapes}</div>
+      </div>
+      <div class="jour-arrow">›</div>
+    </a>`).join('');
+
+  const resas = c.reservations.map(r => {
+    const ref = r.pdf ? `${r.ref} · <a href="${r.pdf}">📄 PDF</a>` : r.ref;
+    return `
+    <div class="resa${r.ok ? '' : ' alerte'}">
+      <div class="resa-l1">
+        <span class="resa-ok">${r.ok ? '✅' : '❗️'}</span>
+        <span class="resa-jour">${r.jour}</span>
+        <span class="resa-heure">${r.heure}</span>
+        <span class="resa-pers">· ${r.pers}</span>
+      </div>
+      <div class="resa-site">${r.site}</div>
+      <div class="resa-ref">${ref}</div>
+    </div>`;
+  }).join('');
+
+  const transports = c.transports.map(t => `
+    <div class="transport">
+      <div class="transport-l1">${t.type} ${t.label} — ${t.ref}</div>
+      <div class="transport-l2">${t.date} · ${t.heure} · ${t.lieu}</div>
+    </div>`).join('');
+  const warnT = c.alerte_transport ? `<div class="warn-transport"><div class="t">${c.alerte_transport.titre}</div>${c.alerte_transport.lignes.map(l=>`<div class="l">${l}</div>`).join('')}</div>` : '';
+
+  const hebs = c.hebergements.map(h => `
+    <div class="heb">
+      <div class="heb-nuits">${h.nuits}</div>
+      <div class="heb-nom">${h.nom}</div>
+      <div class="heb-info">${mapLink(h.maps,'🗺️ Maps')} · ${h.contact} · 🅿️ ${h.parking}${h.note ? '<br>📍 '+h.note : ''}</div>
+    </div>`).join('');
+
+  const logi = `
+    <div class="kv"><div class="kv-k">Groupe</div><div class="kv-v">${c.logistique.groupe}</div></div>
+    <div class="kv"><div class="kv-k">Véhicule</div><div class="kv-v">${c.logistique.vehicule}</div></div>
+    <div class="kv"><div class="kv-k">Guide</div><div class="kv-v">${c.logistique.guide}</div></div>`;
+
+  const alertes = c.alertes.map(a => `
+    <div class="alerte-op">
+      <div class="alerte-op-titre">⚠️ ${a.titre}</div>
+      ${a.lignes.map(l=>`<div class="alerte-op-l">${l}</div>`).join('')}
+    </div>`).join('');
+
+  document.getElementById('app').innerHTML = `
+    <div class="dash-head">
+      <div class="dash-titre">🗺️ ${c.titre}</div>
+      <div class="dash-sous">${c.sous_titre}</div>
+    </div>
+
+    <div style="margin-bottom:14px">${jours}</div>
+
+    ${sectionBloc('resa', '🎟️ Réservations', resas, true)}
+    ${sectionBloc('transp', '✈️ Vols & Trains', transports + warnT, false)}
+    ${sectionBloc('heb', '🏨 Hébergements', hebs, false)}
+    ${sectionBloc('logi', '🚐 Logistique', logi, false)}
+    ${sectionBloc('alertes', '⚠️ Alertes opérationnelles', alertes, false)}
+  `;
+}
+
+function sectionBloc(id, titre, contenu, ouvert) {
+  return `
+    <div class="section-bloc${ouvert ? ' ouvert' : ''}" id="sb-${id}">
+      <div class="section-bloc-header" onclick="toggleBloc('sb-${id}')">
+        <div class="section-bloc-titre">${titre}</div>
+        <div class="chev">▼</div>
+      </div>
+      <div class="section-bloc-body">${contenu}</div>
+    </div>`;
+}
+function toggleBloc(id) { document.getElementById(id).classList.toggle('ouvert'); }
+
+(async function () {
+  try { renderDash(await loadJSON('circuits/2026-0618/circuit.json')); }
+  catch (e) { document.getElementById('app').innerHTML = `<div style="padding:20px;color:#A33B2E">Erreur: ${e.message}</div>`; }
+})();
+</script>
+</body>
+</html>
