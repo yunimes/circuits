@@ -1,0 +1,29 @@
+{
+  "jour": "J2",
+  "date": "Vendredi 19 juin 2026",
+  "titre": "Arles · Les Baux · Avignon · Beaucaire",
+  "obsidian": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FCircuit%2FFeuilles%20de%20Route%2FJ2%20%E2%80%94%20Arles%20%C2%B7%20Les%20Baux%20%C2%B7%20Avignon%20%C2%B7%20Beaucaire",
+  "abstract": [
+    { "emoji": "🍽️", "texte": "Le Roucas — Les Baux", "heure_cle": "12h30", "ref": "Réservé 11p · ☎️ 04 84 84 93 62" },
+    { "emoji": "🎟️", "texte": "Palais des Papes — Avignon", "heure_cle": "16h00", "ref": "Billet", "billet": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FPalais%20des%20papes.pdf" }
+  ],
+  "hebergement": "domaine-des-clos",
+  "creneaux": [
+    { "heure": "09h00", "type": "boucle", "site": "arles",
+      "trajet": { "depuis": "Beaucaire", "duree": "35 min", "km": 25 },
+      "visite": { "duree": "2h" } },
+    { "heure": "11h35", "type": "boucle", "site": "les-baux-matin",
+      "trajet": { "depuis": "Arles", "duree": "25 min", "km": 18 },
+      "visite": { "duree": "30 min" } },
+    { "heure": "12h30", "type": "repas", "restaurant": "le-roucas", "duree": "1h30" },
+    { "heure": "14h00", "type": "boucle", "site": "les-baux-apres-midi",
+      "visite": { "duree": "1h" } },
+    { "heure": "15h00", "type": "visite", "site": "avignon",
+      "trajet": { "depuis": "Les Baux", "duree": "50 min", "km": 40 },
+      "visite": { "duree": "2h" } },
+    { "heure": "17h30", "type": "courses", "titre": "Carrefour Contact · Aramon", "duree": "1h",
+      "maps": "https://maps.app.goo.gl/mTrjYhA1atfYjpo88?g_st=ic",
+      "segments": [ "🚗 15 min · 13km — Avignon → Carrefour", "🛒 20 min — Courses", "🚗 25 min · 21km — Aramon → Domaine des Clos" ],
+      "adresse": "760 Av. Général de Gaulle, 30390 Aramon" }
+  ]
+}
