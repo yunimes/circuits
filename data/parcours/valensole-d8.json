@@ -1,7 +1,11 @@
 {
   "id": "valensole-d8",
   "nom": "Plateau de Valensole · Champs de lavande",
-  "guide": { "nom": "Guide Valensole", "id": "valensole" },
+  "guide": {
+    "nom": "Guide Valensole",
+    "id": "valensole"
+  },
+  "itineraire_maps": "https://maps.app.goo.gl/oN5cRSLzm31YqA1q6?g_st=ic",
   "arrets": [
     {
       "nom": "Traversée du plateau · Arrêts photo",
@@ -13,7 +17,9 @@
       ],
       "texte_original": [],
       "detail": "📸 30 min (3 arrêts 10min ou 2 arrêts 15min)",
-      "recits": ["lavande"]
+      "recits": [
+        "lavande"
+      ]
     }
   ]
 }
