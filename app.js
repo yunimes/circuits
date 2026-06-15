@@ -115,7 +115,8 @@ async function cr_visite(c, idx) {
   if (c.visite) segs += `<div class="segment">👣 ${c.visite.duree} — Visite</div>`;
   const liste = site.points || (site.point ? [site.point] : []);
   let pts = ''; for (let i=0;i<liste.length;i++) pts += await renderPoint(liste[i], `${cid}-${i}`);
-  return wrap(cid, c.heure, site.nom, dureeTotale(c), `${segs}${billetBar(site)}${pts}${renderNotes(site, cid)}${renderGuides(site)}`);
+  const optV = site.option ? `<div class="option-bloc">${site.option.texte}</div>` : '';
+  return wrap(cid, c.heure, site.nom, dureeTotale(c), `${segs}${billetBar(site)}${pts}${renderNotes(site, cid)}${optV}${renderGuides(site)}`);
 }
 
 async function cr_trajet(c, idx) {
@@ -163,7 +164,10 @@ async function cr_portion(c, idx) {
     const aide = `<div class="aide">${lignesHtml(a.aide_memoire)}${a.photo?`<div class="photo">${a.photo}</div>`:''}</div>`;
     const orig = `<div class="original">${a.texte_original?lignesHtml(a.texte_original):'<div class="ligne vide">(texte original à compléter)</div>'}</div>`;
     const detail = a.detail ? `<div class="segment">${a.detail}${a.trajet_maps?' '+mapBtn(a.trajet_maps):''}${a.parking_maps?' · 🅿️ '+mapBtn(a.parking_maps):''}</div>` : '';
-    arr += `<div class="point"><div class="point-tete"><span class="point-nom">${a.emoji||'🏁'} ${a.nom}</span><span class="point-meta">· ${a.duree||''}</span></div>${aide}${orig}${detail}</div>`;
+    let boutons='',blocs='';
+    if (a.recits&&a.recits.length){for(let k=0;k<a.recits.length;k++){const r=renderRecit(await getRecit(a.recits[k]),`${cid}-${i}-${k}`);boutons+=r.bouton;blocs+=r.bloc;}}
+    const acces = boutons?`<div class="acces-rangee">${boutons}</div>${blocs}`:'';
+    arr += `<div class="point"><div class="point-tete"><span class="point-nom">${a.emoji||'🏁'} ${a.nom}</span><span class="point-meta">· ${a.duree||''}</span></div>${aide}${orig}${detail}${acces}</div>`;
   }
   return wrap(cid, c.heure, `🏁 ${c.titre}`, c.duree||'', `${arr}${renderGuides(c)}`);
 }
