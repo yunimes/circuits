@@ -2,69 +2,55 @@
   "jour": "J1",
   "date": "Jeudi 18 juin 2026",
   "titre": "Nîmes · Aigues-Mortes · Camargue · Beaucaire",
-  "obsidian": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FCircuit%2FFeuilles%20de%20Route%2FJ1",
+  "obsidian": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FCircuit%2FFeuilles%20de%20Route%2FJ1%20%E2%80%94%20N%C3%AEmes%20%C2%B7%20Aigues-Mortes%20%C2%B7%20Camargue%20%C2%B7%20Beaucaire",
   "abstract": [
-    {
-      "emoji": "🎟️",
-      "texte": "Arènes + Maison Carrée",
-      "ref": "Billet N° 6655896348",
-      "billet": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FN%C3%AEmes%203%20monuments.pdf"
-    },
-    {
-      "emoji": "🍽️",
-      "texte": "L'imprev'",
-      "heure_cle": "13h00",
-      "ref": "Réservé 11p"
-    },
-    {
-      "emoji": "🍷",
-      "texte": "Domaine de la Tour",
-      "heure_cle": "19h00",
-      "ref": "90€ sur place"
-    }
+    { "emoji": "🎟️", "texte": "Arènes + Maison Carrée", "ref": "Billet N° 6655896348", "billet": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FN%C3%AEmes%203%20monuments.pdf" },
+    { "emoji": "🍽️", "texte": "L'imprev'", "heure_cle": "13h00", "ref": "Réservé 11p" },
+    { "emoji": "🍷", "texte": "Domaine de la Tour", "heure_cle": "19h00", "ref": "90€ sur place (acompte 30€ versé)" },
+    { "emoji": "🍽️", "texte": "Dîner Domaine des Clos", "heure_cle": "20h30", "ref": "Réservé 10p" }
   ],
-  "alerte": "‼️ Départ à 8h30",
   "hebergement": "domaine-des-clos",
   "creneaux": [
-    {
-      "heure": "11h30",
-      "type": "trajet",
-      "titre": "Gare Pont-du-Gard → Nîmes",
-      "duree": "30 min",
-      "km": 15,
+    { "heure": "10h35", "type": "checkin", "titre": "Arrivée · Gare Nîmes Pont-du-Gard", "texte": "Accueil du groupe · Chargement des bagages", "duree": "25 min" },
+    { "heure": "11h00", "type": "checkin", "titre": "Retrait véhicule · SIXT", "texte": "📍 SIXT Pont du Gard", "duree": "30 min" },
+    { "heure": "11h30", "type": "trajet", "titre": "Gare Pont-du-Gard → Nîmes", "duree": "30 min", "km": 15,
       "parkings": [
-        {
-          "nom": "Indigo Maison Carrée",
-          "maps": "https://maps.app.goo.gl/Btg5LYPpA6ZC3zb76?g_st=ic"
-        }
-      ]
-    },
-    {
-      "heure": "12h30",
-      "type": "repas",
-      "restaurant": "le-roucas",
-      "duree": "1h30"
-    },
-    {
-      "heure": "15h45",
-      "type": "boucle",
-      "site": "aigues-mortes",
-      "trajet": {
-        "depuis": "Nîmes",
-        "duree": "45 min",
-        "km": 42
-      },
-      "visite": {
-        "duree": "45 min"
-      }
-    },
-    {
-      "heure": "19h00",
-      "type": "degustation",
-      "titre": "Domaine de la Tour",
-      "duree": "1h",
-      "maps": "https://maps.app.goo.gl/FTkiWGYSc7c12n9w8?g_st=ic",
-      "prix": "90€ sur place (acompte 30€ payé)"
-    }
+        { "nom": "Indigo Maison Carrée", "maps": "https://maps.app.goo.gl/Btg5LYPpA6ZC3zb76?g_st=ic" },
+        { "nom": "Interparking Les Halles", "maps": "https://maps.app.goo.gl/RJYikhSFrcY6Dta8A?g_st=ic" }
+      ] },
+    { "heure": "12h00", "type": "boucle", "site": "nimes", "visite": { "duree": "1h" } },
+    { "heure": "13h00", "type": "repas", "restaurant": "l-imprev", "duree": "1h30" },
+    { "heure": "15h00", "type": "boucle", "site": "aigues-mortes",
+      "trajet": { "depuis": "Nîmes", "duree": "45 min", "km": 42 },
+      "visite": { "duree": "45 min" } },
+    { "heure": "16h30", "type": "portion", "titre": "Camargue Roadtrip → Réserve Scamandre", "duree": "1h20",
+      "arrets": [
+        { "nom": "Tour Carbonnière", "emoji": "🏁📸", "duree": "20 min · 3,5km",
+          "aide_memoire": [
+            "13세기 통행세 징수 탑 · 에그모르트 들어오는 유일한 육로 통제",
+            "루이 9세 항구 도시 방어 체계의 일부 · 탑 정상서 카마르그 습지 + 에그모르트 성벽 전경"
+          ],
+          "texte_original": [],
+          "photo": "📸 탑과 카마르그 전경 · 플라밍고 무리",
+          "detail": "🏁 5 min trajet · 📸 15 min arrêt",
+          "trajet_maps": "https://maps.app.goo.gl/N59RvjuaXBfCMewm9?g_st=ic",
+          "parking_maps": "https://maps.app.goo.gl/xqeUcoPwW5oL1L1L6?g_st=ic" },
+        { "nom": "Réserve naturelle du Scamandre", "emoji": "🏁🔭", "duree": "1h · 16km",
+          "aide_memoire": [
+            "카마르그 가르두아즈 습지 자연보호구역 · 갈대밭·연못·초원",
+            "홍학·왜가리·황새·양서류 서식 · 🔭 수상 산책로서 조류 관찰 · 쌍안경 지참 권장"
+          ],
+          "texte_original": [],
+          "detail": "🏁 15 min trajet · 🔭 45 min observation",
+          "trajet_maps": "https://maps.app.goo.gl/hVKt3pYufXhHJdBJ9?g_st=ic",
+          "parking_maps": "https://maps.app.goo.gl/QhszQqW3N5Y2KjZX8?g_st=ic" }
+      ],
+      "guide": { "nom": "Guide Camargue", "id": "camargue" } },
+    { "heure": "17h50", "type": "trajet", "titre": "Scamandre → Beaucaire", "duree": "40 min", "km": 38,
+      "parkings": [ { "nom": "Domaine des Clos", "maps": "https://maps.app.goo.gl/1vWfiX3XXQnhVPxU7?g_st=ic" } ] },
+    { "heure": "18h30", "type": "checkin", "titre": "Check-in · Domaine des Clos", "texte": "Attribution des logements & Installation", "duree": "30 min" },
+    { "heure": "19h00", "type": "degustation", "titre": "Domaine de la Tour", "duree": "1h",
+      "maps": "https://maps.app.goo.gl/FTkiWGYSc7c12n9w8?g_st=ic", "prix": "90€ sur place (acompte 30€ payé · 12€/pers) · 500m · 7 min à pied" },
+    { "heure": "20h30", "type": "repas", "restaurant": "bistro-des-clos" }
   ]
 }
