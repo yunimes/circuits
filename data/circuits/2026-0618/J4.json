@@ -1,0 +1,172 @@
+{
+  "jour": "J4",
+  "date": "Dimanche 21 juin 2026",
+  "titre": "Valensole · Moustiers · Verdon · Pierrevert",
+  "obsidian": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FCircuit%2FFeuilles%20de%20Route%2FJ4%20%E2%80%94%20Valensole%20%C2%B7%20Moustiers%20%C2%B7%20Verdon%20%C2%B7%20Pierrevert",
+  "abstract": [
+    {
+      "emoji": "⛵",
+      "texte": "Pédalos · Lac Ste-Croix",
+      "heure_cle": "13h15",
+      "ref": "2 pédalos · 50€ sur place"
+    },
+    {
+      "emoji": "⚠️",
+      "texte": "Dimanche + Fête de la Musique — trajets chargés l'après-midi",
+      "alerte": true
+    }
+  ],
+  "hebergement": "villa-pierrevert",
+  "creneaux": [
+    {
+      "heure": "09h00",
+      "type": "portion",
+      "titre": "Valensole · Champs de lavande (D8)",
+      "duree": "1h40",
+      "arrets": [
+        {
+          "nom": "Trajet D8 · Pierrevert → Puimoisson → Moustiers",
+          "emoji": "🏁📸",
+          "duree": "1h10 · 58km",
+          "aide_memoire": [
+            "발랑솔 고원은 유럽 최대 라벤더 재배지 · 프로방스 생산량 약 70%",
+            "진정한 개화는 6월 말~7월 중순 · 6/21은 초록과 보라가 섞이기 시작 · 이 시기만의 그라데이션",
+            "아침 이른 시간 또는 저녁 역광이 가장 아름다운 색"
+          ],
+          "texte_original": [],
+          "detail": "🏁 1h10 trajet · 📸 30 min (3 arrêts 10min ou 2 arrêts 15min)",
+          "trajet_maps": "https://maps.app.goo.gl/oN5cRSLzm31YqA1q6?g_st=ic",
+          "recits": [
+            "lavande"
+          ]
+        }
+      ],
+      "guide": {
+        "nom": "Guide Valensole",
+        "id": "valensole"
+      }
+    },
+    {
+      "heure": "10h40",
+      "type": "boucle",
+      "site": "moustiers",
+      "trajet": {
+        "depuis": "Puimoisson",
+        "duree": "20 min",
+        "km": 14
+      },
+      "visite": {
+        "duree": "1h"
+      }
+    },
+    {
+      "heure": "12h00",
+      "type": "visite",
+      "site": "lac-sainte-croix",
+      "trajet": {
+        "depuis": "Moustiers",
+        "duree": "15 min",
+        "km": 8
+      },
+      "visite": {
+        "duree": "2h"
+      }
+    },
+    {
+      "heure": "14h15",
+      "type": "portion",
+      "titre": "Route des Crêtes · La Palud-sur-Verdon",
+      "duree": "2h35",
+      "arrets": [
+        {
+          "nom": "Route des Crêtes",
+          "emoji": "🏁",
+          "duree": "43 min · 22km",
+          "aide_memoire": [
+            "베르동 협곡(Gorges du Verdon) = '유럽의 그랜드 캐니언' · 깊이 최대 700m",
+            "라우트 데 크레트(Route des Crêtes) D23 순환도로 · 14개 전망대 · 절벽 가장자리 아찔한 뷰",
+            "🔭 협곡 300m 아래로 아침에 페달로 탄 에메랄드빛 강물이 보임"
+          ],
+          "texte_original": [],
+          "detail": "🚗 35 min · 23km (Pont du Galetas → début) puis 🏁 43 min · 22km",
+          "trajet_maps": "https://maps.app.goo.gl/ZsS4j4HfnpXxdiZh6?g_st=ic"
+        },
+        {
+          "nom": "Belvédère de la Carelle",
+          "emoji": "📸",
+          "duree": "",
+          "aide_memoire": [
+            "협곡 북쪽 전망 · 독수리 서식지"
+          ],
+          "texte_original": []
+        },
+        {
+          "nom": "Belvédère de l'Escalès",
+          "emoji": "📸",
+          "duree": "",
+          "aide_memoire": [
+            "가장 인기 있는 전망대 · 암벽 등반가들 출발점"
+          ],
+          "texte_original": []
+        },
+        {
+          "nom": "Belvédère de la Dent d'Aïre",
+          "emoji": "📸",
+          "duree": "",
+          "aide_memoire": [
+            "뾰족한 바위 봉우리 전망"
+          ],
+          "texte_original": []
+        },
+        {
+          "nom": "Belvédère de Guègues",
+          "emoji": "📸",
+          "duree": "",
+          "aide_memoire": [
+            "협곡 깊이를 가장 잘 체감하는 지점"
+          ],
+          "texte_original": []
+        },
+        {
+          "nom": "Bar de la Place · La Palud-sur-Verdon",
+          "emoji": "☕",
+          "duree": "",
+          "aide_memoire": [
+            "라 팔뤼 마을 광장 카페 · 휴식"
+          ],
+          "texte_original": []
+        }
+      ],
+      "guide": {
+        "nom": "Guide Gorges du Verdon",
+        "id": "gorges-verdon"
+      }
+    },
+    {
+      "heure": "16h50",
+      "type": "portion",
+      "titre": "Retour · La Palud → Villa Pierrevert (via Valensole)",
+      "duree": "1h40",
+      "arrets": [
+        {
+          "nom": "Trajet D8 retour",
+          "emoji": "🏁📸",
+          "duree": "1h40 · 76km",
+          "aide_memoire": [
+            "귀로에 발랑솔 라벤더 고원 다시 통과 · 저녁 빛으로 또 다른 분위기"
+          ],
+          "texte_original": [],
+          "detail": "🏁 1h40 · 76km",
+          "trajet_maps": "https://maps.app.goo.gl/7HJE4HBSJW2E3jjW9?g_st=ic",
+          "parking_maps": "https://maps.app.goo.gl/gYbfGM6mhTqqnwCm6?g_st=ic"
+        }
+      ]
+    },
+    {
+      "heure": "18h30",
+      "type": "checkin",
+      "titre": "Villa Pierrevert",
+      "texte": "Soirée libre · Installation"
+    }
+  ]
+}
