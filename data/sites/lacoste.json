@@ -1,7 +1,7 @@
 {
   "id": "lacoste",
   "nom": "Lacoste",
-  "guide": { "nom": "Guide Lacoste", "id": "lacoste-lourmarin" },
+  "guide": { "nom": "Guide Lacoste", "id": "lacoste" },
   "parkings": [ { "nom": "Parking Château Lacoste", "maps": "https://maps.app.goo.gl/L7fYx7iM1cJzmPLk7?g_st=ic" } ],
   "points": [
     {
