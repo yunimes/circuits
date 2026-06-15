@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Guide</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .guide-titre { font-size: 20px; font-weight: 700; margin: 6px 4px 16px; line-height: 1.25; }
+  .retour { display: inline-block; margin: 0 4px 12px; font-size: 13px; color: var(--purple); text-decoration: none; }
+  .section { background: var(--card); border: 1px solid var(--card-line); border-radius: 12px; margin-bottom: 7px; overflow: hidden; }
+  .section.actif { border-color: var(--blue); box-shadow: 0 0 0 2px rgba(31,111,178,0.15); }
+  .section-header { padding: 13px 14px; display: flex; align-items: center; gap: 11px; cursor: pointer; user-select: none; }
+  .section-titre { flex: 1; font-size: 14.5px; font-weight: 600; line-height: 1.3; }
+  .section-body { display: none; padding: 0 14px 14px; font-size: 13.5px; color: #34322D; line-height: 1.75; }
+  .section.ouvert .section-body { display: block; }
+  .section.ouvert .section-header .chev { transform: rotate(180deg); }
+  .section-body h3 { font-size: 13.5px; color: var(--gold); font-weight: 700; margin: 12px 0 4px; }
+  .section-body p { margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<a class="retour" href="javascript:history.back()">← Retour</a>
+<div id="guide">Chargement…</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.0/marked.min.js"></script>
+<script>
+function getParam(name) {
+  return new URLSearchParams(window.location.search).get(name);
+}
+
+// Découpe le markdown en : titre (#), sections (## avec leur contenu incluant ###)
+function parseGuide(md) {
+  const lines = md.split('\n');
+  let titre = '';
+  const sections = [];
+  let current = null;
+
+  for (const line of lines) {
+    if (line.startsWith('# ') && !line.startsWith('## ')) {
+      titre = line.slice(2).trim();
+    } else if (line.startsWith('## ') && !line.startsWith('### ')) {
+      if (current) sections.push(current);
+      current = { titre: line.slice(3).trim(), contenu: [] };
+    } else {
+      if (current) current.contenu.push(line);
+      // lignes avant la 1re section (sous le #) : on les ignore ou on pourrait les mettre en intro
+    }
+  }
+  if (current) sections.push(current);
+  return { titre, sections };
+}
+
+function render(guide) {
+  const root = document.getElementById('guide');
+  let html = `<div class="guide-titre">${guide.titre}</div>`;
+  guide.sections.forEach((s, i) => {
+    const contenuMd = s.contenu.join('\n').trim();
+    const contenuHtml = marked.parse(contenuMd);
+    html += `
+      <div class="section" id="sec-${i}">
+        <div class="section-header" onclick="toggleSection('sec-${i}')">
+          <div class="section-titre">${s.titre}</div>
+          <div class="chev">▼</div>
+        </div>
+        <div class="section-body">${contenuHtml}</div>
+      </div>`;
+  });
+  root.innerHTML = html;
+}
+
+function toggleSection(id) {
+  const sec = document.getElementById(id);
+  const deja = sec.classList.contains('ouvert');
+  document.querySelectorAll('.section').forEach(s => { s.classList.remove('ouvert'); s.classList.remove('actif'); });
+  if (!deja) { sec.classList.add('ouvert'); sec.classList.add('actif'); setTimeout(() => sec.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50); }
+}
+
+(async function () {
+  const id = getParam('id');
+  if (!id) { document.getElementById('guide').innerHTML = '<div style="padding:20px;color:#B23A3A">Aucun guide spécifié.</div>'; return; }
+  try {
+    const res = await fetch(`data/guides/${id}.md`);
+    if (!res.ok) throw new Error(`Guide introuvable: ${id}`);
+    const md = await res.text();
+    render(parseGuide(md));
+  } catch (e) {
+    document.getElementById('guide').innerHTML = `<div style="padding:20px;color:#B23A3A">Erreur: ${e.message}</div>`;
+  }
+})();
+</script>
+</body>
+</html>
