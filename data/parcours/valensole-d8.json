@@ -1,0 +1,19 @@
+{
+  "id": "valensole-d8",
+  "nom": "Plateau de Valensole · Champs de lavande",
+  "guide": { "nom": "Guide Valensole", "id": "valensole" },
+  "arrets": [
+    {
+      "nom": "Traversée du plateau · Arrêts photo",
+      "emoji": "🏁📸",
+      "aide_memoire": [
+        "발랑솔 고원은 유럽 최대 라벤더 재배지 · 프로방스 생산량 약 70%",
+        "진정한 개화는 6월 말~7월 중순 · 6/21은 초록과 보라가 섞이기 시작 · 이 시기만의 그라데이션",
+        "아침 이른 시간 또는 저녁 역광이 가장 아름다운 색"
+      ],
+      "texte_original": [],
+      "detail": "📸 30 min (3 arrêts 10min ou 2 arrêts 15min)",
+      "recits": ["lavande"]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "camargue-scamandre",
+  "nom": "Camargue · Réserve du Scamandre",
+  "guide": { "nom": "Guide Camargue", "id": "camargue" },
+  "arrets": [
+    {
+      "nom": "Tour Carbonnière",
+      "emoji": "🏁📸",
+      "duree": "20 min · 3,5km",
+      "aide_memoire": [
+        "13세기 통행세 징수 탑 · 에그모르트 들어오는 유일한 육로 통제",
+        "루이 9세 항구 도시 방어 체계의 일부 · 탑 정상서 카마르그 습지 + 에그모르트 성벽 전경"
+      ],
+      "texte_original": [],
+      "photo": "📸 탑과 카마르그 전경 · 플라밍고 무리",
+      "detail": "🏁 5 min trajet · 📸 15 min arrêt",
+      "trajet_maps": "https://maps.app.goo.gl/N59RvjuaXBfCMewm9?g_st=ic",
+      "parking_maps": "https://maps.app.goo.gl/xqeUcoPwW5oL1L1L6?g_st=ic"
+    },
+    {
+      "nom": "Réserve naturelle du Scamandre",
+      "emoji": "🏁🔭",
+      "duree": "1h · 16km",
+      "aide_memoire": [
+        "카마르그 가르두아즈 습지 자연보호구역 · 갈대밭·연못·초원",
+        "홍학·왜가리·황새·양서류 서식 · 🔭 수상 산책로서 조류 관찰 · 쌍안경 지참 권장"
+      ],
+      "texte_original": [],
+      "detail": "🏁 15 min trajet · 🔭 45 min observation",
+      "trajet_maps": "https://maps.app.goo.gl/hVKt3pYufXhHJdBJ9?g_st=ic",
+      "parking_maps": "https://maps.app.goo.gl/QhszQqW3N5Y2KjZX8?g_st=ic",
+      "recits": ["camargue-scamandre"]
+    }
+  ]
+}
