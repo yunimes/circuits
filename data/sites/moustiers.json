@@ -1,0 +1,50 @@
+{
+  "id": "moustiers",
+  "nom": "Moustiers-Sainte-Marie",
+  "guide": { "nom": "Guide Moustiers", "id": "moustiers" },
+  "parkings": [ { "nom": "Parking Haut de Moustiers", "maps": "https://maps.app.goo.gl/qsqoGbeukNSETBna6?g_st=ic" } ],
+  "boucle": {
+    "distance_m": 1800,
+    "marche_min": 30,
+    "itineraire_maps": "https://maps.app.goo.gl/KsvhbpFMAJmtpXtN8?g_st=ic",
+    "points": [
+      {
+        "nom": "Chem. Marcel Provence · Boutiques Faïences",
+        "emoji": "🏺",
+        "aide_memoire": [
+          "무스티에 파이앙스 = 17세기부터 명성 · 눈처럼 흰 주석 에나멜 위 코발트 블루 문양",
+          "1689 루이 14세가 은 식기 녹이라 칙령 → 무스티에 파이앙스가 태양왕 식탁에 · 유럽 귀족 주문 쇄도",
+          "마을에 공방 12개 이상 · 플로럴·사냥 장면 패턴 접시·꽃병"
+        ],
+        "texte_original": [],
+        "recits": ["faience-moustiers"]
+      },
+      {
+        "nom": "Chapelle Notre-Dame-de-Beauvoir",
+        "emoji": "⛪",
+        "aide_memoire": [
+          "12세기 절벽 위 순례 예배당 · 마을에서 262계단",
+          "두 절벽 사이 135m 쇠사슬 끝에 황금별(지름 1.25m·150kg)",
+          "절벽 위에서 마을 전경과 베르동 협곡 입구가 한눈에"
+        ],
+        "texte_original": [],
+        "recits": ["chaine-moustiers"]
+      },
+      {
+        "nom": "Cascade du Riou",
+        "emoji": "💧",
+        "aide_memoire": [
+          "마을 가로지르는 시냇물 원류 · 작지만 청량한 폭포",
+          "골목 어디서든 물소리 · 무스티에가 '물소리의 마을'로 불리는 이유"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Église Notre-Dame de l'Assomption",
+        "emoji": "⛪",
+        "aide_memoire": [ "12세기 로마네스크 · 롬바르드식 종탑(북이탈리아 양식) · 단순하고 아름다운 내부" ],
+        "texte_original": []
+      }
+    ]
+  }
+}

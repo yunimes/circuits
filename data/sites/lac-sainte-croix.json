@@ -1,0 +1,22 @@
+{
+  "id": "lac-sainte-croix",
+  "nom": "Lac de Sainte-Croix",
+  "parkings": [
+    { "nom": "Parking Pont du Galetas", "maps": "https://maps.app.goo.gl/xUDMb6m6KogFgSMbA?g_st=ic" },
+    { "nom": "MYC Plage · Pédalos Verdon", "maps": "https://maps.app.goo.gl/H8q75jsCn7Lhd9988?g_st=ic" }
+  ],
+  "point": {
+    "nom": "Lac de Sainte-Croix",
+    "emoji": "🏞️",
+    "maps": "https://maps.app.goo.gl/xUDMb6m6KogFgSMbA?g_st=ic",
+    "aide_memoire": [
+      "면적 22km² · 길이 10km · 최대 수심 90m · 해발 470m",
+      "1974 담수 · EDF가 베르동 강을 막아 조성한 인공 호수",
+      "에메랄드빛 초록 이유는 석회암 지형 — 석회 성분이 물과 반응",
+      "🚣 페달로 — 퐁 뒤 갈레타서 출발하면 베르동 협곡 입구로 · 양쪽 수백 미터 절벽이 좁혀지는 구간 · 오후 전망대에서 300m 아래로 볼 바로 그 강물 위를 직접"
+    ],
+    "texte_original": [],
+    "recits": ["village-englouti"]
+  },
+  "option": { "texte": "🍽️ Option déjeuner à Moustiers (au lieu du pique-nique) — Les Tables du Cloître 20–30€ ⭐4,8 · décale pédalos à 14h00" }
+}
