@@ -80,7 +80,7 @@ async function loadJSON(path) {
 }
 function mapLink(url, label) { return url ? `<a href="${url}">${label || 'Maps'}</a>` : ''; }
 
-function renderDash(c) {
+async function renderDash(c) {
   const jours = c.jours.map(j => `
     <a class="jour-btn" href="jour.html?j=${j.id}">
       <div class="jour-id">${j.id}</div>
@@ -114,12 +114,16 @@ function renderDash(c) {
     </div>`).join('');
   const warnT = c.alerte_transport ? `<div class="warn-transport"><div class="t">${c.alerte_transport.titre}</div>${c.alerte_transport.lignes.map(l=>`<div class="l">${l}</div>`).join('')}</div>` : '';
 
-  const hebs = c.hebergements.map(h => `
+  const hebs = (await Promise.all(c.hebergements.map(async hr => {
+    const h = await loadJSON(`hebergements/${hr.ref}.json`);
+    const contact = (h.sous||'').split('·').slice(1).join('·').trim() || h.sous || '';
+    return `
     <div class="heb">
-      <div class="heb-nuits">${h.nuits}</div>
+      <div class="heb-nuits">${hr.nuits}</div>
       <div class="heb-nom">${h.nom}</div>
-      <div class="heb-info">${mapLink(h.maps,'🗺️ Maps')} · ${h.contact} · 🅿️ ${h.parking}${h.note ? '<br>📍 '+h.note : ''}</div>
-    </div>`).join('');
+      <div class="heb-info">${h.sous||''} · ${h.parking||''}<br>${mapLink(h.maps,'🗺️ Maps')}${h.note ? ' · 📍 '+h.note : ''}</div>
+    </div>`;
+  }))).join('');
 
   const logi = `
     <div class="kv"><div class="kv-k">Groupe</div><div class="kv-v">${c.logistique.groupe}</div></div>
@@ -161,7 +165,7 @@ function sectionBloc(id, titre, contenu, ouvert) {
 function toggleBloc(id) { document.getElementById(id).classList.toggle('ouvert'); }
 
 (async function () {
-  try { renderDash(await loadJSON('circuits/2026-0618/circuit.json')); }
+  try { await renderDash(await loadJSON('circuits/2026-0618/circuit.json')); }
   catch (e) { document.getElementById('app').innerHTML = `<div style="padding:20px;color:#A33B2E">Erreur: ${e.message}</div>`; }
 })();
 </script>

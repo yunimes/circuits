@@ -13,9 +13,11 @@ async function loadJSON(path) {
   if (!res.ok) throw new Error(`Introuvable: ${path}`);
   return res.json();
 }
-const cache = { sites: {}, recits: {} };
+const cache = { sites: {}, recits: {}, hebergements: {}, restaurants: {} };
 async function getSite(id) { if (!cache.sites[id]) cache.sites[id] = await loadJSON(`sites/${id}.json`); return cache.sites[id]; }
 async function getRecit(id) { if (!cache.recits[id]) cache.recits[id] = await loadJSON(`recits/${id}.json`); return cache.recits[id]; }
+async function getHeberg(id) { if (!cache.hebergements[id]) cache.hebergements[id] = await loadJSON(`hebergements/${id}.json`); return cache.hebergements[id]; }
+async function getResto(id) { if (!cache.restaurants[id]) cache.restaurants[id] = await loadJSON(`restaurants/${id}.json`); return cache.restaurants[id]; }
 
 function el(html) { const d = document.createElement('div'); d.innerHTML = html.trim(); return d.firstElementChild; }
 function mapBtn(url) { return url ? `<a class="map-btn" href="${url}">🗺️</a>` : ''; }
@@ -119,7 +121,7 @@ async function cr_trajet(c, idx) {
 async function cr_repas(c, idx) {
   const cid = `c-${idx}`;
   let r = c.restaurant;
-  if (typeof r === 'string') r = await getSite(r);
+  if (typeof r === 'string') r = await getResto(r);
   const resa = r.reservation ? `${r.reservation.statut||''}${r.reservation.heure?' à '+r.reservation.heure:''}${r.reservation.tel?' · ☎️ '+r.reservation.tel:''}` : '';
   const aide = `<div class="aide">${lignesHtml(r.aide_memoire)}${r.prix_indicatif?`<div class="ligne" style="color:var(--orange)">💶 ${r.prix_indicatif}</div>`:''}${r.adresse?`<div class="photo">📍 ${r.adresse}</div>`:''}</div>`;
   const tete = `<div class="point-tete"><span class="point-nom">${r.nom}</span>${mapBtn(r.maps)}</div>`;
@@ -192,8 +194,16 @@ function renderAbstract(jour) {
   const alerte = jour.alerte ? `<div class="abstract-row alerte">${jour.alerte}</div>` : '';
   return `<div class="abstract"><div class="abstract-title">📋 Abstract du jour</div>${rows}${alerte}</div>`;
 }
-function renderHeberg(jour) {
-  const h = jour.hebergement; if (!h) return '';
+async function renderHeberg(jour) {
+  let h = jour.hebergement; if (!h) return '';
+  if (typeof h === 'string') h = await getHeberg(h);
+  const aide = (h.aide_memoire&&h.aide_memoire.length)?`<div class="aide">${lignesHtml(h.aide_memoire)}</div>`:'';
+  const orig = (h.texte_original&&h.texte_original.length)?`<div class="original">${lignesHtml(h.texte_original)}</div>`:'';
+  // récits éventuels
+  let boutons='',blocs='';
+  if (h.recits&&h.recits.length){for(let i=0;i<h.recits.length;i++){const r=renderRecit(await getRecit(h.recits[i]),`heb-${i}`);boutons+=r.bouton;blocs+=r.bloc;}}
+  const guideBtn = h.guide?`<a class="btn-obsidian" href="${guideHref(h.guide)}">🎙️ ${h.guide.nom}</a>`:'';
+  const acces = (boutons||guideBtn)?`<div class="acces-rangee">${boutons}${guideBtn}</div>${blocs}`:'';
   return `
     <div class="heberg" id="heberg">
       <div class="heberg-header">
@@ -204,8 +214,9 @@ function renderHeberg(jour) {
         ${mapBtn(h.maps)}
       </div>
       <div class="heberg-body">
-        ${h.parking?`<div class="aide" style="margin-bottom:10px">${h.parking}</div>`:''}
-        ${h.guide?`<a class="btn-obsidian" href="${guideHref(h.guide)}">🎙️ ${h.guide.nom}</a>`:''}
+        ${h.parking?`<div class="segment">${h.parking}</div>`:''}
+        ${h.note?`<div class="segment">📍 ${h.note}</div>`:''}
+        ${aide}${orig}${acces}
       </div>
     </div>`;
 }
@@ -220,7 +231,7 @@ async function renderJour(jour) {
       <div class="mode-btn" id="mb-revision" onclick="setMode('revision')">📖 Révision</div>
     </div>
     ${renderAbstract(jour)}
-    ${renderHeberg(jour)}
+    ${await renderHeberg(jour)}
     <div id="creneaux"></div>
     ${jour.obsidian?`<div class="footer">${jour.jour} · ${jour.date}<br><a href="${jour.obsidian}">📖 Feuille de route complète · Obsidian</a></div>`:''}`;
   const cont = document.getElementById('creneaux');
