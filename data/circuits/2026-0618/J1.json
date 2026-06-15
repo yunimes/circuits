@@ -1,0 +1,79 @@
+{
+  "jour": "J1",
+  "date": "Jeudi 18 juin 2026",
+  "titre": "Nîmes · Aigues-Mortes · Camargue · Beaucaire",
+  "obsidian": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FCircuit%2FFeuilles%20de%20Route%2FJ1",
+  "abstract": [
+    {
+      "emoji": "🎟️",
+      "texte": "Arènes + Maison Carrée",
+      "ref": "Billet N° 6655896348",
+      "billet": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FN%C3%AEmes%203%20monuments.pdf"
+    },
+    {
+      "emoji": "🍽️",
+      "texte": "L'imprev'",
+      "heure_cle": "13h00",
+      "ref": "Réservé 11p"
+    },
+    {
+      "emoji": "🍷",
+      "texte": "Domaine de la Tour",
+      "heure_cle": "19h00",
+      "ref": "90€ sur place"
+    }
+  ],
+  "alerte": "‼️ Départ à 8h30",
+  "hebergement": {
+    "nom": "Domaine des Clos",
+    "sous": "Beaucaire · ☎️ +33 4 66 01 14 61",
+    "maps": "https://maps.app.goo.gl/1vWfiX3XXQnhVPxU7?g_st=ic",
+    "parking": "🅿️ Parking sur place",
+    "guide": {
+      "nom": "Guide Beaucaire",
+      "id": "beaucaire"
+    }
+  },
+  "creneaux": [
+    {
+      "heure": "11h30",
+      "type": "trajet",
+      "titre": "Gare Pont-du-Gard → Nîmes",
+      "duree": "30 min",
+      "km": 15,
+      "parkings": [
+        {
+          "nom": "Indigo Maison Carrée",
+          "maps": "https://maps.app.goo.gl/Btg5LYPpA6ZC3zb76?g_st=ic"
+        }
+      ]
+    },
+    {
+      "heure": "12h30",
+      "type": "repas",
+      "restaurant": "le-roucas",
+      "duree": "1h30"
+    },
+    {
+      "heure": "15h45",
+      "type": "boucle",
+      "site": "aigues-mortes",
+      "trajet": {
+        "depuis": "Nîmes",
+        "duree": "45 min",
+        "km": 42
+      },
+      "visite": {
+        "duree": "45 min"
+      }
+    },
+    {
+      "heure": "19h00",
+      "type": "degustation",
+      "titre": "Domaine de la Tour",
+      "duree": "1h",
+      "maps": "https://maps.app.goo.gl/FTkiWGYSc7c12n9w8?g_st=ic",
+      "prix": "90€ sur place (acompte 30€ payé)"
+    }
+  ]
+}
