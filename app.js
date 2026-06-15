@@ -13,7 +13,7 @@ async function loadJSON(path) {
   if (!res.ok) throw new Error(`Introuvable: ${path}`);
   return res.json();
 }
-const cache = { sites: {}, recits: {}, hebergements: {}, restaurants: {} };
+const cache = { sites: {}, recits: {}, hebergements: {}, restaurants: {}, parcours: {} };
 async function getSite(id) { if (!cache.sites[id]) cache.sites[id] = await loadJSON(`sites/${id}.json`); return cache.sites[id]; }
 async function getRecit(id) { if (!cache.recits[id]) cache.recits[id] = await loadJSON(`recits/${id}.json`); return cache.recits[id]; }
 async function getHeberg(id) { if (!cache.hebergements[id]) cache.hebergements[id] = await loadJSON(`hebergements/${id}.json`); return cache.hebergements[id]; }
@@ -156,11 +156,23 @@ async function cr_checkin(c, idx) {
   return wrap(cid, c.heure, `🏨 ${c.titre}`, c.duree||'', `<div class="bloc-texte">${c.texte||''}</div>`);
 }
 
+async function getParcours(id) { if (!cache.parcours[id]) cache.parcours[id] = await loadJSON(`parcours/${id}.json`); return cache.parcours[id]; }
 async function cr_portion(c, idx) {
   const cid = `c-${idx}`;
+  // Parcours réutilisable (par id) OU inline (arrets dans le circuit)
+  let p = c, titre = c.titre, guideSrc = c;
+  if (c.parcours) { p = await getParcours(c.parcours); titre = p.nom; guideSrc = p; }
+  const arrets = p.arrets || [];
+  // En-tête départ → arrivée si fournis par le circuit
+  let entete = '';
+  if (c.depart || c.arrivee) {
+    const km = c.trajet_km ? ' · ' + c.trajet_km + 'km' : '';
+    const td = c.trajet_duree ? c.trajet_duree : '';
+    entete = `<div class="segment">🚗 ${td}${km} — ${c.depart||''} → ${c.arrivee||''}</div>`;
+  }
   let arr = '';
-  for (let i=0;i<(c.arrets||[]).length;i++) {
-    const a = c.arrets[i];
+  for (let i=0;i<arrets.length;i++) {
+    const a = arrets[i];
     const aide = `<div class="aide">${lignesHtml(a.aide_memoire)}${a.photo?`<div class="photo">${a.photo}</div>`:''}</div>`;
     const orig = `<div class="original">${a.texte_original?lignesHtml(a.texte_original):'<div class="ligne vide">(texte original à compléter)</div>'}</div>`;
     const detail = a.detail ? `<div class="segment">${a.detail}${a.trajet_maps?' '+mapBtn(a.trajet_maps):''}${a.parking_maps?' · 🅿️ '+mapBtn(a.parking_maps):''}</div>` : '';
@@ -169,7 +181,7 @@ async function cr_portion(c, idx) {
     const acces = boutons?`<div class="acces-rangee">${boutons}</div>${blocs}`:'';
     arr += `<div class="point"><div class="point-tete"><span class="point-nom">${a.emoji||'🏁'} ${a.nom}</span><span class="point-meta">· ${a.duree||''}</span></div>${aide}${orig}${detail}${acces}</div>`;
   }
-  return wrap(cid, c.heure, `🏁 ${c.titre}`, c.duree||'', `${arr}${renderGuides(c)}`);
+  return wrap(cid, c.heure, `🏁 ${titre}`, c.duree||'', `${entete}${arr}${renderGuides(guideSrc)}`);
 }
 
 // Enveloppe commune d'un créneau
