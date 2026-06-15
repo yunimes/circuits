@@ -77,6 +77,12 @@ function renderNote(note, key) {
   const nid = `note-${key}`;
   return `<div class="note-pratique"><button class="note-toggle" onclick="toggleNote('${nid}')"><span>${note.titre}</span><span>▼</span></button><div class="note-body" id="${nid}">${lignesHtml(note.lignes)}</div></div>`;
 }
+function renderNotes(site, cid) {
+  let out = '';
+  if (site.note_pratique) out += renderNote(site.note_pratique, `${cid}-n0`);
+  if (site.notes_pratiques) site.notes_pratiques.forEach((n,i)=> out += renderNote(n, `${cid}-n${i}`));
+  return out;
+}
 
 function guideHref(g) { return g.id ? `guide.html?id=${g.id}` : (g.lien || g.obsidian); }
 function renderGuides(obj) {
@@ -98,7 +104,8 @@ async function cr_boucle(c, idx) {
   if (c.visite) segs += `<div class="segment">👣 ${c.visite.duree} — Visite</div>`;
   const bar = `<div class="boucle-bar">👣 Boucle pédestre · ${b.marche_min} min · ${b.distance_m}m ${mapBtn(b.itineraire_maps)}</div>`;
   let pts = ''; for (let i=0;i<b.points.length;i++) pts += await renderPoint(b.points[i], `${cid}-${i}`);
-  return wrap(cid, c.heure, site.nom, dureeTotale(c), `${segs}${billetBar(site)}${bar}${pts}${renderGuides(site)}`);
+  const opt = site.option ? `<div class="option-bloc">${site.option.texte}</div>` : '';
+  return wrap(cid, c.heure, site.nom, dureeTotale(c), `${segs}${billetBar(site)}${bar}${pts}${renderNotes(site, cid)}${opt}${renderGuides(site)}`);
 }
 
 async function cr_visite(c, idx) {
@@ -108,7 +115,7 @@ async function cr_visite(c, idx) {
   if (c.visite) segs += `<div class="segment">👣 ${c.visite.duree} — Visite</div>`;
   const liste = site.points || (site.point ? [site.point] : []);
   let pts = ''; for (let i=0;i<liste.length;i++) pts += await renderPoint(liste[i], `${cid}-${i}`);
-  return wrap(cid, c.heure, site.nom, dureeTotale(c), `${segs}${billetBar(site)}${pts}${renderGuides(site)}`);
+  return wrap(cid, c.heure, site.nom, dureeTotale(c), `${segs}${billetBar(site)}${pts}${renderNotes(site, cid)}${renderGuides(site)}`);
 }
 
 async function cr_trajet(c, idx) {
