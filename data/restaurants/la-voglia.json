@@ -1,0 +1,12 @@
+{
+  "id": "la-voglia",
+  "nom": "La Voglia",
+  "maps": "https://maps.app.goo.gl/nQ8K57eo8nVqmWvk7?g_st=ic",
+  "reservation": { "statut": "Sans réservation · ouvre à 12h" },
+  "aide_memoire": [
+    "쿠르 살레야 인근 정통 이탈리아 레스토랑 · 피자·파스타·해산물 · 풍성한 양·합리적 가격 · 테라스",
+    "대표: 보글리아 샐러드 19€ · 부라타·트러플 22€ · 해산물 스파게티 23€ · 라자냐 18€"
+  ],
+  "prix_indicatif": "메인 18–23€ · 메뉴 약 30€ · 매일 점심 12h–14h30 · 예약 불가",
+  "adresse": "2 Rue Saint-François de Paule, 06300 Nice"
+}
