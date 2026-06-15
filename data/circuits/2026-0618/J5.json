@@ -1,0 +1,27 @@
+{
+  "jour": "J5",
+  "date": "Lundi 22 juin 2026",
+  "titre": "Antibes · Saint-Paul-de-Vence · Nice · La Trinité",
+  "obsidian": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FCircuit%2FFeuilles%20de%20Route%2FJ5%20%E2%80%94%20Antibes%20%C2%B7%20Saint-Paul-de-Vence%20%C2%B7%20Nice%20%C2%B7%20La%20Trinit%C3%A9",
+  "abstract": [
+    { "emoji": "🍽️", "texte": "Les Mimosas du Cours — Nice", "heure_cle": "19h00", "ref": "Réservé 11p · Confirmé" }
+  ],
+  "hebergement": "domaine-baccia-donna",
+  "creneaux": [
+    { "heure": "09h00", "type": "trajet", "titre": "Pierrevert → Antibes", "duree": "3h", "km": 185,
+      "parkings": [ { "nom": "Parking Port Vauban", "maps": "https://maps.app.goo.gl/4MsCaTxQUYcDPDAn6?g_st=ic" } ] },
+    { "heure": "12h00", "type": "boucle", "site": "antibes", "visite": { "duree": "1h" } },
+    { "heure": "13h00", "type": "repas", "titre": "Déjeuner · Plage de la Gravette", "duree": "2h",
+      "restaurant": { "nom": "Pique-nique · Plage de la Gravette", "maps": "https://maps.app.goo.gl/tBnzMHuA1RCgpRRs7?g_st=ic",
+        "aide_memoire": ["🍱 1h 피크닉 · 👙 1h 해수욕", "구시가지 성벽 아래 잔잔한 모래 해변"] } },
+    { "heure": "15h00", "type": "boucle", "site": "saint-paul-de-vence",
+      "trajet": { "depuis": "Antibes", "duree": "30 min", "km": 16 },
+      "visite": { "duree": "2h" } },
+    { "heure": "17h30", "type": "visite", "site": "nice",
+      "trajet": { "depuis": "Saint-Paul-de-Vence", "duree": "40 min", "km": 20 },
+      "visite": { "duree": "50 min" } },
+    { "heure": "19h00", "type": "repas", "restaurant": "les-mimosas-du-cours", "duree": "1h30" },
+    { "heure": "20h30", "type": "trajet", "titre": "Nice → Domaine Baccia Donna · La Trinité", "duree": "15 min", "km": 10 },
+    { "heure": "20h45", "type": "checkin", "titre": "Check-in · Domaine Baccia Donna", "texte": "Attribution des logements & Installation" }
+  ]
+}
