@@ -1,0 +1,77 @@
+{
+  "id": "les-baux-apres-midi",
+  "nom": "Les Baux-de-Provence · Après-midi",
+  "guide": { "nom": "Guide Les Baux", "id": "les-baux-de-provence" },
+  "boucle": {
+    "distance_m": 800,
+    "marche_min": 11,
+    "itineraire_maps": "https://maps.app.goo.gl/f1C6N3BFaheEya7H8?g_st=ic",
+    "points": [
+      {
+        "nom": "Chapelle Saint-Blaise",
+        "emoji": "⛪",
+        "maps": "https://maps.app.goo.gl/JrnchvhCgw2aDp2N6?g_st=ic",
+        "aide_memoire": [ "12세기 직조공 예배당 · 레보 양모 직물업 번성 흔적", "내부 레보 역사 영상 상영" ],
+        "texte_original": []
+      },
+      {
+        "nom": "Château des Baux-de-Provence",
+        "emoji": "🏰",
+        "maps": "https://maps.app.goo.gl/7cfHk6v9P8qtAJUe8?g_st=ic",
+        "prix": "🎟️ 10€/pers",
+        "aide_memoire": [
+          "10세기 건설 요새 · 해발 245m 바위 위 난공불락",
+          "레보 영주들은 동방박사 후손 자처 · 문장에 베들레헴의 별",
+          "전성기 79개 마을·30만 명 지배 남프랑스 최강 세력",
+          "1632 리슐리외 명으로 철저히 파괴",
+          "중세 공성 무기 실물 복원: 16m 트레뷰셋(프랑스 최대)·브리콜·발리스트 · 4~9월 발사 시연",
+          "1821 인근서 처음 발견된 알루미늄 원광이 '보크사이트' — 레보(Baux) 이름에서"
+        ],
+        "texte_original": [],
+        "photo": "🔭 폐허 위 알피유 산맥·라 크로 평원 전경",
+        "recits": ["apogee-baux", "richelieu-baux"]
+      },
+      {
+        "nom": "Musée Yves Brayer",
+        "emoji": "🎨",
+        "maps": "https://maps.app.goo.gl/g3Q9TNCh3TbhxzTs6?g_st=ic",
+        "aide_memoire": [
+          "오텔 드 포르슬레 — 16세기 르네상스 저택 · 좌우 대칭·기둥 장식",
+          "이브 브레예르(1907–1990) — 20세기 구상화가 · 추상 시대에 '보이는 것을 그린다' 고수 · 프로방스 풍경·투우",
+          "페니탕 블랑 예배당 프레스코화(1974)도 그의 작품"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Église Saint-Vincent · Pénitents Blancs",
+        "emoji": "⛪",
+        "maps": "https://maps.app.goo.gl/vALiheRw5o38hpL96?g_st=ic",
+        "aide_memoire": [
+          "12세기 암반 파내어 지은 교회 · 한쪽 벽이 자연 암석",
+          "막스 앵그랑 스테인드글라스 · 흰 참회 형제단 예배당은 이브 브레예르 1974 장식"
+        ],
+        "texte_original": [],
+        "recits": ["penitents-blancs"]
+      },
+      {
+        "nom": "Place Saint-Vincent · Panorama",
+        "emoji": "📸",
+        "maps": "https://maps.app.goo.gl/zEnEwmB2sYNUbbPX9?g_st=ic",
+        "aide_memoire": [ "레보 계곡·알피유 산맥 한눈에 · 아래 묘지에서 보는 뷰도 일품" ],
+        "texte_original": [],
+        "photo": "📸 광각으로 계곡 전체, 또는 묘지 측면에서 마을 실루엣"
+      },
+      {
+        "nom": "Rue de la Calade · Porte Eyguières",
+        "emoji": "👣",
+        "maps": "https://maps.app.goo.gl/eknoizQ9Z4ph7NFQ7?g_st=ic",
+        "aide_memoire": [
+          "내리막 돌계단 거리 · '칼라드(calade)'는 프로방스어로 경사진 돌포장 도로",
+          "에그이에르 문 — 레보 유일 잔존 중세 성문 · '물 항아리 든 사람들'에서 유래, 물장수들이 드나듦",
+          "성문 윗부분에 철제 격자(herse) 내리던 홈 아직 남음"
+        ],
+        "texte_original": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "avignon",
+  "nom": "Avignon · Palais des Papes",
+  "guide": { "nom": "Guide Avignon", "id": "avignon" },
+  "billet": { "ref": "Palais des Papes · Réservé 16h00", "obsidian": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FPalais%20des%20papes.pdf" },
+  "parkings": [ { "nom": "Parking Palais des Papes", "maps": "https://maps.app.goo.gl/bxzcaE6dijhfYf8G9?g_st=ic" } ],
+  "points": [
+    {
+      "nom": "Palais des Papes",
+      "emoji": "🏰",
+      "maps": "https://maps.app.goo.gl/3D6r8b3As5YoWnpS9?g_st=ic",
+      "aide_memoire": [
+        "14세기 교황청이 로마→아비뇽 이전한 '아비뇽 유수(1309–1377)' 산물 · 7명 교황 거주",
+        "중세 유럽 최대 고딕 건축물 · 15,000m² · 고딕 대성당 4개 분량",
+        "이전 배경: 이탈리아 정치 분쟁 + 프랑스 왕 필리프 4세 강압 → 클레멘스 5세가 1309 아비뇽 선택",
+        "비판자들은 '바빌론 유수'라 부름 · 단테는 『신곡』에서 아비뇽 교황청 맹비판",
+        "1377 로마 귀환 후 '대분열' — 로마·아비뇽 동시 교황 약 40년",
+        "내부 이탈리아 화가 조반네티 벽화 = 당시 가장 화려한 궁정 미술"
+      ],
+      "texte_original": [],
+      "recits": ["avignon-terre", "captivite-babylone"]
+    },
+    {
+      "nom": "Pont Saint-Bénézet",
+      "emoji": "📸",
+      "maps": "https://maps.app.goo.gl/qi6dPatUsSjqwzpA7?g_st=ic",
+      "aide_memoire": [
+        "기적의 전설: 12세기 양치기 소년 베네제가 '하느님이 다리를 놓으라 하셨다' · 거대한 돌을 혼자 들어 군중이 기적이라 외침",
+        "실체: 1177 착공~1185 완성 · 아치 22개 · 길이 약 900m · 론 강 가로지른 중세 최대 교량",
+        "오늘날 아치 4개만 — 론 강 반복 홍수로 무너지다 17세기 수리 포기",
+        "다리 위 두 예배당 겹친 구조: 생베네제(성인 유해)·생니콜라(뱃사공 수호성인) — 유럽 매우 드문 형태",
+        "동요 'Sur le Pont d'Avignon' — 실제로는 다리 아래 섬 바르텔라스에서 춤췄다는 게 정설 · 1853 오페레타로 세계에",
+        "유네스코 · 관람료 5€"
+      ],
+      "texte_original": [],
+      "photo": "📸 강 건너편 또는 성벽에서 다리 + 교황청 한 프레임"
+    }
+  ]
+}

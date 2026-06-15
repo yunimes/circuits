@@ -1,0 +1,96 @@
+{
+  "id": "arles",
+  "nom": "Arles",
+  "guides": [
+    { "nom": "Guide Arles", "id": "arles" },
+    { "nom": "Guide Van Gogh", "id": "van-gogh" }
+  ],
+  "boucle": {
+    "distance_m": 2000,
+    "marche_min": 30,
+    "itineraire_maps": "https://maps.app.goo.gl/LWxYPPsgLLNea8r89?g_st=ic",
+    "points": [
+      {
+        "nom": "Théâtre antique",
+        "emoji": "🏛️",
+        "maps": "https://maps.app.goo.gl/Y14rWzEbzw9xRtp38?g_st=ic",
+        "aide_memoire": [
+          "아우구스투스 황제 시대, 기원전 1세기 건설 · 원래 1만 명 수용 · 오늘날 기둥 두 개만 남아 '두 과부(les Deux Veuves)'",
+          "원래 무대 뒷벽 3층 높이 기둥 100개 → 지금 둘만",
+          "중세에 아를 사람들이 극장 돌 뽑아 마을 건설 → 구시가지 많은 건물이 이 극장 돌",
+          "무대 벽 벽감에 그리스 조각상 · 그중 '아를의 비너스'는 19세기 발굴, 현재 루브르 · 아를엔 복제품"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Cathédrale Saint-Trophime",
+        "emoji": "⛪",
+        "maps": "https://maps.app.goo.gl/jsvSye9dLKsox4eK6?g_st=ic",
+        "aide_memoire": [
+          "12세기 로마네스크 걸작 · 정면 포르티코 조각은 프랑스에서 가장 아름다운 것 중 하나 · 팀파눔 '심판자 그리스도'",
+          "유네스코 · 산티아고 순례길 4개 루트 중 하나의 출발점",
+          "옆 클로이트르 생트로핌 — 12~14세기 · 기둥·주두에 성서 장면·성인·환상적 동물 · 프로방스 로마네스크 조각의 정수"
+        ],
+        "texte_original": [],
+        "recits": ["tympan"]
+      },
+      {
+        "nom": "Le Forum · Place du Forum",
+        "emoji": "🏛️",
+        "maps": "https://maps.app.goo.gl/28Dhx6fXzBnSiduv6?g_st=ic",
+        "aide_memoire": [
+          "고대 로마 중심 광장 자리 · 오늘날 카페·테라스 활기찬 공간",
+          "반 고흐가 1888 이곳에서 「밤의 카페 테라스」 · 그 카페 지금도 같은 자리",
+          "광장 남쪽 끝 미스트랄(Mistral) 동상 · 프로방스 문학 거장, 1904 노벨문학상 · 상금으로 아를 민속박물관 건립",
+          "1942 비시 정권이 청동 동상 녹임 · 고물상이 두상 잘라 보존 → 1948 복원",
+          "동상 뒤 오텔 노르-피뉘스 파사드에 1세기 로마 신전 코린트식 기둥 2개 박힘"
+        ],
+        "texte_original": [],
+        "recits": ["ordres-colonnes"]
+      },
+      {
+        "nom": "L'Espace Van Gogh",
+        "emoji": "🎨",
+        "maps": "https://maps.app.goo.gl/52ajDFG5SjpsyGas8?g_st=ic",
+        "aide_memoire": [
+          "반 고흐가 1888 말~1889 입원한 옛 시립병원 · 그가 그린 정원 모습 재현",
+          "1888.12.23 고갱과 다툼 끝 면도칼로 왼쪽 귀 자름 · 잘린 귀를 인근 여성 라셸에게",
+          "다음 날 피투성이로 발견, 이 병원 이송 · 담당의 펠릭스 레 박사 초상화 선물 · 현재 모스크바 푸슈킨 미술관"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Fondation Vincent van Gogh",
+        "emoji": "🎨",
+        "maps": "https://maps.app.goo.gl/3hh2tFnGsecwidrt5?g_st=ic",
+        "aide_memoire": [
+          "반 고흐 예술적 유산 기리는 현대 미술관 · 동시대 작가와 대화하는 컬렉션",
+          "아를에서 1888.2~1889.5 불과 15개월 체류했지만 「해바라기」「밤의 카페」 등 300점 이상"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Café Van Gogh",
+        "emoji": "☕",
+        "maps": "https://maps.app.goo.gl/kQjcCT4ZUkwhk17j6?g_st=ic",
+        "aide_memoire": [
+          "「밤의 카페 테라스(1888)」 무대 그대로 · 노란 차양·노란 조명"
+        ],
+        "texte_original": [],
+        "photo": "📸 저녁 조명 켜지면 그림 속 장면과 거의 동일 구도"
+      },
+      {
+        "nom": "Arènes d'Arles",
+        "emoji": "🏟️",
+        "maps": "https://maps.app.goo.gl/iMmU4Xi7wifj61649?g_st=ic",
+        "aide_memoire": [
+          "1세기 로마 원형경기장 · 136m × 107m · 약 25,000명 · 유네스코",
+          "님보다 규모는 크지만 보존은 님이 우수 (아를은 최상층부 소실)",
+          "콜로세움 완공 직후 건설 — 같은 설계 모델의 형제 건축물",
+          "중세에 가옥 200여 채·탑 4개 요새 마을 → 19세기 복원 · 현재 투우·공연 · 피카소가 여기서 투우 영감"
+        ],
+        "texte_original": []
+      }
+    ]
+  }
+}

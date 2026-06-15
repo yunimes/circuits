@@ -1,0 +1,47 @@
+{
+  "id": "les-baux-matin",
+  "nom": "Les Baux-de-Provence · Matin",
+  "guide": { "nom": "Guide Les Baux", "id": "les-baux-de-provence" },
+  "parkings": [ { "nom": "Parking entrée village", "maps": "https://maps.app.goo.gl/mWDZVqmFG4u56Kfw7?g_st=ic" } ],
+  "boucle": {
+    "distance_m": 350,
+    "marche_min": 6,
+    "itineraire_maps": "https://maps.app.goo.gl/Uxi6UisDoGDofvK89?g_st=ic",
+    "points": [
+      {
+        "nom": "Maison du Roy · Office de tourisme",
+        "emoji": "🏛️",
+        "maps": "https://maps.app.goo.gl/oqJKMoDw5aHNSmXNA?g_st=ic",
+        "aide_memoire": [ "16세기 르네상스 건물 · 옛 왕실 관저 · 현재 관광안내소 · 마을 산책 출발점" ],
+        "texte_original": [],
+        "recits": ["renaissance-architecture"]
+      },
+      {
+        "nom": "Hôtel Jean de Brion · Fondation Louis Jou",
+        "emoji": "🏛️",
+        "maps": "https://maps.app.goo.gl/gTEX9YsHPsBK5UM38?g_st=ic",
+        "aide_memoire": [ "16세기 르네상스 저택 · 바르셀로나 출신 판화가 루이 주(1881–1968) 컬렉션 · 레보 정착해 평생" ],
+        "texte_original": []
+      },
+      {
+        "nom": "Mairie · Hôtel de Manville",
+        "emoji": "🏛️",
+        "maps": "https://maps.app.goo.gl/NriFBXmRrEHr58cS6?g_st=ic",
+        "aide_memoire": [ "16세기 르네상스 · 현재 레보 시청사" ],
+        "texte_original": []
+      },
+      {
+        "nom": "Fenêtre Post Tenebras Lux",
+        "emoji": "🪟",
+        "maps": "https://maps.app.goo.gl/Cggp2PxggpPzwMym7?g_st=ic",
+        "aide_memoire": [
+          "돌에 새겨진 레보 영주 모토 'Post Tenebras Lux' — '어둠 뒤에 빛이'",
+          "원래 칼뱅파 개신교 모토였으나 레보 영주들이 채택 · 이 창문 하나가 마을 역사 압축"
+        ],
+        "texte_original": [],
+        "photo": "📸 창문 프레임 안으로 하늘이 들어오는 구도",
+        "recits": ["devise", "calvinisme"]
+      }
+    ]
+  }
+}
