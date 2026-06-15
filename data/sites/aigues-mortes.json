@@ -1,1 +1,93 @@
-
+{
+  "id": "aigues-mortes",
+  "nom": "Aigues-Mortes",
+  "parkings": [
+    {
+      "nom": "P1",
+      "maps": "https://maps.app.goo.gl/sikBYbin8RTLf24i6?g_st=ic"
+    },
+    {
+      "nom": "P2",
+      "maps": "https://maps.app.goo.gl/vznUzbAUxdt3wL2W9?g_st=ic"
+    },
+    {
+      "nom": "P3",
+      "maps": "https://maps.app.goo.gl/SKdspqoZVS9AV7NZ7?g_st=ic"
+    }
+  ],
+  "boucle": {
+    "distance_m": 850,
+    "marche_min": 11,
+    "itineraire_maps": "https://maps.app.goo.gl/jPXCbqvEX4DKEpms8?g_st=ic",
+    "points": [
+      {
+        "nom": "Tour de Constance",
+        "emoji": "🏛️",
+        "maps": "https://maps.app.goo.gl/N1Lk36ziQJXEDLmf7?g_st=ic",
+        "aide_memoire": [
+          "13세기 · 지름 22m · 높이 33m · 벽 두께 6m → 한여름에도 서늘",
+          "원형 평면 = 왕실 donjon 특권 · 루이 9세, 왕의 수비대 거점 · 꼭대기 = 항해 등대 망루",
+          "14세기 → 필리프 4세, 성전기사단 45명 감금·심문",
+          "17세기 말 → 낭트 칙령 폐지 후 위그노 여성 감옥 · 신앙 포기 한마디면 석방, 대부분 거부",
+          "마리 뒤랑 (1711–1776): 19살 투옥 → 38년 후 석방 · 감옥에서 오빠(목사) 처형 소식 · 편지 약 50통 · 우물 돌턱에 \"RÉSISTER\" 새김 (비바레 방언 \"REGISTER\")"
+        ],
+        "photo": "📸 우물 입구 돌턱 (조명 어두울 수 있음) · 🔭 옥상: 카마르그 습지 + 염전",
+        "recits": [
+          "edit-de-nantes"
+        ],
+        "texte_original": [
+          "(EXEMPLE de texte original — c'est ici que tu colleras le contenu élaboré complet de ton guide.)",
+          "13세기에 지어진 원형 탑으로, 지름 22m, 높이 33m, 벽 두께는 무려 6m에 달합니다. 이 엄청난 벽 두께 덕분에 한여름에도 탑 내부는 서늘합니다.",
+          "원형 평면은 당시 왕실 donjon에만 허용된 특권적 형태였습니다. 루이 9세가 왕의 수비대 거점으로 세웠고, 꼭대기는 항해 등대 망루로 쓰였습니다.",
+          "14세기에는 필리프 4세가 성전기사단 45명을 이곳에 감금하고 심문했습니다.",
+          "17세기 말, 낭트 칙령 폐지 이후에는 위그노 여성들의 감옥이 되었습니다. 신앙을 포기하겠다는 한마디면 풀려날 수 있었지만, 대부분 거부했습니다.",
+          "그중 마리 뒤랑(1711–1776)은 19살에 투옥되어 38년 후에야 풀려났습니다. 감옥에서 목사였던 오빠의 처형 소식을 들었고, 약 50통의 편지를 남겼으며, 우물 돌턱에 'RÉSISTER(저항하라)'를 새겼습니다. 비바레 방언으로는 'REGISTER'."
+        ]
+      },
+      {
+        "nom": "Porte de la Gardette",
+        "emoji": "🚪",
+        "maps": "https://maps.app.goo.gl/vxVusPhdX86da3339?g_st=ic",
+        "aide_memoire": [
+          "성벽 도시 정문 · 석벽에 루이 9세 문장(紋章) → 지나치기 쉬움, 꼭 가리킬 것",
+          "이 문으로 루이 9세가 십자군 원정 출발 (7차 1248 · 8차 1270)"
+        ]
+      },
+      {
+        "nom": "Grande Rue Jean Jaurès",
+        "emoji": "👣",
+        "maps": "https://maps.app.goo.gl/8uqTX7fGCb9X8mwP8?g_st=ic",
+        "aide_memoire": [
+          "마을 중심 상가 거리 · 중세 분위기 아케이드 · 소금·플라멩코·카마르그 특산품 상점"
+        ]
+      },
+      {
+        "nom": "Place Saint-Louis",
+        "emoji": "📸",
+        "maps": "https://maps.app.goo.gl/YrYZ9H1UzF5athLz6?g_st=ic",
+        "aide_memoire": [
+          "기마 동상 = 도시 창건자 루이 9세 (1214–1270)",
+          "1240 창건 이유 = 당시 프랑스 왕국은 지중해 항구가 단 한 곳도 없었음 → 에그모르트 = 프랑스 최초의 지중해 왕실 항구",
+          "이 광장에서 십자군 원정 집결·출항 (7차 1248 · 8차 1270) · 2차 원정 중 튀니지 카르타고서 전염병 사망 · 사후 27년 시성 → \"성왕(Saint Louis)\"",
+          "분수 · 그늘진 카페 테라스 · 카마르그 소금·지역 특산품 상점"
+        ],
+        "photo": "📸 동상 정면 + 뒤로 성벽 아치"
+      },
+      {
+        "nom": "Remparts · Retour Gardette",
+        "emoji": "🚪",
+        "maps": "https://maps.app.goo.gl/2CpvXAoDD3x33K4c8?g_st=ic",
+        "aide_memoire": [
+          "총 1,640m · 높이 11m · 13세기 루이 9세 창건, 후계자들이 약 30년에 걸쳐 완성",
+          "원래 구조 약 90% 보존 → 서유럽 거의 유일 (카르카손은 19세기 대대적 복원)",
+          "❗️탑 수: 문헌따라 6개 또는 15개 (위키 15개) · 문은 10개로 일치"
+        ],
+        "photo": "🔭 성벽 위 산책로 → 카마르그 평원 + 염전 · 플라밍고 무리"
+      }
+    ]
+  },
+  "guide": {
+    "nom": "Guide Aigues-Mortes",
+    "id": "aigues-mortes"
+  }
+}
