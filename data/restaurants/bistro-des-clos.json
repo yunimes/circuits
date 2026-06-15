@@ -1,0 +1,11 @@
+{
+  "id": "bistro-des-clos",
+  "nom": "Le Bistro des Clos",
+  "reservation": { "statut": "Réservé 10p · sur place (Domaine des Clos)" },
+  "aide_memoire": [
+    "도멘 데 클로 숙박객 위한 매일 다른 수제 저녁 코스 (전채·메인·치즈·디저트)",
+    "프로방스 전통 가정식 현대적 재해석 · 텃밭 채소·과일·지역 특산품",
+    "플래터(샤퀴트리·치즈·채식 모둠) 매일 제공 · 피크닉 바구니 포장도 가능"
+  ],
+  "prix_indicatif": "저녁 38€ (음료 별도) · 플래터 20€ · 수~토 저녁 · 예약 최소 하루 전"
+}
