@@ -1,0 +1,45 @@
+{
+  "id": "eze",
+  "nom": "Eze · Split groupe",
+  "guides": [
+    { "nom": "Guide Nietzsche Eze", "id": "nietzsche-eze" },
+    { "nom": "Guide Eze", "id": "eze" }
+  ],
+  "parkings": [
+    { "nom": "Parking Général de Gaulle (Eze village)", "maps": "https://maps.app.goo.gl/2j595LgQWesYVQtU7?g_st=ic" },
+    { "nom": "Parking Fragonard", "maps": "https://maps.app.goo.gl/1vPfubwKa2chWQNm9?g_st=ic" }
+  ],
+  "points": [
+    {
+      "nom": "🏭 Team Fragonard · Visite guidée (1h)",
+      "emoji": "🏭",
+      "maps": "https://maps.app.goo.gl/1vPfubwKa2chWQNm9?g_st=ic",
+      "aide_memoire": [
+        "프라고나르 향수 공장 견학 (09h00, 1h) · 입장·견학 무료 · 약 30분 + 자유시간",
+        "향수 피라미드·퍼퓸 오르간(200가지 에센스) · 견학 후 에즈 마을 자유 20분"
+      ],
+      "texte_original": [],
+      "recits": ["fragonard"]
+    },
+    {
+      "nom": "👣 Team Eze Village · Libre (1h20)",
+      "emoji": "🏛️",
+      "maps": "https://maps.app.goo.gl/2j595LgQWesYVQtU7?g_st=ic",
+      "aide_memoire": [
+        "해발 429m 암벽 위 중세 마을 · 지중해와 모나코 한눈에 · 사라센 해적 막으려 절벽 위 건설",
+        "마을 전체가 요새 — 좁은 골목·아치 통로·돌담 위 꽃 · 니스~모나코 최고 전망 마을",
+        "니체가 1883-1885 머물며 매일 오솔길(Chemin de Nietzsche)을 걸음 → 『차라투스트라』 사상 탄생"
+      ],
+      "texte_original": [],
+      "recits": ["nietzsche-eze"]
+    }
+  ],
+  "note_pratique": {
+    "titre": "⚠️ Split groupe — RV commun 10h20",
+    "lignes": [
+      "Team SIXT → Eze village libre · Team Fragonard → visite guidée 1h",
+      "RV commun : Toilettes publiques avant jardin exotique · 10h20",
+      "🅿️ Team Fragonard se gare au Parking Fragonard · Team Eze au Parking Général de Gaulle"
+    ]
+  }
+}

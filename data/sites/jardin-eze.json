@@ -1,0 +1,20 @@
+{
+  "id": "jardin-eze",
+  "nom": "Jardin Exotique d'Eze",
+  "billet": { "ref": "Réservé 10p · 10h20", "obsidian": "obsidian://open?vault=IMES&file=2026%2F0618-0623%2FReservation%2FJardin_Eze_1122389_sYAICeeO.pdf" },
+  "parkings": [
+    { "nom": "Parking Général de Gaulle", "maps": "https://maps.app.goo.gl/2j595LgQWesYVQtU7?g_st=ic" },
+    { "nom": "Parking Fragonard", "maps": "https://maps.app.goo.gl/1vPfubwKa2chWQNm9?g_st=ic" }
+  ],
+  "point": {
+    "nom": "Jardin Exotique d'Eze",
+    "emoji": "🌵",
+    "maps": "https://maps.app.goo.gl/3JFKi4WCk1dvBqhE8?g_st=ic",
+    "aide_memoire": [
+      "중세 성터 위 정원 · 100종 이상 다육식물·선인장 · 해발 430m 360° 조망",
+      "코트다쥐르에서 가장 넓고 높은 파노라마 중 하나 · 맑은 날 코르시카섬까지",
+      "선인장 사이로 에즈 마을 돌담과 지중해가 겹치는 풍경 · 사진 최적"
+    ],
+    "texte_original": []
+  }
+}
