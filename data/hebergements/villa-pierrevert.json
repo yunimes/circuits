@@ -1,1 +1,11 @@
-
+{
+  "id": "villa-pierrevert",
+  "nom": "Villa Pierrevert",
+  "sous": "Pierrevert · Robin ☎️ 06 51 72 87 83",
+  "maps": "https://maps.app.goo.gl/gYbfGM6mhTqqnwCm6?g_st=ic",
+  "parking": "🅿️ Parking privé",
+  "note": "1 Avenue de l'Houme, 04860 Pierrevert",
+  "guide": { "nom": "Guide Pierrevert", "id": "pierrevert" },
+  "aide_memoire": [ "(à compléter)" ],
+  "texte_original": [ "(à compléter)" ]
+}
