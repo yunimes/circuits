@@ -150,9 +150,12 @@ jobs:
          # 2. texte_auto === true (généré automatiquement, donc remplaçable)
          # Les points avec texte_auto: false (écrits manuellement) sont ignorés
          # Les points sans texte_auto (nouveau, jamais traité) sont ignorés
+         
          function shouldProcess(obj) {
            const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);
-           return hasSource && obj.texte_auto === true;
+           const hasTarget = hasContent(obj.texte_original);
+           # Traite si : a une source ET (texte_original vide OU texte_auto: true)
+           return hasSource && (!hasTarget || obj.texte_auto === true);
          }
 
          # Traite un point : génère le texte, l'écrit, marque texte_auto: true
