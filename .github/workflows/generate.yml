@@ -3,11 +3,11 @@ name: Générer résumé et aide-mémoire
 on:
   workflow_dispatch:
     inputs:
-      md_file:
-        description: 'Nom du fichier MD (ex: paris.md)'
-        required: true
       json_file:
-        description: 'Nom du fichier JSON (ex: paris.json)'
+        description: 'Fichier JSON (ex: nimes.json)'
+        required: true
+      point_id:
+        description: 'ID du point (ex: maison-carree)'
         required: true
 
 jobs:
@@ -19,8 +19,8 @@ jobs:
           node << 'EOF'
           const https = require('https');
 
-          const MD_FILE = process.env.MD_FILE;
           const JSON_FILE = process.env.JSON_FILE;
+          const POINT_ID = process.env.POINT_ID;
           const GH_PAT = process.env.GH_PAT;
           const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
           const REPO = 'yunimes/circuits';
@@ -52,13 +52,17 @@ jobs:
 
           function claudeRequest(mdContent, aideMemoire) {
             return new Promise((resolve, reject) => {
+              const existing = Array.isArray(aideMemoire) && aideMemoire.length
+                ? aideMemoire.join('\n')
+                : typeof aideMemoire === 'string' ? aideMemoire : '';
+
               const body = JSON.stringify({
                 model: 'claude-sonnet-4-6',
                 max_tokens: 2000,
                 system: 'Tu réponds UNIQUEMENT en JSON valide, sans backticks, sans préambule.',
                 messages: [{
                   role: 'user',
-                  content: `Voici le texte original (Markdown) :\n\n---\n${mdContent}\n---\n\n${aideMemoire ? `Aide-mémoire existant à réviser :\n\n---\n${aideMemoire}\n---\n\n` : ''}Ta mission :\n\n1. texte_original : Résumé complet et fidèle qui restitue TOUS les éléments importants (lieux, dates, anecdotes, contexte, conseils, détails marquants). Dense et structuré par thèmes.\n\n2. aide_memoire : Liste concise de points clés mémorables — faits, dates, noms, conseils essentiels. Format liste à puces, court mais dense.\n\nRéponds UNIQUEMENT avec ce JSON :\n{"texte_original": "...", "aide_memoire": "..."}`
+                  content: `Voici le texte original (Markdown) :\n\n---\n${mdContent}\n---\n\n${existing ? `Aide-mémoire existant à réviser :\n\n---\n${existing}\n---\n\n` : ''}Ta mission :\n\n1. texte_original : Résumé complet et fidèle qui restitue TOUS les éléments importants (lieux, dates, anecdotes, contexte, conseils, détails marquants). Dense et structuré par thèmes.\n\n2. aide_memoire : Liste concise de points clés mémorables — faits, dates, noms, conseils essentiels. Format : tableau JSON de strings, une string par point clé.\n\nRéponds UNIQUEMENT avec ce JSON :\n{"texte_original": "...", "aide_memoire": ["point 1", "point 2", ...]}`
                 }]
               });
 
@@ -90,36 +94,53 @@ jobs:
           }
 
           async function main() {
-            console.log(`Lecture de ${MD_FILE} et ${JSON_FILE}...`);
+            console.log(`Lecture de ${POINT_ID}.md et ${JSON_FILE}...`);
 
             const [mdFile, jsonFile] = await Promise.all([
-              ghRequest('GET', `/repos/${REPO}/contents/data/guides/${MD_FILE}`),
+              ghRequest('GET', `/repos/${REPO}/contents/data/guides/${POINT_ID}.md`),
               ghRequest('GET', `/repos/${REPO}/contents/data/sites/${JSON_FILE}`)
             ]);
 
             const mdContent = Buffer.from(mdFile.content, 'base64').toString('utf8');
-            const jsonContent = JSON.parse(Buffer.from(jsonFile.content, 'base64').toString('utf8'));
+            const jsonData = JSON.parse(Buffer.from(jsonFile.content, 'base64').toString('utf8'));
 
+            // Détection structure A (boucle) ou B (points direct)
+            let point, isBoucle;
+            if (jsonData.boucle && Array.isArray(jsonData.boucle.points)) {
+              isBoucle = true;
+              point = jsonData.boucle.points.find(p => p.id === POINT_ID);
+            } else if (jsonData.points) {
+              isBoucle = false;
+              point = jsonData.points;
+            }
+
+            if (!point) throw new Error(`Point "${POINT_ID}" non trouvé dans ${JSON_FILE}`);
+
+            console.log(`Point trouvé : ${point.nom}`);
             console.log('Génération via Claude...');
-            const result = await claudeRequest(mdContent, jsonContent.aide_memoire || '');
 
-            const updated = { ...jsonContent, texte_original: result.texte_original, aide_memoire: result.aide_memoire };
-            const newContent = Buffer.from(JSON.stringify(updated, null, 2)).toString('base64');
+            const result = await claudeRequest(mdContent, point.aide_memoire);
+
+            // Mise à jour du point
+            point.texte_original = result.texte_original;
+            point.aide_memoire = result.aide_memoire;
+
+            const newContent = Buffer.from(JSON.stringify(jsonData, null, 2)).toString('base64');
 
             console.log('Sauvegarde sur GitHub...');
             await ghRequest('PUT', `/repos/${REPO}/contents/data/sites/${JSON_FILE}`, {
-              message: `Update résumé et aide-mémoire pour ${JSON_FILE}`,
+              message: `Update résumé et aide-mémoire pour ${POINT_ID}`,
               content: newContent,
               sha: jsonFile.sha
             });
 
-            console.log('Terminé avec succès !');
+            console.log(`✓ Terminé : ${point.nom}`);
           }
 
-          main().catch(e => { console.error(e); process.exit(1); });
+          main().catch(e => { console.error(e.message); process.exit(1); });
           EOF
         env:
-          MD_FILE: ${{ github.event.inputs.md_file }}
           JSON_FILE: ${{ github.event.inputs.json_file }}
+          POINT_ID: ${{ github.event.inputs.point_id }}
           GH_PAT: ${{ secrets.GH_PAT }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
