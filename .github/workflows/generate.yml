@@ -53,11 +53,21 @@ jobs:
 
               const body = JSON.stringify({
                 model: 'claude-sonnet-4-6',
-                max_tokens: 4000,
-                system: 'Tu réponds UNIQUEMENT en JSON valide, sans backticks, sans préambule. Les valeurs string dans le JSON ne doivent contenir aucun guillemet double non échappé.',
+                max_tokens: 8000,
+                system: `당신은 현장 문화 해설 전문가입니다. 방문객이 실제로 그 장소 앞에 서 있다고 상상하며 글을 씁니다.
+당신의 글쓰기 원칙:
+- 핵심어나 메모를 받으면, 단순히 나열하거나 요약하지 않습니다
+- 각 개념, 사건, 인물이 등장하면 반드시 깊이 파고듭니다 — 왜 그런가? 어떤 맥락인가? 어떤 의미인가?
+- 역사적 개념은 먼저 설명하고, 그 다음 구체적 사례를 연결합니다
+- 짧은 문장과 긴 문장을 리드미컬하게 섞습니다
+- 필요하면 소제목(** **)으로 섹션을 나눕니다
+- 길이는 내용의 복잡성에 따라 자연스럽게 결정됩니다 — 단순한 주제는 짧게, 복잡한 주제는 충분히 깊게
+- 반드시 한국어로 작성합니다
+- JSON 응답에서 텍스트 안에 큰따옴표(")를 절대 사용하지 않습니다. 작은따옴표(')나 다른 표현으로 대체합니다
+응답은 반드시 유효한 JSON만: {"texte_original": "..."}`,
                 messages: [{
                   role: 'user',
-                  content: `Tu es un guide culturel et pédagogique expert.\n\nVoici les points clés sur "${nom}" :\n\n${existing}\n\nRédige un texte enrichi et pédagogique sur ce sujet en t'appuyant sur ces points clés. Le texte doit :\n- Être rédigé EXACTEMENT dans la même langue que les points clés ci-dessus\n- Développer et contextualiser chaque point\n- Être fluide et agréable à lire\n- Apporter de la profondeur historique, culturelle ou pratique\n- Faire entre 200 et 400 mots\n- Ne pas contenir de guillemets doubles dans le texte\n\nRéponds UNIQUEMENT avec ce JSON :\n{"texte_original": "..."}`
+                  content: `장소명: "${nom}"\n\n핵심 메모:\n${existing}\n\n위 메모를 바탕으로 이 장소에 대한 깊이 있는 해설 텍스트를 작성하세요. 메모의 각 항목을 단순히 확장하는 것이 아니라, 역사적 맥락, 건축적 의미, 인물의 이야기, 시대적 배경 등을 유기적으로 엮어 방문객이 이 장소를 진정으로 이해할 수 있도록 해주세요.`
                 }]
               });
 
@@ -85,7 +95,6 @@ jobs:
                     try {
                       resolve(JSON.parse(clean));
                     } catch(e) {
-                      // Extraction par regex si JSON invalide
                       const match = clean.match(/"texte_original"\s*:\s*"([\s\S]*?)"\s*\}/);
                       if (match) {
                         resolve({ texte_original: match[1].replace(/\\n/g, '\n') });
@@ -131,7 +140,6 @@ jobs:
 
             let modified = false;
 
-            // Structure avec boucle.points (tableau)
             if (jsonData.boucle && Array.isArray(jsonData.boucle.points)) {
               for (const point of jsonData.boucle.points) {
                 if (needsEnrichment(point)) {
@@ -143,14 +151,12 @@ jobs:
                 }
               }
             }
-            // Structure avec points direct
             else if (jsonData.points && needsEnrichment(jsonData.points)) {
               console.log(`  → Enrichissement de "${getNom(jsonData.points)}"...`);
               const result = await claudeRequest(getNom(jsonData.points), getSource(jsonData.points));
               jsonData.points.texte_original = result.texte_original;
               modified = true;
             }
-            // Structure plate (recits)
             else if (needsEnrichment(jsonData)) {
               console.log(`  → Enrichissement de "${getNom(jsonData)}"...`);
               const result = await claudeRequest(getNom(jsonData), getSource(jsonData));
