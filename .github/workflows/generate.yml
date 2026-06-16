@@ -1,4 +1,4 @@
-name: Enrichir textes depuis aide-mémoire
+name: Enrichir textes depuis aide-mémoire et récits
 
 on:
  workflow_dispatch:
@@ -45,11 +45,11 @@ jobs:
            });
          }
 
-         function claudeRequest(nom, aideMemoire) {
+         function claudeRequest(nom, source) {
            return new Promise((resolve, reject) => {
-             const existing = Array.isArray(aideMemoire)
-               ? aideMemoire.join('\n')
-               : aideMemoire;
+             const existing = Array.isArray(source)
+               ? source.join('\n')
+               : source;
 
              const body = JSON.stringify({
                model: 'claude-sonnet-4-6',
@@ -95,45 +95,61 @@ jobs:
            });
          }
 
-         function enrichPoint(point) {
-           const am = point.aide_memoire;
-           const hasAideMemoire = Array.isArray(am) ? am.length > 0 : (typeof am === 'string' && am.trim().length > 0);
-           const hasTexteOriginal = Array.isArray(point.texte_original)
-             ? point.texte_original.length > 0
-             : (typeof point.texte_original === 'string' && point.texte_original.trim().length > 0);
-           return hasAideMemoire && !hasTexteOriginal;
+         function hasContent(val) {
+           return Array.isArray(val) ? val.length > 0 : (typeof val === 'string' && val.trim().length > 0);
          }
 
-         async function processJson(fileName) {
-           console.log(`\nTraitement de ${fileName}...`);
-           const jsonFile = await ghRequest('GET', `/repos/${REPO}/contents/data/sites/${fileName}`);
+         function needsEnrichment(obj) {
+           const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);
+           const hasTarget = hasContent(obj.texte_original);
+           return hasSource && !hasTarget;
+         }
+
+         function getSource(obj) {
+           return hasContent(obj.aide_memoire) ? obj.aide_memoire : obj.lignes;
+         }
+
+         function getNom(obj) {
+           return obj.nom || obj.titre || obj.id || '?';
+         }
+
+         async function processFile(folder, fileName) {
+           console.log(`\nTraitement de ${folder}/${fileName}...`);
+           const jsonFile = await ghRequest('GET', `/repos/${REPO}/contents/data/${folder}/${fileName}`);
            const jsonData = JSON.parse(Buffer.from(jsonFile.content, 'base64').toString('utf8'));
 
            let modified = false;
 
-           // Structure A : boucle.points (tableau)
+           // Structure avec boucle.points (tableau) — dossier sites
            if (jsonData.boucle && Array.isArray(jsonData.boucle.points)) {
              for (const point of jsonData.boucle.points) {
-               if (enrichPoint(point)) {
-                 console.log(`  → Enrichissement de "${point.nom}"...`);
-                 const result = await claudeRequest(point.nom, point.aide_memoire);
+               if (needsEnrichment(point)) {
+                 console.log(`  → Enrichissement de "${getNom(point)}"...`);
+                 const result = await claudeRequest(getNom(point), getSource(point));
                  point.texte_original = result.texte_original;
                  modified = true;
                  await sleep(3000);
                }
              }
            }
-           // Structure B : points direct
-           else if (jsonData.points && enrichPoint(jsonData.points)) {
-             console.log(`  → Enrichissement de "${jsonData.points.nom}"...`);
-             const result = await claudeRequest(jsonData.points.nom, jsonData.points.aide_memoire);
+           // Structure avec points direct — dossier sites
+           else if (jsonData.points && needsEnrichment(jsonData.points)) {
+             console.log(`  → Enrichissement de "${getNom(jsonData.points)}"...`);
+             const result = await claudeRequest(getNom(jsonData.points), getSource(jsonData.points));
              jsonData.points.texte_original = result.texte_original;
+             modified = true;
+           }
+           // Structure plate — dossier recits
+           else if (needsEnrichment(jsonData)) {
+             console.log(`  → Enrichissement de "${getNom(jsonData)}"...`);
+             const result = await claudeRequest(getNom(jsonData), getSource(jsonData));
+             jsonData.texte_original = result.texte_original;
              modified = true;
            }
 
            if (modified) {
              const newContent = Buffer.from(JSON.stringify(jsonData, null, 2)).toString('base64');
-             await ghRequest('PUT', `/repos/${REPO}/contents/data/sites/${fileName}`, {
+             await ghRequest('PUT', `/repos/${REPO}/contents/data/${folder}/${fileName}`, {
                message: `Enrichissement texte_original pour ${fileName}`,
                content: newContent,
                sha: jsonFile.sha
@@ -144,16 +160,21 @@ jobs:
            }
          }
 
-         async function main() {
-           const files = await ghRequest('GET', `/repos/${REPO}/contents/data/sites`);
+         async function processFolder(folder) {
+           console.log(`\n=== Dossier : ${folder} ===`);
+           const files = await ghRequest('GET', `/repos/${REPO}/contents/data/${folder}`);
            const jsonFiles = files.filter(f => f.name.endsWith('.json')).map(f => f.name);
            console.log(`${jsonFiles.length} fichiers JSON trouvés.`);
 
            for (const fileName of jsonFiles) {
-             await processJson(fileName);
+             await processFile(folder, fileName);
              await sleep(2000);
            }
+         }
 
+         async function main() {
+           await processFolder('sites');
+           await processFolder('recits');
            console.log('\n✓ Tout est terminé.');
          }
 
