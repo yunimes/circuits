@@ -18,6 +18,7 @@
     "points": [
       {
         "nom": "Maison Carrée",
+        "id": "maison-carree",
         "emoji": "🏛️",
         "maps": "https://maps.app.goo.gl/dDpZNYCTA2ZaHDQT7?g_st=ic",
         "aide_memoire": [
