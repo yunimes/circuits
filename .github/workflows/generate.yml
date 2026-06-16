@@ -1,4 +1,4 @@
-name: Réécrire tous les textes
+name: Reecrire tous les textes
 
 on:
   workflow_dispatch:
