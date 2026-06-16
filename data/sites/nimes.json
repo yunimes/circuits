@@ -57,6 +57,7 @@
       },
       {
         "nom": "Arènes de Nîmes",
+        "id": "arenes-de-nimes",
         "emoji": "🏟️",
         "maps": "https://maps.app.goo.gl/wSnnWPVjGPVE4YzHA?g_st=ic",
         "aide_memoire": [
@@ -75,6 +76,7 @@
       },
       {
         "nom": "Place de l'horloge",
+        "id": "place-de-l-horloge",
         "emoji": "🕰️",
         "maps": "https://maps.app.goo.gl/cc4B3ghdYvwcmxy2A?g_st=ic",
         "aide_memoire": [
