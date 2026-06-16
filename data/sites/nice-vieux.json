@@ -1,6 +1,6 @@
 {
   "id": "nice-vieux",
-  "nom": "Nice · Cours Saleya & Place Masséna",
+  "nom": "Nice · Marché Cours Saleya · Place Masséna",
   "guides": [
     { "nom": "Guide Nice", "id": "nice" },
     { "nom": "Guide Nice Matisse", "id": "nice-matisse" },
@@ -17,19 +17,20 @@
         "emoji": "👣",
         "maps": "https://maps.app.goo.gl/YioMWfNmRSZYNmmCA?g_st=ic",
         "aide_memoire": [
-          "구시가지 꽃·채소 시장 · 프랑스 최고 시장 선정 · 화~일 오전 꽃·채소, 월 골동품",
-          "1897 세계 최초 절화 도매 시장 · 동쪽 끝 황토색 건물에 마티스 화실"
+          "니스 구시가지 중심의 꽃·채소 시장 · 프랑스 최고 시장(Marché d'Exception)으로 선정",
+          "화요일~일요일 오전 : 꽃과 채소 시장 · 월요일 : 골동품·벼룩시장 · 여름 저녁 : 공예 야시장"
         ],
         "texte_original": [],
-        "photo": "📸 꽃 판매대 전경 · 파스텔 이탈리아 바로크 파사드",
+        "photo": "📸 꽃 판매대가 늘어선 전경 · 파스텔 톤 이탈리아 바로크 건물 파사드와 함께",
         "recits": ["matisse-cours-saleya"]
       },
       {
         "nom": "Vieux-Nice",
         "emoji": "🌆",
         "aide_memoire": [
-          "니스는 그리스→로마→사보이(이탈리아)→1860 프랑스 · 니수아르 방언·소카·피살라디에르가 정체성",
-          "가리발디는 여기 출생이나 프랑스 합병 반대 · 동상은 이탈리아 쪽을 향함"
+          "🚶 10 min · 600m — Itinéraire pédestre",
+          "니스 구시가지 골목 · 그리스→로마→사보이(이탈리아)→1860 프랑스",
+          "니수아르(Niçard) 방언·소카·피살라디에르·팡 바냐가 정체성"
         ],
         "texte_original": [],
         "recits": ["vieux-nice-cosmopolite"]
@@ -38,12 +39,12 @@
         "nom": "Fontaine du Soleil · Place Masséna",
         "emoji": "⛲️",
         "aide_memoire": [
-          "니스 중심 광장 · 태양의 분수 · 아폴론 7m · 1956 · 5개 행성상(목성 빠짐)",
-          "기둥 위 7개 반투명 인체 = 플렌사 「대화」(2007) · 앙티브 『노마드』와 같은 작가",
-          "제막 당일 '4CV 광고 동상' 조롱 소동 → 1970년대 추방 → 2011 복귀"
+          "📸 15 min — Fontaine du Soleil & Place Masséna",
+          "니스 중심 광장 · 태양의 분수 · 자니오 작품 · 1956 · 아폴론 7m · 5개 행성상",
+          "기둥 위 7개 반투명 인체 = 플렌사 「대화」(2007) · 앙티브 「노마드」와 같은 작가"
         ],
         "texte_original": [],
-        "photo": "📸 분수와 구시가지 파사드 정면 · 저녁이면 플렌사 조각이 빛남",
+        "photo": "📸 분수와 뒤의 구시가지 파사드가 함께 들어오는 정면 구도 · 저녁이면 플렌사 조각이 빛나기 시작함",
         "recits": ["fontaine-soleil"]
       }
     ]
