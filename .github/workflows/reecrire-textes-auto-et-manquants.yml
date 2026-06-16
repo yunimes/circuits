@@ -148,11 +148,11 @@ jobs:
            return hasSource && (!hasTarget || obj.texte_auto === true);
          }
          
-function shouldProcess(obj) {
-  const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);
-  // Traite UNIQUEMENT si texte_auto est absent
-  return hasSource && obj.texte_auto === undefined;
-}
+         function shouldProcess(obj) {
+           const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);
+           // Traite UNIQUEMENT si texte_auto est absent
+           return hasSource && obj.texte_auto === undefined;
+         }
 
 
          async function processPoint(point) {
