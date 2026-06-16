@@ -1,0 +1,125 @@
+name: Générer résumé et aide-mémoire
+
+on:
+  workflow_dispatch:
+    inputs:
+      md_file:
+        description: 'Nom du fichier MD (ex: paris.md)'
+        required: true
+      json_file:
+        description: 'Nom du fichier JSON (ex: paris.json)'
+        required: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Générer via Claude
+        run: |
+          node << 'EOF'
+          const https = require('https');
+
+          const MD_FILE = process.env.MD_FILE;
+          const JSON_FILE = process.env.JSON_FILE;
+          const GH_PAT = process.env.GH_PAT;
+          const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
+          const REPO = 'yunimes/circuits';
+
+          function ghRequest(method, path, body) {
+            return new Promise((resolve, reject) => {
+              const data = body ? JSON.stringify(body) : null;
+              const options = {
+                hostname: 'api.github.com',
+                path,
+                method,
+                headers: {
+                  'Authorization': `Bearer ${GH_PAT}`,
+                  'Accept': 'application/vnd.github.v3+json',
+                  'User-Agent': 'circuits-workflow',
+                  ...(data && { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(data) })
+                }
+              };
+              const req = https.request(options, res => {
+                let raw = '';
+                res.on('data', d => raw += d);
+                res.on('end', () => resolve(JSON.parse(raw)));
+              });
+              req.on('error', reject);
+              if (data) req.write(data);
+              req.end();
+            });
+          }
+
+          function claudeRequest(mdContent, aideMemoire) {
+            return new Promise((resolve, reject) => {
+              const body = JSON.stringify({
+                model: 'claude-sonnet-4-6',
+                max_tokens: 2000,
+                system: 'Tu réponds UNIQUEMENT en JSON valide, sans backticks, sans préambule.',
+                messages: [{
+                  role: 'user',
+                  content: `Voici le texte original (Markdown) :\n\n---\n${mdContent}\n---\n\n${aideMemoire ? `Aide-mémoire existant à réviser :\n\n---\n${aideMemoire}\n---\n\n` : ''}Ta mission :\n\n1. texte_original : Résumé complet et fidèle qui restitue TOUS les éléments importants (lieux, dates, anecdotes, contexte, conseils, détails marquants). Dense et structuré par thèmes.\n\n2. aide_memoire : Liste concise de points clés mémorables — faits, dates, noms, conseils essentiels. Format liste à puces, court mais dense.\n\nRéponds UNIQUEMENT avec ce JSON :\n{"texte_original": "...", "aide_memoire": "..."}`
+                }]
+              });
+
+              const options = {
+                hostname: 'api.anthropic.com',
+                path: '/v1/messages',
+                method: 'POST',
+                headers: {
+                  'x-api-key': ANTHROPIC_KEY,
+                  'anthropic-version': '2023-06-01',
+                  'Content-Type': 'application/json',
+                  'Content-Length': Buffer.byteLength(body)
+                }
+              };
+
+              const req = https.request(options, res => {
+                let raw = '';
+                res.on('data', d => raw += d);
+                res.on('end', () => {
+                  const parsed = JSON.parse(raw);
+                  const text = parsed.content.map(b => b.text || '').join('').trim();
+                  resolve(JSON.parse(text));
+                });
+              });
+              req.on('error', reject);
+              req.write(body);
+              req.end();
+            });
+          }
+
+          async function main() {
+            console.log(`Lecture de ${MD_FILE} et ${JSON_FILE}...`);
+
+            const [mdFile, jsonFile] = await Promise.all([
+              ghRequest('GET', `/repos/${REPO}/contents/data/guides/${MD_FILE}`),
+              ghRequest('GET', `/repos/${REPO}/contents/data/sites/${JSON_FILE}`)
+            ]);
+
+            const mdContent = Buffer.from(mdFile.content, 'base64').toString('utf8');
+            const jsonContent = JSON.parse(Buffer.from(jsonFile.content, 'base64').toString('utf8'));
+
+            console.log('Génération via Claude...');
+            const result = await claudeRequest(mdContent, jsonContent.aide_memoire || '');
+
+            const updated = { ...jsonContent, texte_original: result.texte_original, aide_memoire: result.aide_memoire };
+            const newContent = Buffer.from(JSON.stringify(updated, null, 2)).toString('base64');
+
+            console.log('Sauvegarde sur GitHub...');
+            await ghRequest('PUT', `/repos/${REPO}/contents/data/sites/${JSON_FILE}`, {
+              message: `Update résumé et aide-mémoire pour ${JSON_FILE}`,
+              content: newContent,
+              sha: jsonFile.sha
+            });
+
+            console.log('Terminé avec succès !');
+          }
+
+          main().catch(e => { console.error(e); process.exit(1); });
+          EOF
+        env:
+          MD_FILE: ${{ github.event.inputs.md_file }}
+          JSON_FILE: ${{ github.event.inputs.json_file }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
