@@ -1,4 +1,4 @@
-name: Enrichir textes depuis aide-mémoire et récits
+name: Enrichir textes depuis aide-mémoire et recits
 
 on:
  workflow_dispatch:
