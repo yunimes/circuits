@@ -58,11 +58,12 @@ jobs:
         
             const body = JSON.stringify({
               model: 'claude-sonnet-4-6',
-              max_tokens: 4000,
+              max_tokens: 8000,
               system: 'Tu réponds UNIQUEMENT en JSON valide, sans backticks, sans préambule.',
               messages: [{
                 role: 'user',
-                content: `Voici le texte original (Markdown) :\n\n---\n${mdContent}\n---\n\n${existing ? `Aide-mémoire existant à réviser :\n\n---\n${existing}\n---\n\n` : ''}Ta mission :\n\n1. texte_original : Résumé complet et fidèle qui restitue TOUS les éléments importants (lieux, dates, anecdotes, contexte, conseils, détails marquants). Dense et structuré par thèmes.\n\n2. aide_memoire : Liste concise de points clés mémorables — faits, dates, noms, conseils essentiels. Format : tableau JSON de strings, une string par point clé.\n\nRéponds UNIQUEMENT avec ce JSON :\n{"texte_original": "...", "aide_memoire": ["point 1", "point 2", ...]}`
+                content: `Voici le texte original (Markdown) :\n\n---\n${mdContent}\n---\n\n${existing ? `Aide-mémoire existant :\n---\n${existing}\n---\n\n` : ''}Ta mission — réponds en JSON uniquement :\n\n1. texte_original : Résumé fidèle et complet en 300-500 mots max. Tous les éléments importants (faits, dates, noms, contexte) mais formulés de façon dense.\n\n2. aide_memoire : 5 à 10 points clés en tableau JSON de strings courtes.\n\nJSON attendu :\n{"texte_original": "...", "aide_memoire": ["point 1", "point 2", ...]}`
+
               }]
             });
         
