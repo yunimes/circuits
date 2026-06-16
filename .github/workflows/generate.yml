@@ -1,159 +1,164 @@
 name: Enrichir textes depuis aide-mémoire
 
 on:
-  workflow_dispatch:
+ workflow_dispatch:
 
 jobs:
-  enrich:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Enrichir via Claude
-        run: |
-          node << 'EOF'
-          const https = require('https');
+ enrich:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Enrichir via Claude
+       run: |
+         node << 'EOF'
+         const https = require('https');
 
-          const GH_PAT = process.env.GH_PAT;
-          const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
-          const REPO = 'yunimes/circuits';
+         const GH_PAT = process.env.GH_PAT;
+         const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
+         const REPO = 'yunimes/circuits';
 
-          function ghRequest(method, path, body) {
-            return new Promise((resolve, reject) => {
-              const data = body ? JSON.stringify(body) : null;
-              const options = {
-                hostname: 'api.github.com',
-                path,
-                method,
-                headers: {
-                  'Authorization': `Bearer ${GH_PAT}`,
-                  'Accept': 'application/vnd.github.v3+json',
-                  'User-Agent': 'circuits-workflow',
-                  ...(data && { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(data) })
-                }
-              };
-              const req = https.request(options, res => {
-                let raw = '';
-                res.on('data', d => raw += d);
-                res.on('end', () => resolve(JSON.parse(raw)));
-              });
-              req.on('error', reject);
-              if (data) req.write(data);
-              req.end();
-            });
-          }
+         function sleep(ms) {
+           return new Promise(resolve => setTimeout(resolve, ms));
+         }
 
-          function claudeRequest(nom, aideMemoire) {
-            return new Promise((resolve, reject) => {
-              const existing = Array.isArray(aideMemoire)
-                ? aideMemoire.join('\n')
-                : aideMemoire;
+         function ghRequest(method, path, body) {
+           return new Promise((resolve, reject) => {
+             const data = body ? JSON.stringify(body) : null;
+             const options = {
+               hostname: 'api.github.com',
+               path,
+               method,
+               headers: {
+                 'Authorization': `Bearer ${GH_PAT}`,
+                 'Accept': 'application/vnd.github.v3+json',
+                 'User-Agent': 'circuits-workflow',
+                 ...(data && { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(data) })
+               }
+             };
+             const req = https.request(options, res => {
+               let raw = '';
+               res.on('data', d => raw += d);
+               res.on('end', () => resolve(JSON.parse(raw)));
+             });
+             req.on('error', reject);
+             if (data) req.write(data);
+             req.end();
+           });
+         }
 
-              const body = JSON.stringify({
-                model: 'claude-sonnet-4-6',
-                max_tokens: 4000,
-                system: 'Tu réponds UNIQUEMENT en JSON valide, sans backticks, sans préambule.',
-                messages: [{
-                  role: 'user',
-                  content: `Tu es un guide culturel et pédagogique expert.\n\nVoici les points clés sur "${nom}" :\n\n${existing}\n\nRédige un texte enrichi et pédagogique sur ce sujet en t'appuyant sur ces points clés. Le texte doit :\n- Être rédigé EXACTEMENT dans la même langue que les points clés ci-dessus\n- Développer et contextualiser chaque point\n- Être fluide et agréable à lire\n- Apporter de la profondeur historique, culturelle ou pratique\n- Faire entre 200 et 400 mots\n\nRéponds UNIQUEMENT avec ce JSON :\n{"texte_original": "..."}`
-                }]
-              });
+         function claudeRequest(nom, aideMemoire) {
+           return new Promise((resolve, reject) => {
+             const existing = Array.isArray(aideMemoire)
+               ? aideMemoire.join('\n')
+               : aideMemoire;
 
-              const options = {
-                hostname: 'api.anthropic.com',
-                path: '/v1/messages',
-                method: 'POST',
-                headers: {
-                  'x-api-key': ANTHROPIC_KEY,
-                  'anthropic-version': '2023-06-01',
-                  'Content-Type': 'application/json',
-                  'Content-Length': Buffer.byteLength(body)
-                }
-              };
+             const body = JSON.stringify({
+               model: 'claude-sonnet-4-6',
+               max_tokens: 4000,
+               system: 'Tu réponds UNIQUEMENT en JSON valide, sans backticks, sans préambule.',
+               messages: [{
+                 role: 'user',
+                 content: `Tu es un guide culturel et pédagogique expert.\n\nVoici les points clés sur "${nom}" :\n\n${existing}\n\nRédige un texte enrichi et pédagogique sur ce sujet en t'appuyant sur ces points clés. Le texte doit :\n- Être rédigé EXACTEMENT dans la même langue que les points clés ci-dessus\n- Développer et contextualiser chaque point\n- Être fluide et agréable à lire\n- Apporter de la profondeur historique, culturelle ou pratique\n- Faire entre 200 et 400 mots\n\nRéponds UNIQUEMENT avec ce JSON :\n{"texte_original": "..."}`
+               }]
+             });
 
-              const req = https.request(options, res => {
-                let raw = '';
-                res.on('data', d => raw += d);
-                res.on('end', () => {
-                  try {
-                    const parsed = JSON.parse(raw);
-                    if (parsed.error) throw new Error(`Claude API error: ${JSON.stringify(parsed.error)}`);
-                    const text = parsed.content.map(b => b.text || '').join('').trim();
-                    const clean = text.replace(/```json|```/g, '').trim();
-                    resolve(JSON.parse(clean));
-                  } catch(e) {
-                    console.error('Erreur parsing Claude:', raw.substring(0, 300));
-                    reject(e);
-                  }
-                });
-              });
-              req.on('error', reject);
-              req.write(body);
-              req.end();
-            });
-          }
+             const options = {
+               hostname: 'api.anthropic.com',
+               path: '/v1/messages',
+               method: 'POST',
+               headers: {
+                 'x-api-key': ANTHROPIC_KEY,
+                 'anthropic-version': '2023-06-01',
+                 'Content-Type': 'application/json',
+                 'Content-Length': Buffer.byteLength(body)
+               }
+             };
 
-          function enrichPoint(point) {
-            const am = point.aide_memoire;
-            const hasAideMemoire = Array.isArray(am) ? am.length > 0 : (typeof am === 'string' && am.trim().length > 0);
-            const hasTexteOriginal = Array.isArray(point.texte_original)
-              ? point.texte_original.length > 0
-              : (typeof point.texte_original === 'string' && point.texte_original.trim().length > 0);
-            return hasAideMemoire && !hasTexteOriginal;
-          }
+             const req = https.request(options, res => {
+               let raw = '';
+               res.on('data', d => raw += d);
+               res.on('end', () => {
+                 try {
+                   const parsed = JSON.parse(raw);
+                   if (parsed.error) throw new Error(`Claude API error: ${JSON.stringify(parsed.error)}`);
+                   const text = parsed.content.map(b => b.text || '').join('').trim();
+                   const clean = text.replace(/```json|```/g, '').trim();
+                   resolve(JSON.parse(clean));
+                 } catch(e) {
+                   console.error('Erreur parsing Claude:', raw.substring(0, 300));
+                   reject(e);
+                 }
+               });
+             });
+             req.on('error', reject);
+             req.write(body);
+             req.end();
+           });
+         }
 
-          async function processJson(fileName) {
-            console.log(`\nTraitement de ${fileName}...`);
-            const jsonFile = await ghRequest('GET', `/repos/${REPO}/contents/data/sites/${fileName}`);
-            const jsonData = JSON.parse(Buffer.from(jsonFile.content, 'base64').toString('utf8'));
+         function enrichPoint(point) {
+           const am = point.aide_memoire;
+           const hasAideMemoire = Array.isArray(am) ? am.length > 0 : (typeof am === 'string' && am.trim().length > 0);
+           const hasTexteOriginal = Array.isArray(point.texte_original)
+             ? point.texte_original.length > 0
+             : (typeof point.texte_original === 'string' && point.texte_original.trim().length > 0);
+           return hasAideMemoire && !hasTexteOriginal;
+         }
 
-            let modified = false;
+         async function processJson(fileName) {
+           console.log(`\nTraitement de ${fileName}...`);
+           const jsonFile = await ghRequest('GET', `/repos/${REPO}/contents/data/sites/${fileName}`);
+           const jsonData = JSON.parse(Buffer.from(jsonFile.content, 'base64').toString('utf8'));
 
-            // Structure A : boucle.points (tableau)
-            if (jsonData.boucle && Array.isArray(jsonData.boucle.points)) {
-              for (const point of jsonData.boucle.points) {
-                if (enrichPoint(point)) {
-                  console.log(`  → Enrichissement de "${point.nom}"...`);
-                  const result = await claudeRequest(point.nom, point.aide_memoire);
-                  point.texte_original = result.texte_original;
-                  modified = true;
-                }
-              }
-            }
-            // Structure B : points direct
-            else if (jsonData.points && enrichPoint(jsonData.points)) {
-              console.log(`  → Enrichissement de "${jsonData.points.nom}"...`);
-              const result = await claudeRequest(jsonData.points.nom, jsonData.points.aide_memoire);
-              jsonData.points.texte_original = result.texte_original;
-              modified = true;
-            }
+           let modified = false;
 
-            if (modified) {
-              const newContent = Buffer.from(JSON.stringify(jsonData, null, 2)).toString('base64');
-              await ghRequest('PUT', `/repos/${REPO}/contents/data/sites/${fileName}`, {
-                message: `Enrichissement texte_original pour ${fileName}`,
-                content: newContent,
-                sha: jsonFile.sha
-              });
-              console.log(`  ✓ ${fileName} sauvegardé`);
-            } else {
-              console.log(`  ↩ ${fileName} — rien à enrichir`);
-            }
-          }
+           // Structure A : boucle.points (tableau)
+           if (jsonData.boucle && Array.isArray(jsonData.boucle.points)) {
+             for (const point of jsonData.boucle.points) {
+               if (enrichPoint(point)) {
+                 console.log(`  → Enrichissement de "${point.nom}"...`);
+                 const result = await claudeRequest(point.nom, point.aide_memoire);
+                 point.texte_original = result.texte_original;
+                 modified = true;
+                 await sleep(3000);
+               }
+             }
+           }
+           // Structure B : points direct
+           else if (jsonData.points && enrichPoint(jsonData.points)) {
+             console.log(`  → Enrichissement de "${jsonData.points.nom}"...`);
+             const result = await claudeRequest(jsonData.points.nom, jsonData.points.aide_memoire);
+             jsonData.points.texte_original = result.texte_original;
+             modified = true;
+           }
 
-          async function main() {
-            // Lister tous les JSON dans data/sites/
-            const files = await ghRequest('GET', `/repos/${REPO}/contents/data/sites`);
-            const jsonFiles = files.filter(f => f.name.endsWith('.json')).map(f => f.name);
-            console.log(`${jsonFiles.length} fichiers JSON trouvés.`);
+           if (modified) {
+             const newContent = Buffer.from(JSON.stringify(jsonData, null, 2)).toString('base64');
+             await ghRequest('PUT', `/repos/${REPO}/contents/data/sites/${fileName}`, {
+               message: `Enrichissement texte_original pour ${fileName}`,
+               content: newContent,
+               sha: jsonFile.sha
+             });
+             console.log(`  ✓ ${fileName} sauvegardé`);
+           } else {
+             console.log(`  ↩ ${fileName} — rien à enrichir`);
+           }
+         }
 
-            for (const fileName of jsonFiles) {
-              await processJson(fileName);
-            }
+         async function main() {
+           const files = await ghRequest('GET', `/repos/${REPO}/contents/data/sites`);
+           const jsonFiles = files.filter(f => f.name.endsWith('.json')).map(f => f.name);
+           console.log(`${jsonFiles.length} fichiers JSON trouvés.`);
 
-            console.log('\n✓ Tout est terminé.');
-          }
+           for (const fileName of jsonFiles) {
+             await processJson(fileName);
+             await sleep(2000);
+           }
 
-          main().catch(e => { console.error(e.message); process.exit(1); });
-          EOF
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+           console.log('\n✓ Tout est terminé.');
+         }
+
+         main().catch(e => { console.error(e.message); process.exit(1); });
+         EOF
+       env:
+         GH_PAT: ${{ secrets.GH_PAT }}
+         ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
