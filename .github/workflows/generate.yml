@@ -1,4 +1,4 @@
-name: Enrichir textes depuis aide-mémoire et récits
+name: Réécrire tous les textes
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ jobs:
   enrich:
     runs-on: ubuntu-latest
     steps:
-      - name: Enrichir via Claude
+      - name: Réécrire via Claude
         run: |
           node << 'EOF'
           const https = require('https');
@@ -63,6 +63,7 @@ jobs:
 - 필요하면 소제목(** **)으로 섹션을 나눕니다
 - 길이는 내용의 복잡성에 따라 자연스럽게 결정됩니다 — 단순한 주제는 짧게, 복잡한 주제는 충분히 깊게
 - 반드시 한국어로 작성합니다
+- 정보를 담지 않는 전환 문장이나 도입 문장을 쓰지 않습니다. '이것은 단순한 X가 아닙니다', '우연이 아닙니다', '여기서 주목할 것은' 같은 표현은 금지입니다. 모든 문장은 직접적인 정보를 담아야 합니다
 - JSON 응답에서 텍스트 안에 큰따옴표(")를 절대 사용하지 않습니다. 작은따옴표(')나 다른 표현으로 대체합니다
 응답은 반드시 유효한 JSON만: {"texte_original": "..."}`,
                 messages: [{
@@ -119,18 +120,16 @@ jobs:
             return Array.isArray(val) ? val.length > 0 : (typeof val === 'string' && val.trim().length > 0);
           }
 
-          function needsEnrichment(obj) {
-            const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);
-            const hasTarget = hasContent(obj.texte_original);
-            return hasSource && !hasTarget;
-          }
-
           function getSource(obj) {
             return hasContent(obj.aide_memoire) ? obj.aide_memoire : obj.lignes;
           }
 
           function getNom(obj) {
             return obj.nom || obj.titre || obj.id || '?';
+          }
+
+          function shouldProcess(obj) {
+            return hasContent(obj.aide_memoire) || hasContent(obj.lignes);
           }
 
           async function processFile(folder, fileName) {
@@ -142,38 +141,41 @@ jobs:
 
             if (jsonData.boucle && Array.isArray(jsonData.boucle.points)) {
               for (const point of jsonData.boucle.points) {
-                if (needsEnrichment(point)) {
-                  console.log(`  → Enrichissement de "${getNom(point)}"...`);
+                if (shouldProcess(point)) {
+                  console.log(`  → Réécriture de "${getNom(point)}"...`);
                   const result = await claudeRequest(getNom(point), getSource(point));
                   point.texte_original = result.texte_original;
+                  point.texte_auto = true;
                   modified = true;
                   await sleep(3000);
                 }
               }
             }
-            else if (jsonData.points && needsEnrichment(jsonData.points)) {
-              console.log(`  → Enrichissement de "${getNom(jsonData.points)}"...`);
+            else if (jsonData.points && shouldProcess(jsonData.points)) {
+              console.log(`  → Réécriture de "${getNom(jsonData.points)}"...`);
               const result = await claudeRequest(getNom(jsonData.points), getSource(jsonData.points));
               jsonData.points.texte_original = result.texte_original;
+              jsonData.points.texte_auto = true;
               modified = true;
             }
-            else if (needsEnrichment(jsonData)) {
-              console.log(`  → Enrichissement de "${getNom(jsonData)}"...`);
+            else if (shouldProcess(jsonData)) {
+              console.log(`  → Réécriture de "${getNom(jsonData)}"...`);
               const result = await claudeRequest(getNom(jsonData), getSource(jsonData));
               jsonData.texte_original = result.texte_original;
+              jsonData.texte_auto = true;
               modified = true;
             }
 
             if (modified) {
               const newContent = Buffer.from(JSON.stringify(jsonData, null, 2)).toString('base64');
               await ghRequest('PUT', `/repos/${REPO}/contents/data/${folder}/${fileName}`, {
-                message: `Enrichissement texte_original pour ${fileName}`,
+                message: `Réécriture texte_original pour ${fileName}`,
                 content: newContent,
                 sha: jsonFile.sha
               });
               console.log(`  ✓ ${fileName} sauvegardé`);
             } else {
-              console.log(`  ↩ ${fileName} — rien à enrichir`);
+              console.log(`  ↩ ${fileName} — pas de source`);
             }
           }
 
