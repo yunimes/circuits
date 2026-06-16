@@ -52,7 +52,7 @@ function dureeTotale(c) {
 function renderRecit(recit, key) {
   const rid = `recit-${key}`;
   const cond = `<div class="lignes-recit">${recit.titre ? `<div class="titre-recit">${recit.titre}</div>` : ''}${lignesHtml(recit.lignes)}${recit.speak ? `<div class="speak">${recit.speak}</div>` : ''}</div>`;
-  const orig = `<div class="original-recit">${recit.titre ? `<div class="titre-recit">${recit.titre}</div>` : ''}${recit.texte_original ? lignesHtml(recit.texte_original) : '<div class="ligne vide">(texte original à compléter)</div>'}</div>`;
+  const orig = `<div class="original-recit">${recit.titre ? `<div class="titre-recit">${recit.titre}</div>` : ''}${recit.texte_original ? marked.parse(recit.texte_original) : '<div class="ligne vide">(texte original à compléter)</div>'}</div>`;
   return {
     bouton: `<button class="btn-recit" onclick="toggleRecit('${rid}')">${recit.titre || 'Récit'}</button>`,
     bloc: `<div class="recit" id="${rid}">${cond}${orig}</div>`
@@ -62,7 +62,7 @@ function renderRecit(recit, key) {
 // ===== Point (aide-mémoire + texte original + récits) =====
 async function renderPoint(point, key) {
   const aide = `<div class="aide">${lignesHtml(point.aide_memoire)}${point.photo ? `<div class="photo">${point.photo}</div>` : ''}</div>`;
-  const orig = `<div class="original">${point.texte_original ? lignesHtml(point.texte_original) : '<div class="ligne vide">(texte original à compléter)</div>'}${point.photo ? `<div class="photo">${point.photo}</div>` : ''}</div>`;
+  const orig = `<div class="original">${point.texte_original ? marked.parse(point.texte_original) : '<div class="ligne vide">(texte original à compléter)</div>'}${point.photo ? `<div class="photo">${point.photo}</div>` : ''}</div>`;
 
   let boutons = '', blocs = '';
   if (point.recits && point.recits.length) {
@@ -189,7 +189,7 @@ async function cr_portion(c, idx) {
   for (let i=0;i<arrets.length;i++) {
     const a = arrets[i];
     const aide = `<div class="aide">${lignesHtml(a.aide_memoire)}${a.photo?`<div class="photo">${a.photo}</div>`:''}</div>`;
-    const orig = `<div class="original">${a.texte_original?lignesHtml(a.texte_original):'<div class="ligne vide">(texte original à compléter)</div>'}</div>`;
+    const orig = `<div class="original">${a.texte_original?marked.parse(a.texte_original):'<div class="ligne vide">(texte original à compléter)</div>'}</div>`;
     const detail = a.detail ? `<div class="segment">${a.detail}${a.trajet_maps?' '+mapBtn(a.trajet_maps):''}${a.parking_maps?' · 🅿️ '+mapBtn(a.parking_maps):''}</div>` : '';
     let boutons='',blocs='';
     if (a.recits&&a.recits.length){for(let k=0;k<a.recits.length;k++){const r=renderRecit(await getRecit(a.recits[k]),`${cid}-${i}-${k}`);boutons+=r.bouton;blocs+=r.bloc;}}
@@ -245,7 +245,7 @@ async function renderHeberg(jour) {
   let h = jour.hebergement; if (!h) return '';
   if (typeof h === 'string') h = await getHeberg(h);
   const aide = (h.aide_memoire&&h.aide_memoire.length)?`<div class="aide">${lignesHtml(h.aide_memoire)}</div>`:'';
-  const orig = (h.texte_original&&h.texte_original.length)?`<div class="original">${lignesHtml(h.texte_original)}</div>`:'';
+  const orig = (h.texte_original&&h.texte_original.length)?`<div class="original">${marked.parse(h.texte_original)}</div>`:'';
   // récits éventuels
   let boutons='',blocs='';
   if (h.recits&&h.recits.length){for(let i=0;i<h.recits.length;i++){const r=renderRecit(await getRecit(h.recits[i]),`heb-${i}`);boutons+=r.bouton;blocs+=r.bloc;}}
