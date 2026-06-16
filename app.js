@@ -21,7 +21,13 @@ async function getResto(id) { if (!cache.restaurants[id]) cache.restaurants[id] 
 
 function el(html) { const d = document.createElement('div'); d.innerHTML = html.trim(); return d.firstElementChild; }
 function mapBtn(url) { return url ? `<a class="map-btn" href="${url}">🗺️</a>` : ''; }
-function lignesHtml(arr) { return (arr || []).map(l => `<div class="${l.includes('❗️') ? 'ligne flag' : 'ligne'}">${autolink(l)}</div>`).join(''); }
+function lignesHtml(arr) {
+  if (typeof arr === 'string') {
+    return `<div class="ligne">${autolink(arr)}</div>`;
+  }
+  return (arr || []).map(l => `<div class="${l.includes('❗️') ? 'ligne flag' : 'ligne'}">${autolink(l)}</div>`).join('');
+}
+
 function autolink(txt) {
   return (txt || '').replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" style="color:var(--terra);text-decoration:none;font-weight:600">🗺️ Maps</a>');
 }
