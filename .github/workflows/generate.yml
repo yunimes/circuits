@@ -1,204 +1,202 @@
-name: Reecrire tous les textes
+name: Réécrire tous les textes
 
 on:
-  workflow_dispatch:
+ workflow_dispatch:
 
 jobs:
-  enrich:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Réécrire via Claude
-        run: |
-          node << 'EOF'
-          const https = require('https');
+ enrich:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Réécrire via Claude
+       run: |
+         node << 'EOF'
+         const https = require('https');
 
-          const GH_PAT = process.env.GH_PAT;
-          const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
-          const REPO = 'yunimes/circuits';
+         const GH_PAT = process.env.GH_PAT;
+         const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
+         const REPO = 'yunimes/circuits';
 
-          function sleep(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
-          }
+         function sleep(ms) {
+           return new Promise(resolve => setTimeout(resolve, ms));
+         }
 
-          function ghRequest(method, path, body) {
-            return new Promise((resolve, reject) => {
-              const data = body ? JSON.stringify(body) : null;
-              const options = {
-                hostname: 'api.github.com',
-                path,
-                method,
-                headers: {
-                  'Authorization': `Bearer ${GH_PAT}`,
-                  'Accept': 'application/vnd.github.v3+json',
-                  'User-Agent': 'circuits-workflow',
-                  ...(data && { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(data) })
-                }
-              };
-              const req = https.request(options, res => {
-                let raw = '';
-                res.on('data', d => raw += d);
-                res.on('end', () => resolve(JSON.parse(raw)));
-              });
-              req.on('error', reject);
-              if (data) req.write(data);
-              req.end();
-            });
-          }
+         function ghRequest(method, path, body) {
+           return new Promise((resolve, reject) => {
+             const data = body ? JSON.stringify(body) : null;
+             const options = {
+               hostname: 'api.github.com',
+               path,
+               method,
+               headers: {
+                 'Authorization': 'Bearer ' + GH_PAT,
+                 'Accept': 'application/vnd.github.v3+json',
+                 'User-Agent': 'circuits-workflow',
+                 ...(data && { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(data) })
+               }
+             };
+             const req = https.request(options, res => {
+               let raw = '';
+               res.on('data', d => raw += d);
+               res.on('end', () => resolve(JSON.parse(raw)));
+             });
+             req.on('error', reject);
+             if (data) req.write(data);
+             req.end();
+           });
+         }
 
-          function claudeRequest(nom, source) {
-            return new Promise((resolve, reject) => {
-              const existing = Array.isArray(source)
-                ? source.join('\n')
-                : source;
+         function claudeRequest(nom, source) {
+           return new Promise((resolve, reject) => {
+             const existing = Array.isArray(source) ? source.join('\n') : source;
 
-              const body = JSON.stringify({
-                model: 'claude-sonnet-4-6',
-                max_tokens: 8000,
-                system: `당신은 현장 문화 해설 전문가입니다. 방문객이 실제로 그 장소 앞에 서 있다고 상상하며 글을 씁니다.
-당신의 글쓰기 원칙:
-- 핵심어나 메모를 받으면, 단순히 나열하거나 요약하지 않습니다
-- 각 개념, 사건, 인물이 등장하면 반드시 깊이 파고듭니다 — 왜 그런가? 어떤 맥락인가? 어떤 의미인가?
-- 역사적 개념은 먼저 설명하고, 그 다음 구체적 사례를 연결합니다
-- 짧은 문장과 긴 문장을 리드미컬하게 섞습니다
-- 필요하면 소제목(** **)으로 섹션을 나눕니다
-- 길이는 내용의 복잡성에 따라 자연스럽게 결정됩니다 — 단순한 주제는 짧게, 복잡한 주제는 충분히 깊게
-- 반드시 한국어로 작성합니다
-- 정보를 담지 않는 전환 문장이나 도입 문장을 쓰지 않습니다. '이것은 단순한 X가 아닙니다', '우연이 아닙니다', '여기서 주목할 것은' 같은 표현은 금지입니다. 모든 문장은 직접적인 정보를 담아야 합니다
-- JSON 응답에서 텍스트 안에 큰따옴표(")를 절대 사용하지 않습니다. 작은따옴표(')나 다른 표현으로 대체합니다
-응답은 반드시 유효한 JSON만: {"texte_original": "..."}`,
-                messages: [{
-                  role: 'user',
-                  content: `장소명: "${nom}"\n\n핵심 메모:\n${existing}\n\n위 메모를 바탕으로 이 장소에 대한 깊이 있는 해설 텍스트를 작성하세요. 메모의 각 항목을 단순히 확장하는 것이 아니라, 역사적 맥락, 건축적 의미, 인물의 이야기, 시대적 배경 등을 유기적으로 엮어 방문객이 이 장소를 진정으로 이해할 수 있도록 해주세요.`
-                }]
-              });
+             const systemPrompt = [
+               '당신은 현장 문화 해설 전문가입니다. 방문객이 실제로 그 장소 앞에 서 있다고 상상하며 글을 씁니다.',
+               '당신의 글쓰기 원칙:',
+               '- 핵심어나 메모를 받으면, 단순히 나열하거나 요약하지 않습니다',
+               '- 각 개념, 사건, 인물이 등장하면 반드시 깊이 파고듭니다 — 왜 그런가? 어떤 맥락인가? 어떤 의미인가?',
+               '- 역사적 개념은 먼저 설명하고, 그 다음 구체적 사례를 연결합니다',
+               '- 짧은 문장과 긴 문장을 리드미컬하게 섞습니다',
+               '- 필요하면 소제목으로 섹션을 나눕니다',
+               '- 길이는 내용의 복잡성에 따라 자연스럽게 결정됩니다 — 단순한 주제는 짧게, 복잡한 주제는 충분히 깊게',
+               '- 반드시 한국어로 작성합니다',
+               '- 정보를 담지 않는 전환 문장이나 도입 문장을 쓰지 않습니다. 모든 문장은 직접적인 정보를 담아야 합니다',
+               '- JSON 텍스트 안에 큰따옴표를 절대 사용하지 않습니다. 작은따옴표나 다른 표현으로 대체합니다',
+               '응답은 반드시 유효한 JSON만: {"texte_original": "..."}'
+             ].join('\n');
 
-              const options = {
-                hostname: 'api.anthropic.com',
-                path: '/v1/messages',
-                method: 'POST',
-                headers: {
-                  'x-api-key': ANTHROPIC_KEY,
-                  'anthropic-version': '2023-06-01',
-                  'Content-Type': 'application/json',
-                  'Content-Length': Buffer.byteLength(body)
-                }
-              };
+             const userPrompt = '장소명: "' + nom + '"\n\n핵심 메모:\n' + existing + '\n\n위 메모를 바탕으로 이 장소에 대한 깊이 있는 해설 텍스트를 작성하세요. 메모의 각 항목을 단순히 확장하는 것이 아니라, 역사적 맥락, 건축적 의미, 인물의 이야기, 시대적 배경 등을 유기적으로 엮어 방문객이 이 장소를 진정으로 이해할 수 있도록 해주세요.';
 
-              const req = https.request(options, res => {
-                let raw = '';
-                res.on('data', d => raw += d);
-                res.on('end', () => {
-                  try {
-                    const parsed = JSON.parse(raw);
-                    if (parsed.error) throw new Error(`Claude API error: ${JSON.stringify(parsed.error)}`);
-                    const text = parsed.content.map(b => b.text || '').join('').trim();
-                    const clean = text.replace(/```json|```/g, '').trim();
-                    try {
-                      resolve(JSON.parse(clean));
-                    } catch(e) {
-                      const match = clean.match(/"texte_original"\s*:\s*"([\s\S]*?)"\s*\}/);
-                      if (match) {
-                        resolve({ texte_original: match[1].replace(/\\n/g, '\n') });
-                      } else {
-                        const fallback = clean.replace(/^\{"texte_original"\s*:\s*"/, '').replace(/"\s*\}$/, '');
-                        resolve({ texte_original: fallback });
-                      }
-                    }
-                  } catch(e) {
-                    console.error('Erreur parsing Claude:', raw.substring(0, 300));
-                    reject(e);
-                  }
-                });
-              });
-              req.on('error', reject);
-              req.write(body);
-              req.end();
-            });
-          }
+             const body = JSON.stringify({
+               model: 'claude-sonnet-4-6',
+               max_tokens: 8000,
+               system: systemPrompt,
+               messages: [{ role: 'user', content: userPrompt }]
+             });
 
-          function hasContent(val) {
-            return Array.isArray(val) ? val.length > 0 : (typeof val === 'string' && val.trim().length > 0);
-          }
+             const options = {
+               hostname: 'api.anthropic.com',
+               path: '/v1/messages',
+               method: 'POST',
+               headers: {
+                 'x-api-key': ANTHROPIC_KEY,
+                 'anthropic-version': '2023-06-01',
+                 'Content-Type': 'application/json',
+                 'Content-Length': Buffer.byteLength(body)
+               }
+             };
 
-          function getSource(obj) {
-            return hasContent(obj.aide_memoire) ? obj.aide_memoire : obj.lignes;
-          }
+             const req = https.request(options, res => {
+               let raw = '';
+               res.on('data', d => raw += d);
+               res.on('end', () => {
+                 try {
+                   const parsed = JSON.parse(raw);
+                   if (parsed.error) throw new Error('Claude API error: ' + JSON.stringify(parsed.error));
+                   const text = parsed.content.map(b => b.text || '').join('').trim();
+                   const clean = text.replace(/```json|```/g, '').trim();
+                   try {
+                     resolve(JSON.parse(clean));
+                   } catch(e) {
+                     const match = clean.match(/"texte_original"\s*:\s*"([\s\S]*?)"\s*\}/);
+                     if (match) {
+                       resolve({ texte_original: match[1].replace(/\\n/g, '\n') });
+                     } else {
+                       const fallback = clean.replace(/^\{"texte_original"\s*:\s*"/, '').replace(/"\s*\}$/, '');
+                       resolve({ texte_original: fallback });
+                     }
+                   }
+                 } catch(e) {
+                   console.error('Erreur parsing Claude:', raw.substring(0, 300));
+                   reject(e);
+                 }
+               });
+             });
+             req.on('error', reject);
+             req.write(body);
+             req.end();
+           });
+         }
 
-          function getNom(obj) {
-            return obj.nom || obj.titre || obj.id || '?';
-          }
+         function hasContent(val) {
+           return Array.isArray(val) ? val.length > 0 : (typeof val === 'string' && val.trim().length > 0);
+         }
 
-          function shouldProcess(obj) {
-            return hasContent(obj.aide_memoire) || hasContent(obj.lignes);
-          }
+         function getSource(obj) {
+           return hasContent(obj.aide_memoire) ? obj.aide_memoire : obj.lignes;
+         }
 
-          async function processFile(folder, fileName) {
-            console.log(`\nTraitement de ${folder}/${fileName}...`);
-            const jsonFile = await ghRequest('GET', `/repos/${REPO}/contents/data/${folder}/${fileName}`);
-            const jsonData = JSON.parse(Buffer.from(jsonFile.content, 'base64').toString('utf8'));
+         function getNom(obj) {
+           return obj.nom || obj.titre || obj.id || '?';
+         }
 
-            let modified = false;
+         function shouldProcess(obj) {
+           return hasContent(obj.aide_memoire) || hasContent(obj.lignes);
+         }
 
-            if (jsonData.boucle && Array.isArray(jsonData.boucle.points)) {
-              for (const point of jsonData.boucle.points) {
-                if (shouldProcess(point)) {
-                  console.log(`  → Réécriture de "${getNom(point)}"...`);
-                  const result = await claudeRequest(getNom(point), getSource(point));
-                  point.texte_original = result.texte_original;
-                  point.texte_auto = true;
-                  modified = true;
-                  await sleep(3000);
-                }
-              }
-            }
-            else if (jsonData.points && shouldProcess(jsonData.points)) {
-              console.log(`  → Réécriture de "${getNom(jsonData.points)}"...`);
-              const result = await claudeRequest(getNom(jsonData.points), getSource(jsonData.points));
-              jsonData.points.texte_original = result.texte_original;
-              jsonData.points.texte_auto = true;
-              modified = true;
-            }
-            else if (shouldProcess(jsonData)) {
-              console.log(`  → Réécriture de "${getNom(jsonData)}"...`);
-              const result = await claudeRequest(getNom(jsonData), getSource(jsonData));
-              jsonData.texte_original = result.texte_original;
-              jsonData.texte_auto = true;
-              modified = true;
-            }
+         async function processFile(folder, fileName) {
+           console.log('\nTraitement de ' + folder + '/' + fileName + '...');
+           const jsonFile = await ghRequest('GET', '/repos/' + REPO + '/contents/data/' + folder + '/' + fileName);
+           const jsonData = JSON.parse(Buffer.from(jsonFile.content, 'base64').toString('utf8'));
 
-            if (modified) {
-              const newContent = Buffer.from(JSON.stringify(jsonData, null, 2)).toString('base64');
-              await ghRequest('PUT', `/repos/${REPO}/contents/data/${folder}/${fileName}`, {
-                message: `Réécriture texte_original pour ${fileName}`,
-                content: newContent,
-                sha: jsonFile.sha
-              });
-              console.log(`  ✓ ${fileName} sauvegardé`);
-            } else {
-              console.log(`  ↩ ${fileName} — pas de source`);
-            }
-          }
+           let modified = false;
 
-          async function processFolder(folder) {
-            console.log(`\n=== Dossier : ${folder} ===`);
-            const files = await ghRequest('GET', `/repos/${REPO}/contents/data/${folder}`);
-            const jsonFiles = files.filter(f => f.name.endsWith('.json')).map(f => f.name);
-            console.log(`${jsonFiles.length} fichiers JSON trouvés.`);
+           if (jsonData.boucle && Array.isArray(jsonData.boucle.points)) {
+             for (const point of jsonData.boucle.points) {
+               if (shouldProcess(point)) {
+                 console.log('  -> Reecriture de "' + getNom(point) + '"...');
+                 const result = await claudeRequest(getNom(point), getSource(point));
+                 point.texte_original = result.texte_original;
+                 point.texte_auto = true;
+                 modified = true;
+                 await sleep(3000);
+               }
+             }
+           } else if (jsonData.points && shouldProcess(jsonData.points)) {
+             console.log('  -> Reecriture de "' + getNom(jsonData.points) + '"...');
+             const result = await claudeRequest(getNom(jsonData.points), getSource(jsonData.points));
+             jsonData.points.texte_original = result.texte_original;
+             jsonData.points.texte_auto = true;
+             modified = true;
+           } else if (shouldProcess(jsonData)) {
+             console.log('  -> Reecriture de "' + getNom(jsonData) + '"...');
+             const result = await claudeRequest(getNom(jsonData), getSource(jsonData));
+             jsonData.texte_original = result.texte_original;
+             jsonData.texte_auto = true;
+             modified = true;
+           }
 
-            for (const fileName of jsonFiles) {
-              await processFile(folder, fileName);
-              await sleep(2000);
-            }
-          }
+           if (modified) {
+             const newContent = Buffer.from(JSON.stringify(jsonData, null, 2)).toString('base64');
+             await ghRequest('PUT', '/repos/' + REPO + '/contents/data/' + folder + '/' + fileName, {
+               message: 'Reecriture texte_original pour ' + fileName,
+               content: newContent,
+               sha: jsonFile.sha
+             });
+             console.log('  ok ' + fileName + ' sauvegarde');
+           } else {
+             console.log('  -> ' + fileName + ' — pas de source');
+           }
+         }
 
-          async function main() {
-            await processFolder('sites');
-            await processFolder('recits');
-            console.log('\n✓ Tout est terminé.');
-          }
+         async function processFolder(folder) {
+           console.log('\n=== Dossier : ' + folder + ' ===');
+           const files = await ghRequest('GET', '/repos/' + REPO + '/contents/data/' + folder);
+           const jsonFiles = files.filter(f => f.name.endsWith('.json')).map(f => f.name);
+           console.log(jsonFiles.length + ' fichiers JSON trouves.');
+           for (const fileName of jsonFiles) {
+             await processFile(folder, fileName);
+             await sleep(2000);
+           }
+         }
 
-          main().catch(e => { console.error(e.message); process.exit(1); });
-          EOF
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+         async function main() {
+           await processFolder('sites');
+           await processFolder('recits');
+           console.log('\n ok Tout est termine.');
+         }
+
+         main().catch(e => { console.error(e.message); process.exit(1); });
+         EOF
+       env:
+         GH_PAT: ${{ secrets.GH_PAT }}
+         ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
