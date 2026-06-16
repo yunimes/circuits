@@ -1,5 +1,8 @@
-name: Réécrire tous les textes
+# Workflow 2 — Réécrit uniquement les textes générés automatiquement (texte_auto: true)
+# Les textes écrits manuellement (texte_auto: false) sont protégés
+name: Réécrire les textes automatiques
 
+# Déclencheur manuel depuis l'onglet Actions
 on:
  workflow_dispatch:
 
@@ -16,10 +19,13 @@ jobs:
          const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
          const REPO = 'yunimes/circuits';
 
+         # Pause pour éviter de dépasser les limites de débit des APIs
          function sleep(ms) {
            return new Promise(resolve => setTimeout(resolve, ms));
          }
 
+         # Appel générique à l'API GitHub
+         # GET pour lire un fichier, PUT pour l'écrire
          function ghRequest(method, path, body) {
            return new Promise((resolve, reject) => {
              const data = body ? JSON.stringify(body) : null;
@@ -45,10 +51,16 @@ jobs:
            });
          }
 
+         # Appel à l'API Claude pour générer le texte enrichi
+         # nom : nom du lieu
+         # source : contenu de aide_memoire ou lignes
          function claudeRequest(nom, source) {
            return new Promise((resolve, reject) => {
+             # Tableau → string si nécessaire
              const existing = Array.isArray(source) ? source.join('\n') : source;
 
+             # Instructions de style pour Claude
+             # Stockées en tableau pour éviter les conflits de caractères avec YAML
              const systemPrompt = [
                '당신은 현장 문화 해설 전문가입니다. 방문객이 실제로 그 장소 앞에 서 있다고 상상하며 글을 씁니다.',
                '당신의 글쓰기 원칙:',
@@ -95,12 +107,15 @@ jobs:
                    const text = parsed.content.map(b => b.text || '').join('').trim();
                    const clean = text.replace(/```json|```/g, '').trim();
                    try {
+                     # Tentative de parse JSON normal
                      resolve(JSON.parse(clean));
                    } catch(e) {
+                     # Plan B : extraction par regex si JSON malformé
                      const match = clean.match(/"texte_original"\s*:\s*"([\s\S]*?)"\s*\}/);
                      if (match) {
                        resolve({ texte_original: match[1].replace(/\\n/g, '\n') });
                      } else {
+                       # Plan C : texte brut en dernier recours
                        const fallback = clean.replace(/^\{"texte_original"\s*:\s*"/, '').replace(/"\s*\}$/, '');
                        resolve({ texte_original: fallback });
                      }
@@ -129,10 +144,30 @@ jobs:
            return obj.nom || obj.titre || obj.id || '?';
          }
 
+         # DIFFÉRENCE CLÉ avec le Workflow 1 :
+         # Traite un point si ET SEULEMENT SI :
+         # 1. Il a une source (aide_memoire ou lignes non vide)
+         # 2. texte_auto === true (généré automatiquement, donc remplaçable)
+         # Les points avec texte_auto: false (écrits manuellement) sont ignorés
+         # Les points sans texte_auto (nouveau, jamais traité) sont ignorés
          function shouldProcess(obj) {
-           return hasContent(obj.aide_memoire) || hasContent(obj.lignes);
+           const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);
+           return hasSource && obj.texte_auto === true;
          }
 
+         # Traite un point : génère le texte, l'écrit, marque texte_auto: true
+         async function processPoint(point) {
+           if (!shouldProcess(point)) return false;
+           console.log('  -> Reecriture de "' + getNom(point) + '"...');
+           const result = await claudeRequest(getNom(point), getSource(point));
+           point.texte_original = result.texte_original;
+           # Maintient texte_auto: true pour signaler que c'est encore auto
+           point.texte_auto = true;
+           await sleep(3000);
+           return true;
+         }
+
+         # Traite un fichier JSON — détecte automatiquement sa structure
          async function processFile(folder, fileName) {
            console.log('\nTraitement de ' + folder + '/' + fileName + '...');
            const jsonFile = await ghRequest('GET', '/repos/' + REPO + '/contents/data/' + folder + '/' + fileName);
@@ -140,44 +175,43 @@ jobs:
 
            let modified = false;
 
+           # Structure A : boucle.points tableau (ex: nimes.json)
            if (jsonData.boucle && Array.isArray(jsonData.boucle.points)) {
              for (const point of jsonData.boucle.points) {
-               if (shouldProcess(point)) {
-                 console.log('  -> Reecriture de "' + getNom(point) + '"...');
-                 const result = await claudeRequest(getNom(point), getSource(point));
-                 point.texte_original = result.texte_original;
-                 point.texte_auto = true;
-                 modified = true;
-                 await sleep(3000);
-               }
+               if (await processPoint(point)) modified = true;
              }
-           } else if (jsonData.points && shouldProcess(jsonData.points)) {
-             console.log('  -> Reecriture de "' + getNom(jsonData.points) + '"...');
-             const result = await claudeRequest(getNom(jsonData.points), getSource(jsonData.points));
-             jsonData.points.texte_original = result.texte_original;
-             jsonData.points.texte_auto = true;
-             modified = true;
-           } else if (shouldProcess(jsonData)) {
-             console.log('  -> Reecriture de "' + getNom(jsonData) + '"...');
-             const result = await claudeRequest(getNom(jsonData), getSource(jsonData));
-             jsonData.texte_original = result.texte_original;
-             jsonData.texte_auto = true;
-             modified = true;
+           }
+           # Structure B : points tableau direct (ex: avignon.json)
+           else if (Array.isArray(jsonData.points)) {
+             for (const point of jsonData.points) {
+               if (await processPoint(point)) modified = true;
+             }
+           }
+           # Structure C : points objet unique
+           else if (jsonData.points && !Array.isArray(jsonData.points)) {
+             if (await processPoint(jsonData.points)) modified = true;
+           }
+           # Structure D : fichier plat (recits)
+           else if (shouldProcess(jsonData)) {
+             if (await processPoint(jsonData)) modified = true;
            }
 
            if (modified) {
+             # Encode en base64 (format requis par GitHub)
              const newContent = Buffer.from(JSON.stringify(jsonData, null, 2)).toString('base64');
+             # sha : version actuelle du fichier — obligatoire pour éviter les conflits
              await ghRequest('PUT', '/repos/' + REPO + '/contents/data/' + folder + '/' + fileName, {
-               message: 'Reecriture texte_original pour ' + fileName,
+               message: 'Reecriture texte_auto pour ' + fileName,
                content: newContent,
                sha: jsonFile.sha
              });
              console.log('  ok ' + fileName + ' sauvegarde');
            } else {
-             console.log('  -> ' + fileName + ' — pas de source');
+             console.log('  -> ' + fileName + ' — rien a faire');
            }
          }
 
+         # Traite tous les fichiers .json d'un dossier
          async function processFolder(folder) {
            console.log('\n=== Dossier : ' + folder + ' ===');
            const files = await ghRequest('GET', '/repos/' + REPO + '/contents/data/' + folder);
@@ -185,10 +219,11 @@ jobs:
            console.log(jsonFiles.length + ' fichiers JSON trouves.');
            for (const fileName of jsonFiles) {
              await processFile(folder, fileName);
-             await sleep(2000);
+             await sleep(2000);  # Pause 2s entre chaque fichier
            }
          }
 
+         # Point d'entrée : traite sites puis recits
          async function main() {
            await processFolder('sites');
            await processFolder('recits');
@@ -200,4 +235,3 @@ jobs:
        env:
          GH_PAT: ${{ secrets.GH_PAT }}
          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-
