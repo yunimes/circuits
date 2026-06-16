@@ -21,7 +21,10 @@ async function getResto(id) { if (!cache.restaurants[id]) cache.restaurants[id] 
 
 function el(html) { const d = document.createElement('div'); d.innerHTML = html.trim(); return d.firstElementChild; }
 function mapBtn(url) { return url ? `<a class="map-btn" href="${url}">🗺️</a>` : ''; }
-function lignesHtml(arr) { return (arr || []).map(l => `<div class="${l.includes('❗️') ? 'ligne flag' : 'ligne'}">${l}</div>`).join(''); }
+function lignesHtml(arr) { return (arr || []).map(l => `<div class="${l.includes('❗️') ? 'ligne flag' : 'ligne'}">${autolink(l)}</div>`).join(''); }
+function autolink(txt) {
+  return (txt || '').replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" style="color:var(--terra);text-decoration:none;font-weight:600">🗺️ Maps</a>');
+}
 
 // ===== Durées =====
 function parseDuree(str) {
@@ -145,10 +148,13 @@ async function cr_degustation(c, idx) {
 
 async function cr_courses(c, idx) {
   const cid = `c-${idx}`;
-  const segs = (c.segments||[]).map(s=>`<div class="segment">${s}</div>`).join('');
-  const tete = `<div class="point-tete"><span class="point-nom">🛒 ${c.titre}</span>${mapBtn(c.maps)}</div>`;
+  const segs = (c.segments||[]).map(s=>`<div class="segment">${autolink(s)}</div>`).join('');
   const adr = c.adresse ? `<div class="photo" style="font-size:12px;color:var(--ink-soft);margin-top:6px">📍 ${c.adresse}</div>` : '';
-  return wrap(cid, c.heure, `🛒 ${c.titre}`, c.duree||'', `${tete}${segs}${adr}`);
+  const note = c.note_pratique ? renderNote(c.note_pratique, `${cid}-note`) : '';
+  // Emoji : 🛒 par défaut, sauf si le titre commence déjà par un emoji
+  const hasEmoji = /^[\p{Emoji}]/u.test(c.titre||'');
+  const titreAff = hasEmoji ? c.titre : `🛒 ${c.titre}`;
+  return wrap(cid, c.heure, titreAff, c.duree||'', `${segs}${adr}${note}`);
 }
 
 async function cr_checkin(c, idx) {
@@ -208,6 +214,15 @@ async function renderCreneau(c, idx) {
 }
 
 // ===== Abstract + Hébergement =====
+function renderWarnings(jour) {
+  if (!jour.warnings) return '';
+  return jour.warnings.map(w => `
+    <div class="day-warning">
+      <div class="day-warning-titre">⚠️ ${w.titre}</div>
+      ${w.lignes.map(l => `<div class="day-warning-l">${autolink(l)}</div>`).join('')}
+    </div>`).join('');
+}
+
 function renderAbstract(jour) {
   if (!jour.abstract) return '';
   const rows = jour.abstract.map(r => {
@@ -257,6 +272,7 @@ async function renderJour(jour) {
       <div class="mode-btn" id="mb-revision" onclick="setMode('revision')">📖 Révision</div>
     </div>
     ${renderAbstract(jour)}
+    ${renderWarnings(jour)}
     ${await renderHeberg(jour)}
     <div id="creneaux"></div>
     ${jour.obsidian?`<div class="footer">${jour.jour} · ${jour.date}<br><a href="${jour.obsidian}">📖 Feuille de route complète · Obsidian</a></div>`:''}`;

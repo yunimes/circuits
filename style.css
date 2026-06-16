@@ -118,3 +118,9 @@ body.mode-revision .recit .original-recit { display: block; }
 
 .footer { text-align: center; font-size: 11px; color: var(--ink-faint); margin-top: 22px; line-height: 1.6; }
 .footer a { color: var(--olive); text-decoration: none; }
+
+/* Warning de jour (callout warning avant les créneaux) */
+.day-warning { background: #FBEEEA; border: 1px solid #E6C4B8; border-left: 4px solid var(--alert); border-radius: 10px; padding: 11px 13px; margin-bottom: 12px; }
+.day-warning-titre { font-weight: 700; color: var(--alert); font-size: 13px; margin-bottom: 5px; }
+.day-warning-l { font-size: 12.5px; color: #6A4038; line-height: 1.6; padding: 1px 0; }
+.day-warning-l a { color: var(--terra); text-decoration: none; font-weight: 600; }
