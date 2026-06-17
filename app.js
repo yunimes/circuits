@@ -1,5 +1,6 @@
 // ===== MOTEUR DE RENDU — version complète =====
 const DATA_BASE = 'data';
+const DEBUG = new URLSearchParams(location.search).get('debug') === '1';
 
 // Grammaire d'emojis par type
 const TYPE_EMOJI = {
@@ -178,9 +179,11 @@ async function getParcours(id) { if (!cache.parcours[id]) cache.parcours[id] = a
 async function cr_portion(c, idx) {
   const cid = `c-${idx}`;
   try {
+    // Parcours réutilisable (par id) OU inline (points dans le circuit)
     let p = c, titre = c.titre, guideSrc = c;
     if (c.parcours) { p = await getParcours(c.parcours); titre = p.nom; guideSrc = p; }
     const points = p.points || [];
+    // En-tête départ → arrivée si fournis par le circuit
     let entete = '';
     if (c.depart || c.arrivee) {
       const km = c.trajet_km ? ' · ' + c.trajet_km + 'km' : '';
@@ -191,7 +194,7 @@ async function cr_portion(c, idx) {
       entete = `<div class="segment">🏁 Itinéraire ${mapBtn(p.itineraire_maps)}</div>`;
     }
     let arr = '';
-    arr += `<div class="segment" style="color:green">DEBUG: ${points.length} points trouvés</div>`;
+    if (DEBUG) arr += `<div class="segment" style="color:green">DEBUG: ${points.length} points · parcours=${c.parcours||'(inline)'}</div>`;
     for (let i=0;i<points.length;i++) {
       const a = points[i];
       const aide = `<div class="aide">${lignesHtml(a.aide_memoire)}${a.photo?`<div class="photo">${a.photo}</div>`:''}</div>`;
@@ -204,7 +207,7 @@ async function cr_portion(c, idx) {
     }
     return wrap(cid, c.heure, `🏁 ${titre}`, c.duree||'', `${entete}${arr}${renderGuides(guideSrc)}`);
   } catch (e) {
-    return wrap(cid, c.heure, `🏁 ${c.titre||'portion'}`, '', `<div class="segment" style="color:red">ERREUR: ${e.message}</div>`);
+    return wrap(cid, c.heure, `🏁 ${c.titre||'portion'}`, '', `<div class="segment" style="color:#A33B2E">ERREUR: ${e.message}</div>`);
   }
 }
 
