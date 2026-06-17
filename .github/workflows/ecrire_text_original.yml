@@ -144,11 +144,11 @@ jobs:
          }
 
          // Workflow 1 - Traite uniquement les texte_original vides 
-         // function shouldProcess(obj) {
-         //   const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);
-         //   const hasTarget = hasContent(obj.texte_original);
-         //   return hasSource && !hasTarget;
-         // }
+         function shouldProcess(obj) {
+           const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);
+           const hasTarget = hasContent(obj.texte_original);
+           return hasSource && !hasTarget;
+         }
          
          // Workflow 2 - Traite uniquement les texte_auto: true
          // function shouldProcess(obj) {
@@ -165,10 +165,10 @@ jobs:
          // }
 
          // Workflow 4 - Traite UNIQUEMENT si texte_auto est absent
-         function shouldProcess(obj) {
-           const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);           
-           return hasSource && obj.texte_auto === undefined;
-         }
+         // function shouldProcess(obj) {
+         //   const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);           
+         //   return hasSource && obj.texte_auto === undefined;
+         // }
 
 
          async function processPoint(point) {
@@ -234,8 +234,8 @@ jobs:
          }
 
          async function main() {
-           // await processFolder('sites');
-           // await processFolder('recits');
+           await processFolder('sites');
+           await processFolder('recits');
            await processFolder('parcours');
            console.log('\n ok Tout est termine.');
          }
