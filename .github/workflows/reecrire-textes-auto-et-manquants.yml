@@ -2,7 +2,7 @@
 # Workflow 1 - Traite uniquement les texte_original vides (Actuel)
 # Workflow 2 - Traite uniquement les texte_auto: true
 # Workflow 3 - Réécrit (textes auto : true) ET les texte_original vides, (texte_auto: false) sont protégés
-# Workflow shouldProcess —  Traite UNIQUEMENT si texte_auto est absent
+# Workflow 4 — Traite uniquement si texte_auto est absent
 name: Réécrire textes auto et manquants
 
 on:
