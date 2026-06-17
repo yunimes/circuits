@@ -5,7 +5,7 @@
     "nom": "Guide Camargue",
     "id": "camargue"
   },
-  "arrets": [
+  "points": [
     {
       "nom": "Tour Carbonnière",
       "emoji": "🏁📸",
