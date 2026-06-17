@@ -5,7 +5,7 @@
     { "nom": "Parking Pont du Galetas", "maps": "https://maps.app.goo.gl/xUDMb6m6KogFgSMbA?g_st=ic" },
     { "nom": "MYC Plage · Pédalos Verdon", "maps": "https://maps.app.goo.gl/H8q75jsCn7Lhd9988?g_st=ic" }
   ],
-  "point": {
+  "points": {
     "nom": "Lac de Sainte-Croix",
     "emoji": "🏞️",
     "maps": "https://maps.app.goo.gl/xUDMb6m6KogFgSMbA?g_st=ic",
