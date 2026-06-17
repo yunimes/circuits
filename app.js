@@ -128,7 +128,7 @@ async function cr_visite(c, idx) {
   let segs = '';
   if (c.trajet) { const t = c.trajet; const pk = (site.parkings||[]).map(p=>`${p.nom} ${mapBtn(p.maps)}`).join(' · '); segs += `<div class="segment">🚗 ${t.duree}${t.km?' · '+t.km+'km':''} — ${t.depuis} → ${site.nom}${pk?' · 🅿️ '+pk:''}</div>`; }
   if (c.visite) segs += `<div class="segment">👣 ${c.visite.duree} — Visite</div>`;
-  const liste = site.points || (site.point ? [site.point] : []);
+  const liste = site.points || [];
   let pts = ''; for (let i=0;i<liste.length;i++) pts += await renderPoint(liste[i], `${cid}-${i}`);
   const optV = site.option ? `<div class="option-bloc">${site.option.texte}</div>` : '';
   return wrap(cid, c.heure, site.nom, dureeTotale(c), `${segs}${billetBar(site)}${pts}${renderNotes(site, cid)}${optV}${renderGuides(site)}`);
@@ -177,10 +177,10 @@ async function cr_checkin(c, idx) {
 async function getParcours(id) { if (!cache.parcours[id]) cache.parcours[id] = await loadJSON(`parcours/${id}.json`); return cache.parcours[id]; }
 async function cr_portion(c, idx) {
   const cid = `c-${idx}`;
-  // Parcours réutilisable (par id) OU inline (arrets dans le circuit)
+  // Parcours réutilisable (par id) OU inline (points dans le circuit)
   let p = c, titre = c.titre, guideSrc = c;
   if (c.parcours) { p = await getParcours(c.parcours); titre = p.nom; guideSrc = p; }
-  const arrets = p.arrets || [];
+  const points = p.points || [];
   // En-tête départ → arrivée si fournis par le circuit
   let entete = '';
   if (c.depart || c.arrivee) {
@@ -192,8 +192,8 @@ async function cr_portion(c, idx) {
     entete = `<div class="segment">🏁 Itinéraire ${mapBtn(p.itineraire_maps)}</div>`;
   }
   let arr = '';
-  for (let i=0;i<arrets.length;i++) {
-    const a = arrets[i];
+  for (let i=0;i<points.length;i++) {
+    const a = points[i];
     const aide = `<div class="aide">${lignesHtml(a.aide_memoire)}${a.photo?`<div class="photo">${a.photo}</div>`:''}</div>`;
     const orig = `<div class="original">${a.texte_original?parseMarkdown(a.texte_original):'<div class="ligne vide">(texte original à compléter)</div>'}</div>`;
     const detail = a.detail ? `<div class="segment">${a.detail}${a.trajet_maps?' '+mapBtn(a.trajet_maps):''}${a.parking_maps?' · 🅿️ '+mapBtn(a.parking_maps):''}</div>` : '';
