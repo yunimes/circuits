@@ -7,7 +7,7 @@
     { "nom": "Guide Nice Garibaldi", "id": "nice-garibaldi" }
   ],
   "parkings": [ { "nom": "Parking Sulzer", "maps": "https://maps.app.goo.gl/35bcC4yJztPZwEQn9?g_st=ic" } ],
-  "point": {
+  "points": {
     "nom": "Promenade des Anglais",
     "emoji": "🌊",
     "aide_memoire": [
