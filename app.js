@@ -180,7 +180,7 @@ async function cr_portion(c, idx) {
   // Parcours réutilisable (par id) OU inline (arrets dans le circuit)
   let p = c, titre = c.titre, guideSrc = c;
   if (c.parcours) { p = await getParcours(c.parcours); titre = p.nom; guideSrc = p; }
-  const arrets = p.point || [];
+  const arrets = p.arrets || [];
   // En-tête départ → arrivée si fournis par le circuit
   let entete = '';
   if (c.depart || c.arrivee) {
