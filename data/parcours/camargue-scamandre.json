@@ -2,7 +2,7 @@
   "id": "camargue-scamandre",
   "nom": "Camargue · Réserve du Scamandre",
   "guide": { "nom": "Guide Camargue", "id": "camargue" },
-  "arrets": [
+  "points": [
     {
       "nom": "Tour Carbonnière",
       "emoji": "🏁📸",
