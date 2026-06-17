@@ -6,7 +6,7 @@
     { "nom": "Parking Général de Gaulle", "maps": "https://maps.app.goo.gl/2j595LgQWesYVQtU7?g_st=ic" },
     { "nom": "Parking Fragonard", "maps": "https://maps.app.goo.gl/1vPfubwKa2chWQNm9?g_st=ic" }
   ],
-  "point": {
+  "points": {
     "nom": "Jardin Exotique d'Eze",
     "emoji": "🌵",
     "maps": "https://maps.app.goo.gl/3JFKi4WCk1dvBqhE8?g_st=ic",
