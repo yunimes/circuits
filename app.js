@@ -177,32 +177,35 @@ async function cr_checkin(c, idx) {
 async function getParcours(id) { if (!cache.parcours[id]) cache.parcours[id] = await loadJSON(`parcours/${id}.json`); return cache.parcours[id]; }
 async function cr_portion(c, idx) {
   const cid = `c-${idx}`;
-  // Parcours réutilisable (par id) OU inline (points dans le circuit)
-  let p = c, titre = c.titre, guideSrc = c;
-  if (c.parcours) { p = await getParcours(c.parcours); titre = p.nom; guideSrc = p; }
-  const points = p.points || [];
-  // En-tête départ → arrivée si fournis par le circuit
-  let entete = '';
-  if (c.depart || c.arrivee) {
-    const km = c.trajet_km ? ' · ' + c.trajet_km + 'km' : '';
-    const td = c.trajet_duree ? c.trajet_duree : '';
-    const itin = p.itineraire_maps ? ' ' + mapBtn(p.itineraire_maps) : '';
-    entete = `<div class="segment">🚗 ${td}${km} — ${c.depart||''} → ${c.arrivee||''}${itin}</div>`;
-  } else if (p.itineraire_maps) {
-    entete = `<div class="segment">🏁 Itinéraire ${mapBtn(p.itineraire_maps)}</div>`;
+  try {
+    let p = c, titre = c.titre, guideSrc = c;
+    if (c.parcours) { p = await getParcours(c.parcours); titre = p.nom; guideSrc = p; }
+    const points = p.points || [];
+    let entete = '';
+    if (c.depart || c.arrivee) {
+      const km = c.trajet_km ? ' · ' + c.trajet_km + 'km' : '';
+      const td = c.trajet_duree ? c.trajet_duree : '';
+      const itin = p.itineraire_maps ? ' ' + mapBtn(p.itineraire_maps) : '';
+      entete = `<div class="segment">🚗 ${td}${km} — ${c.depart||''} → ${c.arrivee||''}${itin}</div>`;
+    } else if (p.itineraire_maps) {
+      entete = `<div class="segment">🏁 Itinéraire ${mapBtn(p.itineraire_maps)}</div>`;
+    }
+    let arr = '';
+    arr += `<div class="segment" style="color:green">DEBUG: ${points.length} points trouvés</div>`;
+    for (let i=0;i<points.length;i++) {
+      const a = points[i];
+      const aide = `<div class="aide">${lignesHtml(a.aide_memoire)}${a.photo?`<div class="photo">${a.photo}</div>`:''}</div>`;
+      const orig = `<div class="original">${a.texte_original?parseMarkdown(a.texte_original):'<div class="ligne vide">(texte original à compléter)</div>'}</div>`;
+      const detail = a.detail ? `<div class="segment">${a.detail}${a.trajet_maps?' '+mapBtn(a.trajet_maps):''}${a.parking_maps?' · 🅿️ '+mapBtn(a.parking_maps):''}</div>` : '';
+      let boutons='',blocs='';
+      if (a.recits&&a.recits.length){for(let k=0;k<a.recits.length;k++){const r=renderRecit(await getRecit(a.recits[k]),`${cid}-${i}-${k}`);boutons+=r.bouton;blocs+=r.bloc;}}
+      const acces = boutons?`<div class="acces-rangee">${boutons}</div>${blocs}`:'';
+      arr += `<div class="point"><div class="point-tete"><span class="point-nom">${a.emoji||'🏁'} ${a.nom}</span><span class="point-meta">· ${a.duree||''}</span></div>${aide}${orig}${detail}${acces}</div>`;
+    }
+    return wrap(cid, c.heure, `🏁 ${titre}`, c.duree||'', `${entete}${arr}${renderGuides(guideSrc)}`);
+  } catch (e) {
+    return wrap(cid, c.heure, `🏁 ${c.titre||'portion'}`, '', `<div class="segment" style="color:red">ERREUR: ${e.message}</div>`);
   }
-  let arr = '';
-  for (let i=0;i<points.length;i++) {
-    const a = points[i];
-    const aide = `<div class="aide">${lignesHtml(a.aide_memoire)}${a.photo?`<div class="photo">${a.photo}</div>`:''}</div>`;
-    const orig = `<div class="original">${a.texte_original?parseMarkdown(a.texte_original):'<div class="ligne vide">(texte original à compléter)</div>'}</div>`;
-    const detail = a.detail ? `<div class="segment">${a.detail}${a.trajet_maps?' '+mapBtn(a.trajet_maps):''}${a.parking_maps?' · 🅿️ '+mapBtn(a.parking_maps):''}</div>` : '';
-    let boutons='',blocs='';
-    if (a.recits&&a.recits.length){for(let k=0;k<a.recits.length;k++){const r=renderRecit(await getRecit(a.recits[k]),`${cid}-${i}-${k}`);boutons+=r.bouton;blocs+=r.bloc;}}
-    const acces = boutons?`<div class="acces-rangee">${boutons}</div>${blocs}`:'';
-    arr += `<div class="point"><div class="point-tete"><span class="point-nom">${a.emoji||'🏁'} ${a.nom}</span><span class="point-meta">· ${a.duree||''}</span></div>${aide}${orig}${detail}${acces}</div>`;
-  }
-  return wrap(cid, c.heure, `🏁 ${titre}`, c.duree||'', `${entete}${arr}${renderGuides(guideSrc)}`);
 }
 
 // Enveloppe commune d'un créneau
