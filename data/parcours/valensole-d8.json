@@ -6,7 +6,7 @@
     "id": "valensole"
   },
   "itineraire_maps": "https://maps.app.goo.gl/oN5cRSLzm31YqA1q6?g_st=ic",
-  "arrets": [
+  "points": [
     {
       "nom": "Traversée du plateau · Arrêts photo",
       "emoji": "🏁📸",
