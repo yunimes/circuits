@@ -1,5 +1,8 @@
-# Workflow 3 — Réécrit les textes auto (texte_auto: true) ET les texte_original vides
-# Les textes écrits manuellement (texte_auto: false) sont protégés
+# Changer shouldProcess selon besoin
+# Workflow 1 - Traite uniquement les texte_original vides (Actuel)
+# Workflow 2 - Traite uniquement les texte_auto: true
+# Workflow 3 - Réécrit (textes auto : true) ET les texte_original vides, (texte_auto: false) sont protégés
+# Workflow shouldProcess —  Traite UNIQUEMENT si texte_auto est absent
 name: Réécrire textes auto et manquants
 
 on:
@@ -140,17 +143,30 @@ jobs:
            return obj.nom || obj.titre || obj.id || '?';
          }
 
-         // Traite si : a une source ET (texte_original vide OU texte_auto === true)
-         // Protège les textes avec texte_auto: false (écrits manuellement)
-         function shouldProcess1(obj) {
-           const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);
-           const hasTarget = hasContent(obj.texte_original);
-           return hasSource && (!hasTarget || obj.texte_auto === true);
-         }
+         // Workflow 1 - Traite uniquement les texte_original vides 
+         // function shouldProcess(obj) {
+         //   const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);
+         //   const hasTarget = hasContent(obj.texte_original);
+         //   return hasSource && !hasTarget;
+         // }
          
+         // Workflow 2 - Traite uniquement les texte_auto: true
+         // function shouldProcess(obj) {
+         //   const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);
+         //   return hasSource && obj.texte_auto === true;
+         // }
+
+         // Workflow 3 - Traite texte_original vide OU texte_auto: true
+         // Protège les textes avec texte_auto: false (écrits manuellement)
+         // function shouldProcess(obj) {
+         //   const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);
+         //   const hasTarget = hasContent(obj.texte_original);
+         //   return hasSource && (!hasTarget || obj.texte_auto === true);
+         // }
+
+         // Workflow 4 - Traite UNIQUEMENT si texte_auto est absent
          function shouldProcess(obj) {
-           const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);
-           // Traite UNIQUEMENT si texte_auto est absent
+           const hasSource = hasContent(obj.aide_memoire) || hasContent(obj.lignes);           
            return hasSource && obj.texte_auto === undefined;
          }
 
@@ -218,8 +234,9 @@ jobs:
          }
 
          async function main() {
-           await processFolder('sites');
-           await processFolder('recits');
+           // await processFolder('sites');
+           // await processFolder('recits');
+           await processFolder('parcours');
            console.log('\n ok Tout est termine.');
          }
 
