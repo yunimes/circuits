@@ -194,7 +194,7 @@ jobs:
            }
 
            if (modified) {
-             const newContent = Buffer.from(JSON.stringify(jsonData, null, 2)).toString('base64');
+             const newContent = Buffer.from(JSON.stringify(jsonData, null, 2), 'utf8').toString('base64');
              await ghRequest('PUT', '/repos/' + REPO + '/contents/data/' + folder + '/' + fileName, {
                message: 'Reecriture texte_original pour ' + fileName,
                content: newContent,
