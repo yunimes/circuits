@@ -7,7 +7,7 @@
     "id": "gorges-verdon"
   },
   "itineraire_maps": "https://maps.app.goo.gl/ZsS4j4HfnpXxdiZh6?g_st=ic",
-  "arrets": [
+  "points": [
     {
       "nom": "Route des Crêtes (D23)",
       "emoji": "🏁",
