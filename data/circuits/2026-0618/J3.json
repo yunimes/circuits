@@ -18,7 +18,7 @@
       "trajet": { "depuis": "Sénanque", "duree": "15 min", "km": 4.5 },
       "visite": { "duree": "45 min" } },
     { "heure": "11h45", "type": "portion", "titre": "Gordes → Point de vue", "duree": "15 min",
-      "arrets": [
+      "points": [
         { "nom": "Point de vue sur Gordes", "emoji": "⛰️📸", "duree": "10 min",
           "aide_memoire": [
             "고르드 하면 떠오르는 바로 그 사진 · 석회암 절벽 위 황금빛 돌집들·꼭대기 성채·아래 뤼베롱 계곡",
