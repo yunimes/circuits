@@ -1,0 +1,105 @@
+{
+  "jour": "J3",
+  "date": "Dimanche 19 juillet 2026",
+  "titre": "Cabo da Roca · Sintra",
+  "abstract": [
+    { "emoji": "🎟️", "texte": "Palácio da Pena", "heure_cle": "14h00", "ref": "N° 31704168" },
+    { "emoji": "🎟️", "texte": "Quinta da Regaleira", "heure_cle": "16h00", "ref": "N° 31704168" },
+    { "emoji": "⚠️", "texte": "Durées trajets Cabo da Roca → Sintra non vérifiées", "alerte": true }
+  ],
+  "hebergement": "hotel-lisboa",
+  "creneaux": [
+    {
+      "heure": "09h00",
+      "type": "trajet",
+      "titre": "Hôtel Lisboa → Cabo da Roca",
+      "duree": "45 min",
+      "km": 38
+    },
+    {
+      "heure": "09h45",
+      "type": "visite",
+      "site": "cabo-da-roca",
+      "visite": { "duree": "45 min" }
+    },
+    {
+      "heure": "10h30",
+      "type": "trajet",
+      "titre": "Cabo da Roca → Volta do Duche · Sintra",
+      "duree": "30 min",
+      "note_pratique": "❗️Durée non vérifiée · Guide dépose groupe à Volta do Duche puis va garer le véhicule au P2 Portela Urbanismo",
+      "parkings": [
+        { "nom": "P2 Portela Urbanismo (gratuit — horaires à confirmer)", "maps": "https://maps.app.goo.gl/sintra-p2" }
+      ]
+    },
+    {
+      "heure": "11h45",
+      "type": "boucle",
+      "site": "sintra-centre",
+      "visite": { "duree": "45 min" }
+    },
+    {
+      "heure": "12h15",
+      "type": "repas",
+      "duree": "1h15",
+      "restaurant": {
+        "nom": "Déjeuner — Sintra (pause guide incluse)",
+        "aide_memoire": [
+          "Tasca do Xico — R. Arco do Teixeira 6 · ~20€/pers · bacalhau, poulpe · ❗️réservation conseillée",
+          "Tacho Real — R. Ferraria 4 · 15–25€/pers · bon accueil groupes · fermé mercredi",
+          "Romaria de Baco — R. Gil Vicente 2 · cuisine revisitée · proche Palácio Nacional"
+        ]
+      }
+    },
+    {
+      "heure": "13h30",
+      "type": "portion",
+      "titre": "Guide → récupère véhicule + organise taxi Pena",
+      "duree": "30 min",
+      "arrets": [
+        {
+          "nom": "Taxi vers Palácio da Pena",
+          "emoji": "🚕",
+          "aide_memoire": [
+            "~15€ forfait / 4-5 pers · héler dans le centre ou réserver via Uber/Bolt",
+            "❗️Disponibilité taxis à confirmer sur place"
+          ],
+          "texte_original": []
+        }
+      ]
+    },
+    {
+      "heure": "14h00",
+      "type": "visite",
+      "site": "palacio-pena",
+      "visite": { "duree": "1h30" }
+    },
+    {
+      "heure": "15h30",
+      "type": "trajet",
+      "titre": "Taxi Pena → Largo Carlos França (groupe seul)",
+      "duree": "10 min",
+      "note_pratique": "Station de taxis à la sortie de Pena · ~8–12€ · Largo Carlos França → entrée Regaleira à pied ~5–8'"
+    },
+    {
+      "heure": "16h00",
+      "type": "visite",
+      "site": "quinta-regaleira",
+      "visite": { "duree": "1h30" }
+    },
+    {
+      "heure": "17h45",
+      "type": "checkin",
+      "titre": "RDV Volta do Duche · Retrouvailles",
+      "texte": "Point de RDV : Volta do Duche (poste info touristique + repère boutique Queijadas da Sapa n°12) · Chargement → départ direct Lisbonne",
+      "duree": "15 min"
+    },
+    {
+      "heure": "18h00",
+      "type": "trajet",
+      "titre": "Sintra → Hôtel Lisboa",
+      "duree": "45 min",
+      "km": 30
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "jour": "J2",
+  "date": "Samedi 18 juillet 2026",
+  "titre": "Lisbonne · Arrivées + Belém",
+  "abstract": [
+    { "emoji": "🎟️", "texte": "Mosteiro dos Jerónimos", "heure_cle": "14h30", "ref": "N° 37244492" },
+    { "emoji": "🚗", "texte": "Prise en charge véhicule Tangerine", "heure_cle": "10h30", "ref": "PT852394790 · Parque das Nações · Via Verde 10€" }
+  ],
+  "hebergement": "hotel-lisboa",
+  "creneaux": [
+    {
+      "heure": "08h00",
+      "type": "checkin",
+      "titre": "Guide arrive LIS T1",
+      "texte": "TP495 TLS→LIS · RV représentant Tangerine dans le hall des arrivées (près Vodafone / glacier Ola) · Navette gratuite vers bureau de location (~8 min)"
+    },
+    {
+      "heure": "10h30",
+      "type": "checkin",
+      "titre": "Prise en charge véhicule · Tangerine",
+      "texte": "⚠️ Régler 10€ forfait Via Verde à la prise en charge",
+      "duree": "30 min",
+      "maps": "https://maps.app.goo.gl/Yb7yo6SjfiTq8mcw5?g_st=ic"
+    },
+    {
+      "heure": "11h00",
+      "type": "checkin",
+      "titre": "Retour T1 · Arrivées voyageurs",
+      "texte": "Parents (KL1579 · AMS→LIS · 10h55) · Fils (AC810 · YYZ→LIS · 11h05) · Point de RDV : sortie arrivées T1",
+      "duree": "30 min",
+      "maps": "https://maps.app.goo.gl/MboqdmQcPrzCCh7G7?g_st=ic"
+    },
+    {
+      "heure": "11h30",
+      "type": "trajet",
+      "titre": "Aéroport → Belém",
+      "duree": "25 min",
+      "km": 15,
+      "parkings": [
+        { "nom": "Estacionamento Rua de Belém", "maps": "https://maps.app.goo.gl/nTeHATWzKKNFUMLA6?g_st=ic" },
+        { "nom": "Estacionamento Praça Afonso Albuquerque", "maps": "https://maps.app.goo.gl/8fAEBvJHpTDwK1m98?g_st=ic" }
+      ]
+    },
+    {
+      "heure": "12h00",
+      "type": "repas",
+      "duree": "1h",
+      "restaurant": {
+        "nom": "Déjeuner libre — Belém",
+        "aide_memoire": [
+          "Guelra Restaurante — 25–50€ · Seafood, cuisine portugaise",
+          "O rolhas — 10–15€ · Sardine grillée · Riz au poulpe · sans réservation",
+          "Miolo Coffee & Brunch — 15–20€ · Pain perdu · Assiette végane"
+        ]
+      }
+    },
+    {
+      "heure": "13h00",
+      "type": "boucle",
+      "site": "belem",
+      "visite": { "duree": "3h" }
+    },
+    {
+      "heure": "16h05",
+      "type": "trajet",
+      "titre": "Belém → Baixa",
+      "duree": "25 min",
+      "note_pratique": "❗️Vérifier compatibilité ZER du véhicule avant de valider ce trajet",
+      "parkings": [
+        { "nom": "SABA Praça do Município (24h/24, ~3 min à pied de Praça do Comércio)", "maps": "https://maps.app.goo.gl/praça-municipio" }
+      ]
+    },
+    {
+      "heure": "16h30",
+      "type": "boucle",
+      "site": "baixa-chiado",
+      "visite": { "duree": "1h30" }
+    },
+    {
+      "heure": "18h10",
+      "type": "trajet",
+      "titre": "Baixa → Hotel Lisboa",
+      "duree": "15 min"
+    },
+    {
+      "heure": "18h25",
+      "type": "checkin",
+      "titre": "Check-in · Hotel Lisboa",
+      "texte": "Rua Barata Salgueiro, 5 · Parking extérieur 10€/j · 3 places dispo · à demander à l'enregistrement (sans réservation)"
+    }
+  ]
+}

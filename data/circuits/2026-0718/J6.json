@@ -1,0 +1,58 @@
+{
+  "jour": "J6",
+  "date": "Mercredi 22 juillet 2026",
+  "titre": "Porto → Óbidos",
+  "abstract": [
+    { "emoji": "🏨", "texte": "Check-in Casa Senhoras Rainhas · Óbidos", "heure_cle": "15h00", "ref": "Réf 6120.613.335 · PIN 3264" }
+  ],
+  "hebergement": "casa-senhoras-rainhas",
+  "creneaux": [
+    {
+      "heure": "09h00",
+      "type": "trajet",
+      "titre": "Porto → Óbidos",
+      "duree": "2h30 + pause 30 min",
+      "km": 280,
+      "note_pratique": "Pause ~30' en área de serviço (mi-parcours, région Pombal/Coimbra)"
+    },
+    {
+      "heure": "12h00",
+      "type": "checkin",
+      "titre": "Arrivée Óbidos · Estacionamento do Campo da Bola",
+      "texte": "Parking gratuit · ~450m à pied de l'hôtel · Aqueduto da Usseira visible en passant (5') · ❌ Aucun parking sur site ni à l'hôtel",
+      "duree": "15 min",
+      "maps": "https://maps.app.goo.gl/obidos-parking"
+    },
+    {
+      "heure": "12h15",
+      "type": "checkin",
+      "titre": "Check-in ou dépôt de bagages · Casa Senhoras Rainhas",
+      "texte": "Padre Nunes Tavares, 6 · ☎️ +351 262 955 360 · GPS N 039° 21.646, W 09° 9.403",
+      "duree": "30 min"
+    },
+    {
+      "heure": "13h00",
+      "type": "repas",
+      "duree": "1h30",
+      "restaurant": {
+        "nom": "Pousada do Castelo — Óbidos",
+        "aide_memoire": [
+          "Restaurant de la Pousada dans le château médiéval · cuisine portugaise traditionnelle",
+          "Option : Alcaide (centre-ville)"
+        ]
+      }
+    },
+    {
+      "heure": "14h30",
+      "type": "boucle",
+      "site": "obidos",
+      "visite": { "duree": "3h30" }
+    },
+    {
+      "heure": "18h00",
+      "type": "checkin",
+      "titre": "Retour hôtel · Check-in si non fait",
+      "texte": "Dîner à l'hôtel · Annulation gratuite jusqu'à J-3 avant arrivée"
+    }
+  ]
+}

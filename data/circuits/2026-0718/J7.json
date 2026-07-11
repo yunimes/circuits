@@ -1,0 +1,51 @@
+{
+  "jour": "J7",
+  "date": "Jeudi 23 juillet 2026",
+  "titre": "Óbidos → Aéroport · Fin de circuit",
+  "abstract": [
+    { "emoji": "🛫", "texte": "KL1580 Parents 11h55 · AC811 Fils 13h00 · TP402 Guide 14h15", "ref": "LIS T1" },
+    { "emoji": "🚗", "texte": "Restitution Tangerine", "heure_cle": "10h15", "ref": "Parque das Nações · PT852394790" }
+  ],
+  "creneaux": [
+    {
+      "heure": "08h00",
+      "type": "checkin",
+      "titre": "Check-out · Chargement bagages",
+      "texte": "Casa Senhoras Rainhas · Check-out 07h00–12h00 · Aller chercher le véhicule au Campo da Bola (~450m)"
+    },
+    {
+      "heure": "08h30",
+      "type": "trajet",
+      "titre": "Óbidos → Aéroport Lisbonne T1",
+      "duree": "1h",
+      "km": 80
+    },
+    {
+      "heure": "09h30",
+      "type": "checkin",
+      "titre": "Dépôt voyageurs · Terminal 1",
+      "texte": "Parents (KL1580 à 11h55) → ~2h25 d'avance ✅ · Fils (AC811 à 13h00) → ~3h30 d'avance ✅"
+    },
+    {
+      "heure": "09h45",
+      "type": "trajet",
+      "titre": "Plein d'essence · Secteur aéroport",
+      "duree": "20 min",
+      "note_pratique": "⚠️ Repérer la station-service ouverte tôt le matin dans le secteur aéroport"
+    },
+    {
+      "heure": "10h15",
+      "type": "checkin",
+      "titre": "Restitution véhicule · Tangerine",
+      "texte": "Av. da Boa Esperança 51, Parque das Nações · ☎️ +351 935 741 201",
+      "duree": "15 min",
+      "maps": "https://maps.app.goo.gl/Yb7yo6SjfiTq8mcw5?g_st=ic"
+    },
+    {
+      "heure": "10h30",
+      "type": "checkin",
+      "titre": "Navette Tangerine → T1",
+      "texte": "~30 min · Guide au T1 ~11h00 · Vol TP402 LIS→MRS à 14h15 ✅"
+    }
+  ]
+}

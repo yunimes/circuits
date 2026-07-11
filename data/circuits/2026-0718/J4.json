@@ -1,0 +1,86 @@
+{
+  "jour": "J4",
+  "date": "Lundi 20 juillet 2026",
+  "titre": "Lisbonne Alfama → Nazaré",
+  "abstract": [
+    { "emoji": "🏨", "texte": "Check-out Hôtel Lisboa · Check-in Hotel Praia Nazaré (16h00)", "ref": "Réf B0426Q6Q5P" },
+    { "emoji": "⚠️", "texte": "Vérifier situation funiculaires Lisbonne avant J4", "alerte": true }
+  ],
+  "hebergement": "hotel-praia-nazare",
+  "creneaux": [
+    {
+      "heure": "09h00",
+      "type": "checkin",
+      "titre": "Check-out Hôtel Lisboa · Chargement bagages"
+    },
+    {
+      "heure": "09h15",
+      "type": "trajet",
+      "titre": "Hôtel Lisboa → Parking Restauradores",
+      "duree": "15 min",
+      "parkings": [
+        { "nom": "Parque Restauradores (Empark/Telpark) — Praça dos Restauradores", "maps": "https://maps.app.goo.gl/restauradores" }
+      ],
+      "note_pratique": "❗️Vérifier hauteur maximale parking (compatibilité SUV) · Véhicule restera garé jusqu'après le déjeuner"
+    },
+    {
+      "heure": "09h50",
+      "type": "trajet",
+      "titre": "Tram 12E → Alfama",
+      "duree": "20 min",
+      "note_pratique": "Arrêt Martim Moniz → descendre à Portas do Sol · Alternative moins fréquentée que le 28 · Plan B si attente >15–20' : montée à pied Martim Moniz → Costa do Castelo (~20–25')"
+    },
+    {
+      "heure": "10h10",
+      "type": "boucle",
+      "site": "alfama",
+      "visite": { "duree": "1h55" }
+    },
+    {
+      "heure": "12h05",
+      "type": "trajet",
+      "titre": "Retour à pied vers Restauradores",
+      "duree": "20 min"
+    },
+    {
+      "heure": "12h25",
+      "type": "repas",
+      "duree": "1h05",
+      "restaurant": {
+        "nom": "Casa do Alentejo",
+        "maps": "https://maps.app.goo.gl/casa-alentejo",
+        "adresse": "R. Portas de Santo Antão, 58, Lisboa",
+        "aide_memoire": [
+          "Palais mauresque du XIXe siècle · patio à azulejos · cuisine régionale alentejane · salle de groupe",
+          "❗️Tarifs et note Google à confirmer avant réservation"
+        ]
+      }
+    },
+    {
+      "heure": "13h30",
+      "type": "trajet",
+      "titre": "Lisbonne → Nazaré",
+      "duree": "1h30",
+      "km": 120
+    },
+    {
+      "heure": "15h00",
+      "type": "checkin",
+      "titre": "Arrivée Nazaré · Check-in Hotel Praia",
+      "texte": "Av. Vieira Guimarães 39 · Parking privé 7€/j (sans réservation) · Check-in 16h00",
+      "duree": "30 min"
+    },
+    {
+      "heure": "16h00",
+      "type": "boucle",
+      "site": "nazare",
+      "visite": { "duree": "2h30" }
+    },
+    {
+      "heure": "18h30",
+      "type": "checkin",
+      "titre": "Retour hôtel · Fin de service",
+      "texte": "🏖️ Plage de Nazaré à 150m · Dîner libre : Restaurante Mar Bravo (Praça Sousa Oliveira 71 · ⚠️ réservation conseillée · ☎️ +351 262 569 160) ou Restaurant de l'hôtel"
+    }
+  ]
+}

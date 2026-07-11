@@ -1,0 +1,20 @@
+{
+  "jour": "J8",
+  "date": "Vendredi 24 juillet 2026",
+  "titre": "Arrivées",
+  "abstract": [],
+  "creneaux": [
+    {
+      "heure": "04h25",
+      "type": "checkin",
+      "titre": "Parents — Arrivée Incheon",
+      "texte": "KL855 AMS→ICN · ICN Terminal 1"
+    },
+    {
+      "heure": "21h02",
+      "type": "checkin",
+      "titre": "Fils — Arrivée San Francisco",
+      "texte": "AC74 YYZ→SFO · SFO"
+    }
+  ]
+}

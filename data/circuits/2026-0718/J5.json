@@ -1,0 +1,79 @@
+{
+  "jour": "J5",
+  "date": "Mardi 21 juillet 2026",
+  "titre": "Nazaré → Aveiro → Porto",
+  "abstract": [
+    { "emoji": "🎟️", "texte": "Livraria Lello — Porto", "heure_cle": "15h30", "ref": "Inclus · déductible d'un achat" },
+    { "emoji": "⚠️", "texte": "Limiter Aveiro à 1h30–2h max · Check-in Mercure 16h00", "alerte": true }
+  ],
+  "hebergement": "mercure-porto",
+  "creneaux": [
+    {
+      "heure": "09h00",
+      "type": "trajet",
+      "titre": "Nazaré → Aveiro",
+      "duree": "48 min"
+    },
+    {
+      "heure": "09h48",
+      "type": "visite",
+      "site": "aveiro",
+      "visite": { "duree": "1h20" }
+    },
+    {
+      "heure": "11h15",
+      "type": "trajet",
+      "titre": "Aveiro → Porto",
+      "duree": "45 min",
+      "km": 70
+    },
+    {
+      "heure": "12h00",
+      "type": "checkin",
+      "titre": "Arrivée Hôtel Mercure · Dépôt bagages",
+      "texte": "Praça da Batalha 116 · Check-in complet au retour le soir · City tax 6€ à régler à la réception · ⚠️ Voucher Paul Kyumin listé 'MS' — signaler à l'arrivée si nécessaire",
+      "duree": "10 min"
+    },
+    {
+      "heure": "12h10",
+      "type": "trajet",
+      "titre": "Hôtel → Parking D. João I",
+      "duree": "10 min",
+      "note_pratique": "Délai de courtoisie 2h avant/après confirmé · Véhicule garé jusqu'au lendemain",
+      "parkings": [
+        { "nom": "Parking D. João I / Telpark (réservé · 16,70€ payé via app Telpark)", "maps": "https://maps.app.goo.gl/porto-djoao1" }
+      ]
+    },
+    {
+      "heure": "12h30",
+      "type": "repas",
+      "duree": "1h",
+      "restaurant": {
+        "nom": "Déjeuner libre — Porto",
+        "aide_memoire": [
+          "OKRA - Time Out Market Porto",
+          "Soju Pocha 소주포차 — option coréenne",
+          "Café Majestic — café historique emblématique"
+        ]
+      }
+    },
+    {
+      "heure": "13h30",
+      "type": "boucle",
+      "site": "porto-historique",
+      "visite": { "duree": "5h" }
+    },
+    {
+      "heure": "17h10",
+      "type": "visite",
+      "site": "gaia",
+      "visite": { "duree": "1h20" }
+    },
+    {
+      "heure": "18h30",
+      "type": "checkin",
+      "titre": "Fin de service · Groupe en autonomie",
+      "texte": "Dîner libre dans le Quartier de Ribeira (UNESCO · vieilles rives du Douro) · Indiquer l'ascenseur pour rejoindre la rive"
+    }
+  ]
+}

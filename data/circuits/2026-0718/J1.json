@@ -1,0 +1,14 @@
+{
+  "jour": "J1",
+  "date": "Vendredi 17 juillet 2026",
+  "titre": "Transit",
+  "abstract": [],
+  "creneaux": [
+    {
+      "heure": "—",
+      "type": "checkin",
+      "titre": "Journée de transit",
+      "texte": "Parents : ICN → AMS (KL856 22h25) · Fils : SFO → YYZ (AC742 12h25) → LIS (AC810 23h00) · Guide : TLS → LIS (TP495 06h55 le 18/07)"
+    }
+  ]
+}
