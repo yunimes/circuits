@@ -1,5 +1,6 @@
 {
   "id": "cabo-da-roca",
+  "langue_source": "fr",
   "nom": "Cabo da Roca",
   "parkings": [
     { "nom": "Parking Cabo da Roca (payant)", "maps": "https://maps.app.goo.gl/cabo-roca-parking" }

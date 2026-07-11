@@ -1,5 +1,6 @@
 {
   "id": "sintra-centre",
+  "langue_source": "fr",
   "nom": "Sintra — Centre historique",
   "parkings": [
     { "nom": "P2 Portela Urbanismo (gratuit — ❗️horaires à confirmer)", "maps": "https://maps.app.goo.gl/sintra-p2" }

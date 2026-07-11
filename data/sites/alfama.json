@@ -1,5 +1,6 @@
 {
   "id": "alfama",
+  "langue_source": "fr",
   "nom": "Lisbonne · Alfama",
   "parkings": [
     { "nom": "Parking Restauradores (dépôt avant tram)", "maps": "https://maps.app.goo.gl/restauradores" }

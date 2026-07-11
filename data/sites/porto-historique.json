@@ -1,5 +1,6 @@
 {
   "id": "porto-historique",
+  "langue_source": "fr",
   "nom": "Porto — Quartier historique",
   "parkings": [
     { "nom": "Parking D. João I / Telpark (réservé · 16,70€ payé via app Telpark)", "maps": "https://maps.app.goo.gl/porto-djoao1" }

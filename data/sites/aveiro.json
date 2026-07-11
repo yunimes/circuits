@@ -1,5 +1,6 @@
 {
   "id": "aveiro",
+  "langue_source": "fr",
   "nom": "Aveiro",
   "parkings": [
     { "nom": "Parque de Estacionamento do Rossio", "maps": "https://maps.app.goo.gl/aveiro-parking-rossio" }

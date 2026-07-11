@@ -1,5 +1,6 @@
 {
   "id": "nazare",
+  "langue_source": "fr",
   "nom": "Nazaré",
   "parkings": [
     { "nom": "Parking hôtel (7€/j)", "maps": "https://maps.app.goo.gl/nazare-hotel" }

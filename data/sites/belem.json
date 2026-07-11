@@ -1,5 +1,6 @@
 {
   "id": "belem",
+  "langue_source": "fr",
   "nom": "Quartier de Belém",
   "parkings": [
     { "nom": "Estacionamento Rua de Belém", "maps": "https://maps.app.goo.gl/nTeHATWzKKNFUMLA6?g_st=ic" },
