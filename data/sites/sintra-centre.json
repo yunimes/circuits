@@ -1,0 +1,60 @@
+{
+  "id": "sintra-centre",
+  "nom": "Sintra — Centre historique",
+  "parkings": [
+    { "nom": "P2 Portela Urbanismo (gratuit — ❗️horaires à confirmer)", "maps": "https://maps.app.goo.gl/sintra-p2" }
+  ],
+  "guide": { "nom": "Sintra", "id": "sintra" },
+  "note_pratique": "Guide gare le véhicule seul au P2 (~20–25' A/R) · Groupe déposé à Volta do Duche pour flânerie libre en attendant",
+  "boucle": {
+    "distance_m": 900,
+    "marche_min": 45,
+    "itineraire_maps": "https://maps.app.goo.gl/sintra-boucle",
+    "points": [
+      {
+        "nom": "Palácio Nacional de Sintra",
+        "emoji": "🏛️",
+        "maps": "https://maps.app.goo.gl/sintra-palacio",
+        "aide_memoire": [
+          "Les deux cheminées coniques (33m) : construites par le roi João Ier au XVe s. pour la cuisine royale — sangliers et cerfs entiers rôtis pour les banquets",
+          "LE symbole visuel de Sintra · photo de groupe incontournable",
+          "En haut de l'escalier : Fonte do Palácio, fontaine Renaissance ornée d'un château à 5 tours",
+          "Entrée ~10€/pers ❗️à reconfirmer avant le J3"
+        ],
+        "photo": "📸 Deux cheminées coniques depuis le Largo Rainha D. Amélia",
+        "texte_original": []
+      },
+      {
+        "nom": "Azulejos & architecture mudéjare",
+        "emoji": "🎨",
+        "maps": "https://maps.app.goo.gl/sintra-azulejos",
+        "aide_memoire": [
+          "Plus grande collection d'azulejos mudéjars au monde dans le Palácio Nacional",
+          "Fenêtres et arcs en fer à cheval visibles sur plusieurs bâtiments : héritage de l'occupation maure (Sintra reconquise en 1147)",
+          "Lord Byron a qualifié Sintra d''Eden glorieux' dans Childe Harold's Pilgrimage (1809)"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Rua das Padarias · Piriquita",
+        "emoji": "🥐",
+        "maps": "https://maps.app.goo.gl/sintra-piriquita",
+        "aide_memoire": [
+          "Rue commerçante historique · cœur du centre piéton · artisanat local",
+          "Piriquita (depuis 1862) : travesseiros (pâte feuilletée, crème amande/œuf) et queijadas (fromage frais, cannelle) — LE goûter emblématique de Sintra"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Fonte Mourisca · Volta do Duche",
+        "emoji": "⛲",
+        "maps": "https://maps.app.goo.gl/NNVY5hm6wrjrq47q8?g_st=ic",
+        "aide_memoire": [
+          "Fontaine néo-mauresque (1922) : arcs en fer à cheval sculptés, azulejos néo-mudéjars",
+          "Point de RDV final guide/groupe : repère boutique Queijadas da Sapa n°12"
+        ],
+        "texte_original": []
+      }
+    ]
+  }
+}

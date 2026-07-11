@@ -1,0 +1,66 @@
+{
+  "id": "belem",
+  "nom": "Quartier de Belém",
+  "parkings": [
+    { "nom": "Estacionamento Rua de Belém", "maps": "https://maps.app.goo.gl/nTeHATWzKKNFUMLA6?g_st=ic" },
+    { "nom": "Estacionamento Praça Afonso Albuquerque", "maps": "https://maps.app.goo.gl/8fAEBvJHpTDwK1m98?g_st=ic" }
+  ],
+  "guides": [
+    { "nom": "Lisbonne — Partie 1", "id": "lisbonne-1" },
+    { "nom": "Lisbonne — Partie 2", "id": "lisbonne-2" }
+  ],
+  "boucle": {
+    "distance_m": 1500,
+    "marche_min": 55,
+    "itineraire_maps": "https://maps.app.goo.gl/belem-boucle",
+    "points": [
+      {
+        "nom": "Padrão dos Descobrimentos",
+        "emoji": "🗿",
+        "maps": "https://maps.app.goo.gl/xd5FTK6xRtcgD71W8?g_st=ic",
+        "aide_memoire": [
+          "Monument des Découvertes · inauguré 1960 pour les 500 ans de la mort d'Henri le Navigateur",
+          "52m de haut · 33 figures de proues sculptées (navigateurs, cartographes, rois)",
+          "Ascenseur panoramique ~4€/pers · vue sur le Tage et la Torre de Belém"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Torre de Belém",
+        "emoji": "🗼",
+        "maps": "https://maps.app.goo.gl/WcU4GS7K8FSKeAnX6?g_st=ic",
+        "aide_memoire": [
+          "Tour manuéline 1516–1521 · classée UNESCO · bord du Tage",
+          "Construite sous Manuel Ier pour surveiller l'entrée du port de Lisbonne",
+          "Style manuélin : cordages en pierre, sphères armillaires, croix de l'Ordre du Christ",
+          "Entrée ~7€/pers · extérieur saisissant même sans entrer"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Mosteiro dos Jerónimos",
+        "emoji": "🕌",
+        "maps": "https://maps.app.goo.gl/o2Z5t19cFmQFhQfM6?g_st=ic",
+        "aide_memoire": [
+          "Chef-d'œuvre du style manuélin · construit à partir de 1502 · classé UNESCO",
+          "Commandé par Manuel Ier pour remercier Dieu après le retour de Vasco de Gama (1499)",
+          "Tombe de Vasco de Gama et de Luís de Camões dans l'église · Portail Sud : 70 personnages sculptés",
+          "Cloître à deux niveaux : arcades ornées de motifs marins, sphères armillaires, coraux"
+        ],
+        "photo": "📸 Cloître depuis l'angle nord-ouest · portail principal de l'église depuis le parvis",
+        "texte_original": []
+      },
+      {
+        "nom": "Pastéis de Belém",
+        "emoji": "🥐",
+        "maps": "https://maps.app.goo.gl/wCMbChkM1kGAbk5z6?g_st=ic",
+        "aide_memoire": [
+          "Fondé en 1837 · recette secrète gardée par 3 personnes · 20 000 pastéis produits par jour",
+          "Pastel de nata ≠ pastel de Belém : cette maison est l'unique à utiliser la recette originale des moines",
+          "Se dégustent chauds avec sucre glace et cannelle · à consommer sur place"
+        ],
+        "texte_original": []
+      }
+    ]
+  }
+}

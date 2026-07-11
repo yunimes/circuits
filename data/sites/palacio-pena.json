@@ -1,0 +1,29 @@
+{
+  "id": "palacio-pena",
+  "nom": "Palácio da Pena",
+  "billet": {
+    "ref": "N° 31704168 · 14h00 · 4p",
+    "obsidian": "https://www.headout.com/voucher/booking/31704167?secureBookingId=605W2v_hZerHruyz0aTb-NA4LwKZKhx4XAnqJ8-GhWRrINcqJ9gNGcKa_hI5ZBqWQJZu5qaajVUM0oeSkzg4PA=="
+  },
+  "parkings": [],
+  "guides": [
+    { "nom": "Briefing Palácio da Pena", "id": "briefing-palacio-pena" },
+    { "nom": "Guide Palais Pena", "id": "palais-pena" }
+  ],
+  "note_pratique": "⚠️ Le guide n'entre pas dans le Palácio da Pena. Briefing complet obligatoire avant l'entrée. Prévoir cartes imprimées ou QR codes. Guide en autonomie 13h30–17h00.",
+  "points": [
+    {
+      "nom": "Palácio da Pena — Visite autonome",
+      "emoji": "🏰",
+      "maps": "https://maps.app.goo.gl/pena-palacio",
+      "aide_memoire": [
+        "Palais romantique du XIXe s. · construit pour Ferdinand II (époux de la reine Maria II) · style néo-manuélin, néo-gothique, néo-mauresque",
+        "Couleurs vives : ocre et rouge · tours, coupoles, gargouilles · vue panoramique sur Sintra et l'Atlantique",
+        "Entouré de la Forêt de Pena (85 ha) · point culminant de la Serra de Sintra",
+        "Taxi de retour : station à la sortie de Pena → Largo Carlos França (~10' · ~8–12€)"
+      ],
+      "photo": "📸 Façade principale depuis la terrasse d'entrée · vue sur Sintra depuis les tours",
+      "texte_original": []
+    }
+  ]
+}

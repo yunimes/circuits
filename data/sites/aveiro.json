@@ -1,0 +1,37 @@
+{
+  "id": "aveiro",
+  "nom": "Aveiro",
+  "parkings": [
+    { "nom": "Parque de Estacionamento do Rossio", "maps": "https://maps.app.goo.gl/aveiro-parking-rossio" }
+  ],
+  "guide": { "nom": "Guide Aveiro", "id": "aveiro" },
+  "note_pratique": "Étape sans nuitée · limiter à 1h30–2h max pour arriver à Porto avant 16h00",
+  "points": [
+    {
+      "nom": "Moliceiro — Balade en barque",
+      "emoji": "🛶",
+      "maps": "https://maps.app.goo.gl/aveiro-moliceiro",
+      "aide_memoire": [
+        "Embarcation traditionnelle d'Aveiro · servait à récolter les algues (moliço) pour fertiliser les champs",
+        "Proues peintes de scènes humoristiques ou romantiques — chaque moliceiro est unique",
+        "Balade ~45 min sur les canaux · ~10–15€/pers · embarquement à proximité du Rossio",
+        "Aveiro surnommée 'Venise du Portugal' pour ses canaux et ses barques colorées"
+      ],
+      "photo": "📸 Proue peinte d'un moliceiro · vue sur les façades Art Nouveau depuis le canal",
+      "texte_original": []
+    },
+    {
+      "nom": "Dégustation Ovos Moles + Rossio",
+      "emoji": "🍮",
+      "maps": "https://maps.app.goo.gl/aveiro-rossio",
+      "aide_memoire": [
+        "Ovos Moles : spécialité d'Aveiro depuis le XVIe s. (origine monacale) · pâte fine de farine enveloppant une crème d'œuf et sucre · formes de coquillages, poissons, barils",
+        "Padaria Ria Pão · terrasse au Rossio (place principale) · vue sur les moliceiros et les canaux",
+        "Casa do Rossio, ancienne Cooperativa Agrícola (R. João Mendonça) : façade Art Nouveau remarquable",
+        "Museu Arte Nova (Casa do Major Pessoa) : villa Art Nouveau 1910 · à signaler en passant",
+        "Sel d'Aveiro (fleur de sel de l'Ria) — bonne idée cadeau"
+      ],
+      "texte_original": []
+    }
+  ]
+}

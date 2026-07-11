@@ -1,0 +1,83 @@
+{
+  "id": "obidos",
+  "nom": "Óbidos — Village médiéval",
+  "parkings": [
+    { "nom": "Estacionamento do Campo da Bola (gratuit · ~450m à pied)", "maps": "https://maps.app.goo.gl/obidos-parking" }
+  ],
+  "guide": { "nom": "Guide Óbidos", "id": "obidos" },
+  "note_pratique": "❌ Village strictement piétonnier · aucune solution de parking sur site ni à l'hôtel",
+  "boucle": {
+    "distance_m": 1500,
+    "marche_min": 200,
+    "itineraire_maps": "https://maps.app.goo.gl/obidos-boucle",
+    "points": [
+      {
+        "nom": "Livraria de Santiago",
+        "emoji": "📚",
+        "maps": "https://maps.app.goo.gl/obidos-livraria",
+        "aide_memoire": [
+          "Librairie installée dans l'ancienne église São Tiago (XVIIe s.) · ruines classées",
+          "Óbidos est Ville du Livre depuis 2015 — plusieurs librairies thématiques dans des lieux insolites"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Rua Direita",
+        "emoji": "🛍️",
+        "maps": "https://maps.app.goo.gl/obidos-rua-direita",
+        "aide_memoire": [
+          "Artère principale du village médiéval · dallée en calçada · maisons aux encadrements jaunes et bleus",
+          "Boutiques artisanales, céramique, dentelle, Ginja d'Óbidos",
+          "Tradition : depuis 1282, Óbidos était offert par les rois portugais à leurs épouses comme cadeau de noces"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Igreja de Santa Maria",
+        "emoji": "⛪",
+        "maps": "https://maps.app.goo.gl/obidos-santa-maria",
+        "aide_memoire": [
+          "Nef entièrement recouverte d'azulejos bleus et blancs du XVIIe s. · parmi les plus beaux du Portugal",
+          "Mariage du roi Afonso V (10 ans) avec sa cousine Isabel (8 ans) célébré ici en 1444",
+          "Tableau du peintre Josefa d'Óbidos (XVIIe s.) dans le retable · peintre baroque rare parmi les femmes"
+        ],
+        "photo": "📸 Nef depuis l'entrée · plafond et azulejos bleus",
+        "texte_original": []
+      },
+      {
+        "nom": "Museu Municipal de Óbidos",
+        "emoji": "🏛️",
+        "maps": "https://maps.app.goo.gl/obidos-museu",
+        "aide_memoire": [
+          "Musée municipal · collection archéologique et d'art local",
+          "⚠️ Entrée ~2–3€/pers à reconfirmer"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Dégustation Ginja d'Óbidos",
+        "emoji": "🍒",
+        "maps": "https://maps.app.goo.gl/obidos-ginja",
+        "aide_memoire": [
+          "Ginja : liqueur de cerise aigre (aguardente + sucre + cerises macérées) · spécialité d'Óbidos",
+          "Servie traditionnellement dans un petit verre en chocolat que l'on mange ensuite",
+          "Incontournable · boutiques concentrées près de la Porta da Vila"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Chemin de ronde sur les murailles",
+        "emoji": "🏰",
+        "maps": "https://maps.app.goo.gl/obidos-murailles",
+        "aide_memoire": [
+          "Murailles du XIIe s. · circuit complet de 1,5 km possible · largeur: un seul passage",
+          "Tronçon accessible depuis la Porta da Vila (porte d'entrée du village) · ~45 min",
+          "⚠️ AUCUNE protection ni rambarde sur la grande partie des remparts — prudence absolue",
+          "Vue sur le village, les vignes, et la campagne de l'Estremadura"
+        ],
+        "photo": "📸 Village vu depuis les remparts · toits rouges et fleurs blanches",
+        "texte_original": []
+      }
+    ]
+  }
+}

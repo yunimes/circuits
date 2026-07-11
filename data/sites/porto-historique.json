@@ -1,0 +1,109 @@
+{
+  "id": "porto-historique",
+  "nom": "Porto — Quartier historique",
+  "parkings": [
+    { "nom": "Parking D. João I / Telpark (réservé · 16,70€ payé via app Telpark)", "maps": "https://maps.app.goo.gl/porto-djoao1" }
+  ],
+  "guides": [
+    { "nom": "Porto — Partie 1", "id": "porto-1" },
+    { "nom": "Porto — Partie 2", "id": "porto-2" }
+  ],
+  "boucle": {
+    "distance_m": 3000,
+    "marche_min": 200,
+    "itineraire_maps": "https://maps.app.goo.gl/porto-historique-boucle",
+    "points": [
+      {
+        "nom": "Rue Santa Catarina",
+        "emoji": "🛍️",
+        "maps": "https://maps.app.goo.gl/porto-santa-catarina",
+        "aide_memoire": [
+          "Principale rue commerçante piétonne de Porto · Café Majestic au n°112 (1921 · Belle Époque · un des plus beaux cafés d'Europe)",
+          "Passage par la chapelle das Almas (façade azulejos bleus et blancs · plus de 15 000 carreaux · 1929)"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Gare de São Bento",
+        "emoji": "🚂",
+        "maps": "https://maps.app.goo.gl/porto-sao-bento",
+        "aide_memoire": [
+          "20 000 azulejos bleus et blancs dans le hall · réalisés par Jorge Colaço (1930)",
+          "Scènes historiques : conquête de Ceuta (1415), entrée de João I à Porto, scènes rurales et de transport",
+          "Construit sur l'emplacement du Couvent de São Bento de Avé-Maria (XVIe s.)"
+        ],
+        "photo": "📸 Hall depuis l'entrée en regardant le fond · détails des panneaux azulejos",
+        "texte_original": []
+      },
+      {
+        "nom": "Praça da Liberdade / Avenida dos Aliados",
+        "emoji": "🏛️",
+        "maps": "https://maps.app.goo.gl/porto-aliados",
+        "aide_memoire": [
+          "Avenue principale de Porto · architecture éclectique du XXe s. · Hôtel de Ville en fond",
+          "Statue équestre de Pedro IV (même roi que sur le Rossio à Lisbonne, face à face symbolique)"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Torre dos Clérigos",
+        "emoji": "🗼",
+        "maps": "https://maps.app.goo.gl/porto-clerigos",
+        "aide_memoire": [
+          "Tour baroque 1754–1763 · architecte Nicolau Nasoni (italien installé à Porto) · 75m · 225 marches",
+          "Symbole de Porto · meilleur panorama de la ville depuis le sommet",
+          "⚠️ 10€/pers (tour + église + musée) · montée de 225 marches non prévue faute de temps — à proposer selon énergie"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Igreja do Carmo / Igreja dos Carmelitas",
+        "emoji": "⛪",
+        "maps": "https://maps.app.goo.gl/porto-carmo",
+        "aide_memoire": [
+          "Deux églises jumelles séparées par la Casa Escondida — maison de seulement 1m de large (pour séparer deux ordres religieux)",
+          "Façade de l'Igreja do Carmo : immense panneau d'azulejos (1912) · scènes de la vie du Carmel"
+        ],
+        "photo": "📸 Les deux façades côte à côte · détail de la maison 1m de large entre les deux",
+        "texte_original": []
+      },
+      {
+        "nom": "Livraria Lello",
+        "emoji": "📚",
+        "maps": "https://maps.app.goo.gl/porto-lello",
+        "aide_memoire": [
+          "Fondée en 1906 · néo-gothique · considérée parmi les plus belles librairies du monde",
+          "Escalier central en colimaçon rouge · vitraux · décoration Art Nouveau",
+          "J.K. Rowling a visité pendant ses années à Porto (1991–1993) — inspiration prétendue pour l'escalier de Poudlard",
+          "⚠️ Billet obligatoire · entrée déductible d'un achat en librairie"
+        ],
+        "photo": "📸 Escalier depuis le bas · vitrail central depuis le balcon du 1er",
+        "texte_original": []
+      },
+      {
+        "nom": "Sé do Porto",
+        "emoji": "⛪",
+        "maps": "https://maps.app.goo.gl/porto-se",
+        "aide_memoire": [
+          "Cathédrale romane commencée au XIIe s. · l'une des plus anciennes du Portugal",
+          "Façade austère flanquée de deux tours massives · intérieur gothique / baroque",
+          "Cloître gothique du XIVe s. avec azulejos de Jan van Oort (1729) représentant le Cantique des Cantiques",
+          "Nef gratuite · cloître ~4€/pers"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Ponte Dom Luís I",
+        "emoji": "🌉",
+        "maps": "https://maps.app.goo.gl/porto-pont-luis",
+        "aide_memoire": [
+          "Pont métallique inauguré en 1886 · conçu par Théophile Seyrig (associé de Gustave Eiffel)",
+          "Deux niveaux : niveau supérieur (45m de haut) pour le métro et piétons · niveau inférieur pour voitures et piétons",
+          "Traversée niveau supérieur · vue spectaculaire sur Douro, Ribeira (Porto) et Gaia (rive sud)"
+        ],
+        "photo": "📸 Vue du pont depuis la rive de Porto · traversée avec vue sur les caves à port de Gaia",
+        "texte_original": []
+      }
+    ]
+  }
+}

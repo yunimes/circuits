@@ -1,0 +1,62 @@
+{
+  "id": "baixa-chiado",
+  "nom": "Baixa · Chiado · Rossio",
+  "parkings": [
+    { "nom": "SABA Praça do Município (24h/24, ~3 min à pied de Praça do Comércio)", "maps": "https://maps.app.goo.gl/baixa-parking" }
+  ],
+  "note_pratique": "❗️Vérifier compatibilité ZER du véhicule avant d'entrer dans la Baixa",
+  "guides": [
+    { "nom": "Lisbonne — Partie 1", "id": "lisbonne-1" }
+  ],
+  "boucle": {
+    "distance_m": 1800,
+    "marche_min": 90,
+    "itineraire_maps": "https://maps.app.goo.gl/baixa-boucle",
+    "points": [
+      {
+        "nom": "Praça do Comércio",
+        "emoji": "🏛️",
+        "maps": "https://maps.app.goo.gl/praça-comercio",
+        "aide_memoire": [
+          "Grande place face au Tage · Arc triomphal de Rua Augusta (1755) construit après le séisme",
+          "Statue équestre de José Ier · ancienne entrée royale de Lisbonne depuis le fleuve",
+          "Photo de groupe incontournable face au Tage"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Rua Augusta",
+        "emoji": "🛍️",
+        "maps": "https://maps.app.goo.gl/rua-augusta",
+        "aide_memoire": [
+          "Artère piétonne principale de la Baixa pombaline · reconstruite après le séisme de 1755",
+          "Plan en damier du Marquis de Pombal · architecture néoclassique uniforme"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Chiado · Café A Brasileira",
+        "emoji": "☕",
+        "maps": "https://maps.app.goo.gl/chiado-brasileira",
+        "aide_memoire": [
+          "Café A Brasileira : façade Art déco, ouvert depuis 1905 · statut de monument historique",
+          "Statue de Fernando Pessoa devant la terrasse — plus grand poète portugais (1888–1935) · photo incontournable",
+          "Pessoa a écrit en 72 langues, inventé plus de 70 alter egos littéraires ('hétéronymes')"
+        ],
+        "photo": "📸 Statue Pessoa avec la terrasse du café en arrière-plan",
+        "texte_original": []
+      },
+      {
+        "nom": "Praça do Rossio",
+        "emoji": "🏛️",
+        "maps": "https://maps.app.goo.gl/rossio",
+        "aide_memoire": [
+          "Cœur historique de Lisbonne depuis le Moyen Âge · marché, exécutions, fêtes populaires",
+          "Statue de Pedro IV au centre · pavage en calçada portuguesa (vagues noires et blanches)",
+          "Façade néo-manuéline du Théâtre National D. Maria II (1842)"
+        ],
+        "texte_original": []
+      }
+    ]
+  }
+}

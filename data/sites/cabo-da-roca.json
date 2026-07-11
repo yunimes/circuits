@@ -1,0 +1,44 @@
+{
+  "id": "cabo-da-roca",
+  "nom": "Cabo da Roca",
+  "parkings": [
+    { "nom": "Parking Cabo da Roca (payant)", "maps": "https://maps.app.goo.gl/cabo-roca-parking" }
+  ],
+  "guide": { "nom": "Cabo da Roca", "id": "cabo-da-roca" },
+  "points": [
+    {
+      "nom": "Monument — Croix de pierre",
+      "emoji": "✝️",
+      "maps": "https://maps.app.goo.gl/cabo-roca-monument",
+      "aide_memoire": [
+        "Point le plus occidental de l'Europe continentale — 9°30'W · 38°47'N",
+        "Inscription de Luís de Camões (Os Lusíadas, Canto III) : 'Onde a terra se acaba e o mar começa' — 'Où la terre finit et où la mer commence'",
+        "À l'époque de Camões (XVIe s.) : littéralement le bord du monde connu",
+        "🌬️ Vent souvent fort même en été — prévenir le groupe de prendre une veste",
+        "⚠️ Ne pas s'approcher du bord des falaises (~140m de haut) — risque d'éboulement"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Farol do Cabo da Roca",
+      "emoji": "🏛️",
+      "maps": "https://maps.app.goo.gl/cabo-roca-farol",
+      "aide_memoire": [
+        "Construit en 1772 sur ordre du Marquês de Pombal · 2e phare le plus ancien encore en activité sur la côte portugaise",
+        "Tour blanche à balcon rouge · ~22m de haut",
+        "❗️Visitable de l'intérieur seulement le mercredi (14h–17h) — extérieur/photo uniquement"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Poste de tourisme — Certificat de passage",
+      "emoji": "🎫",
+      "maps": "https://maps.app.goo.gl/cabo-roca-turismo",
+      "aide_memoire": [
+        "Certificat de passage disponible sur place — 11€/pers (optionnel)",
+        "Coordonnées GPS exactes du lieu imprimées · souvenir apprécié des groupes"
+      ],
+      "texte_original": []
+    }
+  ]
+}

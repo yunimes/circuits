@@ -1,0 +1,43 @@
+{
+  "id": "gaia",
+  "nom": "Vila Nova de Gaia",
+  "parkings": [],
+  "guides": [
+    { "nom": "Porto — Partie 2", "id": "porto-2" }
+  ],
+  "points": [
+    {
+      "nom": "Téléférico de Gaia",
+      "emoji": "🚡",
+      "maps": "https://maps.app.goo.gl/gaia-teleferico",
+      "aide_memoire": [
+        "Relie les caves à port (rive basse) au niveau supérieur du Pont Dom Luís I",
+        "~5–8 min de trajet · vue sur le Douro, Porto, et les caves à port",
+        "⚠️ ~6€/pers A/S · sens descente ici (du pont vers les caves)"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Croisière sur le Douro",
+      "emoji": "⛵",
+      "maps": "https://maps.app.goo.gl/gaia-croisiere",
+      "aide_memoire": [
+        "Croisière des 6 ponts · ~50 min · sans réservation en juillet (départs ~toutes les 30–45 min)",
+        "⚠️ ~15–20€/pers à vérifier sur place (Barcadouro, RioDouro…)",
+        "Vue unique sur Ribeira, les caves à port de Gaia, et les 6 ponts emblématiques du Douro"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Espaço Porto Cruz — Dégustation & Rooftop",
+      "emoji": "🍷",
+      "maps": "https://maps.app.goo.gl/gaia-porto-cruz",
+      "aide_memoire": [
+        "Cave à port contemporaine · dégustation libre · rooftop avec vue sur Porto et le Douro",
+        "Porto (vin de Porto) : vin muté né dans la région du Haut-Douro · producteurs regroupés à Gaia depuis XVIIe s.",
+        "Fin de service guide ici · groupe en autonomie ensuite pour le dîner"
+      ],
+      "texte_original": []
+    }
+  ]
+}

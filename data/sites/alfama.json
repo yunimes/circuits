@@ -1,0 +1,65 @@
+{
+  "id": "alfama",
+  "nom": "Lisbonne · Alfama",
+  "parkings": [
+    { "nom": "Parking Restauradores (dépôt avant tram)", "maps": "https://maps.app.goo.gl/restauradores" }
+  ],
+  "guides": [
+    { "nom": "Lisbonne — Partie 1", "id": "lisbonne-1" },
+    { "nom": "Lisbonne — Partie 2", "id": "lisbonne-2" }
+  ],
+  "note_pratique": "Tram 12E depuis Martim Moniz → arrêt Portas do Sol · Plan B si attente >15–20' : montée à pied (~20–25')",
+  "boucle": {
+    "distance_m": 2000,
+    "marche_min": 115,
+    "itineraire_maps": "https://maps.app.goo.gl/alfama-boucle",
+    "points": [
+      {
+        "nom": "Miradouro de Santa Luzia",
+        "emoji": "🏞️",
+        "maps": "https://maps.app.goo.gl/santa-luzia",
+        "aide_memoire": [
+          "~100m de l'arrêt tram · azulejos historiques sur la terrasse représentant la prise de Lisbonne (1147) et la Praça do Comércio",
+          "Pergola bougainvillier · vue sur Alfama et le Tage"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Castelo de São Jorge",
+        "emoji": "🏰",
+        "maps": "https://maps.app.goo.gl/castelo-sao-jorge",
+        "aide_memoire": [
+          "Forteresse maure reconquise par Afonso Henriques (1er roi du Portugal) en 1147",
+          "Remparts sur 10 tours · vue panoramique à 360° sur Lisbonne, le Tage, et les collines",
+          "Paons en liberté dans les cours intérieures",
+          "⚠️ Entrée ~15€/pers — tarif à revérifier · ⚠️ Aucun tram ne dessert l'entrée directement"
+        ],
+        "photo": "📸 Vue panoramique depuis les remparts · paons dans la cour",
+        "texte_original": []
+      },
+      {
+        "nom": "Descente à pied dans Alfama",
+        "emoji": "👣",
+        "maps": "https://maps.app.goo.gl/alfama-descente",
+        "aide_memoire": [
+          "Quartier le plus ancien de Lisbonne · seul à avoir survécu au séisme de 1755",
+          "Ruelles pavées en calçada · maisons colorées · linge aux fenêtres",
+          "Miradouro das Portas do Sol en chemin · vue sur le Tage et les toits d'Alfama"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Sé de Lisboa",
+        "emoji": "⛪",
+        "maps": "https://maps.app.goo.gl/se-lisboa",
+        "aide_memoire": [
+          "Cathédrale romane fondée en 1147, la plus ancienne de Lisbonne",
+          "Construite sur l'emplacement de la grande mosquée de Lisbonne après la reconquête",
+          "Nef gratuite · cloître payant ~4€/pers · azulejos remarquables dans le cloître",
+          "Sarcophage gothique d'Afonso IV et de son épouse dans le cloître"
+        ],
+        "texte_original": []
+      }
+    ]
+  }
+}

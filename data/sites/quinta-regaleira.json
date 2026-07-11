@@ -1,0 +1,29 @@
+{
+  "id": "quinta-regaleira",
+  "nom": "Quinta da Regaleira",
+  "billet": {
+    "ref": "N° 31704168 · 16h00 · 4p",
+    "obsidian": "https://www.regaleira.pt"
+  },
+  "parkings": [],
+  "guides": [
+    { "nom": "Briefing Quinta da Regaleira", "id": "briefing-quinta-regaleira" },
+    { "nom": "Guide Quinta da Regaleira", "id": "quinta-da-regaleira" }
+  ],
+  "note_pratique": "⚠️ Le guide n'entre pas. Briefing obligatoire avant l'entrée. Départ : taxi Pena → Largo Carlos França (~5–8' à pied de l'entrée Regaleira). Sortie groupe → Volta do Duche à pied (~350m 5') ou taxi selon fatigue.",
+  "points": [
+    {
+      "nom": "Puits initiatique (Poço Iniciático)",
+      "emoji": "🌀",
+      "maps": "https://maps.app.goo.gl/quinta-regaleira",
+      "aide_memoire": [
+        "Domaine construit entre 1898 et 1912 par l'excentrique Carvalho Monteiro, en collaboration avec l'architecte Luigi Manini",
+        "Symbolisme maçonnique, templier et rosicrucien — palais, chapelle, jardins, grottes, lacs",
+        "Puits initiatique : spirale de 27m de profondeur en colimaçon · aucune fonction hydraulique · utilisé pour des rituels initiatiques",
+        "Sortie du puits par un tunnel débouchant dans les jardins"
+      ],
+      "photo": "📸 Vue du dessus du puits depuis le bord (vertigineux) · intérieur spirale depuis le bas",
+      "texte_original": []
+    }
+  ]
+}

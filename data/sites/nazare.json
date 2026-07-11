@@ -1,0 +1,70 @@
+{
+  "id": "nazare",
+  "nom": "Nazaré",
+  "parkings": [
+    { "nom": "Parking hôtel (7€/j)", "maps": "https://maps.app.goo.gl/nazare-hotel" }
+  ],
+  "guide": { "nom": "Guide Nazaré", "id": "nazare" },
+  "boucle": {
+    "distance_m": 2500,
+    "marche_min": 150,
+    "itineraire_maps": "https://maps.app.goo.gl/nazare-boucle",
+    "points": [
+      {
+        "nom": "Basse ville (Praia) — Front de mer",
+        "emoji": "🏘️",
+        "maps": "https://maps.app.goo.gl/nazare-praia",
+        "aide_memoire": [
+          "Grande plage de sable atlantique · marché de poissons typique",
+          "Séchage de la morue (bacalhau) à l'air sur des claies — pratique immémoriale",
+          "Vêtements traditionnels nazarénos encore portés par certaines vendeuses (jupes à 7 couches)"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Funiculaire → Sítio",
+        "emoji": "🚡",
+        "maps": "https://maps.app.goo.gl/nazare-funicular",
+        "aide_memoire": [
+          "Funiculaire datant de 1889 · départs toutes les 15 minutes",
+          "Monte 110m de dénivelé en 318m · vue progressive sur la plage et l'Atlantique"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Miradouro do Suberco",
+        "emoji": "🌅",
+        "maps": "https://maps.app.goo.gl/nazare-miradouro",
+        "aide_memoire": [
+          "Vue plongeante sur la longue plage de Nazaré et l'Atlantique · coucher de soleil spectaculaire",
+          "Photo incontournable"
+        ],
+        "photo": "📸 Plage en contrebas depuis le miradouro · silhouettes de pêcheurs",
+        "texte_original": []
+      },
+      {
+        "nom": "Santuário de Nossa Senhora da Nazaré",
+        "emoji": "⛪",
+        "maps": "https://maps.app.goo.gl/nazare-sanctuaire",
+        "aide_memoire": [
+          "Sanctuaire baroque du XVIIe s. · lieu de pèlerinage depuis le XIIe s.",
+          "Légende : Dom Fuas Roupinho poursuivant un cerf dans le brouillard s'est arrêté au bord de la falaise par miracle — attribué à la Vierge",
+          "Façade couverte d'azulejos bleus et blancs · riche décoration intérieure"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Forte de São Miguel Arcanjo",
+        "emoji": "🏯",
+        "maps": "https://maps.app.goo.gl/nazare-forte",
+        "aide_memoire": [
+          "Fort du XVIIe s. · musée sur les grandes vagues de Nazaré",
+          "Praia do Norte : spot mondial de surf de grosses vagues · records du monde battus ici (Garrett McNamara 2011)",
+          "⚠️ Entrée musée ~4€/pers · accès extérieur et vue gratuits"
+        ],
+        "photo": "📸 Vue sur la Praia do Norte et les vagues depuis le fort",
+        "texte_original": []
+      }
+    ]
+  }
+}
