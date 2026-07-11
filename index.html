@@ -165,7 +165,7 @@ function sectionBloc(id, titre, contenu, ouvert) {
 function toggleBloc(id) { document.getElementById(id).classList.toggle('ouvert'); }
 
 (async function () {
-  try { await renderDash(await loadJSON('circuits/2026-0618/circuit.json')); }
+  try { await renderDash(await loadJSON('circuits/2026-0718/circuit.json')); }
   catch (e) { document.getElementById('app').innerHTML = `<div style="padding:20px;color:#A33B2E">Erreur: ${e.message}</div>`; }
 })();
 </script>
