@@ -1,0 +1,84 @@
+{
+  "id": "2026-0718",
+  "titre": "Lisbonne · Porto · Óbidos",
+  "sous_titre": "Groupe LEE-RYOU · 4 personnes · 5N/7J · 18–23 juillet 2026",
+  "logistique": {
+    "groupe": "4 personnes",
+    "vehicule": "Volvo XC90 · Tangerine · PT852394790 · Conf. 151201",
+    "guide": "Yun ZO"
+  },
+  "transports": [
+    { "type": "🛬", "label": "Arrivée Parents LIS", "ref": "KL1579 AMS→LIS", "date": "18/07 Sam", "heure": "10h55", "lieu": "LIS T1" },
+    { "type": "🛬", "label": "Arrivée Fils LIS", "ref": "AC810 YYZ→LIS", "date": "18/07 Sam", "heure": "11h05", "lieu": "LIS T1" },
+    { "type": "🛫", "label": "Départ Parents LIS", "ref": "KL1580 LIS→AMS", "date": "23/07 Jeu", "heure": "11h55", "lieu": "LIS T1" },
+    { "type": "🛫", "label": "Départ Fils LIS", "ref": "AC811 LIS→YYZ", "date": "23/07 Jeu", "heure": "13h00", "lieu": "LIS T1" },
+    { "type": "🛫", "label": "Départ Guide MRS", "ref": "TP402 LIS→MRS", "date": "23/07 Jeu", "heure": "14h15", "lieu": "LIS T1" }
+  ],
+  "alerte_transport": {
+    "titre": "⚠️ J7 — Départs serrés",
+    "lignes": [
+      "08h30 Départ Óbidos · 09h30 dépôt T1 · KL1580 Parents 11h55 ✅ · AC811 Fils 13h00 ✅",
+      "~10h15 Restitution Tangerine Parque das Nações · navette T1 · Vol guide TP402 14h15 ✅"
+    ]
+  },
+  "hebergements": [
+    { "nuits": "J2–J3 (18–20/07)", "ref": "hotel-lisboa" },
+    { "nuits": "J4 (20–21/07)", "ref": "hotel-praia-nazare" },
+    { "nuits": "J5 (21–22/07)", "ref": "mercure-porto" },
+    { "nuits": "J6 (22–23/07)", "ref": "casa-senhoras-rainhas" }
+  ],
+  "reservations": [
+    { "ok": true, "jour": "J2 · 18/07", "heure": "14h30", "site": "Mosteiro dos Jerónimos", "pers": "4p", "ref": "N° 37244492" },
+    { "ok": true, "jour": "J3 · 19/07", "heure": "14h00", "site": "Palácio da Pena — Sintra", "pers": "4p", "ref": "N° 31704168" },
+    { "ok": true, "jour": "J3 · 19/07", "heure": "16h00", "site": "Quinta da Regaleira — Sintra", "pers": "4p", "ref": "N° 31704168" },
+    { "ok": true, "jour": "J5 · 21/07", "heure": "15h30", "site": "Livraria Lello — Porto", "pers": "4p", "ref": "Inclus · déductible d'un achat en librairie" },
+    { "ok": false, "jour": "J2 · 18/07", "heure": "—", "site": "Restaurant Fado — Alfama (J2 soir)", "pers": "—", "ref": "À réserver en juillet · Dona Amália / Clube de Fado / Real Fado Concerts" }
+  ],
+  "jours": [
+    { "id": "J1", "date": "Ven 17/07", "titre": "Transit", "etapes": "ICN → AMS → LIS · SFO → YYZ → LIS", "hebergement": "—" },
+    { "id": "J2", "date": "Sam 18/07", "titre": "Lisbonne · Arrivées + Belém", "etapes": "Belém : Padrão · Torre · Jerónimos · Pastéis → Baixa · Chiado", "hebergement": "Hotel Lisboa" },
+    { "id": "J3", "date": "Dim 19/07", "titre": "Cabo da Roca · Sintra", "etapes": "Cabo da Roca → Sintra : Centre · Palácio da Pena · Quinta da Regaleira", "hebergement": "Hotel Lisboa" },
+    { "id": "J4", "date": "Lun 20/07", "titre": "Lisbonne Alfama → Nazaré", "etapes": "Alfama : Castelo · Sé → Nazaré : Sítio · Forte", "hebergement": "Hotel Praia · Nazaré" },
+    { "id": "J5", "date": "Mar 21/07", "titre": "Nazaré → Aveiro → Porto", "etapes": "Aveiro : Moliceiro → Porto : Historique · Gaia · Douro", "hebergement": "Mercure Porto" },
+    { "id": "J6", "date": "Mer 22/07", "titre": "Porto → Óbidos", "etapes": "Porto → Óbidos : Village médiéval", "hebergement": "Casa Senhoras Rainhas" },
+    { "id": "J7", "date": "Jeu 23/07", "titre": "Óbidos → Aéroport · Fin de circuit", "etapes": "Óbidos → LIS T1 · Restitution Tangerine", "hebergement": "—" },
+    { "id": "J8", "date": "Ven 24/07", "titre": "Arrivées", "etapes": "ICN · SFO", "hebergement": "—" }
+  ],
+  "alertes": [
+    {
+      "titre": "Funiculaires Lisbonne — à vérifier avant départ",
+      "lignes": [
+        "Suite à un accident (sept. 2025), funiculaires Glória/Bica/Lavra + ascenseur Santa Justa suspendus indéfiniment.",
+        "Vérifier si rétablis pour juillet 2026. Si toujours suspendus → adapter J4 (montée à pied vers Castelo)."
+      ]
+    },
+    {
+      "titre": "Via Verde — 10€ à régler à la prise en charge",
+      "lignes": [
+        "Forfait boîtier Tangerine à payer à la prise en charge le 18/07 à 10h30.",
+        "Indispensable — péages électroniques sans guichet sur A8, A17, A1."
+      ]
+    },
+    {
+      "titre": "Sintra — Le guide n'entre pas dans les sites",
+      "lignes": [
+        "Ni Palácio da Pena, ni Quinta da Regaleira. Briefing complet avant chaque entrée obligatoire.",
+        "Prévoir cartes imprimées ou QR codes. Guide en autonomie 13h30–17h00."
+      ]
+    },
+    {
+      "titre": "Porto — City tax Mercure",
+      "lignes": [
+        "6 € city tax à régler à la réception à l'arrivée.",
+        "Voucher Paul Kyumin listé 'MS' (erreur de genre) — signaler à l'arrivée si nécessaire."
+      ]
+    },
+    {
+      "titre": "Óbidos — Parking impossible sur site",
+      "lignes": [
+        "Village strictement piétonnier. Stationner à Estacionamento do Campo da Bola (gratuit, ~450m à pied).",
+        "Prévoir pour les bagages le soir J6 et le matin J7."
+      ]
+    }
+  ]
+}
