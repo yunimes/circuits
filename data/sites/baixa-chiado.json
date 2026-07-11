@@ -4,7 +4,10 @@
   "parkings": [
     { "nom": "SABA Praça do Município (24h/24, ~3 min à pied de Praça do Comércio)", "maps": "https://maps.app.goo.gl/baixa-parking" }
   ],
-  "note_pratique": "❗️Vérifier compatibilité ZER du véhicule avant d'entrer dans la Baixa",
+  "note_pratique": {
+    "titre": "❗️ Zone ZER",
+    "lignes": ["Vérifier compatibilité ZER du véhicule avant d'entrer dans la Baixa."]
+  },
   "guides": [
     { "nom": "Lisbonne — Partie 1", "id": "lisbonne-1" }
   ],

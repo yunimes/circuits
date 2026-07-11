@@ -10,7 +10,14 @@
     { "nom": "Briefing Palácio da Pena", "id": "briefing-palacio-pena" },
     { "nom": "Guide Palais Pena", "id": "palais-pena" }
   ],
-  "note_pratique": "⚠️ Le guide n'entre pas dans le Palácio da Pena. Briefing complet obligatoire avant l'entrée. Prévoir cartes imprimées ou QR codes. Guide en autonomie 13h30–17h00.",
+  "note_pratique": {
+    "titre": "⚠️ Le guide n'entre pas dans ce site",
+    "lignes": [
+      "Briefing complet obligatoire avant l'entrée — histoire, plan du site, conseils de visite.",
+      "Prévoir cartes imprimées ou QR codes pour les voyageurs.",
+      "Guide en autonomie 13h30–17h00."
+    ]
+  },
   "points": [
     {
       "nom": "Palácio da Pena — Visite autonome",

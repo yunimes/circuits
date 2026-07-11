@@ -5,7 +5,10 @@
     { "nom": "Parque de Estacionamento do Rossio", "maps": "https://maps.app.goo.gl/aveiro-parking-rossio" }
   ],
   "guide": { "nom": "Guide Aveiro", "id": "aveiro" },
-  "note_pratique": "Étape sans nuitée · limiter à 1h30–2h max pour arriver à Porto avant 16h00",
+  "note_pratique": {
+    "titre": "⏱️ Timing",
+    "lignes": ["Étape sans nuitée · limiter à 1h30–2h max pour arriver à Porto avant 16h00."]
+  },
   "points": [
     {
       "nom": "Moliceiro — Balade en barque",

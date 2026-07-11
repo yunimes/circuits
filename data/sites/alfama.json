@@ -8,7 +8,13 @@
     { "nom": "Lisbonne — Partie 1", "id": "lisbonne-1" },
     { "nom": "Lisbonne — Partie 2", "id": "lisbonne-2" }
   ],
-  "note_pratique": "Tram 12E depuis Martim Moniz → arrêt Portas do Sol · Plan B si attente >15–20' : montée à pied (~20–25')",
+  "note_pratique": {
+    "titre": "🚋 Tram 12E",
+    "lignes": [
+      "Depuis Martim Moniz → descendre à l'arrêt Portas do Sol.",
+      "Plan B si attente >15–20' : montée à pied Martim Moniz → Costa do Castelo (~20–25', dénivelé modéré)."
+    ]
+  },
   "boucle": {
     "distance_m": 2000,
     "marche_min": 115,

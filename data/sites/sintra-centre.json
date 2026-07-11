@@ -5,7 +5,13 @@
     { "nom": "P2 Portela Urbanismo (gratuit — ❗️horaires à confirmer)", "maps": "https://maps.app.goo.gl/sintra-p2" }
   ],
   "guide": { "nom": "Sintra", "id": "sintra" },
-  "note_pratique": "Guide gare le véhicule seul au P2 (~20–25' A/R) · Groupe déposé à Volta do Duche pour flânerie libre en attendant",
+  "note_pratique": {
+    "titre": "🚗 Logistique véhicule / groupe",
+    "lignes": [
+      "Guide dépose le groupe à Volta do Duche, puis gare le véhicule seul au P2 Portela Urbanismo (~20–25' A/R).",
+      "Groupe en flânerie libre dans le centre historique en attendant."
+    ]
+  },
   "boucle": {
     "distance_m": 900,
     "marche_min": 45,

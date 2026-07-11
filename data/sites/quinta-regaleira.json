@@ -10,7 +10,14 @@
     { "nom": "Briefing Quinta da Regaleira", "id": "briefing-quinta-regaleira" },
     { "nom": "Guide Quinta da Regaleira", "id": "quinta-da-regaleira" }
   ],
-  "note_pratique": "⚠️ Le guide n'entre pas. Briefing obligatoire avant l'entrée. Départ : taxi Pena → Largo Carlos França (~5–8' à pied de l'entrée Regaleira). Sortie groupe → Volta do Duche à pied (~350m 5') ou taxi selon fatigue.",
+  "note_pratique": {
+    "titre": "⚠️ Le guide n'entre pas dans ce site",
+    "lignes": [
+      "Briefing complet obligatoire avant l'entrée.",
+      "Départ : taxi Pena → Largo Carlos França (~5–8' à pied de l'entrée Regaleira).",
+      "Sortie groupe → Volta do Duche à pied (~350m, 5') ou taxi selon fatigue."
+    ]
+  },
   "points": [
     {
       "nom": "Puits initiatique (Poço Iniciático)",

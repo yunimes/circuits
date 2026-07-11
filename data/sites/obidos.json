@@ -5,7 +5,13 @@
     { "nom": "Estacionamento do Campo da Bola (gratuit · ~450m à pied)", "maps": "https://maps.app.goo.gl/obidos-parking" }
   ],
   "guide": { "nom": "Guide Óbidos", "id": "obidos" },
-  "note_pratique": "❌ Village strictement piétonnier · aucune solution de parking sur site ni à l'hôtel",
+  "note_pratique": {
+    "titre": "❌ Parking",
+    "lignes": [
+      "Village strictement piétonnier · aucune solution de parking sur site ni à l'hôtel.",
+      "Stationner à Estacionamento do Campo da Bola (gratuit, ~450m à pied)."
+    ]
+  },
   "boucle": {
     "distance_m": 1500,
     "marche_min": 200,
