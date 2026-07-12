@@ -1,26 +1,29 @@
-# 🧭 GUIDE DE REPRISE — Créer un nouveau circuit (Portugal)
+# 🧭 GUIDE DE REPRISE — Créer un nouveau circuit
 
 > À lire en premier à ton retour. Ce document part du principe que tu as TOUT
-> oublié. Il te fait construire le circuit Portugal pas à pas, en réutilisant
-> le système Nîmes→Nice déjà en place.
-> 
-> Dépôt : `yunimes/circuits` · Live : `https://yunimes.github.io/circuits/`
+> oublié. Il te fait construire un nouveau circuit pas à pas, en réutilisant
+> le système déjà en place.
+>
+> Dépôt : `yunimes/circuits` · Live : `https://yunimes.github.io/circuits/accueil.html`
 
 -----
 
 ## 0. Démarrer la conversation avec Claude (2 min)
 
 1. Ouvre une nouvelle conversation Claude.
-1. Active le **connecteur GitHub** : bouton « + » → « Add from GitHub » →
-   sélectionne le dépôt `circuits`. (Si jamais indisponible, colle plutôt les
-   fichiers `PROJET.md` et ce guide.)
-1. Premier message type :
+2. Colle le contenu de **`PROJET.md`** (dossier `Doc_projet/`) en début de message.
+   C'est le document de reprise principal — il contient tout le contexte.
+3. Premier message type :
 
-> « Je reprends mon outil de feuilles de route (dépôt circuits). Le système
-> Nîmes→Nice est en place. Je veux créer un NOUVEAU circuit : Portugal.
-> Lis PROJET.md et GUIDE-NOUVEAU-CIRCUIT.md pour le contexte, puis aide-moi. »
+> « Je reprends mon outil de feuilles de route (dépôt circuits). Lis ce
+> PROJET.md, puis aide-moi à créer un nouveau circuit : [destination]. »
 
 Claude aura alors tout le contexte sans que tu réexpliques.
+
+> **Note :** Le **connecteur GitHub** (bouton « + » → « Add from GitHub »)
+> permet à Claude de lire ton dépôt directement. Utile, mais pas indispensable
+> si tu colles PROJET.md. Les deux approches fonctionnent. **PROJET.md reste
+> en local Obsidian — pas besoin de l'uploader sur GitHub.**
 
 -----
 
@@ -31,7 +34,11 @@ référencés par `id`. Un « jour » ne fait qu’ASSEMBLER ces fichiers en ajo
 l’horaire et les durées.
 
 ```
+accueil.html           ← Page d'accueil : liste de tous les circuits
+index.html?c=ID        ← Dashboard : métadonnées circuit + accès aux jours
+jour.html?j=JX&c=ID   ← Moteur : affiche une feuille de jour
 data/
+├── circuits.json  ← Index de tous les circuits (liste pour accueil.html)
 ├── sites/         ← lieux de visite          (réutilisables)
 ├── hebergements/  ← où on dort                (réutilisables)
 ├── restaurants/   ← où on mange               (réutilisables)
@@ -39,8 +46,9 @@ data/
 ├── recits/        ← modules narratifs          (réutilisables)
 ├── guides/        ← guides oraux en .md         (réutilisables)
 └── circuits/
-    ├── 2026-0618/  ← circuit Nîmes→Nice (existant)
-    └── AAAA-MMJJ/  ← TON NOUVEAU CIRCUIT PORTUGAL (à créer)
+    ├── 2026-0618/  ← circuit Nîmes→Nice
+    ├── 2026-0718/  ← circuit Lisbonne·Porto·Óbidos
+    └── AAAA-MMJJ/  ← TON NOUVEAU CIRCUIT (à créer)
 ```
 
 **Règle d’or n°1 :** `id` = nom de fichier (sans extension), minuscules, tirets,
@@ -55,33 +63,33 @@ Safari AVANT de chercher un bug.
 
 -----
 
-## 2. Ce que tu RÉUTILISES vs ce que tu CRÉES pour le Portugal
+## 2. Ce que tu RÉUTILISES vs ce que tu CRÉES pour un nouveau circuit
 
-Le moteur (`app.js`, `style.css`, `index.html`, `jour.html`, `guide.html`) est
-**générique** : il marche pour n’importe quel pays, tu n’y touches pas.
+Le moteur (`app.js`, `style.css`, `accueil.html`, `index.html`, `jour.html`,
+`guide.html`) est **générique** : il marche pour n’importe quel pays,
+tu n’y touches pas.
 
-Pour le Portugal, tu crées seulement du CONTENU :
+Pour chaque nouveau circuit, tu crées seulement du CONTENU :
 
-|À créer                |Où                        |Note                                               |
+|À créer / modifier     |Où                        |Note                                               |
 |-----------------------|--------------------------|---------------------------------------------------|
-|1 dossier circuit      |`data/circuits/AAAA-MMJJ/`|date de départ du circuit Portugal                 |
-|`circuit.json`         |dans ce dossier           |dashboard (logistique, résa, hébergements, alertes)|
-|`J1.json … Jn.json`    |dans ce dossier           |un fichier par jour                                |
-|Sites portugais        |`data/sites/`             |porto.json, lisbonne.json, sintra.json…            |
+|Ajouter une entrée     |`data/circuits.json`      |Une ligne pour que l’accueil affiche le circuit    |
+|1 dossier circuit      |`data/circuits/AAAA-MMJJ/`|Date de départ du circuit                          |
+|`circuit.json`         |dans ce dossier           |Dashboard (logistique, résa, hébergements, alertes)|
+|`J1.json … Jn.json`    |dans ce dossier           |Un fichier par jour                                |
+|Sites du pays          |`data/sites/`             |porto.json, lisbonne.json, sintra.json…            |
 |Hébergements           |`data/hebergements/`      |                                                   |
 |Restaurants            |`data/restaurants/`       |                                                   |
-|Parcours (si roadtrips)|`data/parcours/`          |extrémités modulables                              |
-|Récits                 |`data/recits/`            |tes histoires/anecdotes                            |
+|Parcours (si roadtrips)|`data/parcours/`          |Extrémités modulables                              |
+|Récits                 |`data/recits/`            |Tes histoires/anecdotes                            |
 |Guides oraux           |`data/guides/`            |.md, copiés d’Obsidian                             |
 
-⚠️ **Rien de la France n’est touché.** Les deux circuits coexistent. Le dashboard
+⚠️ **Rien des autres circuits n’est touché.** Ils coexistent. Le dashboard
 de chaque circuit lit son propre `circuit.json`.
 
 -----
 
 ## 3. Méthode de travail recommandée (la plus efficace)
-
-C’est l’ordre qui a le mieux marché pour Nîmes→Nice :
 
 **Étape A — Prépare tes feuilles de route dans Obsidian** (comme d’habitude).
 C’est ta source. Garde la même structure de callouts qu’avant.
@@ -91,17 +99,29 @@ C’est ta source. Garde la même structure de callouts qu’avant.
 C’est indépendant et rapide.
 
 **Étape C — Demande à Claude de construire jour par jour.** Donne-lui une feuille
-de route (J1 Portugal), il génère : les sites, récits, restaurants, hébergements
-ET le Jn.json. Il te livre les fichiers à déployer. Tu valides la FIDÉLITÉ avant
-de déployer (préviews).
+de route (J1), il génère : les sites, récits, restaurants, hébergements ET le
+Jn.json. Il te livre les fichiers à déployer. Tu valides la FIDÉLITÉ avant de
+déployer (préviews).
 
-**Étape D — Le dashboard en dernier** (circuit.json), une fois les jours connus.
+**Étape D — Le dashboard en dernier** (`circuit.json`), une fois les jours connus.
 
-**Étape E — Déploie sur GitHub** (Add file / edit), vide le cache, teste.
+**Étape E — Ajoute le circuit à l’accueil.** Édite `data/circuits.json` et ajoute
+une entrée pour le nouveau circuit (voir modèle section 4).
+
+**Étape F — Génère les textes coréens** si les notes des sites sont en français.
+Voir section 5 « Workflow textes coréens ».
+
+**Étape G — Déploie sur GitHub** (Add file / edit), vide le cache, teste.
 
 -----
 
 ## 4. Structures de référence (copier-coller)
+
+### Entrée dans `data/circuits.json` (une ligne par circuit)
+
+```json
+{ "id": "2026-XXXX", "emoji": "🇵🇹", "titre": "Lisbonne · Porto · Óbidos", "sous_titre": "Groupe LEE-RYOU · 4p · 18–23 juillet 2026" }
+```
 
 ### Un SITE à visiter (boucle pédestre)
 
@@ -109,6 +129,7 @@ de déployer (préviews).
 {
   "id": "porto",
   "nom": "Porto",
+  "langue_source": "fr",
   "guide": { "nom": "Guide Porto", "id": "porto" },
   "parkings": [ { "nom": "...", "maps": "https://..." } ],
   "boucle": {
@@ -116,8 +137,8 @@ de déployer (préviews).
     "points": [
       {
         "nom": "...", "emoji": "🏛️", "maps": "https://...",
-        "aide_memoire": ["ligne courte terrain"],
-        "texte_original": "texte long (mode Révision). Markdown OK : ## titres.",
+        "aide_memoire": ["tes notes en français (orientation pour le workflow coréen)"],
+        "texte_original": [],
         "photo": "📸 ...",
         "recits": ["id-recit"]
       }
@@ -126,10 +147,22 @@ de déployer (préviews).
 }
 ```
 
+> **`langue_source: "fr"`** : ajouter si tes notes sont en français et que tu veux
+> générer les textes coréens via `ecrire_aide_memoire.yml` (voir section 5).
+> Le workflow le remplace par `"ko"` après traitement.
+
 ### Un SITE à points simples (pas de boucle fermée)
 
 Remplace `"boucle": {...}` par `"points": [ {…}, {…} ]` directement.
 (Un lieu à un seul point = `"points": [ {…} ]` — toujours un TABLEAU `points`.)
+
+### ⚠️ Piège n°1 (vécu) : `note_pratique` est TOUJOURS un objet
+
+```json
+"note_pratique": { "titre": "Billetterie", "lignes": ["Acheter en ligne", "..."] }
+```
+
+**JAMAIS une string** `"note_pratique": "texte direct"` — ça produit "undefined" dans l'UI.
 
 ### Un RÉCIT
 
@@ -207,17 +240,42 @@ Remplace `"boucle": {...}` par `"points": [ {…}, {…} ]` directement.
 { "heure": "16h00", "type": "portion", "parcours": "douro-vallee", "depart": "Porto", "arrivee": "Pinhão", "duree": "2h", "trajet_duree": "1h10", "trajet_km": 58 }
 { "heure": "18h00", "type": "checkin", "titre": "Check-in · ...", "texte": "...", "duree": "30 min" }
 { "heure": "19h00", "type": "degustation", "titre": "...", "maps": "https://...", "prix": "..." }
-{ "heure": "17h00", "type": "courses", "titre": "🛒 ...", "segments": ["🚗 ...", "🛒 ..."], "note_pratique": {...} }
+{ "heure": "17h00", "type": "courses", "titre": "🛒 ...", "segments": ["🚗 ...", "🛒 ..."], "note_pratique": {"titre":"...","lignes":["..."]} }
 ```
 
-⚠️ **Le piège n°1 (vécu) :** pour un roadtrip, le créneau doit avoir
+⚠️ **Piège n°2 :** pour un roadtrip, le créneau doit avoir
 `"parcours": "id"` — PAS un `"titre"` + `"arrets"` inline. Sinon les arrêts ne
 s’affichent pas. Le contenu des arrêts vit dans le fichier `parcours/`, le
 créneau ne fait que le RÉFÉRENCER avec depart/arrivee/durées.
 
 -----
 
-## 5. Déploiement sur GitHub (rappel)
+## 5. Workflow : générer les textes coréens (sites en français)
+
+Quand les notes d'un nouveau pays sont en français, utilise le workflow
+`ecrire_aide_memoire.yml` pour générer automatiquement `aide_memoire` et
+`texte_original` en coréen via Claude.
+
+**Procédure :**
+
+1. Créer les fichiers sites avec `"langue_source": "fr"` au niveau racine.
+2. Mettre tes notes françaises dans `aide_memoire[]` (orientation seulement —
+   Claude génère du contenu depuis ses propres connaissances, plus riche).
+3. Laisser `"texte_original": []`.
+4. Uploader les fichiers sur GitHub.
+5. Aller dans l'onglet **Actions** du dépôt → `ecrire_aide_memoire.yml` →
+   **Run workflow**.
+
+**Ce que fait le workflow :**
+- Traite uniquement les fichiers avec `"langue_source": "fr"`
+- Génère d'abord un `texte_original` coréen élaboré (source de vérité)
+- Extrait l'`aide_memoire` coréen depuis ce `texte_original` (cohérence garantie)
+- Marque `"langue_source": "ko"` après traitement (protection anti-re-traitement)
+- Les fichiers sans `langue_source: "fr"` (ex. anciens circuits Nîmes) sont marqués « Ignoré » — c'est normal
+
+-----
+
+## 6. Déploiement sur GitHub (rappel)
 
 - **Créer un fichier :** Add file → Create new file → taper le chemin complet
   (ex. `data/sites/porto.json`) → coller → Commit.
@@ -225,11 +283,12 @@ créneau ne fait que le RÉFÉRENCER avec depart/arrivee/durées.
 - **Le dossier se crée** en tapant le chemin avec des `/`.
 - **Après déploiement :** vider le cache Safari, recharger.
 - **Si un parcours est vide :** ajouter `&debug=1` à l’URL
-  (ex. `jour.html?j=J1&debug=1`) → le moteur affiche le diagnostic.
+  (ex. `jour.html?j=J1&c=2026-0718&debug=1`) → le moteur affiche le diagnostic.
+- **PROJET.md** : reste en local Obsidian — pas besoin de l’uploader sur GitHub.
 
 -----
 
-## 6. Check-list de fidélité (avant de déployer un jour)
+## 7. Check-list de fidélité (avant de déployer un jour)
 
 - [ ] Tous les textes des feuilles source sont présents, non condensés
 - [ ] Les callouts `[!warning]` de tête de journée → `warnings[]` (pas dans un créneau)
@@ -237,11 +296,13 @@ créneau ne fait que le RÉFÉRENCER avec depart/arrivee/durées.
 - [ ] Les sous-horaires exacts respectés
 - [ ] Les liens Maps vérifiés
 - [ ] `id` des guides = noms réels des fichiers `.md`
-- [ ] Les roadtrips référencés par `"parcours": "id"` (piège n°1)
+- [ ] Les roadtrips référencés par `"parcours": "id"` (piège n°2)
+- [ ] `note_pratique` est un objet `{ titre, lignes[] }` — jamais une string (piège n°1)
+- [ ] `data/circuits.json` mis à jour avec le nouveau circuit
 
 -----
 
-## 7. Si quelque chose ne marche pas
+## 8. Si quelque chose ne marche pas
 
 1. Vider le cache Safari (80% des cas).
 1. Vérifier que `app.js` ET les JSON sont cohérents et déployés.
@@ -253,5 +314,5 @@ créneau ne fait que le RÉFÉRENCER avec depart/arrivee/durées.
 
 -----
 
-Bon circuit en Provence — et bonne construction du Portugal à ton retour.
-Tout est déjà en place ; tu n’as qu’à ajouter du contenu. 🇵🇹
+Bon circuit — et bonne construction du prochain !
+Tout est déjà en place ; tu n’as qu’à ajouter du contenu. 🗺️
