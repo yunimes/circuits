@@ -80,9 +80,9 @@ async function loadJSON(path) {
 }
 function mapLink(url, label) { return url ? `<a href="${url}">${label || 'Maps'}</a>` : ''; }
 
-async function renderDash(c) {
+async function renderDash(c, circuitId) {
   const jours = c.jours.map(j => `
-    <a class="jour-btn" href="jour.html?j=${j.id}">
+    <a class="jour-btn" href="jour.html?j=${j.id}&c=${circuitId}">
       <div class="jour-id">${j.id}</div>
       <div class="jour-info">
         <div class="jour-date">${j.date}</div>
@@ -138,6 +138,7 @@ async function renderDash(c) {
 
   document.getElementById('app').innerHTML = `
     <div class="dash-head">
+      <a href="accueil.html" style="font-size:12px;color:var(--ink-soft);text-decoration:none;display:inline-block;margin-bottom:8px">‹ Tous les circuits</a>
       <div class="dash-titre">🗺️ ${c.titre}</div>
       <div class="dash-sous">${c.sous_titre}</div>
     </div>
@@ -165,7 +166,10 @@ function sectionBloc(id, titre, contenu, ouvert) {
 function toggleBloc(id) { document.getElementById(id).classList.toggle('ouvert'); }
 
 (async function () {
-  try { await renderDash(await loadJSON('circuits/2026-0718/circuit.json')); }
+  try {
+    const circuitId = new URLSearchParams(location.search).get('c') || '2026-0718';
+    await renderDash(await loadJSON(`circuits/${circuitId}/circuit.json`), circuitId);
+  }
   catch (e) { document.getElementById('app').innerHTML = `<div style="padding:20px;color:#A33B2E">Erreur: ${e.message}</div>`; }
 })();
 </script>

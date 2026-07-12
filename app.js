@@ -316,6 +316,7 @@ function setMode(m) {
 function getParam(name){ return new URLSearchParams(window.location.search).get(name); }
 (async function () {
   const j = getParam('j') || 'J1';
-  try { await renderJour(await loadJSON(`circuits/2026-0718/${j}.json`)); }
+  const c = getParam('c') || '2026-0718';
+  try { await renderJour(await loadJSON(`circuits/${c}/${j}.json`)); }
   catch (e) { document.getElementById('app').innerHTML = `<div style="padding:20px;color:#A33B2E">Erreur: ${e.message}</div>`; }
 })();
