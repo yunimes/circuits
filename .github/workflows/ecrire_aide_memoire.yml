@@ -113,9 +113,10 @@ jobs:
               };
 
               const req = https.request(options, res => {
-                let raw = '';
-                res.on('data', d => raw += d);
+                const chunks = [];
+                res.on('data', d => chunks.push(Buffer.isBuffer(d) ? d : Buffer.from(d)));
                 res.on('end', () => {
+                  const raw = Buffer.concat(chunks).toString('utf8');
                   try {
                     const parsed = JSON.parse(raw);
                     if (parsed.error) throw new Error('Claude API error: ' + JSON.stringify(parsed.error));
