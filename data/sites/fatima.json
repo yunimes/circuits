@@ -1,0 +1,42 @@
+{
+  "id": "fatima",
+  "langue_source": "fr",
+  "nom": "Santuário de Fátima",
+  "parkings": [
+    { "nom": "Parking côté Hotel Mercure", "maps": "https://maps.app.goo.gl/hZePSH9NLGWmBD1KA?g_st=ic" }
+  ],
+  "note_pratique": {
+    "titre": "⚠️ Horaire de messe",
+    "lignes": [
+      "Vérifier l'horaire de la messe pour ne pas perturber un office pendant la visite."
+    ]
+  },
+  "points": [
+    {
+      "nom": "Esplanade",
+      "emoji": "🏞️",
+      "aide_memoire": [
+        "Vue d'ensemble sur le sanctuaire · large espace · rythme tranquille",
+        "Basilique ancienne et basilique nouvelle visibles de part et d'autre de l'esplanade"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Chapelle des Apparitions",
+      "emoji": "🕯️",
+      "aide_memoire": [
+        "Lieu principal du sanctuaire · recueillement · voix basse, photos sans flash",
+        "Pèlerins en prière — lieu vécu, pas seulement un site touristique"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Basilique Nossa Senhora do Rosário",
+      "emoji": "⛪",
+      "aide_memoire": [
+        "Intérieur de la basilique ancienne · tombeaux des 3 voyants (Lúcia, Francisco, Jacinta)"
+      ],
+      "texte_original": []
+    }
+  ]
+}
