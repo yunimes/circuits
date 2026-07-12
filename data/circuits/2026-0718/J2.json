@@ -74,16 +74,35 @@
       "heure": "16h30",
       "type": "boucle",
       "site": "baixa-chiado",
-      "visite": { "duree": "1h30" }
+      "visite": { "duree": "40 min" }
     },
     {
-      "heure": "18h10",
+      "heure": "17h10",
+      "type": "trajet",
+      "titre": "Rua Augusta → Alfama · Tram 28/12E",
+      "duree": "20 min",
+      "note_pratique": "Descendre à l'arrêt Portas do Sol · tram 12E alternative moins fréquentée que le 28 · Tarif 3,30€ en espèces à bord, ou 1,90€/1,72€ avec carte Viva Viagem/Navegante (0,50€ la carte)"
+    },
+    {
+      "heure": "17h30",
+      "type": "boucle",
+      "site": "alfama",
+      "visite": { "duree": "1h" }
+    },
+    {
+      "heure": "18h30",
+      "type": "trajet",
+      "titre": "Retour parking SABA Praça do Município",
+      "duree": "20 min"
+    },
+    {
+      "heure": "18h50",
       "type": "trajet",
       "titre": "Baixa → Hotel Lisboa",
-      "duree": "15 min"
+      "duree": "10 min"
     },
     {
-      "heure": "18h25",
+      "heure": "19h00",
       "type": "checkin",
       "titre": "Check-in · Hotel Lisboa",
       "texte": "Rua Barata Salgueiro, 5 · Parking extérieur 10€/j · 3 places dispo · à demander à l'enregistrement (sans réservation)"

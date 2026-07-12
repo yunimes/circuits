@@ -36,9 +36,9 @@
   ],
   "jours": [
     { "id": "J1", "date": "Ven 17/07", "titre": "Transit", "etapes": "ICN → AMS → LIS · SFO → YYZ → LIS", "hebergement": "—" },
-    { "id": "J2", "date": "Sam 18/07", "titre": "Lisbonne · Arrivées + Belém", "etapes": "Belém : Padrão · Torre · Jerónimos · Pastéis → Baixa · Chiado", "hebergement": "Hotel Lisboa" },
+    { "id": "J2", "date": "Sam 18/07", "titre": "Lisbonne · Arrivées + Belém", "etapes": "Belém : Padrão · Torre · Jerónimos · Pastéis → Baixa · Alfama : Castelo · Sé", "hebergement": "Hotel Lisboa" },
     { "id": "J3", "date": "Dim 19/07", "titre": "Cabo da Roca · Sintra", "etapes": "Cabo da Roca → Sintra : Centre · Palácio da Pena · Quinta da Regaleira", "hebergement": "Hotel Lisboa" },
-    { "id": "J4", "date": "Lun 20/07", "titre": "Lisbonne Alfama → Nazaré", "etapes": "Alfama : Castelo · Sé → Nazaré : Sítio · Forte", "hebergement": "Hotel Praia · Nazaré" },
+    { "id": "J4", "date": "Lun 20/07", "titre": "Lisbonne → Fátima → Nazaré", "etapes": "Fátima : Sanctuaire → Nazaré : Sítio · Forte", "hebergement": "Hotel Praia · Nazaré" },
     { "id": "J5", "date": "Mar 21/07", "titre": "Nazaré → Aveiro → Porto", "etapes": "Aveiro : Moliceiro → Porto : Historique · Gaia · Douro", "hebergement": "Mercure Porto" },
     { "id": "J6", "date": "Mer 22/07", "titre": "Porto → Óbidos", "etapes": "Porto → Óbidos : Village médiéval", "hebergement": "Casa Senhoras Rainhas" },
     { "id": "J7", "date": "Jeu 23/07", "titre": "Óbidos → Aéroport · Fin de circuit", "etapes": "Óbidos → LIS T1 · Restitution Tangerine", "hebergement": "—" },
@@ -49,7 +49,7 @@
       "titre": "Funiculaires Lisbonne — à vérifier avant départ",
       "lignes": [
         "Suite à un accident (sept. 2025), funiculaires Glória/Bica/Lavra + ascenseur Santa Justa suspendus indéfiniment.",
-        "Vérifier si rétablis pour juillet 2026. Si toujours suspendus → adapter J4 (montée à pied vers Castelo)."
+        "Vérifier si rétablis pour juillet 2026. Si toujours suspendus → adapter J2 (montée à pied vers Castelo)."
       ]
     },
     {
