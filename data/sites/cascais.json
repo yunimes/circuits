@@ -1,0 +1,25 @@
+{
+  "id": "cascais",
+  "langue_source": "fr",
+  "nom": "Cascais — front de mer",
+  "guide": { "nom": "Guide Cascais", "id": "cascais" },
+  "parkings": [
+    {
+      "nom": "Parque Marechal Carmona (Cascais Próxima) — Av. da República, 389, 2750-475 Cascais · ouvert 24h/24 · paiement numéraire et carte · ⚠️ tarif estimé ~8€/jour non confirmé"
+    }
+  ],
+  "points": [
+    {
+      "nom": "Boca do Inferno + front de mer",
+      "emoji": "🌊",
+      "aide_memoire": [
+        "Falaises et grottes marines spectaculaires, accès libre et gratuit, praticable en famille.",
+        "Accès depuis le parking Marechal Carmona : ~5-10 min à pied.",
+        "Possibilité de pause café/thé au bord de l'Atlantique (café \"A ver o Parque\" dans le parking, ou établissements du front de mer).",
+        "Pas de réservation nécessaire.",
+        "Durée recommandée : ~45-50 min."
+      ],
+      "texte_original": []
+    }
+  ]
+}

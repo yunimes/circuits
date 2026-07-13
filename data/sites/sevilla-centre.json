@@ -1,0 +1,71 @@
+{
+  "id": "sevilla-centre",
+  "langue_source": "fr",
+  "nom": "Séville — centre historique",
+  "guide": { "nom": "Guide Séville", "id": "sevilla" },
+  "parkings": [
+    {
+      "nom": "Parking Meliá Sevilla — Calle Dr. Pedro de Castro 1, 41004 Sevilla · parking couvert d'un autre hôtel du groupe Meliá (à ne pas confondre avec le Meliá Lebreros), à 2 min à pied de la Plaza de España",
+      "maps": "https://www.google.com/maps/place/?q=place_id:ChIJW4NBeCBsEg0R03-cU5rlGug"
+    },
+    {
+      "nom": "Parking Torre de la Plata",
+      "maps": "https://maps.app.goo.gl/Uvb8uaTpYQ7WcNHcA?g_st=ic"
+    }
+  ],
+  "points": [
+    {
+      "nom": "Plaza de España + Parque de María Luisa",
+      "emoji": "🌇",
+      "maps": "https://maps.app.goo.gl/KUnT4AxVNLTUEfGN6?g_st=ic",
+      "aide_memoire": [
+        "Place emblématique de l'Exposition ibéro-américaine de 1929, gratuit.",
+        "Accès libre, ouvert 8h00-minuit.",
+        "Idéal en fin de journée (coucher du soleil ~21h15 en août) — moins de monde, lumière superbe pour les photos.",
+        "Parc María Luisa attenant, gratuit.",
+        "Durée recommandée : 45 min - 1h."
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Cathédrale de Séville + Tour Giralda",
+      "emoji": "⛪",
+      "maps": "https://maps.app.goo.gl/gHtSE5NZ2oFsnCjU8?g_st=ic",
+      "aide_memoire": [
+        "Plus grande cathédrale gothique du monde, tombeau de Christophe Colomb.",
+        "Billet combiné ~12 €.",
+        "Durée recommandée : 30 min (passage) à plus selon programme."
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Real Alcázar",
+      "emoji": "🏰",
+      "maps": "https://maps.app.goo.gl/sDZUH2SWSCYLtoNp6?g_st=ic",
+      "aide_memoire": [
+        "Palais mudéjar, ~14,50 €.",
+        "❗️Réservation en ligne fortement recommandée — quota de visiteurs, dernière admission 18h15.",
+        "⚠️ Aucune réservation confirmée à ce jour (cf. Information Circuit) — à traiter avant le départ.",
+        "Durée recommandée : 30 min (passage) à plus selon programme."
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Barrio Santa Cruz",
+      "emoji": "🚶",
+      "aide_memoire": [
+        "Ancien quartier juif, ruelles typiques, gratuit.",
+        "Bon point de flânerie entre Plaza de España et le dîner."
+      ],
+      "texte_original": []
+    }
+  ],
+  "note_pratique": {
+    "titre": "Sites optionnels selon temps disponible",
+    "lignes": [
+      "Las Setas (Metropol Parasol) · ~5-15 € selon option · vue panoramique, spectacle de lumière en soirée",
+      "Spectacle de flamenco · ~20-35 €/pers ⚠️ tarif estimé, mentionné comme optionnel — non réservé à ce jour",
+      "Torre del Oro · quartier de Triana"
+    ]
+  }
+}

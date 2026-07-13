@@ -1,0 +1,71 @@
+{
+  "id": "evora",
+  "langue_source": "fr",
+  "nom": "Évora — centre historique (UNESCO)",
+  "guide": { "nom": "Guide Évora", "id": "evora" },
+  "parkings": [
+    {
+      "nom": "Parking gratuit zone Portas da Lagoa / Aqueduto — Praça da Horta da Porta, à côté de l'Aqueduto da Água de Prata · stationnement municipal en plein air, gratuit, sans limite de durée constatée · à distinguer des zones à parcmètre du centre historique (payantes lun-ven 8h30-19h30, sam 9h-14h, gratuites le reste du temps)",
+      "maps": "https://www.google.com/maps/place/?q=place_id:ChIJmdimO-DkGQ0RoDAmolK7X2w"
+    }
+  ],
+  "boucle": {
+    "distance_m": 1200,
+    "marche_min": 35,
+    "points": [
+      {
+        "nom": "Templo Romano de Évora (Temple de Diane)",
+        "emoji": "🏛️",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJQXqPCd3kGQ0RvX--v_U4dho",
+        "aide_memoire": [
+          "Plus ancien monument romain du Portugal, très beau au coucher du soleil.",
+          "Accès libre, en plein air, ouvert 24h/24 — aucun billet nécessaire.",
+          "Site le plus emblématique d'Évora ; adjacent à la Sé.",
+          "Durée recommandée : 15-20 min."
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Sé Catedral de Évora",
+        "emoji": "⛪",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJVcDDxP_vGQ0RGBqaa46vtTE",
+        "aide_memoire": [
+          "Plus grande cathédrale médiévale du Portugal.",
+          "Horaires vérifiés (site officiel evoracathedral.com) : tous les jours 9h00-17h00.",
+          "Tarif vérifié : billet unique « Sé + Cloître + Vue panoramique + Musée » = 5,00 € — enfants jusqu'à 12 ans gratuits accompagnés.",
+          "⚠️ Paiement en espèces uniquement selon un retour de visiteur — à prévoir par précaution.",
+          "Montée à la terrasse par escalier étroit — non adaptée aux personnes à mobilité réduite.",
+          "Durée recommandée : 45 min (nef, cloître, terrasse panoramique, musée)."
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Capela dos Ossos (Igreja de São Francisco)",
+        "emoji": "💀",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJSZa4itvkGQ0RxsMt9GIv6eM",
+        "aide_memoire": [
+          "Site le plus emblématique d'Évora, macabre et impressionnant — ossements humains apparents, à signaler au groupe en amont selon leur sensibilité.",
+          "Horaires vérifiés (site officiel igrejadesaofrancisco.pt) : ouvert tous les jours sauf 1er janvier, dimanche de Pâques, 24/12 après-midi et 25/12 — horaire d'été 9h00-18h30.",
+          "Tarif vérifié : billet unique adulte 7,00 € (Capela dos Ossos + Sala do Capítulo + Musée d'art sacré + terrasse) — jeunes/seniors 5,00 €.",
+          "La nef de l'église est en accès libre et gratuit ; seuls la Capela dos Ossos et les espaces muséaux sont payants.",
+          "Durée recommandée : 30-40 min."
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Praça do Giraldo",
+        "emoji": "☕",
+        "aide_memoire": [
+          "Place centrale d'Évora, cafés, boutiques de produits en liège (spécialité régionale) — bonne pause avant le déjeuner, pas d'arrêt formel nécessaire."
+        ],
+        "texte_original": []
+      }
+    ]
+  },
+  "note_pratique": {
+    "titre": "⚠️ Site optionnel à évaluer selon le temps disponible",
+    "lignes": [
+      "Almendres Cromlech (site mégalithique, ~15 km hors ville) — non inclus par défaut faute de confirmation."
+    ]
+  }
+}

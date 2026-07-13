@@ -1,0 +1,33 @@
+{
+  "id": "torremolinos-carihuela",
+  "langue_source": "fr",
+  "nom": "Torremolinos — La Carihuela",
+  "guide": { "nom": "Guide Torremolinos", "id": "torremolinos" },
+  "parkings": [
+    {
+      "nom": "Parking Parkia La Carihuela Playa — Av. Carlota Alessandri, 60, 29620 Torremolinos · ouvert 24h/24 · couvert · vidéosurveillance · bornes de recharge électrique · hauteur max 2,10 m · dimensions max 5,00 x 2,50 m · tarif à partir de ~2,29€/h (rotation) ⚠️ tarif journée/longue durée à confirmer sur place",
+      "maps": "https://www.google.com/maps/place/?q=place_id:ChIJnRZ1u4v7cg0ROS9kUUisTK4"
+    }
+  ],
+  "points": [
+    {
+      "nom": "Playa de la Carihuela — temps libre / baignade",
+      "emoji": "🏖️",
+      "aide_memoire": [
+        "Plage gratuite, ~2 km de long, sable sombre, eaux calmes — ancien quartier de pêcheurs, très bonne réputation gastronomique (pescaíto frito, espetos de sardines).",
+        "Location de transats/parasols sur place ⚠️ (~8€/transat, tarif à confirmer sur place).",
+        "Nombreux chiringuitos pour une pause fraîcheur.",
+        "⚠️ Stationnement très demandé en août — parking couvert recommandé plutôt qu'une recherche de place en voirie.",
+        "Distance à pied depuis le parking : ~4 min.",
+        "Durée recommandée : 1h15-1h30."
+      ],
+      "texte_original": []
+    }
+  ],
+  "note_pratique": {
+    "titre": "En passant",
+    "lignes": [
+      "Ruelles typiques de La Carihuela (Calle Los Perros, Arenas, Chiriva) · Casa de los Navajas · Parque de la Batería (à pied depuis la plage, ~15 min)."
+    ]
+  }
+}

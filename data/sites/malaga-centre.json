@@ -1,0 +1,80 @@
+{
+  "id": "malaga-centre",
+  "langue_source": "fr",
+  "nom": "Málaga — centre historique",
+  "guide": { "nom": "Guide Málaga", "id": "malaga" },
+  "parkings": [
+    {
+      "nom": "Aparcamiento La Alcazaba — Plaza de Jesús \"El Rico\", 3, 29012 Málaga · ouvert 24h/24, 7j/7 · 532 places publiques · accès PMR · tarif ⚠️ ~2,10€/h annoncé sur place, forfait journée ~18-20€ (variable selon avis) · hauteur max non communiquée, à vérifier avant d'engager le véhicule (poste de contrôle 952 21 23 00)",
+      "maps": "https://www.google.com/maps/place/?q=place_id:ChIJjTrKFQD3cg0R0vc135DnfR4"
+    },
+    {
+      "nom": "Alternative : Parking de Muelle Uno — zone portuaire, ~10-15 min à pied de l'Alcazaba, plus spacieux, gabarits plus confortables pour un utilitaire — utile si Alcazaba complet",
+      "maps": "https://www.google.com/maps/place/?q=place_id:ChIJs4PVMwD3cg0R3MNgeZEDVug"
+    }
+  ],
+  "boucle": {
+    "distance_m": 1500,
+    "marche_min": 40,
+    "points": [
+      {
+        "nom": "Teatro Romano",
+        "emoji": "🏛️",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJM8NJoOr3cg0RKUe-SadD5oU",
+        "aide_memoire": [
+          "Au pied de l'Alcazaba.",
+          "Horaires : mardi-samedi 10h00-18h00 · dimanche/fériés 10h00-16h00 · fermé le lundi (sans impact le 12/08, mercredi).",
+          "Entrée gratuite, y compris le centre d'interprétation.",
+          "Durée recommandée : 20-30 min."
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Alcazaba de Málaga",
+        "emoji": "🏰",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJxSK7oOr3cg0RZ7K4v2udaYQ",
+        "aide_memoire": [
+          "Forteresse maure, vue sur le port.",
+          "Horaires (source officielle Ayuntamiento, saison été 1/04-31/10) : 09h00-20h00, dernier accès 19h00, ouvert 7j/7. ❗️ Google Maps affiche des horaires différents (9h-18h) — se fier à alcazabaygibralfaro.malaga.eu en cas de doute.",
+          "Tarif : Général 7,00 € · Combiné Alcazaba + Gibralfaro 10,00 € · Groupe (10 pers. min., non applicable ici) 5,00 €.",
+          "Billetterie sur place ou en ligne (alcazabaygibralfaro.janto.es).",
+          "Terrain accidenté, nombreuses marches — non adapté aux poussettes/fauteuils.",
+          "Durée recommandée : 1h-1h15."
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Catedral de Málaga (\"La Manquita\")",
+        "emoji": "⛪",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJjanOEZX3cg0R-hlvsHnCw_w",
+        "aide_memoire": [
+          "Tour inachevée caractéristique.",
+          "Horaires (mercredi) : 10h00-18h30, dernier accès 45 min avant fermeture.",
+          "❗️ Tarif variable selon les sources (de 3€ à 10€ selon catégorie/formule avec audioguide) — à reconfirmer sur malagacatedral.com ou en caisse.",
+          "Façade et Puerta del Perdón visibles gratuitement de l'extérieur si visite intérieure écartée faute de temps.",
+          "Durée recommandée : 15 min (extérieur/photo) à 45-60 min (visite intérieure)."
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Calle Larios",
+        "emoji": "🛍️",
+        "maps": "https://www.google.com/maps/place/?q=place_id:ChIJX_OksZX3cg0RBuCwuIlH1PM",
+        "aide_memoire": [
+          "Rue piétonne principale, shopping, gratuit.",
+          "Durée recommandée : 15-20 min (passage)."
+        ],
+        "texte_original": []
+      }
+    ]
+  },
+  "note_pratique": {
+    "titre": "Options selon temps/énergie du groupe",
+    "lignes": [
+      "Museo Picasso Málaga (optionnel) · 1h-1h30 · ~9-16,50€ selon formule ⚠️ tarifs divergents · Palacio de Buenavista, C. San Agustín 8 · ouvert tous les jours 10h00-19h00 — consomme facilement 1h-1h30, au détriment du temps libre ou de la plage",
+      "Playa de la Malagueta (alternative baignade) · gratuite, sable foncé, mer généralement calme · ~15-20 min à pied du centre — bon point d'observation pour l'éclipse partielle du soir si le groupe est encore présent",
+      "Castillo de Gibralfaro (optionnel, seulement si large marge de temps) · 1h30-2h A/R à pied (dénivelé sensible) ou ~45 min en véhicule/bus 35 · horaires 09h00-19h00 · meilleur panorama sur Málaga et la baie",
+      "Mercado de Atarazanas (option rapide) · marché couvert historique, tapas et fruits de mer frais · ⚠️ ouvert seulement 9h00-14h00, fermé le dimanche"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "ronda",
+  "langue_source": "fr",
+  "nom": "Ronda — centre et gorge du Tajo",
+  "guide": { "nom": "Guide Ronda", "id": "ronda" },
+  "parkings": [
+    {
+      "nom": "Parking AT Ronda-Centro",
+      "maps": "https://maps.app.goo.gl/HfuNPZWpghTfzknp8?g_st=ic"
+    }
+  ],
+  "points": [
+    {
+      "nom": "Puente Nuevo (vue extérieure)",
+      "emoji": "🌉",
+      "maps": "https://maps.app.goo.gl/qLLtfaGZ9JhJqCYy5?g_st=ic",
+      "aide_memoire": [
+        "Symbole de Ronda, franchit la gorge du Tajo (~100 m de profondeur).",
+        "Vue gratuite depuis le pont et les miradors alentour (Mirador de Aldehuela, Paseo Blas Infante).",
+        "Centre d'interprétation à l'intérieur du pont (optionnel) : ~2,50 €/pers, courte visite (~15 min).",
+        "⚠️ Zone très fréquentée toute la journée — meilleure lumière et moins de monde tôt le matin.",
+        "Durée recommandée : 15-20 min."
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Desfiladero del Tajo — Camino del Desfiladero",
+      "emoji": "🥾",
+      "aide_memoire": [
+        "❗️ Correspond en réalité au \"Mirador Puente Nuevo\" du catalogue circuit initial (Camino del Desfiladero, ouvert en 2024).",
+        "❗️ Quota strict de 30 personnes/heure — réservation en ligne indispensable avant le départ (site officiel du Desfiladero del Tajo), achat limité à 4 billets par transaction (prévoir 2 transactions pour le groupe de 4 + guide).",
+        "Tarif : 5 €/pers, casque de sécurité fourni à l'entrée et restitué à la sortie.",
+        "⚠️ Horaires discordants selon les sources : soit 9h30-19h30 en continu, soit 10h00-14h00 puis 18h00-20h20 en été — à reconfirmer sur le site officiel avant réservation.",
+        "Enfants de moins de 8 ans non admis.",
+        "Sentier suspendu à flanc de paroi menant au pied du Puente Nuevo, vue sur la cascade et le Guadalevín ; 2ᵉ phase (vers les Baños Árabes) en travaux — parcours limité à ~200-250 m selon plusieurs avis récents.",
+        "Accès depuis Puente Nuevo : ~10-15 min à pied (via Plaza de María Auxiliadora, entrée à la Casa de Manolillo).",
+        "Durée recommandée : 45 min."
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Baños Árabes",
+      "emoji": "🛁",
+      "maps": "https://maps.app.goo.gl/NWs1WbdXbk4uovTc6?g_st=ic",
+      "aide_memoire": [
+        "Parmi les mieux conservés d'Espagne.",
+        "❗️ Horaires en semaine (haute saison) : ~9h30-20h00 selon la fiche la plus récente — ⚠️ d'autres sources indiquent une fermeture à 19h00, à reconfirmer sur place ou par téléphone (+34 951 15 42 97). Weekend/jours fériés : 10h00-15h00.",
+        "Tarif : ~3,50 €/pers ⚠️ (variantes constatées entre 3 € et 4,50 €).",
+        "Vidéo de présentation (espagnol/anglais sous-titré), site compact, visite rapide.",
+        "Accès depuis le Desfiladero del Tajo / La Ciudad : ~10 min à pied (quartier de San Miguel, en contrebas).",
+        "Durée recommandée : 20-25 min."
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Plaza de Toros de Ronda (Real Maestranza) + Museo Taurino",
+      "emoji": "🐂",
+      "maps": "https://maps.app.goo.gl/JxVXLpJaXokxszc56?g_st=ic",
+      "aide_memoire": [
+        "L'une des plus anciennes arènes d'Espagne ; ruedo (piste) le plus large d'Espagne.",
+        "Horaires (avril-septembre) : 10h00-20h00, 7j/7.",
+        "Tarif : 9 €/pers en individuel — pas de tarif groupe en dessous de 15 personnes.",
+        "Audioguide disponible en plusieurs langues ❗️ présence du coréen à confirmer sur place.",
+        "Musée taurin : costumes, affiches, histoire des dynasties Romero et Ordóñez.",
+        "Durée recommandée : 30-45 min."
+      ],
+      "texte_original": []
+    }
+  ],
+  "note_pratique": {
+    "titre": "🏛️ Ville chère à Hemingway",
+    "lignes": [
+      "Vieille ville (La Ciudad) et ses ruelles maures · Puente Viejo · Casa del Rey Moro (jardins suspendus) — en passant.",
+      "Alameda del Tajo · gratuit · jardins et mirador (statues Hemingway/Orson Welles) — en passant.",
+      "⚠️ Setenil de las Bodegas (village troglodyte à ~20 min de Ronda) — optionnel, à évaluer selon temps disponible."
+    ]
+  }
+}
