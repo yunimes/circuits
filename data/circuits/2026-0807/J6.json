@@ -1,0 +1,123 @@
+{
+  "jour": "J6",
+  "date": "Mercredi 12 août 2026",
+  "titre": "Málaga (matinée resserrée) → Aéroport · Fin du service guide",
+  "abstract": [
+    { "emoji": "✈️", "texte": "Vol confirmé Málaga → Barcelone 14h55 — présentation à l'aéroport 12h55 au plus tard", "heure_cle": "12h55", "ref": "❗️Horaire dur, marge très réduite" },
+    { "emoji": "🏛️", "texte": "Programme resserré : Teatro Romano + Alcazaba uniquement (sans Cathédrale, ni Calle Larios, ni déjeuner assis)", "heure_cle": "09:10" },
+    { "emoji": "👋", "texte": "Fin du service du guide à l'aéroport de Málaga", "heure_cle": "~12h40" }
+  ],
+  "warnings": [
+    {
+      "titre": "Vol Málaga → Barcelone 14h55 confirmé — journée entièrement resserrée le matin",
+      "lignes": [
+        "Confirmation reçue : le vol domestique 14:55 (간단한 일정) est bien celui des voyageurs — l'hypothèse \"fin d'après-midi\" de l'Information Circuit est écartée.",
+        "❗️Présentation à l'aéroport de Málaga (AGP) au plus tard 12h55. Programme du matin volontairement condensé : Teatro Romano + Alcazaba uniquement (sans Catedral, ni Calle Larios, ni déjeuner assis) — voir le catalogue du site malaga-centre pour les autres points, non réalisables ce jour.",
+        "❗️Terminal de dépose et modalités de restitution du véhicule toujours à confirmer avec IMES."
+      ]
+    }
+  ],
+  "creneaux": [
+    {
+      "heure": "08:00",
+      "type": "checkin",
+      "titre": "Petit-déjeuner à l'hôtel",
+      "texte": "Rapide — journée resserrée."
+    },
+    {
+      "heure": "08:30",
+      "type": "checkin",
+      "titre": "Check-out anticipé · Catalonia Málaga",
+      "texte": "Bagages chargés dans le véhicule."
+    },
+    {
+      "heure": "08:45",
+      "type": "trajet",
+      "titre": "Hôtel → Parking Alcazaba",
+      "duree": "12-15 min",
+      "km": 5,
+      "note_pratique": { "titre": "Trajet", "lignes": ["Paseo Marítimo / Av. Manuel Agustín Heredia · trajet côtier direct, sans autoroute ni péage."] },
+      "parkings": [
+        { "nom": "Aparcamiento La Alcazaba — Plaza de Jesús \"El Rico\", 3 · 532 places · ⚠️ tarif ~2,10€/h, forfait journée ~18-20€ (variable) · hauteur max non communiquée — véhicule 1,89 m, à confirmer compatibilité avant d'engager (poste de contrôle 952 21 23 00)", "maps": "https://www.google.com/maps/place/?q=place_id:ChIJjTrKFQD3cg0R0vc135DnfR4" }
+      ]
+    },
+    {
+      "heure": "09:00",
+      "type": "checkin",
+      "titre": "Dépôt véhicule — Aparcamiento La Alcazaba"
+    },
+    {
+      "heure": "09:05",
+      "type": "trajet",
+      "titre": "Marche vers le Teatro Romano",
+      "duree": "3 min"
+    },
+    {
+      "heure": "09:10",
+      "type": "boucle",
+      "site": "malaga-centre",
+      "visite": { "duree": "1h30" },
+      "note_pratique": {
+        "titre": "Programme resserré — sans Cathédrale ni Calle Larios",
+        "lignes": [
+          "Teatro Romano (25') — gratuit",
+          "Marche vers l'entrée Alcazaba (3')",
+          "Alcazaba de Málaga (~1h) — 7€/pers ou 10€ combiné Gibralfaro · durée réduite compte tenu du planning condensé · terrain accidenté, chaussures confortables"
+        ]
+      }
+    },
+    {
+      "heure": "10:40",
+      "type": "trajet",
+      "titre": "Marche vers Mercado de Atarazanas",
+      "duree": "10 min"
+    },
+    {
+      "heure": "10:50",
+      "type": "repas",
+      "duree": "50 min",
+      "restaurant": {
+        "nom": "Déjeuner rapide — Mercado de Atarazanas (ou panier repas)",
+        "aide_memoire": [
+          "Mercado de Atarazanas (C. Atarazanas, 10) · marché couvert historique, stands de tapas et fruits de mer frais, ambiance vivante — 4,6 (49 000+ avis) · ⚠️ ouvert seulement 9h00-14h00 (fermé le dimanche, sans impact le 12/08 = mercredi)",
+          "Alternative : panier repas préparé à l'avance si le groupe préfère éviter tout arrêt supplémentaire.",
+          "Pas de déjeuner assis ce jour compte tenu de la contrainte horaire du vol 14h55."
+        ]
+      }
+    },
+    {
+      "heure": "11:40",
+      "type": "trajet",
+      "titre": "Retour vers le parking",
+      "duree": "10-15 min"
+    },
+    {
+      "heure": "11:55",
+      "type": "checkin",
+      "titre": "Récupération véhicule — Aparcamiento La Alcazaba"
+    },
+    {
+      "heure": "12:05",
+      "type": "trajet",
+      "titre": "Centre → Aéroport de Málaga (AGP)",
+      "duree": "15-18 min hors trafic",
+      "km": 11,
+      "note_pratique": {
+        "titre": "Trajet",
+        "lignes": ["A-7 (Av. Comandante García Morato) · pas de péage sur cet itinéraire.", "❗️Terminal de dépose et modalités de restitution du véhicule à confirmer avec IMES."]
+      }
+    },
+    {
+      "heure": "12:25",
+      "type": "checkin",
+      "titre": "Arrivée aéroport",
+      "texte": "Marge d'environ 30 min avant l'heure limite de présentation (12h55) pour le vol 14h55."
+    },
+    {
+      "heure": "12:30",
+      "type": "checkin",
+      "titre": "Fin du service guide",
+      "texte": "Accompagnement enregistrement/dépôt bagages, transmission des consignes pour la suite du voyage, au revoir au groupe."
+    }
+  ]
+}

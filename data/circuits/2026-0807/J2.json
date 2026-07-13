@@ -1,0 +1,153 @@
+{
+  "jour": "J2",
+  "date": "Samedi 08 août 2026",
+  "titre": "Lisbonne → Cascais → Cabo da Roca → Sintra → Lisbonne",
+  "abstract": [
+    { "emoji": "🎟️", "texte": "Palais National de la Pena — billet à horodatage obligatoire", "heure_cle": "14h00-14h30", "ref": "❗️Réservation en ligne indispensable avant le 08/08 sur parquesdesintra.pt" },
+    { "emoji": "⚠️", "texte": "Accès Pena/Château des Maures interdit en voiture particulière depuis 2018 — stationnement Portela de Sintra + navette 434", "alerte": true },
+    { "emoji": "⚠️", "texte": "Risque réaliste de retour à l'hôtel après 18h30 (plutôt ~18h45-19h00) — à annoncer au groupe en amont", "alerte": true }
+  ],
+  "hebergement": "hotel-lisboa",
+  "creneaux": [
+    {
+      "heure": "09:00",
+      "type": "trajet",
+      "titre": "Hotel Lisboa → Cascais",
+      "duree": "30-35 min hors trafic (~40-45 min avec trafic samedi matin)",
+      "km": 30,
+      "note_pratique": {
+        "titre": "Trajet",
+        "lignes": [
+          "Autoroute A5 (Autoestrada da Costa do Estoril) · Péage confirmé : 1,60 € (tarif Classe 1, 2026)",
+          "Alternative : Marginal (N6, front de mer Lisbonne-Cascais) · +15-20 min · gratuit · plus pittoresque mais très chargée le week-end en été"
+        ]
+      },
+      "parkings": [
+        { "nom": "Parque Marechal Carmona (Cascais Próxima) — Av. da República, 389 · ⚠️ tarif estimé ~8€/jour non confirmé" }
+      ]
+    },
+    {
+      "heure": "09:40",
+      "type": "boucle",
+      "site": "cascais",
+      "visite": { "duree": "50 min" }
+    },
+    {
+      "heure": "10:30",
+      "type": "trajet",
+      "titre": "Cascais → Cabo da Roca",
+      "duree": "20 min",
+      "km": 16,
+      "note_pratique": {
+        "titre": "Trajet",
+        "lignes": ["N247 (route côtière via Azóia) · gratuit · route simple et unique, aucune difficulté d'itinéraire signalée"]
+      }
+    },
+    {
+      "heure": "10:50",
+      "type": "boucle",
+      "site": "cabo-da-roca",
+      "visite": { "duree": "30 min" },
+      "note_pratique": {
+        "titre": "Prévoir coupe-vent",
+        "lignes": ["Vent fort et frais toute l'année à Cabo da Roca."]
+      }
+    },
+    {
+      "heure": "11:20",
+      "type": "trajet",
+      "titre": "Cabo da Roca → Sintra",
+      "duree": "20-25 min",
+      "km": 16,
+      "note_pratique": {
+        "titre": "Trajet",
+        "lignes": ["N247 puis accès Sintra · gratuit"]
+      }
+    },
+    {
+      "heure": "11:45",
+      "type": "checkin",
+      "titre": "Stationnement Portela de Sintra + navette 434 vers centre historique",
+      "texte": "❗️Circulation en véhicule particulier interdite sur les accès directs au Palais de la Pena et au Château des Maures depuis 2018 — la fin du trajet se fait en navette/bus 434 ou à pied, quel que soit le parking choisi. Navette gratuite / bus 434 (circuit historique) desservant le centre historique ET le Parc-Palais de la Pena, fréquence ~7-10 min.",
+      "duree": "30 min",
+      "parkings": [
+        { "nom": "Portela de Sintra (Parque de Estacionamento / Park & Ride) — proche de la gare de Portela de Sintra · ⚠️ estimation ~1-2€/h, ~5-10€/jour à confirmer (parking.sintra.pt) · un seul stationnement pour la journée" },
+        { "nom": "Alternative : P1 Norte — le plus proche du Palais de la Pena à pied (~10-15 min de montée) ⚠️ ~5-10€/h, se remplit vite en été" }
+      ]
+    },
+    {
+      "heure": "12:15",
+      "type": "checkin",
+      "titre": "Passage — centre historique, Casa Piriquita",
+      "texte": "Pas d'arrêt formel.",
+      "duree": "15 min"
+    },
+    {
+      "heure": "12:30",
+      "type": "repas",
+      "duree": "1h30",
+      "restaurant": {
+        "nom": "Déjeuner — Sintra, centre historique",
+        "aide_memoire": [
+          "Option 1 — Tacho Real (R. da Ferraria 4, 2710-616 Sintra) · 15-25€/pers hors boissons · cuisine portugaise traditionnelle généreuse (bacalhau à Tacho Real, filet de bœuf aux crevettes) · horaires 12h00-15h30 et 19h30-22h00, fermé le mercredi · réservation recommandée, forte affluence en août",
+          "Option 2 — Tasca do Xico (Rua Arco do Teixeira n°6, 2710-533 Sintra) · ~20€/pers hors boissons · petite tasca conviviale, plats portugais traditionnels (morue, poulpe, côtes d'agneau), terrasse agréable, très proche de la pâtisserie Casa Piriquita · réservation conseillée pour le service du midi"
+        ]
+      }
+    },
+    {
+      "heure": "14:00",
+      "type": "trajet",
+      "titre": "Navette 434 centre historique → entrée Parc da Pena + marche jusqu'au Palais",
+      "duree": "30 min",
+      "note_pratique": {
+        "titre": "❗️Selon l'heure du billet réservé",
+        "lignes": ["Compter ~30 min entre l'entrée du Parc et l'entrée du Palais dans chaque sens."]
+      }
+    },
+    {
+      "heure": "14:30",
+      "type": "visite",
+      "site": "palacio-pena",
+      "visite": { "duree": "2h15" },
+      "note_pratique": {
+        "titre": "❗️Billet à horodatage obligatoire",
+        "lignes": [
+          "Aucune tolérance de retard, pas d'échange/remboursement en cas de retard. Réservation en ligne sur parquesdesintra.pt avant le départ.",
+          "Horaires : Palais + Parc 09h30-18h30 (dernière entrée 18h00) · Parc seul jusqu'à 19h00.",
+          "Tarif estimé (catalogue) : ~14-20€ selon option — à reconfirmer, tarifs susceptibles d'évolution en 2026.",
+          "Fermeture billetterie 12h00-13h00 (distributeur automatique disponible).",
+          "Un seul site formel retenu à Sintra ce jour — Château des Maures et Quinta da Regaleira non planifiés en visite formelle, à proposer uniquement en cas d'avance réelle sur le planning."
+        ]
+      }
+    },
+    {
+      "heure": "16:45",
+      "type": "trajet",
+      "titre": "Retour navette/marche → parking Portela de Sintra",
+      "duree": "30 min"
+    },
+    {
+      "heure": "17:15",
+      "type": "trajet",
+      "titre": "Sintra → Lisbonne",
+      "duree": "30-40 min hors trafic (~45-50 min avec trafic samedi fin d'après-midi)",
+      "km": 30,
+      "note_pratique": {
+        "titre": "Trajet",
+        "lignes": ["IC19 / A16 · gratuit, pas de péage sur cet axe — retour direct vers l'hôtel"]
+      }
+    },
+    {
+      "heure": "19:30",
+      "type": "repas",
+      "duree": "1h30",
+      "restaurant": {
+        "nom": "Dîner — proximité Hotel Lisboa (à pied)",
+        "aide_memoire": [
+          "Option 1 — Cervejaria Ribadouro (Avenida da Liberdade, 155) · 20-50€/pers hors boissons · cervejaria/marisqueira emblématique de Lisbonne depuis 1947, fruits de mer très frais, bacalhau, bife Ribadouro · ouvert tous les jours 12h00-01h30 · réservation recommandée · ~7-8 min à pied de l'hôtel",
+          "Option 2 — Floresta do Salitre (R. do Salitre 42D) · ~15-20€/pers hors boissons · petit restaurant familial depuis 1929, cuisine maison (bacalhau com grão, bitoque) · ⚠️ horaires divergents selon sources, à confirmer par téléphone +351 213 547 605 (généralement 12h00-15h00 et 19h00-22h00) · ~5 min à pied de l'hôtel"
+        ]
+      }
+    }
+  ]
+}

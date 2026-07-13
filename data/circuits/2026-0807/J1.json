@@ -1,0 +1,71 @@
+{
+  "jour": "J1",
+  "date": "Vendredi 07 août 2026",
+  "titre": "Vol + arrivée Lisbonne",
+  "abstract": [
+    { "emoji": "✈️", "texte": "Vol KE0921 Séoul ICN → Lisbonne LIS", "heure_cle": "20h15", "ref": "Korean Air Prestige (D) · Boeing 787-9 · 15h30 de vol" },
+    { "emoji": "⚠️", "texte": "Aucune visite prévue ce jour — décalage horaire -8h Séoul/Lisbonne", "alerte": true },
+    { "emoji": "💶", "texte": "Taxe de séjour Hotel Lisboa 16€ au total, à régler sur place à l'arrivée", "alerte": true }
+  ],
+  "hebergement": "hotel-lisboa",
+  "creneaux": [
+    {
+      "heure": "12:45",
+      "type": "checkin",
+      "titre": "Décollage Séoul ICN — vol KE0921",
+      "texte": "Korean Air, Prestige (D), Boeing 787-9 · 15h30 de vol"
+    },
+    {
+      "heure": "20:15",
+      "type": "checkin",
+      "titre": "Atterrissage Lisbonne LIS (T1) · Débarquement & contrôle passeports",
+      "texte": "⚠️ Heure à reconfirmer le jour J (retards long-courrier possibles) via appli de suivi de vol · Vol non-Schengen : passage au contrôle des passeports à prévoir au Terminal 1, attente variable · Guide en accueil zone arrivées avant 20:15",
+      "duree": "45 min"
+    },
+    {
+      "heure": "21:00",
+      "type": "trajet",
+      "titre": "Aéroport de Lisbonne (T1) → Hotel Lisboa",
+      "duree": "20-25 min",
+      "km": 7,
+      "note_pratique": {
+        "titre": "Trajet",
+        "lignes": [
+          "Trajet urbain (Av. Almirante Reis / Av. da República ou 2ª Circular selon trafic)",
+          "Pas de péage — parcours entièrement urbain",
+          "Trajet plutôt fluide en soirée (arrivée 20:15, hors heures de pointe), mais Terminal 1 = zone souvent congestionnée en sortie",
+          "⚠️ Durée non vérifiée via viamichelin.fr, à confirmer avant le jour J"
+        ]
+      },
+      "parkings": [
+        { "nom": "Hotel Lisboa — parking sur place, payant 15€/unité/nuit (notes de débit additionnelles selon voucher)", "maps": "https://maps.app.goo.gl/FcegHqHDHwxwLaqL8?g_st=ic" }
+      ]
+    },
+    {
+      "heure": "21:25",
+      "type": "checkin",
+      "titre": "Check-in · Hotel Lisboa",
+      "texte": "❗️Taxe de séjour 16€ au total, payable sur place — prévoir espèces ou CB selon accueil hôtel",
+      "duree": "20 min"
+    },
+    {
+      "heure": "21:45",
+      "type": "repas",
+      "duree": "45 min",
+      "restaurant": {
+        "nom": "Dîner optionnel — à proximité de l'hôtel",
+        "aide_memoire": [
+          "À proposer, pas à imposer — arrivée hôtel estimée ~21:30-21:45 avec décalage horaire de 8h, solliciter le ressenti du groupe avant de réserver quoi que ce soit. Room service / repos direct reste une option tout à fait légitime.",
+          "Option 1 — Dote (Rua Barata Salgueiro 37A, 1250-042 Lisboa) · 15-25 €/pers hors boissons · cuisine portugaise traditionnelle, portions généreuses, cadre familial · ~1 min à pied (48 m) · ouvert tous les jours 12h00-01h00 ⚠️ horaires à reconfirmer · pas de réservation nécessaire pour un petit groupe en semaine",
+          "Option 2 — Koppu Ramen Izakaya (Rua do Salitre 131, 1250-198 Lisboa) · 15-20 €/pers hors boissons · ramen et izakaya japonais, alternative si le groupe préfère une cuisine plus proche de leurs repères après un long vol · ~3-4 min à pied (246 m) · ouvert mardi-samedi 12h00-23h30 (07/08 = vendredi, donc ouvert) · réservation conseillée : reservas.koppu@gmail.com"
+        ]
+      }
+    },
+    {
+      "heure": "22:30",
+      "type": "checkin",
+      "titre": "Nuit — Hotel Lisboa",
+      "texte": "Nuit 1/2"
+    }
+  ]
+}

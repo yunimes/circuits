@@ -1,1 +1,70 @@
-
+{
+  "id": "2026-0807",
+  "titre": "Lisbonne · Évora · Séville · Ronda · Málaga",
+  "sous_titre": "Famille KANG · 4 personnes · 5N/6J · 07–12 août 2026",
+  "logistique": {
+    "groupe": "4 personnes — KANG Minung (père), LEE Joohyun (mère), KANG Wonjoon (fils), KANG Jaewon (fille)",
+    "vehicule": "Citroën Jumpy 9 places · 1,89 m · ER928GL",
+    "guide": "Yun ZO (조윤)"
+  },
+  "transports": [
+    { "type": "🛬", "label": "Arrivée groupe LIS", "ref": "KE0921 ICN→LIS · Korean Air Prestige (D) · Boeing 787-9", "date": "07/08 Ven", "heure": "20h15", "lieu": "LIS T1" }
+  ],
+  "alerte_transport": {
+    "titre": "✅ J6 — Vol Málaga → Barcelone 14h55 confirmé",
+    "lignes": [
+      "Présentation à l'aéroport de Málaga (AGP) au plus tard 12h55 — programme du matin resserré en conséquence (Teatro Romano + Alcazaba uniquement).",
+      "❗️Terminal de dépose et modalités de restitution du véhicule toujours à confirmer avec IMES."
+    ]
+  },
+  "hebergements": [
+    { "nuits": "J1–J2 (07–09/08)", "ref": "hotel-lisboa" },
+    { "nuits": "J3 (09–10/08)", "ref": "hilton-garden-inn-evora" },
+    { "nuits": "J4 (10–11/08)", "ref": "melia-lebreros" },
+    { "nuits": "J5–J6 (11–12/08)", "ref": "catalonia-malaga" }
+  ],
+  "reservations": [
+    { "ok": false, "jour": "J2 · 08/08", "heure": "14h00-14h30", "site": "Palácio da Pena — Sintra", "pers": "4p", "ref": "❗️À réserver en ligne avant le 08/08 sur parquesdesintra.pt — billet à horodatage obligatoire" },
+    { "ok": false, "jour": "J4-J5 · 10-11/08", "heure": "—", "site": "Real Alcázar — Séville", "pers": "4p", "ref": "Quota de visiteurs — aucune réservation confirmée à ce jour" },
+    { "ok": false, "jour": "J5 · 11/08", "heure": "—", "site": "Desfiladero del Tajo — Ronda", "pers": "4p+guide", "ref": "Quota 30 pers/h, max 4 billets/transaction — prévoir 2 transactions · à confirmer si toujours souhaité (cf. J5)" },
+    { "ok": false, "jour": "J4 · 10/08", "heure": "12h15", "site": "Tasquinha do Oliveira — Évora", "pers": "4p", "ref": "Réservation indispensable, très petite capacité (~14 couverts)" },
+    { "ok": false, "jour": "J4 · 10/08", "heure": "21h00", "site": "Casa Román — Séville (Santa Cruz)", "pers": "4p", "ref": "Réservation conseillée en août" },
+    { "ok": false, "jour": "J3 · 09/08", "heure": "13h00", "site": "Casa do Alentejo — Lisbonne", "pers": "4p", "ref": "—" },
+    { "ok": false, "jour": "—", "heure": "—", "site": "Spectacle de flamenco — Séville", "pers": "4p", "ref": "Optionnel, non réservé — tarif estimé 20-35€/pers, à trancher avec le groupe" }
+  ],
+  "jours": [
+    { "id": "J1", "date": "Ven 07/08", "titre": "Vol + arrivée Lisbonne", "etapes": "KE0921 ICN→LIS · aucune visite (décalage horaire)", "hebergement": "Hotel Lisboa" },
+    { "id": "J2", "date": "Sam 08/08", "titre": "Cascais · Cabo da Roca · Sintra", "etapes": "Cascais : Boca do Inferno → Cabo da Roca → Sintra : Palácio da Pena", "hebergement": "Hotel Lisboa" },
+    { "id": "J3", "date": "Dim 09/08", "titre": "Lisbonne (journée) → Évora", "etapes": "Alfama : Castelo de São Jorge · Sé → Belém (extérieur) → Évora", "hebergement": "Hilton Garden Inn Evora" },
+    { "id": "J4", "date": "Lun 10/08", "titre": "Évora → Séville", "etapes": "Évora : Templo Romano · Sé · Capela dos Ossos → Séville : Plaza de España · Barrio Santa Cruz", "hebergement": "Meliá Lebreros" },
+    { "id": "J5", "date": "Mar 11/08", "titre": "Séville → Ronda → Costa del Sol → Málaga", "etapes": "Séville : Cathédrale · Alcázar → Ronda : Puente Nuevo → Torremolinos : Playa de la Carihuela", "hebergement": "Catalonia Málaga" },
+    { "id": "J6", "date": "Mer 12/08", "titre": "Málaga (matinée resserrée) → Aéroport", "etapes": "Málaga : Teatro Romano · Alcazaba (programme condensé) → Aéroport AGP · Fin du service ~12h30 (vol 14h55 confirmé)", "hebergement": "—" }
+  ],
+  "alertes": [
+    {
+      "titre": "Portée du service du guide",
+      "lignes": [
+        "Le circuit complet des voyageurs va jusqu'au 15/08 (retour Séoul via Madrid), mais le service du guide s'arrête à l'aéroport de Málaga le 12/08.",
+        "Incohérence non résolue pour la suite du voyage des clients : la trame simplifiée (간단한 일정) indique un vol domestique Málaga → Barcelone le 12/08 à 14h55, alors que les e-tickets Korean Air confirment un vol retour international Madrid → Séoul le 14/08 au soir. Validé comme hors périmètre guide, mais à signaler à IMES."
+      ]
+    },
+    {
+      "titre": "Documents manquants",
+      "lignes": [
+        "Confirmation de réservation véhicule (fournisseur, dates/lieux de prise en charge et restitution) — non fournie.",
+        "Trame de circuit détaillée en coréen (billets/suppléments/exclusions) — seule une version très résumée (간단한 일정) a été fournie.",
+        "Logistique de restitution du véhicule à l'aéroport de Málaga (J6) non documentée."
+      ]
+    },
+    {
+      "titre": "Données à vérifier avant le départ",
+      "lignes": [
+        "✅ Hauteur du véhicule confirmée : 1,89 m — compatible avec les parkings à gabarit connu (ex. Torremolinos, max 2,10 m). Péage portugais classe 2 confirmé applicable (J4). Le parking Aparcamiento La Alcazaba (Málaga, J6) n'affiche toujours pas sa hauteur max — à vérifier sur place.",
+        "Montant exact de la taxe de séjour de Séville — non précisé sur le voucher Meliá Lebreros.",
+        "Distances/durées/péages de transferts inter-villes en grande partie estimés, non vérifiés via viamichelin.fr.",
+        "Orthographe \"Lee Joojyun\" → \"Lee Joohyun\" à faire corriger auprès de Meliá Lebreros.",
+        "Réservations visites (Real Alcázar, Desfiladero del Tajo) et restaurants non tranchées par les voyageurs — à traiter au cas par cas plus tard."
+      ]
+    }
+  ]
+}

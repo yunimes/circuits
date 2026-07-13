@@ -1,0 +1,162 @@
+{
+  "jour": "J3",
+  "date": "Dimanche 09 août 2026",
+  "titre": "Lisbonne (journée) → Évora",
+  "abstract": [
+    { "emoji": "🏰", "texte": "Matinée Lisbonne : Castelo de São Jorge, Sé, Alfama", "heure_cle": "10h10" },
+    { "emoji": "🗿", "texte": "Après-midi Belém (extérieur) puis départ vers Évora", "heure_cle": "14h50" },
+    { "emoji": "📍", "texte": "Découverte du centre historique d'Évora reportée à la matinée de J4 — journée intégralement consacrée à Lisbonne", "alerte": true }
+  ],
+  "hebergement": "hilton-garden-inn-evora",
+  "creneaux": [
+    {
+      "heure": "09:00",
+      "type": "trajet",
+      "titre": "Hotel Lisboa → Parking Restauradores",
+      "duree": "10-15 min",
+      "parkings": [
+        { "nom": "Parque Restauradores (Empark/Telpark) — Praça dos Restauradores, s/n, 1250-188", "maps": "https://www.telpark.com/en/cities/lisbon/restauradores-car-park/" }
+      ]
+    },
+    {
+      "heure": "09:30",
+      "type": "checkin",
+      "titre": "Dépôt véhicule — Parque Restauradores",
+      "texte": "Le véhicule reste garé jusqu'après le déjeuner."
+    },
+    {
+      "heure": "09:30",
+      "type": "trajet",
+      "titre": "Marche vers l'arrêt tram Martim Moniz",
+      "duree": "5-10 min"
+    },
+    {
+      "heure": "09:40",
+      "type": "trajet",
+      "titre": "Tram 12E vers Alfama / Portas do Sol",
+      "duree": "25-30 min",
+      "note_pratique": {
+        "titre": "Tram 12E",
+        "lignes": [
+          "Descendre à l'arrêt \"Portas do Sol\" · alternative moins fréquentée que le 28",
+          "Tarif : 3,30 € en espèces à bord, ou 1,90 €/1,72 € avec carte Viva Viagem/Navegante (0,50 € la carte) — la carte est recommandée pour un groupe de 4",
+          "⚠️ Zone la plus fréquentée de la ligne en été, surtout 10h-14h — attente possible, jusqu'à 30 min en cas de forte affluence",
+          "Plan B si absent ou attente >15-20' : montée à pied Martim Moniz → Costa do Castelo (~20-25', dénivelé modéré, prévoir pauses)"
+        ]
+      }
+    },
+    {
+      "heure": "10:10",
+      "type": "boucle",
+      "site": "alfama",
+      "visite": { "duree": "1h55" },
+      "note_pratique": {
+        "titre": "Enchaînement",
+        "lignes": [
+          "Miradouro de Santa Luzia + Miradouro das Portas do Sol (30')",
+          "Montée à pied vers le Castelo (10', aucun tram ne dessert l'entrée directement)",
+          "Castelo de São Jorge (35') — ⚠️ entrée ~15€/pers à revérifier",
+          "Descente à pied par Alfama (20') — ruelles pavées, Teatro Romano, Igreja de Santo António",
+          "Sé de Lisboa (20') — nef gratuite, cloître payant ⚠️ ~4€/pers"
+        ]
+      }
+    },
+    {
+      "heure": "12:05",
+      "type": "trajet",
+      "titre": "Marche vers Praça do Comércio + Arco Triunfal da Rua Augusta",
+      "duree": "20 min"
+    },
+    {
+      "heure": "12:25",
+      "type": "trajet",
+      "titre": "Marche vers le restaurant via Rua Augusta",
+      "duree": "35 min"
+    },
+    {
+      "heure": "13:00",
+      "type": "repas",
+      "duree": "1h",
+      "restaurant": {
+        "nom": "Casa do Alentejo — R. Portas de Santo Antão, 58",
+        "aide_memoire": [
+          "Palais mauresque du XIXe, patio à azulejos · cuisine régionale alentejane · salle de groupe — 4,2 (7974 avis) · 15-35€",
+          "Alternative : Marisqueira Azul (Praça do Comércio 70-71) · terrasse sur la place, accessible PMR, ouvert tous les jours 12h00-22h30 — 4,6 (1728 avis) · 20-50€ (fruits de mer)"
+        ]
+      }
+    },
+    {
+      "heure": "14:00",
+      "type": "checkin",
+      "titre": "Récupération véhicule — Parque Restauradores",
+      "duree": "10 min"
+    },
+    {
+      "heure": "14:10",
+      "type": "trajet",
+      "titre": "Parking Restauradores → Quartier de Belém",
+      "duree": "40 min",
+      "parkings": [
+        { "nom": "Estacionamento Rua de Belém", "maps": "https://maps.app.goo.gl/nTeHATWzKKNFUMLA6?g_st=ic" },
+        { "nom": "Estacionamento Praça Afonso Albuquerque", "maps": "https://maps.app.goo.gl/8fAEBvJHpTDwK1m98?g_st=ic" }
+      ]
+    },
+    {
+      "heure": "14:50",
+      "type": "boucle",
+      "site": "belem",
+      "visite": { "duree": "2h00" },
+      "note_pratique": {
+        "titre": "Extérieur uniquement — pas de billet d'entrée prévu ce jour",
+        "lignes": [
+          "Padrão dos Descobrimentos — extérieur · ascenseur panoramique en option ⚠️ ~4€/pers",
+          "Torre de Belém — extérieur, bord du Tage · entrée en option ~7€/pers",
+          "Mosteiro dos Jerónimos — extérieur uniquement",
+          "Pastéis de Belém — dégustation à emporter (depuis 1837)"
+        ]
+      }
+    },
+    {
+      "heure": "16:50",
+      "type": "trajet",
+      "titre": "Retour au parking",
+      "duree": "10 min"
+    },
+    {
+      "heure": "17:00",
+      "type": "trajet",
+      "titre": "Belém → Évora",
+      "duree": "1h25-1h35 hors trafic",
+      "km": 135,
+      "note_pratique": {
+        "titre": "Trajet",
+        "lignes": [
+          "Ponte 25 de Abril (A2) → A6 (direction Alentejo/Évora)",
+          "Le pont 25 de Abril n'est tarifé que dans le sens Sud→Nord (entrée de Lisbonne) — aucun péage pour le franchir en sortant de Lisbonne",
+          "Péage estimé A2/A6 : 6,35 €"
+        ]
+      },
+      "parkings": [
+        { "nom": "Portas da Lagoa (Évora) — Estrada Regional 114-4, à côté de l'Aqueduc des Águas de Prata · 250 places · accès plat · gratuit et illimité le dimanche" }
+      ]
+    },
+    {
+      "heure": "18:30",
+      "type": "checkin",
+      "titre": "Arrivée & Check-in · Hilton Garden Inn Évora",
+      "texte": "Nuit 1/1"
+    },
+    {
+      "heure": "20:00",
+      "type": "repas",
+      "duree": "—",
+      "restaurant": {
+        "nom": "Dîner — Évora, en autonomie",
+        "aide_memoire": [
+          "Restaurante Fialho (Travessa dos Mascarenhas 16) · 30-50€/pers · institution alentejane depuis 1945, gastronomie régionale réputée, salle spacieuse (85 couverts), ~10-12 min à pied de l'hôtel · ouvert mardi-dimanche 12h30-15h00/19h30-22h00 (fermé lundi) · réservation fortement conseillée le week-end, tél. +351 266 703 079",
+          "Alternative : restaurant de l'hôtel (Hilton Garden Inn Évora) — cuisine alentejane et d'auteur, évite tout déplacement après une journée dense, pas de réservation formelle nécessaire, prévenir la réception pour un groupe de 4"
+        ]
+      }
+    }
+  ]
+}

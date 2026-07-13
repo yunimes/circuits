@@ -1,0 +1,182 @@
+{
+  "jour": "J4",
+  "date": "Lundi 10 août 2026",
+  "titre": "Évora → Séville",
+  "abstract": [
+    { "emoji": "🏛️", "texte": "Matinée Évora : Temple romain, Sé, Capela dos Ossos", "heure_cle": "09h10" },
+    { "emoji": "🚗", "texte": "Trajet Évora → Séville corrigé : ~310 km / ~3h05-3h15 + 1h de décalage horaire", "alerte": true },
+    { "emoji": "🌇", "texte": "Real Alcázar / Cathédrale de Séville non réalisables ce soir — programme de substitution Plaza de España", "alerte": true }
+  ],
+  "warnings": [
+    {
+      "titre": "Correction majeure — temps de trajet Évora → Séville",
+      "lignes": [
+        "L'Information Circuit indiquait ~200 km / ~2h10-2h20. Les recherches croisées (distances routières officielles, itinéraire réel via Badajoz) donnent un trajet réel de ~310 km / ~3h05-3h15 hors trafic, auquel s'ajoute +1h de décalage horaire au passage de la frontière (Espagne en avance sur le Portugal en été). Écart d'environ 1h30 à 2h par rapport à l'estimation d'origine — impact direct sur le programme de l'après-midi à Séville.",
+        "⚠️ À signaler à IMES : l'estimation initiale du trajet était erronée.",
+        "Conséquence : la visite du Real Alcázar et/ou de la Cathédrale de Séville n'est pas réalisable ce soir. Avec une arrivée estimée vers 18h15-18h30 et une dernière admission à l'Alcázar à 18h15 (billet non réservé, quota de visiteurs), le risque de ne pas pouvoir entrer est réel. Programme de substitution : Plaza de España / Parque de María Luisa (accès libre, gratuit, magnifique en fin de journée) + flânerie Barrio Santa Cruz + dîner.",
+        "Le Real Alcázar n'a de toute façon aucune réservation confirmée à ce jour."
+      ]
+    }
+  ],
+  "hebergement": "melia-lebreros",
+  "creneaux": [
+    {
+      "heure": "07:00",
+      "type": "checkin",
+      "titre": "Petit-déjeuner à l'hôtel",
+      "texte": "⚠️ Heure d'ouverture du restaurant à confirmer la veille auprès de la réception."
+    },
+    {
+      "heure": "08:45",
+      "type": "checkin",
+      "titre": "Check-out formel",
+      "texte": "Chargement des bagages dans le véhicule."
+    },
+    {
+      "heure": "08:50",
+      "type": "trajet",
+      "titre": "Hôtel → Parking Portas da Lagoa",
+      "duree": "4 min",
+      "parkings": [
+        { "nom": "Parking gratuit zone Portas da Lagoa / Aqueduto — stationnement municipal en plein air, gratuit, sans limite de durée constatée ; à distinguer des zones à parcmètre du centre historique (payantes lun-ven 8h30-19h30, sam 9h-14h)", "maps": "https://www.google.com/maps/place/?q=place_id:ChIJmdimO-DkGQ0RoDAmolK7X2w" }
+      ]
+    },
+    {
+      "heure": "08:55",
+      "type": "checkin",
+      "titre": "Dépose du véhicule",
+      "texte": "Gratuit."
+    },
+    {
+      "heure": "09:00",
+      "type": "trajet",
+      "titre": "Marche vers le centre historique",
+      "duree": "9-10 min"
+    },
+    {
+      "heure": "09:10",
+      "type": "boucle",
+      "site": "evora",
+      "visite": { "duree": "2h50" },
+      "note_pratique": {
+        "titre": "Enchaînement",
+        "lignes": [
+          "Templo Romano de Évora (15') — accès libre",
+          "Sé Catedral de Évora (50') — billet unique 5€/pers, espèces recommandées",
+          "Marche vers la Capela dos Ossos (10')",
+          "Capela dos Ossos / Igreja São Francisco (40') — billet unique 7€/pers adulte",
+          "Marche vers Praça do Giraldo (10')",
+          "Flânerie Praça do Giraldo, boutiques de liège, pause café (45')"
+        ]
+      }
+    },
+    {
+      "heure": "12:00",
+      "type": "trajet",
+      "titre": "Marche vers le restaurant",
+      "duree": "10-15 min"
+    },
+    {
+      "heure": "12:15",
+      "type": "repas",
+      "duree": "1h15",
+      "restaurant": {
+        "nom": "Tasquinha do Oliveira — R. Cândido dos Reis 45",
+        "aide_memoire": [
+          "Petite adresse familiale, cuisine alentejane traditionnelle très réputée (4,5/5, ~400 avis) · ~10 min à pied de la Capela dos Ossos · +351 266 744 841",
+          "⚠️ Très petite capacité (~14 couverts) — réservation indispensable pour un groupe de 4, à faire plusieurs jours à l'avance. Ouvert le lundi 12h30-15h30.",
+          "À défaut, repli sur O Antão (R. João de Deus 5) — cuisine alentejane traditionnelle, central, service efficace ; ouvert tous les jours y compris le lundi (12h00-15h00/19h00-22h30) · +351 266 706 459",
+          "⚠️ Écartés pour ce lundi (fermés) : Café Alentejo et Dom Joaquim, deux adresses très réputées du centre-ville — à ne pas proposer ce jour précis."
+        ]
+      }
+    },
+    {
+      "heure": "13:30",
+      "type": "trajet",
+      "titre": "Retour à pied vers le véhicule",
+      "duree": "10-12 min"
+    },
+    {
+      "heure": "13:45",
+      "type": "checkin",
+      "titre": "Récupération du véhicule",
+      "texte": "Vérification des bagages."
+    },
+    {
+      "heure": "14:00",
+      "type": "trajet",
+      "titre": "Départ vers Séville — via Badajoz (A6 → A-66)",
+      "duree": "3h05-3h15 hors trafic",
+      "km": 310,
+      "note_pratique": {
+        "titre": "Trajet",
+        "lignes": [
+          "Itinéraire recommandé pour véhicule 9 places : Évora → Elvas → frontière du Caia → Badajoz (A6) → A-66 « Autovía Ruta de la Plata » → Séville",
+          "Péage Portugal (A6, Évora Nascente → Elvas Poente) : ⚠️ estimé 11,80€ en classe 2 — confirmé applicable (véhicule 1,89 m > 1,10 m au 1er essieu). Gratuit ensuite jusqu'à la frontière.",
+          "Aucun péage côté espagnol (A-66 gratuite sur toute la section Extremadura-Andalousie)",
+          "⚠️ Passage de la frontière : avancer les montres d'1h (Espagne en avance sur le Portugal)",
+          "Pause recommandée à mi-parcours (aire de service A-66, zone Zafra/Santa Olalla del Cala)",
+          "Arrivée estimée ~18h15-18h25 heure Espagne — ⚠️ hors trafic et hors arrêts, prévoir une marge jusqu'à 18h30-19h00"
+        ]
+      }
+    },
+    {
+      "heure": "18:15",
+      "type": "checkin",
+      "titre": "Arrivée & check-in · Meliá Lebreros",
+      "duree": "45 min"
+    },
+    {
+      "heure": "19:00",
+      "type": "checkin",
+      "titre": "Temps libre / rafraîchissement à l'hôtel",
+      "duree": "30 min"
+    },
+    {
+      "heure": "19:30",
+      "type": "trajet",
+      "titre": "Hôtel → Plaza de España",
+      "duree": "10-15 min selon circulation",
+      "parkings": [
+        { "nom": "Parking Meliá Sevilla — Calle Dr. Pedro de Castro 1", "maps": "https://www.google.com/maps/place/?q=place_id:ChIJW4NBeCBsEg0R03-cU5rlGug" }
+      ]
+    },
+    {
+      "heure": "19:45",
+      "type": "visite",
+      "site": "sevilla-centre",
+      "visite": { "duree": "1h" },
+      "note_pratique": {
+        "titre": "Plaza de España + Parque de María Luisa",
+        "lignes": ["Flânerie libre, lumière de fin de journée — substitut réaliste à l'Alcázar/Cathédrale, non réalisables ce soir."]
+      }
+    },
+    {
+      "heure": "20:45",
+      "type": "trajet",
+      "titre": "Marche vers le Barrio Santa Cruz",
+      "duree": "15-18 min"
+    },
+    {
+      "heure": "21:00",
+      "type": "repas",
+      "duree": "1h30",
+      "restaurant": {
+        "nom": "Casa Román — Pl. Venerables 1",
+        "aide_memoire": [
+          "Institution du quartier Santa Cruz, jambon, tortilla, poulpe, très bien notée (4,4/5) · terrasse sur une placette calme · +34 954 22 84 83",
+          "Ouvert tous les jours 12h30-17h00/20h30-minuit — réservation conseillée en août pour un groupe de 4. Parking le plus proche : Parking Meliá Sevilla, puis ~15-18 min à pied.",
+          "Alternative : Vinería San Telmo (P.º de Catalina de Ribera 4) · cuisine espagnole créative très bien notée (4,6/5), à la lisière des Jardines de Murillo/Santa Cruz · ouvert tous les jours y compris le lundi (10h00-17h00/19h00-minuit) · +34 954 41 06 00",
+          "Optionnel (non réservé à ce jour) : spectacle de flamenco en soirée, à insérer avant ou après le dîner selon décision du groupe — ⚠️ tarif estimé 20-35€/pers, réservation à faire si retenu"
+        ]
+      }
+    },
+    {
+      "heure": "22:45",
+      "type": "trajet",
+      "titre": "Retour à l'hôtel",
+      "duree": "~15 min",
+      "texte": "Véhicule ou taxi."
+    }
+  ]
+}
