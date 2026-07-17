@@ -2,7 +2,10 @@
   "id": "sevilla-centre",
   "langue_source": "fr",
   "nom": "Séville — centre historique",
-  "guide": { "nom": "Guide Séville", "id": "sevilla" },
+  "guides": [
+    { "nom": "Séville — Partie 1", "id": "seville-1" },
+    { "nom": "Séville — Partie 2", "id": "seville-2" }
+  ],
   "parkings": [
     {
       "nom": "Parking Meliá Sevilla — Calle Dr. Pedro de Castro 1, 41004 Sevilla · parking couvert d'un autre hôtel du groupe Meliá (à ne pas confondre avec le Meliá Lebreros), à 2 min à pied de la Plaza de España",
