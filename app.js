@@ -291,6 +291,7 @@ async function renderJour(jour) {
     </div>
     ${renderAbstract(jour)}
     ${renderWarnings(jour)}
+    ${renderGuides(jour)}
     ${await renderHeberg(jour)}
     <div id="creneaux"></div>
     ${jour.obsidian?`<div class="footer">${jour.jour} · ${jour.date}<br><a href="${jour.obsidian}">📖 Feuille de route complète · Obsidian</a></div>`:''}`;
