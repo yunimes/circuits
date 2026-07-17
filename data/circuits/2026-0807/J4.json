@@ -19,6 +19,12 @@
     }
   ],
   "hebergement": "melia-lebreros",
+  "guides": [
+    { "nom": "Espagne — Partie 1", "id": "espagne-1" },
+    { "nom": "Espagne — Partie 2", "id": "espagne-2" },
+    { "nom": "Espagne — Partie 3", "id": "espagne-3" },
+    { "nom": "Espagne — Partie 4", "id": "espagne-4" }
+  ],
   "creneaux": [
     {
       "heure": "07:00",

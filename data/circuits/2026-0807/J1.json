@@ -8,6 +8,12 @@
     { "emoji": "💶", "texte": "Taxe de séjour Hotel Lisboa 16€ au total, à régler sur place à l'arrivée", "alerte": true }
   ],
   "hebergement": "hotel-lisboa",
+  "guides": [
+    { "nom": "Portugal — Partie 1", "id": "portugal-1" },
+    { "nom": "Portugal — Partie 2", "id": "portugal-2" },
+    { "nom": "Portugal — Partie 3", "id": "portugal-3" },
+    { "nom": "Portugal — Partie 4", "id": "portugal-4" }
+  ],
   "creneaux": [
     {
       "heure": "12:45",
