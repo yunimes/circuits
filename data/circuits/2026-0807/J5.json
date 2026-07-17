@@ -126,7 +126,7 @@
     },
     {
       "heure": "16:40",
-      "type": "boucle",
+      "type": "visite",
       "site": "torremolinos-carihuela",
       "visite": { "duree": "1h30" },
       "note_pratique": {
