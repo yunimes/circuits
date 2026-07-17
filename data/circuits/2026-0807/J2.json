@@ -28,7 +28,7 @@
     },
     {
       "heure": "09:40",
-      "type": "boucle",
+      "type": "visite",
       "site": "cascais",
       "visite": { "duree": "50 min" }
     },
@@ -45,7 +45,7 @@
     },
     {
       "heure": "10:50",
-      "type": "boucle",
+      "type": "visite",
       "site": "cabo-da-roca",
       "visite": { "duree": "30 min" },
       "note_pratique": {
