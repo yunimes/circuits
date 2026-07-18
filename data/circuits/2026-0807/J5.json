@@ -3,7 +3,7 @@
   "date": "Mardi 11 août 2026",
   "titre": "Séville → Ronda → Costa del Sol → Málaga",
   "abstract": [
-    { "emoji": "🏛️", "texte": "Matinée Séville : Cathédrale + Real Alcázar avant départ vers Ronda", "heure_cle": "09h50" },
+    { "emoji": "🛏️", "texte": "Matinée libre à l'hôtel — Alcázar/Cathédrale déjà visités la veille (J4) — départ vers Ronda à 10h50", "heure_cle": "10h50" },
     { "emoji": "❗️", "texte": "\"Mirador Puente Nuevo\" du catalogue = Desfiladero del Tajo — quota 30 pers/h, réservation en ligne indispensable si le groupe le souhaite", "alerte": true },
     { "emoji": "🏖️", "texte": "Baignade Playa de la Carihuela (Torremolinos)", "heure_cle": "16h40" }
   ],
@@ -11,49 +11,10 @@
   "creneaux": [
     {
       "heure": "09:00",
-      "type": "trajet",
-      "titre": "Hôtel → Plaza de España",
-      "duree": "10-15 min selon circulation",
-      "parkings": [
-        { "nom": "Parking Plaza España — Avda. Portugal, Cdad. de Ronda, 41004" }
-      ]
-    },
-    {
-      "heure": "09:05",
-      "type": "visite",
-      "site": "sevilla-centre",
-      "visite": { "duree": "30 min" },
-      "note_pratique": { "titre": "Plaza de España + Parque de María Luisa", "lignes": ["Promenade."] }
-    },
-    {
-      "heure": "09:35",
-      "type": "trajet",
-      "titre": "Plaza de España → Catedral de Sevilla",
-      "duree": "10-15 min selon circulation",
-      "parkings": [
-        { "nom": "Parking Torre de la Plata", "maps": "https://maps.app.goo.gl/Uvb8uaTpYQ7WcNHcA?g_st=ic" }
-      ]
-    },
-    {
-      "heure": "09:50",
-      "type": "visite",
-      "site": "sevilla-centre",
-      "visite": { "duree": "30 min" },
-      "note_pratique": { "titre": "Cathédrale de Séville + Tour Giralda", "lignes": ["Billet combiné ~12€."] }
-    },
-    {
-      "heure": "10:20",
-      "type": "visite",
-      "site": "sevilla-centre",
-      "visite": { "duree": "30 min" },
-      "note_pratique": {
-        "titre": "Real Alcázar",
-        "lignes": [
-          "Palais mudéjar, ~14,50€.",
-          "❗️Réservation en ligne fortement recommandée — quota de visiteurs.",
-          "⚠️ Aucune réservation confirmée à ce jour."
-        ]
-      }
+      "type": "checkin",
+      "titre": "Petit-déjeuner et matinée libre à l'hôtel",
+      "texte": "Plaza de España, Cathédrale et Real Alcázar déjà visités la veille (J4 après-midi) — pas de retour au centre-ville ce matin.",
+      "duree": "1h30"
     },
     {
       "heure": "10:50",
