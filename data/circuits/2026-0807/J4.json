@@ -1,20 +1,27 @@
 {
   "jour": "J4",
   "date": "Lundi 10 août 2026",
-  "titre": "Évora → Séville",
+  "titre": "Évora → Séville (départ direct)",
   "abstract": [
-    { "emoji": "🏛️", "texte": "Matinée Évora : Temple romain, Sé, Capela dos Ossos", "heure_cle": "09h10" },
+    { "emoji": "📍", "texte": "Visite d'Évora (Temple romain, Sé, Capela dos Ossos) déplacée à J3 après-midi — départ direct vers Séville dès le check-out", "alerte": true },
     { "emoji": "🚗", "texte": "Trajet Évora → Séville corrigé : ~310 km / ~3h05-3h15 + 1h de décalage horaire", "alerte": true },
-    { "emoji": "🌇", "texte": "Real Alcázar / Cathédrale de Séville non réalisables ce soir — programme de substitution Plaza de España", "alerte": true }
+    { "emoji": "☀️", "texte": "Arrivée avancée à ~12h15 (au lieu de ~18h15) — après-midi libre à Séville non encore planifiée", "heure_cle": "12h15", "alerte": true }
   ],
   "warnings": [
     {
+      "titre": "Changement de programme — visite d'Évora déplacée à J3",
+      "lignes": [
+        "La découverte du centre historique d'Évora (Temple romain, Sé, Capela dos Ossos) a été avancée à J3 après-midi pour éviter un doublon avec cette journée. Le véhicule reste stationné à l'hôtel d'Évora dès l'arrivée le 09/08 (voir J3) — pas de détour par un parking en ville ce matin.",
+        "Conséquence : le groupe part directement vers Séville après le petit-déjeuner et le check-out, avec une arrivée avancée à ~12h05-12h15 au lieu de ~18h15-18h30.",
+        "⚠️ Programme de l'après-midi à Séville (13h00-19h00 environ) non encore défini — à compléter avec le groupe (déjeuner, éventuelle tentative Real Alcázar/Cathédrale ou repos à l'hôtel). Le programme du soir (Plaza de España, dîner Casa Román) reste inchangé."
+      ]
+    },
+    {
       "titre": "Correction majeure — temps de trajet Évora → Séville",
       "lignes": [
-        "L'Information Circuit indiquait ~200 km / ~2h10-2h20. Les recherches croisées (distances routières officielles, itinéraire réel via Badajoz) donnent un trajet réel de ~310 km / ~3h05-3h15 hors trafic, auquel s'ajoute +1h de décalage horaire au passage de la frontière (Espagne en avance sur le Portugal en été). Écart d'environ 1h30 à 2h par rapport à l'estimation d'origine — impact direct sur le programme de l'après-midi à Séville.",
+        "L'Information Circuit indiquait ~200 km / ~2h10-2h20. Les recherches croisées (distances routières officielles, itinéraire réel via Badajoz) donnent un trajet réel de ~310 km / ~3h05-3h15 hors trafic, auquel s'ajoute +1h de décalage horaire au passage de la frontière (Espagne en avance sur le Portugal en été). Écart d'environ 1h30 à 2h par rapport à l'estimation d'origine.",
         "⚠️ À signaler à IMES : l'estimation initiale du trajet était erronée.",
-        "Conséquence : la visite du Real Alcázar et/ou de la Cathédrale de Séville n'est pas réalisable ce soir. Avec une arrivée estimée vers 18h15-18h30 et une dernière admission à l'Alcázar à 18h15 (billet non réservé, quota de visiteurs), le risque de ne pas pouvoir entrer est réel. Programme de substitution : Plaza de España / Parque de María Luisa (accès libre, gratuit, magnifique en fin de journée) + flânerie Barrio Santa Cruz + dîner.",
-        "Le Real Alcázar n'a de toute façon aucune réservation confirmée à ce jour."
+        "Le Real Alcázar n'a aucune réservation confirmée à ce jour — quota de visiteurs, entrée non garantie même avec l'arrivée avancée."
       ]
     }
   ],

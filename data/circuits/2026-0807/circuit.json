@@ -24,18 +24,17 @@
     { "nuits": "J5–J6 (11–12/08)", "ref": "catalonia-malaga" }
   ],
   "reservations": [
-    { "ok": false, "jour": "J2 · 08/08", "heure": "14h00-14h30", "site": "Palácio da Pena — Sintra", "pers": "4p", "ref": "❗️À réserver en ligne avant le 08/08 sur parquesdesintra.pt — billet à horodatage obligatoire" },
     { "ok": false, "jour": "J4-J5 · 10-11/08", "heure": "—", "site": "Real Alcázar — Séville", "pers": "4p", "ref": "Quota de visiteurs — aucune réservation confirmée à ce jour" },
     { "ok": false, "jour": "J5 · 11/08", "heure": "—", "site": "Desfiladero del Tajo — Ronda", "pers": "4p+guide", "ref": "Quota 30 pers/h, max 4 billets/transaction — prévoir 2 transactions · à confirmer si toujours souhaité (cf. J5)" },
     { "ok": false, "jour": "J4 · 10/08", "heure": "12h15", "site": "Tasquinha do Oliveira — Évora", "pers": "4p", "ref": "Réservation indispensable, très petite capacité (~14 couverts)" },
     { "ok": false, "jour": "J4 · 10/08", "heure": "21h00", "site": "Casa Román — Séville (Santa Cruz)", "pers": "4p", "ref": "Réservation conseillée en août" },
-    { "ok": false, "jour": "J3 · 09/08", "heure": "13h00", "site": "Casa do Alentejo — Lisbonne", "pers": "4p", "ref": "—" },
+    { "ok": false, "jour": "J2 · 08/08", "heure": "12h20", "site": "Casa do Alentejo — Lisbonne", "pers": "4p", "ref": "❗️Prévenir de l'horaire — déjeuner ramené à 12h20 (avant tram+centre historique), prévu tardif (~14h50) dans une version antérieure" },
     { "ok": false, "jour": "—", "heure": "—", "site": "Spectacle de flamenco — Séville", "pers": "4p", "ref": "Optionnel, non réservé — tarif estimé 20-35€/pers, à trancher avec le groupe" }
   ],
   "jours": [
     { "id": "J1", "date": "Ven 07/08", "titre": "Vol + arrivée Lisbonne", "etapes": "KE0921 ICN→LIS · aucune visite (décalage horaire)", "hebergement": "Hotel Lisboa" },
-    { "id": "J2", "date": "Sam 08/08", "titre": "Cascais · Cabo da Roca · Sintra", "etapes": "Cascais : Boca do Inferno → Cabo da Roca → Sintra : Palácio da Pena", "hebergement": "Hotel Lisboa" },
-    { "id": "J3", "date": "Dim 09/08", "titre": "Lisbonne (journée) → Évora", "etapes": "Alfama : Castelo de São Jorge · Sé → Belém (extérieur) → Évora", "hebergement": "Hilton Garden Inn Evora" },
+    { "id": "J2", "date": "Sam 08/08", "titre": "Cascais · Cabo da Roca · Lisbonne (centre historique)", "etapes": "Cascais : Boca do Inferno → Cabo da Roca → Alfama : Castelo de São Jorge · Sé (en passant)", "hebergement": "Hotel Lisboa" },
+    { "id": "J3", "date": "Dim 09/08", "titre": "Belém → Évora", "etapes": "Belém : Mosteiro dos Jerónimos · Padrão dos Descobrimentos · Torre de Belém → Évora : Sé · Templo Romano · Capela dos Ossos", "hebergement": "Hilton Garden Inn Evora" },
     { "id": "J4", "date": "Lun 10/08", "titre": "Évora → Séville", "etapes": "Évora : Templo Romano · Sé · Capela dos Ossos → Séville : Plaza de España · Barrio Santa Cruz", "hebergement": "Meliá Lebreros" },
     { "id": "J5", "date": "Mar 11/08", "titre": "Séville → Ronda → Costa del Sol → Málaga", "etapes": "Séville : Cathédrale · Alcázar → Ronda : Puente Nuevo → Torremolinos : Playa de la Carihuela", "hebergement": "Catalonia Málaga" },
     { "id": "J6", "date": "Mer 12/08", "titre": "Málaga (matinée resserrée) → Aéroport", "etapes": "Málaga : Teatro Romano · Alcazaba (programme condensé) → Aéroport AGP · Fin du service ~12h30 (vol 14h55 confirmé)", "hebergement": "—" }

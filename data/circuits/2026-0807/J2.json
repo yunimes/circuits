@@ -1,11 +1,19 @@
 {
   "jour": "J2",
   "date": "Samedi 08 août 2026",
-  "titre": "Lisbonne → Cascais → Cabo da Roca → Sintra → Lisbonne",
+  "titre": "Lisbonne → Cascais → Cabo da Roca → Lisbonne (centre historique)",
   "abstract": [
-    { "emoji": "🎟️", "texte": "Palais National de la Pena — billet à horodatage obligatoire", "heure_cle": "14h00-14h30", "ref": "❗️Réservation en ligne indispensable avant le 08/08 sur parquesdesintra.pt" },
-    { "emoji": "⚠️", "texte": "Accès Pena/Château des Maures interdit en voiture particulière depuis 2018 — stationnement Portela de Sintra + navette 434", "alerte": true },
-    { "emoji": "⚠️", "texte": "Risque réaliste de retour à l'hôtel après 18h30 (plutôt ~18h45-19h00) — à annoncer au groupe en amont", "alerte": true }
+    { "emoji": "⚠️", "texte": "Sintra/Palácio da Pena retirés du circuit — remplacés par Cascais, Cabo da Roca et le centre historique de Lisbonne l'après-midi", "alerte": true },
+    { "emoji": "🚋", "texte": "Tram 12E pris en plein créneau le plus fréquenté de la ligne en été (10h-14h) — attente possible jusqu'à 30 min", "heure_cle": "14h00", "alerte": true },
+    { "emoji": "🏰", "texte": "Château de São Jorge — entrée ~15€/pers à revérifier", "heure_cle": "15h40" }
+  ],
+  "warnings": [
+    {
+      "titre": "Changement de programme (validé)",
+      "lignes": [
+        "Sintra/Pena retirés du circuit. L'après-midi Belém (J2) et la matinée centre historique de Lisbonne (J3) ont été inversées : J2 fait désormais Cascais + Cabo da Roca le matin puis le centre historique de Lisbonne l'après-midi ; Belém passe sur J3 matin."
+      ]
+    }
   ],
   "hebergement": "hotel-lisboa",
   "creneaux": [
@@ -13,129 +21,112 @@
       "heure": "09:00",
       "type": "trajet",
       "titre": "Hotel Lisboa → Cascais",
-      "duree": "30-35 min hors trafic (~40-45 min avec trafic samedi matin)",
+      "duree": "30-35 min hors trafic",
       "km": 30,
       "note_pratique": {
         "titre": "Trajet",
-        "lignes": [
-          "Autoroute A5 (Autoestrada da Costa do Estoril) · Péage confirmé : 1,60 € (tarif Classe 1, 2026)",
-          "Alternative : Marginal (N6, front de mer Lisbonne-Cascais) · +15-20 min · gratuit · plus pittoresque mais très chargée le week-end en été"
-        ]
+        "lignes": ["Autoroute A5 (Autoestrada da Costa do Estoril) · Péage confirmé : 1,60 € (Classe 1, 2026)"]
       },
       "parkings": [
-        { "nom": "Parque Marechal Carmona (Cascais Próxima) — Av. da República, 389 · ⚠️ tarif estimé ~8€/jour non confirmé" }
+        { "nom": "Parque Marechal Carmona (Cascais Próxima) — Av. da República, 389, 2750-475 Cascais · ⚠️ tarif estimé ~8€/jour (non confirmée) · Distance à pied : ~2-5 min du front de mer" }
       ]
     },
     {
       "heure": "09:40",
       "type": "visite",
       "site": "cascais",
-      "visite": { "duree": "50 min" }
+      "visite": { "duree": "1h" }
     },
     {
-      "heure": "10:30",
+      "heure": "10:40",
       "type": "trajet",
       "titre": "Cascais → Cabo da Roca",
-      "duree": "20 min",
+      "duree": "~20 min",
       "km": 16,
       "note_pratique": {
         "titre": "Trajet",
-        "lignes": ["N247 (route côtière via Azóia) · gratuit · route simple et unique, aucune difficulté d'itinéraire signalée"]
+        "lignes": ["N247 (route côtière via Azóia) · gratuit"]
       }
     },
     {
-      "heure": "10:50",
+      "heure": "11:00",
       "type": "visite",
       "site": "cabo-da-roca",
-      "visite": { "duree": "30 min" },
-      "note_pratique": {
-        "titre": "Prévoir coupe-vent",
-        "lignes": ["Vent fort et frais toute l'année à Cabo da Roca."]
-      }
+      "visite": { "duree": "30 min" }
     },
     {
-      "heure": "11:20",
+      "heure": "11:30",
       "type": "trajet",
-      "titre": "Cabo da Roca → Sintra",
-      "duree": "20-25 min",
-      "km": 16,
+      "titre": "Cabo da Roca → Lisbonne (Parque Restauradores)",
+      "duree": "35-40 min hors trafic",
       "note_pratique": {
         "titre": "Trajet",
-        "lignes": ["N247 puis accès Sintra · gratuit"]
-      }
-    },
-    {
-      "heure": "11:45",
-      "type": "checkin",
-      "titre": "Stationnement Portela de Sintra + navette 434 vers centre historique",
-      "texte": "❗️Circulation en véhicule particulier interdite sur les accès directs au Palais de la Pena et au Château des Maures depuis 2018 — la fin du trajet se fait en navette/bus 434 ou à pied, quel que soit le parking choisi. Navette gratuite / bus 434 (circuit historique) desservant le centre historique ET le Parc-Palais de la Pena, fréquence ~7-10 min.",
-      "duree": "30 min",
+        "lignes": ["⚠️ ~38-40 km · estimation par recoupement, non vérifiée via viamichelin.fr"]
+      },
       "parkings": [
-        { "nom": "Portela de Sintra (Parque de Estacionamento / Park & Ride) — proche de la gare de Portela de Sintra · ⚠️ estimation ~1-2€/h, ~5-10€/jour à confirmer (parking.sintra.pt) · un seul stationnement pour la journée" },
-        { "nom": "Alternative : P1 Norte — le plus proche du Palais de la Pena à pied (~10-15 min de montée) ⚠️ ~5-10€/h, se remplit vite en été" }
+        { "nom": "Parque Restauradores (Empark/Telpark) — Praça dos Restauradores, s/n, 1250-188", "maps": "https://www.telpark.com/en/cities/lisbon/restauradores-car-park/" }
       ]
     },
     {
-      "heure": "12:15",
+      "heure": "12:10",
       "type": "checkin",
-      "titre": "Passage — centre historique, Casa Piriquita",
-      "texte": "Pas d'arrêt formel.",
-      "duree": "15 min"
+      "titre": "Dépose véhicule — Parque Restauradores",
+      "texte": "Reste garé jusqu'après le déjeuner.",
+      "duree": "10 min"
     },
     {
-      "heure": "12:30",
+      "heure": "12:20",
       "type": "repas",
       "duree": "1h30",
       "restaurant": {
-        "nom": "Déjeuner — Sintra, centre historique",
+        "nom": "Casa do Alentejo — R. Portas de Santo Antão, 58",
         "aide_memoire": [
-          "Option 1 — Tacho Real (R. da Ferraria 4, 2710-616 Sintra) · 15-25€/pers hors boissons · cuisine portugaise traditionnelle généreuse (bacalhau à Tacho Real, filet de bœuf aux crevettes) · horaires 12h00-15h30 et 19h30-22h00, fermé le mercredi · réservation recommandée, forte affluence en août",
-          "Option 2 — Tasca do Xico (Rua Arco do Teixeira n°6, 2710-533 Sintra) · ~20€/pers hors boissons · petite tasca conviviale, plats portugais traditionnels (morue, poulpe, côtes d'agneau), terrasse agréable, très proche de la pâtisserie Casa Piriquita · réservation conseillée pour le service du midi"
+          "Palais mauresque du XIXe, patio à azulejos · cuisine régionale alentejane · salle de groupe — 4,2 (7974 avis) · 15-35€"
         ]
       }
+    },
+    {
+      "heure": "13:50",
+      "type": "trajet",
+      "titre": "Marche vers l'arrêt tram Martim Moniz",
+      "duree": "10 min"
     },
     {
       "heure": "14:00",
       "type": "trajet",
-      "titre": "Navette 434 centre historique → entrée Parc da Pena + marche jusqu'au Palais",
+      "titre": "Tram 12E vers Alfama / Portas do Sol",
       "duree": "30 min",
       "note_pratique": {
-        "titre": "❗️Selon l'heure du billet réservé",
-        "lignes": ["Compter ~30 min entre l'entrée du Parc et l'entrée du Palais dans chaque sens."]
-      }
-    },
-    {
-      "heure": "14:30",
-      "type": "visite",
-      "site": "palacio-pena",
-      "visite": { "duree": "2h15" },
-      "note_pratique": {
-        "titre": "❗️Billet à horodatage obligatoire",
+        "titre": "Tram 12E",
         "lignes": [
-          "Aucune tolérance de retard, pas d'échange/remboursement en cas de retard. Réservation en ligne sur parquesdesintra.pt avant le départ.",
-          "Horaires : Palais + Parc 09h30-18h30 (dernière entrée 18h00) · Parc seul jusqu'à 19h00.",
-          "Tarif estimé (catalogue) : ~14-20€ selon option — à reconfirmer, tarifs susceptibles d'évolution en 2026.",
-          "Fermeture billetterie 12h00-13h00 (distributeur automatique disponible).",
-          "Un seul site formel retenu à Sintra ce jour — Château des Maures et Quinta da Regaleira non planifiés en visite formelle, à proposer uniquement en cas d'avance réelle sur le planning."
+          "Descendre à l'arrêt \"Portas do Sol\"",
+          "Tarif : 3,30 € en espèces à bord, ou 1,90 €/1,72 € avec carte Viva Viagem/Navegante (0,50 € la carte)",
+          "⚠️ Créneau le plus fréquenté de la ligne en été (10h-14h) — attente possible jusqu'à 30 min",
+          "Plan B si attente excessive : montée à pied Martim Moniz → Costa do Castelo (~20-25 min)"
         ]
       }
     },
     {
-      "heure": "16:45",
-      "type": "trajet",
-      "titre": "Retour navette/marche → parking Portela de Sintra",
-      "duree": "30 min"
+      "heure": "14:30",
+      "type": "boucle",
+      "site": "alfama",
+      "visite": { "duree": "3h50" },
+      "note_pratique": {
+        "titre": "Enchaînement",
+        "lignes": [
+          "Miradouro de Santa Luzia (30')",
+          "Miradouro das Portas do Sol (30')",
+          "Montée à pied vers le Castelo (10')",
+          "Castelo de São Jorge (40') — ⚠️ entrée ~15€/pers à revérifier",
+          "Descente par Alfama (20 min) → Sé de Lisboa en passant (pas d'arrêt formel) → Praça do Comércio → Rua Augusta → vers le parking"
+        ]
+      }
     },
     {
-      "heure": "17:15",
+      "heure": "18:20",
       "type": "trajet",
-      "titre": "Sintra → Lisbonne",
-      "duree": "30-40 min hors trafic (~45-50 min avec trafic samedi fin d'après-midi)",
-      "km": 30,
-      "note_pratique": {
-        "titre": "Trajet",
-        "lignes": ["IC19 / A16 · gratuit, pas de péage sur cet axe — retour direct vers l'hôtel"]
-      }
+      "titre": "Restauradores → Hôtel Lisboa",
+      "duree": "10 min"
     },
     {
       "heure": "19:30",
