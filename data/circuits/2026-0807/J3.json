@@ -3,7 +3,7 @@
   "date": "Dimanche 09 août 2026",
   "titre": "Lisbonne (Belém) → Évora",
   "abstract": [
-    { "emoji": "🕌", "texte": "Mosteiro dos Jerónimos visité en premier, avant la foule — billet coupe-file recommandé", "heure_cle": "09h30", "ref": "❗️Réservation en ligne recommandée — dimanche d'août, forte affluence" },
+    { "emoji": "🕌", "texte": "Mosteiro dos Jerónimos — billet claustro confirmé pour 4 personnes à 10h30", "heure_cle": "10h30", "ref": "✅ Réservé — voir Jeronimos.pdf" },
     { "emoji": "🏨", "texte": "Check-in Hilton Garden Inn Évora dès l'arrivée pour stationner le véhicule, avant la visite à pied du centre historique", "heure_cle": "15h40" },
     { "emoji": "⛪", "texte": "Sé d'Évora visitée en priorité (avant la Capela dos Ossos) pour rester dans la marge de la dernière entrée habituelle ~17h00", "heure_cle": "16h10" }
   ],
@@ -49,7 +49,7 @@
       "note_pratique": {
         "titre": "Enchaînement",
         "lignes": [
-          "Mosteiro dos Jerónimos — visite intérieure (1h30) — billet coupe-file recommandé ❗️",
+          "Mosteiro dos Jerónimos — visite intérieure (1h30) — ✅ billet claustro confirmé à 10h30 (voir Jeronimos.pdf)",
           "Padrão dos Descobrimentos — extérieur (15' marche + 20' visite) — ascenseur panoramique ~4€/pers en option",
           "Torre de Belém — extérieur, bord du Tage (15' marche + 20' visite) — entrée intérieure ~7€/pers en option",
           "Pastéis de Belém — dégustation (15' marche + 30')"

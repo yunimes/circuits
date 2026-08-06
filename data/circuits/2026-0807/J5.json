@@ -3,81 +3,86 @@
   "date": "Mardi 11 août 2026",
   "titre": "Séville → Ronda → Costa del Sol → Málaga",
   "abstract": [
-    { "emoji": "🛏️", "texte": "Matinée libre à l'hôtel — Alcázar/Cathédrale déjà visités la veille (J4) — départ vers Ronda à 10h50", "heure_cle": "10h50" },
-    { "emoji": "❗️", "texte": "\"Mirador Puente Nuevo\" du catalogue = Desfiladero del Tajo — quota 30 pers/h, réservation en ligne indispensable si le groupe le souhaite", "alerte": true },
-    { "emoji": "🏖️", "texte": "Baignade Playa de la Carihuela (Torremolinos)", "heure_cle": "16h40" }
+    { "emoji": "🚗", "texte": "Départ avancé à 9h00 (au lieu d'une matinée libre) — plus de temps sur les miradors de Ronda", "heure_cle": "09h00", "alerte": true },
+    { "emoji": "🌉", "texte": "Ronda en points de vue uniquement (El Toro, Mirador, El Tajo, Puente Nuevo) — pas de billet Desfiladero del Tajo au programme", "heure_cle": "11h00" },
+    { "emoji": "🏖️", "texte": "Baignade Playa de la Carihuela (Torremolinos), 2h", "heure_cle": "16h00" }
+  ],
+  "warnings": [
+    {
+      "titre": "Journée réorganisée par le guide (06/08)",
+      "lignes": [
+        "Départ avancé de Séville à 9h00 (plus de matinée libre à l'hôtel) — Alcázar/Cathédrale ayant déjà été vus à J4, tout le temps gagné est réinvesti dans la visite de Ronda.",
+        "À Ronda : programme en points de vue (El Toro, Mirador de Ronda dit \"la Sevillana\", El Tajo, Puente Nuevo) plutôt que le billet payant du Desfiladero del Tajo — voir la fiche site Ronda si le groupe souhaite finalement l'ajouter (quota 30 pers/h, réservation en ligne indispensable).",
+          "Parking à Ronda : Aparcamiento Público La Concepción (choix du guide) — alternative précédemment identifiée : Parking AT Ronda-Centro."
+      ]
+    }
   ],
   "hebergement": "catalonia-malaga",
   "creneaux": [
     {
       "heure": "09:00",
-      "type": "checkin",
-      "titre": "Petit-déjeuner et matinée libre à l'hôtel",
-      "texte": "Plaza de España, Cathédrale et Real Alcázar déjà visités la veille (J4 après-midi) — pas de retour au centre-ville ce matin.",
-      "duree": "1h30"
+      "type": "trajet",
+      "titre": "Séville → Ronda",
+      "duree": "1h50",
+      "km": 130,
+      "note_pratique": { "titre": "Trajet", "lignes": ["Route la plus directe et la moins chère — pas de péage."] },
+      "parkings": [
+        { "nom": "Aparcamiento Público La Concepción", "maps": "https://maps.app.goo.gl/RLbvYcYL7LxEmrSb9?g_st=ic" },
+        { "nom": "Alternative : Parking AT Ronda-Centro", "maps": "https://maps.app.goo.gl/HfuNPZWpghTfzknp8?g_st=ic" }
+      ]
     },
     {
       "heure": "10:50",
       "type": "trajet",
-      "titre": "Séville → Ronda",
-      "duree": "1h45-1h50 hors trafic",
-      "km": 130,
-      "note_pratique": { "titre": "Trajet", "lignes": ["Route la plus directe et la moins chère."] },
-      "parkings": [
-        { "nom": "Parking AT Ronda-Centro", "maps": "https://maps.app.goo.gl/HfuNPZWpghTfzknp8?g_st=ic" }
-      ]
+      "titre": "Marche vers El Toro",
+      "duree": "10 min"
     },
     {
-      "heure": "12:35",
-      "type": "checkin",
-      "titre": "El Toro",
-      "duree": "10 min",
-      "maps": "https://maps.app.goo.gl/PZ5iKmnvBdojapLm7?g_st=ic"
+      "heure": "11:00",
+      "type": "boucle",
+      "site": "ronda",
+      "visite": { "duree": "1h30" },
+      "note_pratique": {
+        "titre": "Points de vue de Ronda",
+        "lignes": [
+          "El Toro (15') — https://maps.app.goo.gl/PZ5iKmnvBdojapLm7",
+          "Mirador de Ronda, dit \"la Sevillana\" (15')",
+          "El Tajo de Ronda (30')",
+          "Puente Nuevo — vue extérieure (30')",
+          "⚠️ Le Desfiladero del Tajo (sentier suspendu payant, quota 30 pers/h, 5€/pers, casque fourni) n'est pas inclus dans ce programme resserré — à réserver au plus tôt si le groupe le souhaite finalement (voir fiche site Ronda)."
+        ]
+      }
     },
     {
-      "heure": "12:45",
+      "heure": "12:30",
       "type": "trajet",
       "titre": "Marche vers le restaurant",
       "duree": "15 min"
     },
     {
-      "heure": "13:00",
+      "heure": "12:45",
       "type": "repas",
-      "duree": "1h",
+      "duree": "1h30",
       "restaurant": {
         "nom": "Puerta Grande",
         "aide_memoire": [
           "Choix retenu au planning final.",
-          "Alternative — Casa Santa Pola (Cuesta de Santo Domingo 3) · 20-35€/pers hors boissons · terrasses en balcon suspendues sur le Tajo, à deux pas du Puente Nuevo, cuisine andalouse (rabo de toro, poissons, riz, viandes) · ouvert tous les jours 12h00-23h00 · réservation recommandée pour un groupe de 4, demander une table en terrasse · +34 677 00 18 95",
-          "Alternative — Abades Ronda (Paseo Blas Infante 1) · 25-40€/pers hors boissons · juste à côté de la Plaza de Toros, terrasse-mirador sur le Tajo, cuisine méditerranéenne actuelle · ouvert tous les jours 11h00-23h00 · +34 952 87 13 67",
-          "⚠️ Pedro Romero (fermé le mardi, jour de la visite) et Almocábar (horaires non vérifiables) écartés de la sélection."
+          "Alternative — Casa Santa Pola (Cuesta de Santo Domingo 3) · 20-35€/pers hors boissons · terrasses en balcon suspendues sur le Tajo · réservation recommandée pour un groupe de 4 · +34 677 00 18 95",
+          "Alternative — Abades Ronda (Paseo Blas Infante 1) · 25-40€/pers hors boissons · terrasse-mirador sur le Tajo · +34 952 87 13 67"
         ]
       }
     },
     {
-      "heure": "14:00",
-      "type": "visite",
-      "site": "ronda",
-      "visite": { "duree": "1h" },
-      "note_pratique": {
-        "titre": "Ronda — enchaînement possible",
-        "lignes": [
-          "Museo Taurino (optionnel) · Puente Nuevo (vue extérieure) · Baños Árabes (optionnel)",
-          "⚠️ À trancher : la checklist du jour demande de réserver le Desfiladero del Tajo (quota 30 pers/h, billets 5€/pers, casque fourni) mais ce créneau resserré d'1h ne l'inclut pas explicitement dans le planning final — vérifier avec le groupe si son ajout est toujours souhaité et, si oui, réserver au plus tôt (voir fiche site Ronda)."
-        ]
-      }
-    },
-    {
-      "heure": "15:00",
+      "heure": "14:15",
       "type": "trajet",
       "titre": "Marche vers le parking",
       "duree": "10 min"
     },
     {
-      "heure": "15:10",
+      "heure": "14:25",
       "type": "trajet",
       "titre": "Ronda → Torremolinos (La Carihuela)",
-      "duree": "1h20-1h30 hors trafic",
+      "duree": "1h35",
       "km": 104,
       "note_pratique": { "titre": "Trajet", "lignes": ["A-397 (direction San Pedro de Alcántara) → AP-7 Autopista del Sol (direction Málaga)"] },
       "parkings": [
@@ -86,10 +91,10 @@
       ]
     },
     {
-      "heure": "16:40",
+      "heure": "16:00",
       "type": "visite",
       "site": "torremolinos-carihuela",
-      "visite": { "duree": "1h30" },
+      "visite": { "duree": "2h" },
       "note_pratique": {
         "titre": "Prévoir",
         "lignes": ["Maillots de bain, serviettes et crème solaire pour la baignade.", "Le déjeuner étant déjà pris à Ronda, pas de repas prévu ici."]
@@ -106,7 +111,7 @@
       "heure": "18:30",
       "type": "checkin",
       "titre": "Arrivée & Check-in · Catalonia Málaga",
-      "texte": "Chambres vue mer. Parking privé de l'hôtel : 23€/jour."
+      "texte": "Chambres vue mer. ⚠️ Tarif de parking affiché sur le voucher manifestement erroné (erreur OCR) — tarif réel à vérifier directement à la réception."
     },
     {
       "heure": "19:30",
@@ -115,8 +120,8 @@
       "restaurant": {
         "nom": "Dîner — Málaga, à pied depuis l'hôtel Catalonia, en autonomie",
         "aide_memoire": [
-          "Option 1 — Chiringuito La Campana Playa (Paseo Marítimo Antonio Banderas 9) · 15-25€/pers hors boissons · chiringuito en bord de plage, ambiance décontractée, pescaíto frito, calamars, poissons à l'espeto · ouvert tous les jours 11h00-00h00 · ~5 min à pied · conseillé d'arriver avant 20h00 en août",
-          "Option 2 — Gastrobar Torre Mónica (Paseo Marítimo Antonio Banderas 28) · 20-30€/pers hors boissons · cadre plus soigné, cuisine actuelle (paellas, tapas, poissons), terrasse vue mer · ~5 min à pied · réservation recommandée le soir en haute saison · +34 952 24 50 44"
+          "Option 1 — Chiringuito La Campana Playa (Paseo Marítimo Antonio Banderas 9) · 15-25€/pers hors boissons · pescaíto frito, calamars, poissons à l'espeto · ~5 min à pied · conseillé d'arriver avant 20h00 en août",
+          "Option 2 — Gastrobar Torre Mónica (Paseo Marítimo Antonio Banderas 28) · 20-30€/pers hors boissons · cadre plus soigné, terrasse vue mer · ~5 min à pied · réservation recommandée le soir en haute saison · +34 952 24 50 44"
         ]
       }
     }
