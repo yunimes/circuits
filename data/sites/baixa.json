@@ -1,0 +1,35 @@
+{
+  "id": "baixa",
+  "langue_source": "fr",
+  "nom": "Lisbonne · Baixa",
+  "points": [
+    {
+      "nom": "Praça do Comércio",
+      "emoji": "🏛️",
+      "aide_memoire": [
+        "Grande place monumentale ouverte sur le Tage, reconstruite après le séisme de 1755",
+        "Gratuit, accès libre"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Arco da Rua Augusta",
+      "emoji": "🌆",
+      "aide_memoire": [
+        "Arc monumental à l'entrée de la Rua Augusta depuis la Praça do Comércio",
+        "Montée au sommet ~3 €/pers · vue sur la place et le fleuve"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Elevador de Santa Justa",
+      "emoji": "🛗",
+      "aide_memoire": [
+        "Structure métallique néogothique reliant la Baixa au Largo do Carmo",
+        "Entrée ~5,30 €/pers, ou vue gratuite depuis la passerelle sans monter dans l'ascenseur",
+        "En passant seulement — pas d'arrêt formel prévu"
+      ],
+      "texte_original": []
+    }
+  ]
+}
