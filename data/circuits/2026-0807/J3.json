@@ -7,17 +7,6 @@
     { "emoji": "🏨", "texte": "Check-in Hilton Garden Inn Évora dès l'arrivée pour stationner le véhicule, avant la visite à pied du centre historique", "heure_cle": "15h40" },
     { "emoji": "⛪", "texte": "Sé d'Évora visitée en priorité (avant la Capela dos Ossos) pour rester dans la marge de la dernière entrée habituelle ~17h00", "heure_cle": "16h10" }
   ],
-  "warnings": [
-    {
-      "titre": "Changements de programme (validés)",
-      "lignes": [
-        "Belém est désormais visitée le matin de J3 (le centre historique de Lisbonne est passé sur J2 après-midi).",
-        "Ordre Belém confirmé : Mosteiro dos Jerónimos en premier (dès l'arrivée, ~9h30, avant la foule) → Padrão dos Descobrimentos → Torre de Belém → Pastéis de Belém → déjeuner en dernier, avant le départ vers Évora.",
-        "Après-midi consacrée à Évora dès l'arrivée, avec check-in visé à 18h30 comme les autres jours.",
-        "Sé d'Évora visitée en priorité à l'arrivée en ville (avant la Chapelle des Os) pour rester dans la marge de la dernière entrée habituelle (~17h00)."
-      ]
-    }
-  ],
   "hebergement": "hilton-garden-inn-evora",
   "creneaux": [
     {

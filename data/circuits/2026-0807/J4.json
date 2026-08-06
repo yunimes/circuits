@@ -3,29 +3,19 @@
   "date": "Lundi 10 août 2026",
   "titre": "Évora → Séville : Plaza de España, Real Alcázar (extérieur) & Cathédrale",
   "abstract": [
-    { "emoji": "🚗", "texte": "Trajet Évora → Séville : 310 km / ~3h05-3h15 via Badajoz (confirmé)", "heure_cle": "09h00" },
-    { "emoji": "🌇", "texte": "Plaza de España visitée en début d'après-midi (et non plus en soirée)", "heure_cle": "14h30" },
+    { "emoji": "🚗", "texte": "Trajet Évora → Séville : 310 km / ~3h05-3h15 via Badajoz", "heure_cle": "09h00" },
+    { "emoji": "🌇", "texte": "Plaza de España + Parque de María Luisa en début d'après-midi", "heure_cle": "14h30" },
     { "emoji": "⛪", "texte": "Cathédrale de Séville — billet confirmé pour 4 personnes à 16h20 (voir Cathédral Seville.pdf) · Real Alcázar : passage extérieur uniquement, pas de visite intérieure", "heure_cle": "16h20", "ref": "✅ Réservé" }
   ],
   "warnings": [
     {
-      "titre": "Changement de programme — visite d'Évora déplacée à J3",
+      "titre": "Stationnement à Séville",
       "lignes": [
-        "La découverte du centre historique d'Évora (Temple romain, Sé, Capela dos Ossos) a été avancée à J3 après-midi. Le véhicule reste stationné à l'hôtel d'Évora depuis l'arrivée du 09/08 (voir J3) — pas de détour par un parking en ville ce matin.",
-        "Départ direct vers Séville après petit-déjeuner et check-out (9h00)."
+        "Plusieurs parkings possibles à distance de marche du Barrio Santa Cruz (Avenida Roma, Cano y Cueto, San Bernardo/San Sebastián) — à choisir sur place selon la disponibilité."
       ]
     },
     {
-      "titre": "Programme de l'après-midi à Séville revu par le guide (06/08)",
-      "lignes": [
-        "Plaza de España + Parque de María Luisa déplacés en début d'après-midi (14h30), avant le Real Alcázar et la Cathédrale — et non plus en soirée comme initialement prévu.",
-        "Real Alcázar : le groupe ne fait qu'un passage extérieur (30 min), pas de visite intérieure — la réservation en ligne évoquée précédemment n'est donc plus nécessaire.",
-        "Cathédrale de Séville + Giralda : billet CONFIRMÉ pour 4 personnes à 16h20 (voir Cathédral Seville.pdf) — remplace la simple recommandation de réservation en ligne.",
-        "⚠️ Plusieurs parkings différents apparaissent dans les notes du guide (Avenida Roma, Cano y Cueto, San Bernardo/San Sebastián) — tous à distance de marche du Barrio Santa Cruz, à choisir sur place selon la disponibilité plutôt qu'à réserver à l'avance."
-      ]
-    },
-    {
-      "titre": "Distance Évora → Séville — confirmée",
+      "titre": "Trajet Évora → Séville",
       "lignes": [
         "310 km / ~3h05-3h15 hors trafic, via Badajoz (A6 → A-66), péage portugais estimé 11,80 € classe 2, gratuit côté espagnol."
       ]

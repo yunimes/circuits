@@ -3,21 +3,9 @@
   "date": "Samedi 08 août 2026",
   "titre": "Lisbonne → Cabo da Roca → Cascais → Lisbonne (centre historique) → Club de Fado",
   "abstract": [
-    { "emoji": "⚠️", "texte": "Programme réordonné par le guide : Cabo da Roca visité avant Cascais (et non l'inverse) — déjeuner à Cascais plutôt qu'à Lisbonne", "alerte": true },
-    { "emoji": "🎶", "texte": "Club de Fado (R. de São João da Praça 94) — dîner-spectacle réservé pour 4 personnes, remplace le dîner libre initialement prévu", "heure_cle": "19h30" },
-    { "emoji": "🚗", "texte": "Le guide n'entre pas au Club de Fado : il reprend le tram pour récupérer le véhicule à Estrela et rentre seul à l'hôtel — le groupe rentre en autonomie (taxi) après le dîner-spectacle", "alerte": true }
-  ],
-  "warnings": [
-    {
-      "titre": "Changement de programme (validé par le guide, 06/08)",
-      "lignes": [
-        "Ordre inversé : Cabo da Roca visité en premier le matin, puis Cascais (visite + déjeuner), plutôt que Cascais → Cabo da Roca → centre historique comme prévu initialement.",
-        "Déjeuner déplacé à Cascais (bord de mer) — la réservation Casa do Alentejo (Lisbonne) est abandonnée.",
-        "Château de São Jorge retiré du programme faute de temps — l'après-midi Alfama se limite aux miradouros et à la descente à pied vers la Sé.",
-        "Dîner remplacé par une réservation confirmée au Club de Fado (spectacle + repas), 19h30 pour 4 personnes.",
-        "Le guide n'assiste pas au spectacle : une fois le groupe installé au Club de Fado, il reprend le tram jusqu'à Estrela pour récupérer le véhicule et rentre seul à l'Hotel Lisboa. Le groupe rentre en autonomie (taxi probable) à l'issue du dîner-spectacle."
-      ]
-    }
+    { "emoji": "🚗", "texte": "Cabo da Roca le matin, puis Cascais (visite + déjeuner)", "heure_cle": "09h00" },
+    { "emoji": "🎶", "texte": "Club de Fado (R. de São João da Praça 94) — dîner-spectacle réservé pour 4 personnes", "heure_cle": "19h30" },
+    { "emoji": "ℹ️", "texte": "Le guide n'entre pas au Club de Fado : il récupère le véhicule à Estrela en tram et rentre seul à l'hôtel — le groupe rentre en autonomie (taxi) après le dîner-spectacle", "alerte": true }
   ],
   "hebergement": "hotel-lisboa",
   "creneaux": [
@@ -106,14 +94,16 @@
     },
     {
       "heure": "15:30",
-      "type": "visite",
+      "type": "boucle",
       "site": "alfama",
-      "visite": { "duree": "1h" },
+      "visite": { "duree": "3h" },
       "note_pratique": {
-        "titre": "Miradouros",
+        "titre": "Déroulé de l'après-midi (en deux temps)",
         "lignes": [
-          "Miradouro de Santa Luzia (30')",
-          "Miradouro das Portas do Sol (30')"
+          "15h30 : Miradouro de Santa Luzia (30') puis Miradouro das Portas do Sol (30')",
+          "ℹ️ Château de São Jorge : non prévu au programme du jour, malgré sa présence dans la liste des points ci-dessous",
+          "16h30 : pause — tram vers Martim Moniz puis visite de la Baixa (voir créneaux suivants)",
+          "18h30 : reprise — descente à pied dans Alfama, ruelles pavées, Sé de Lisboa en passant (extérieur/photo), jusqu'au Club de Fado"
         ]
       }
     },
@@ -126,29 +116,17 @@
     {
       "heure": "17:00",
       "type": "visite",
-      "titre": "Baixa — Rua Augusta → Praça do Comércio",
-      "duree": "1h",
-      "note_pratique": {
-        "titre": "Baixa",
-        "lignes": [
-          "Praça do Comércio · gratuit",
-          "Arc de la Rua Augusta · ~3 € · vue sur la place (en option)",
-          "Ascenseur de Santa Justa en passant · ~5,30 € (ou vue gratuite depuis la passerelle)"
-        ]
-      }
+      "site": "baixa",
+      "visite": { "duree": "1h" }
     },
     {
       "heure": "18:30",
-      "type": "boucle",
-      "site": "alfama",
-      "visite": { "duree": "1h" },
+      "type": "trajet",
+      "titre": "Descente à pied dans Alfama → Club de Fado",
+      "duree": "~30 min",
       "note_pratique": {
-        "titre": "Descente vers la Sé",
-        "lignes": [
-          "Descente à pied dans Alfama, ruelles pavées",
-          "Sé de Lisboa en passant (extérieur/photo, pas d'arrêt formel)",
-          "Arrivée à pied jusqu'au Club de Fado (R. de São João da Praça 94, à deux pas de la Sé)"
-        ]
+        "titre": "Itinéraire",
+        "lignes": ["Depuis Martim Moniz/Baixa, remontée à pied vers la Sé puis le Club de Fado (R. de São João da Praça 94) — voir le créneau 15h30 pour le détail des points."]
       }
     },
     {

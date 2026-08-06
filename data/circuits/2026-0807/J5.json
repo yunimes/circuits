@@ -3,19 +3,9 @@
   "date": "Mardi 11 août 2026",
   "titre": "Séville → Ronda → Costa del Sol → Málaga",
   "abstract": [
-    { "emoji": "🚗", "texte": "Départ avancé à 9h00 (au lieu d'une matinée libre) — plus de temps sur les miradors de Ronda", "heure_cle": "09h00", "alerte": true },
-    { "emoji": "🌉", "texte": "Ronda en points de vue uniquement (El Toro, Mirador, El Tajo, Puente Nuevo) — pas de billet Desfiladero del Tajo au programme", "heure_cle": "11h00" },
+    { "emoji": "🚗", "texte": "Départ de Séville à 9h00 vers Ronda", "heure_cle": "09h00" },
+    { "emoji": "🌉", "texte": "Ronda en points de vue (El Toro, Mirador, El Tajo, Puente Nuevo)", "heure_cle": "11h00" },
     { "emoji": "🏖️", "texte": "Baignade Playa de la Carihuela (Torremolinos), 2h", "heure_cle": "16h00" }
-  ],
-  "warnings": [
-    {
-      "titre": "Journée réorganisée par le guide (06/08)",
-      "lignes": [
-        "Départ avancé de Séville à 9h00 (plus de matinée libre à l'hôtel) — Alcázar/Cathédrale ayant déjà été vus à J4, tout le temps gagné est réinvesti dans la visite de Ronda.",
-        "À Ronda : programme en points de vue (El Toro, Mirador de Ronda dit \"la Sevillana\", El Tajo, Puente Nuevo) plutôt que le billet payant du Desfiladero del Tajo — voir la fiche site Ronda si le groupe souhaite finalement l'ajouter (quota 30 pers/h, réservation en ligne indispensable).",
-          "Parking à Ronda : Aparcamiento Público La Concepción (choix du guide) — alternative précédemment identifiée : Parking AT Ronda-Centro."
-      ]
-    }
   ],
   "hebergement": "catalonia-malaga",
   "creneaux": [
@@ -39,7 +29,7 @@
     },
     {
       "heure": "11:00",
-      "type": "boucle",
+      "type": "visite",
       "site": "ronda",
       "visite": { "duree": "1h30" },
       "note_pratique": {

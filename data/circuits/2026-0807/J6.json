@@ -9,10 +9,10 @@
   ],
   "warnings": [
     {
-      "titre": "Horaire resserré confirmé par le guide (06/08)",
+      "titre": "Horaire resserré",
       "lignes": [
-        "Vol Málaga → Barcelone 13h40 — dépose du groupe à l'aéroport de Málaga (AGP) à 12h00 pile. Cet horaire remplace les hypothèses précédentes (14h55 puis 12h55 de présentation).",
-        "Programme du matin condensé mais complet : Teatro Romano, Alcazaba, Catedral (extérieur), Calle Larios — pas de déjeuner assis ni de repas prévu, la marge horaire ne le permet pas.",
+        "Vol Málaga → Barcelone 13h40 — dépose du groupe à l'aéroport de Málaga (AGP) à 12h00 pile.",
+        "Programme du matin condensé mais complet : Teatro Romano, Alcazaba, Catedral (extérieur), Calle Larios — pas de repas assis prévu avant l'aéroport.",
         "❗️Terminal de dépose et modalités de restitution du véhicule toujours à confirmer avec IMES."
       ]
     }
@@ -48,60 +48,17 @@
     },
     {
       "heure": "09:20",
-      "type": "visite",
+      "type": "boucle",
       "site": "malaga-centre",
-      "visite": { "duree": "30 min" },
+      "visite": { "duree": "2h10" },
       "note_pratique": {
-        "titre": "Teatro Romano",
-        "lignes": ["Gratuit, au pied de l'Alcazaba."]
-      }
-    },
-    {
-      "heure": "09:50",
-      "type": "trajet",
-      "titre": "Marche vers l'entrée Alcazaba",
-      "duree": "5 min"
-    },
-    {
-      "heure": "09:55",
-      "type": "visite",
-      "site": "malaga-centre",
-      "visite": { "duree": "30 min" },
-      "note_pratique": {
-        "titre": "Alcazaba de Málaga",
-        "lignes": ["7 €/pers (ou 10 € combiné Gibralfaro).", "Terrain accidenté, prévoir chaussures confortables — visite raccourcie compte tenu du planning."]
-      }
-    },
-    {
-      "heure": "10:25",
-      "type": "trajet",
-      "titre": "Marche vers la Catedral via Calle Císter",
-      "duree": "10 min"
-    },
-    {
-      "heure": "10:35",
-      "type": "visite",
-      "site": "malaga-centre",
-      "visite": { "duree": "20 min" },
-      "note_pratique": {
-        "titre": "Catedral de Málaga — extérieur/photo",
-        "lignes": ["Pas de visite intérieure ce jour, contrainte horaire."]
-      }
-    },
-    {
-      "heure": "10:55",
-      "type": "trajet",
-      "titre": "Marche vers Calle Larios",
-      "duree": "5 min"
-    },
-    {
-      "heure": "11:00",
-      "type": "visite",
-      "site": "malaga-centre",
-      "visite": { "duree": "30 min" },
-      "note_pratique": {
-        "titre": "Calle Larios",
-        "lignes": ["Temps libre / shopping — rue piétonne principale."]
+        "titre": "Programme condensé, dans l'ordre",
+        "lignes": [
+          "09h20 — Teatro Romano (30') — gratuit, au pied de l'Alcazaba",
+          "09h55 — Alcazaba de Málaga (30') — 7 €/pers (ou 10 € combiné Gibralfaro), visite raccourcie compte tenu du planning, terrain accidenté",
+          "10h35 — Catedral de Málaga — extérieur/photo uniquement (20'), pas de visite intérieure ce jour",
+          "11h00 — Calle Larios (30') — temps libre / shopping"
+        ]
       }
     },
     {

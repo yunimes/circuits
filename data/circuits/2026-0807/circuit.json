@@ -28,7 +28,7 @@
     { "ok": true, "jour": "J4 · 10/08", "heure": "16h20", "site": "Cathédrale de Séville + Giralda", "pers": "4p", "ref": "Billet confirmé — voir Cathédral Seville.pdf" },
     { "ok": true, "jour": "J2 · 08/08", "heure": "19h30", "site": "Club de Fado — R. de São João da Praça 94, Lisbonne", "pers": "4p", "ref": "Spectacle de fado + dîner, réservé" },
     { "ok": false, "jour": "J4 · 10/08", "heure": "21h00", "site": "Casa Román — Séville (Santa Cruz)", "pers": "4p", "ref": "Réservation conseillée en août" },
-    { "ok": true, "jour": "J4 · 10/08", "heure": "15h30", "site": "Real Alcázar — Séville", "pers": "4p", "ref": "Programme final : passage extérieur uniquement (30 min), pas de visite intérieure — plus besoin de réservation en ligne" },
+    { "ok": true, "jour": "J4 · 10/08", "heure": "15h30", "site": "Real Alcázar — Séville", "pers": "4p", "ref": "Passage extérieur uniquement (30 min), pas de visite intérieure — pas de réservation nécessaire" },
     { "ok": false, "jour": "—", "heure": "—", "site": "Spectacle de flamenco — Séville", "pers": "4p", "ref": "Optionnel, non réservé — tarif estimé 20-35€/pers, à trancher avec le groupe" }
   ],
   "jours": [
