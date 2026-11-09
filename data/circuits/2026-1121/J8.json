@@ -2,21 +2,21 @@
   "jour": "J8",
   "date": "Samedi 28 novembre 2026",
   "titre": "Barcelone → Montserrat → aéroport",
-  "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FCircuit%2FINFORMATION%20CIRCUIT%20Espagne%201121-1128",
+  "obsidian": "obsidian://open?vault=_Imes&file=Guide%2FCircuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FCircuit%2FINFORMATION%20CIRCUIT%20Espagne%201121-1128",
   "abstract": [
     {
       "emoji": "🚞",
       "texte": "Train à crémaillère A/R (5 billets) · aller 13:55, retour 15:55 (16:15 au plus tard)",
       "heure_cle": "13:55",
       "ref": "VOL006020027875",
-      "billet": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FRack%20Railway%20Montserrat%5B006020027875%5D.pdf"
+      "billet": "obsidian://open?vault=_Imes&file=Guide%2FCircuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FRack%20Railway%20Montserrat%5B006020027875%5D.pdf"
     },
     {
       "emoji": "🖤",
       "texte": "Trône de la Vierge noire · 4 billets",
       "heure_cle": "14:30",
       "ref": "R-110874706",
-      "billet": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20MontserratVisita%5B110874706%5D.pdf"
+      "billet": "obsidian://open?vault=_Imes&file=Guide%2FCircuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20MontserratVisita%5B110874706%5D.pdf"
     },
     {
       "emoji": "🌅",
@@ -312,7 +312,7 @@
       ],
       "billet": {
         "ref": "R-110874706 · 4 billets",
-        "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20MontserratVisita%5B110874706%5D.pdf"
+        "obsidian": "obsidian://open?vault=_Imes&file=Guide%2FCircuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20MontserratVisita%5B110874706%5D.pdf"
       }
     },
     {

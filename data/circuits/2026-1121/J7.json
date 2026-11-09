@@ -2,21 +2,21 @@
   "jour": "J7",
   "date": "Vendredi 27 novembre 2026",
   "titre": "Barcelone",
-  "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FCircuit%2FINFORMATION%20CIRCUIT%20Espagne%201121-1128",
+  "obsidian": "obsidian://open?vault=_Imes&file=Guide%2FCircuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FCircuit%2FINFORMATION%20CIRCUIT%20Espagne%201121-1128",
   "abstract": [
     {
       "emoji": "🦎",
       "texte": "Park Güell · 4 billets · entrée jusqu'à 10:30",
       "heure_cle": "10:00",
       "ref": "9322235",
-      "billet": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20Park%20Guell%5B93222351%5D.pdf"
+      "billet": "obsidian://open?vault=_Imes&file=Guide%2FCircuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20Park%20Guell%5B93222351%5D.pdf"
     },
     {
       "emoji": "⛪",
       "texte": "Sagrada Família · 4 billets · pièce d'identité",
       "heure_cle": "14:45",
       "ref": "110849186",
-      "billet": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20SagradaFamilia%5B110849186%5D.pdf"
+      "billet": "obsidian://open?vault=_Imes&file=Guide%2FCircuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20SagradaFamilia%5B110849186%5D.pdf"
     },
     {
       "emoji": "🚗",
@@ -95,7 +95,7 @@
       ],
       "billet": {
         "ref": "9322235 · 4 billets",
-        "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20Park%20Guell%5B93222351%5D.pdf"
+        "obsidian": "obsidian://open?vault=_Imes&file=Guide%2FCircuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20Park%20Guell%5B93222351%5D.pdf"
       }
     },
     {
@@ -180,7 +180,7 @@
       },
       "billet": {
         "ref": "110849186 · 4 billets",
-        "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20SagradaFamilia%5B110849186%5D.pdf"
+        "obsidian": "obsidian://open?vault=_Imes&file=Guide%2FCircuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20SagradaFamilia%5B110849186%5D.pdf"
       }
     },
     {
@@ -319,7 +319,7 @@
       },
       "billet": {
         "ref": "110849186 · 4 billets",
-        "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20SagradaFamilia%5B110849186%5D.pdf"
+        "obsidian": "obsidian://open?vault=_Imes&file=Guide%2FCircuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20SagradaFamilia%5B110849186%5D.pdf"
       }
     },
     {
