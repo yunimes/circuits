@@ -1,0 +1,28 @@
+{
+  "id": "cuenca-casas-colgadas",
+  "nom": "Cuenca — Casas Colgadas et pont de San Pablo",
+  "guide": {
+    "nom": "Guide Cuenca",
+    "id": "cuenca"
+  },
+  "points": [
+    {
+      "nom": "Casas Colgadas",
+      "emoji": "🏚️",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Casas+Colgadas%2C+Cuenca",
+      "aide_memoire": [
+        "Vue gratuite depuis le pont de San Pablo · ~30 min avec le pont"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Pont de San Pablo",
+      "emoji": "🌉",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Puente+de+San+Pablo%2C+Cuenca",
+      "aide_memoire": [
+        "Passerelle métallique au-dessus de la Hoz del Huécar"
+      ],
+      "texte_original": []
+    }
+  ]
+}

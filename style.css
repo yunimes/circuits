@@ -28,11 +28,6 @@ body { background: var(--bg); color: var(--ink); font-family: -apple-system, sys
 .day-label { font-size: 11px; color: var(--ink-faint); letter-spacing: 0.09em; text-transform: uppercase; margin-bottom: 2px; padding: 0 4px; }
 .day-title { font-size: 18px; font-weight: 700; margin-bottom: 10px; line-height: 1.25; padding: 0 4px; color: var(--ink); }
 
-/* Barre mode terrain / révision — doux, pas de bleu plat */
-.mode-bar { display: flex; gap: 6px; margin: 0 4px 12px; }
-.mode-btn { flex: 1; text-align: center; padding: 9px; border-radius: 9px; font-size: 12.5px; font-weight: 600; cursor: pointer; border: 1px solid var(--card-line); background: var(--card); color: var(--ink-soft); user-select: none; transition: all 0.15s; }
-.mode-btn.actif { background: var(--terra); color: #FCFAF5; border-color: var(--terra); box-shadow: 0 1px 3px rgba(181,104,62,0.25); }
-
 .abstract { background: var(--gold-bg); border: 1px solid var(--gold-line); border-left: 4px solid var(--gold); border-radius: 10px; padding: 12px 13px; margin-bottom: 12px; }
 .abstract-title { font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; font-weight: 700; }
 .abstract-row { font-size: 13.5px; margin-bottom: 5px; line-height: 1.4; }
@@ -86,11 +81,19 @@ body { background: var(--bg); color: var(--ink); font-family: -apple-system, sys
 .aide .photo { color: var(--ink-soft); margin-top: 4px; }
 .aide .flag { color: var(--alert); }
 
-.original { font-size: 13.5px; color: #3A372F; line-height: 1.75; display: none; }
+/* Texte complet : pli fermé par défaut, présent seulement si un texte existe */
+.texte-complet { margin-top: 9px; border: 1px solid var(--card-line); border-radius: 8px; background: #F8F5EE; }
+.texte-complet > summary { list-style: none; cursor: pointer; padding: 7px 11px; font-size: 12px; font-weight: 600; color: var(--ink-soft); display: flex; justify-content: space-between; align-items: center; user-select: none; }
+.texte-complet > summary::-webkit-details-marker { display: none; }
+.texte-complet > summary::after { content: '▼'; font-size: 11px; color: var(--ink-faint); transition: transform 0.15s; }
+.texte-complet[open] > summary { border-bottom: 1px solid var(--card-line); }
+.texte-complet[open] > summary::after { transform: rotate(180deg); }
+.original { font-size: 13.5px; color: #3A372F; line-height: 1.75; padding: 10px 12px 12px; }
 .original .ligne { padding: 0.5px 0; }
-.original .vide { color: var(--ink-faint); font-style: italic; }
-body.mode-revision .aide { display: none; }
-body.mode-revision .original { display: block; }
+.original h1, .original h2, .original h3, .original h4 { font-size: 13.5px; color: var(--gold); font-weight: 700; margin: 12px 0 4px; }
+.original h1:first-child, .original h2:first-child, .original h3:first-child { margin-top: 0; }
+.original p { margin-bottom: 8px; }
+.original ul, .original ol { padding-left: 18px; margin-bottom: 8px; }
 
 .acces-rangee { display: flex; gap: 7px; margin-top: 10px; flex-wrap: wrap; }
 .btn-recit { background: var(--gold-bg); border: 1px solid var(--gold-line); color: var(--gold); border-radius: 8px; padding: 6px 11px; font-size: 12px; cursor: pointer; font-family: inherit; }
@@ -100,9 +103,7 @@ body.mode-revision .original { display: block; }
 .recit .titre-recit { color: var(--gold); font-weight: 600; margin-bottom: 6px; font-size: 13px; }
 .recit .ligne { padding: 1px 0; }
 .recit .speak { color: var(--terra); margin-top: 6px; }
-.recit .original-recit { display: none; }
-body.mode-revision .recit .lignes-recit { display: none; }
-body.mode-revision .recit .original-recit { display: block; }
+.recit .texte-complet { background: #FCFAF5; }
 
 .note-pratique { margin-top: 12px; }
 .note-toggle { width: 100%; background: var(--lav-bg); border: 1px solid var(--lav-line); color: var(--lav); border-radius: 8px; padding: 8px 12px; font-size: 12.5px; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-family: inherit; font-weight: 600; }
@@ -124,3 +125,13 @@ body.mode-revision .recit .original-recit { display: block; }
 .day-warning-titre { font-weight: 700; color: var(--alert); font-size: 13px; margin-bottom: 5px; }
 .day-warning-l { font-size: 12.5px; color: #6A4038; line-height: 1.6; padding: 1px 0; }
 .day-warning-l a { color: var(--terra); text-decoration: none; font-weight: 600; }
+
+/* Intertitre dans la liste des créneaux (options d'une journée) */
+.section-creneaux { margin: 16px 4px 8px; padding-bottom: 5px; border-bottom: 2px solid var(--terra-soft); }
+.section-creneaux-titre { font-size: 13px; font-weight: 700; color: var(--terra); text-transform: uppercase; letter-spacing: 0.04em; }
+.section-creneaux-sous { font-size: 12px; color: var(--ink-soft); margin-top: 2px; }
+
+/* Notes de fin de journée (réservations, checklist) */
+.notes-jour { margin-top: 14px; }
+.heberg-details { margin-top: 6px; font-size: 12.5px; }
+.creneau-body .bloc-texte + .aide, .creneau-body .aide + .note-pratique { margin-top: 6px; }

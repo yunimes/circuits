@@ -1,0 +1,78 @@
+{
+  "id": "barcelone-rambla-gotic",
+  "nom": "Barcelone — La Rambla et Barri Gòtic",
+  "guides": [
+    {
+      "nom": "Guide Barcelone",
+      "id": "barcelone"
+    },
+    {
+      "nom": "Guide Barri Gòtic",
+      "id": "barri-gotic"
+    }
+  ],
+  "points": [
+    {
+      "nom": "Plaça de Catalunya",
+      "emoji": "📍",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Pla%C3%A7a+de+Catalunya%2C+Barcelona",
+      "aide_memoire": [],
+      "texte_original": []
+    },
+    {
+      "nom": "La Rambla",
+      "emoji": "🚶",
+      "maps": "https://www.google.com/maps/search/?api=1&query=La+Rambla%2C+Barcelona",
+      "aide_memoire": [],
+      "texte_original": []
+    },
+    {
+      "nom": "Mercat de la Boqueria",
+      "emoji": "🧺",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Mercat+de+la+Boqueria%2C+Barcelona",
+      "aide_memoire": [
+        "Gratuit · fermé le dimanche"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Cathédrale de Barcelone",
+      "emoji": "⛪",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Catedral+de+Barcelona",
+      "aide_memoire": [
+        "⚠️ ~9 €/pers (visite complète avec cloître)"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Avinguda del Portal de l'Àngel",
+      "emoji": "🛍️",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Avinguda+del+Portal+de+l%E2%80%99%C3%80ngel%2C+Barcelona",
+      "aide_memoire": [],
+      "texte_original": []
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Plaça de Catalunya · La Rambla · Pont del Bisbe · Plaça Reial · Carrer Petritxol"
+      ],
+      "texte_original": []
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "Autres sites — zone Gòtic / La Rambla",
+      "lignes": [
+        "Museu Picasso · ⚠️ ~14 €/pers",
+        "Palau de la Música Catalana · ⚠️ ~20–25 €/pers · visite guidée sur réservation"
+      ]
+    },
+    {
+      "titre": "Spécialités — Barcelone",
+      "lignes": [
+        "pa amb tomàquet · crema catalana · botifarra amb mongetes"
+      ]
+    }
+  ]
+}

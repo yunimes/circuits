@@ -1,0 +1,45 @@
+{
+  "id": "toledo-juderia",
+  "nom": "Tolède — juiverie",
+  "guide": {
+    "nom": "Guide Tolède",
+    "id": "toledo"
+  },
+  "points": [
+    {
+      "nom": "Église Santo Tomé",
+      "emoji": "⛪",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Iglesia+de+Santo+Tom%C3%A9%2C+Toledo",
+      "aide_memoire": [
+        "⚠️ ~3 €/pers · ~20 min · L'Enterrement du comte d'Orgaz du Greco"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Synagogue Santa María la Blanca",
+      "emoji": "🕍",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Sinagoga+de+Santa+Mar%C3%ADa+la+Blanca%2C+Toledo",
+      "aide_memoire": [
+        "⚠️ ~3 €/pers · ~15 min"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Mosquée du Cristo de la Luz · Puerta del Sol · Paseo del Tránsito"
+      ],
+      "texte_original": []
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "Autres sites — zone Juiverie / Al-Ándalus",
+      "lignes": [
+        "Synagogue del Tránsito (Musée séfarade) · 3 €/pers · fermée le lundi",
+        "Monastère San Juan de los Reyes · ⚠️ ~3 €/pers · ~30 min"
+      ]
+    }
+  ]
+}

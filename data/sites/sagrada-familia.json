@@ -1,0 +1,19 @@
+{
+  "id": "sagrada-familia",
+  "nom": "Sagrada Família",
+  "guide": {
+    "nom": "Guide Sagrada Família",
+    "id": "sagrada-familia"
+  },
+  "points": [
+    {
+      "nom": "Sagrada Família",
+      "emoji": "⛪",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Sagrada+Fam%C3%ADlia%2C+Carrer+de+la+Marina%2C+Barcelona",
+      "aide_memoire": [
+        "Billet confirmé 26 € · ~1h30 · entrée carrer de la Marina · pièce d'identité obligatoire · audioguide via l'application officielle (date, e-mail et numéro de réservation)"
+      ],
+      "texte_original": []
+    }
+  ]
+}

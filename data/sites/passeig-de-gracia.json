@@ -1,0 +1,66 @@
+{
+  "id": "passeig-de-gracia",
+  "nom": "Barcelone — Passeig de Gràcia",
+  "guides": [
+    {
+      "nom": "Guide Gaudí — partie 1",
+      "id": "antoni-gaudi-1"
+    },
+    {
+      "nom": "Guide Gaudí — partie 2",
+      "id": "antoni-gaudi-2"
+    },
+    {
+      "nom": "Guide Gaudí — partie 3",
+      "id": "antoni-gaudi-3"
+    },
+    {
+      "nom": "Guide Gràcia",
+      "id": "gracia"
+    }
+  ],
+  "points": [
+    {
+      "nom": "Casa Milà (La Pedrera)",
+      "emoji": "🏢",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Casa+Mil%C3%A0%2C+Barcelona",
+      "aide_memoire": [
+        "⚠️ ~29 €/pers · ~1h · toit-terrasse"
+      ],
+      "texte_original": [],
+      "guide": {
+        "nom": "Guide Casa Milà",
+        "id": "casa-mila"
+      }
+    },
+    {
+      "nom": "Casa Batlló",
+      "emoji": "🐉",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Casa+Batll%C3%B3%2C+Barcelona",
+      "aide_memoire": [
+        "⚠️ ~29–39 €/pers selon la date · ~1h · audioguide inclus"
+      ],
+      "texte_original": [],
+      "guide": {
+        "nom": "Guide Casa Batlló",
+        "id": "casa-batllo"
+      }
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Passeig de Gràcia · Casa Amatller · Casa Lleó Morera · quartier de Gràcia"
+      ],
+      "texte_original": []
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "Autres sites — zone Gaudí / Eixample / Gràcia",
+      "lignes": [
+        "Palau Güell · ⚠️ ~18 €/pers"
+      ]
+    }
+  ]
+}

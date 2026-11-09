@@ -1,0 +1,51 @@
+{
+  "id": "toledo-cathedrale",
+  "nom": "Tolède — cathédrale primatiale",
+  "guides": [
+    {
+      "nom": "Guide Cathédrale de Tolède",
+      "id": "catedral-toledo"
+    },
+    {
+      "nom": "Guide Tolède",
+      "id": "toledo"
+    }
+  ],
+  "points": [
+    {
+      "nom": "Cathédrale primatiale",
+      "emoji": "⛪",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Catedral+Primada+de+Toledo",
+      "aide_memoire": [
+        "⚠️ 12 €/pers (temple, musée, cloître, Greco, tour si ouverte) · ~1h10",
+        "Lun–sam 10:00–18:30, portes fermées à 18:00 · dim. à partir de 14:00",
+        "Billets à la boutique en face de la façade principale (rue de droite)",
+        "Audioguide sur téléphone, prévoir des écouteurs · non incluse par IMES"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Plaza de Zocodover · Puerta de Bisagra · Pont d'Alcántara · Pont de San Martín · Mirador del Valle (vue d'ensemble, rive opposée du Tage)"
+      ],
+      "texte_original": []
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "Autres sites — zone Cathédrale / Alcázar",
+      "lignes": [
+        "Alcázar / Museo del Ejército · ⚠️ 5 €/pers · fermé le lundi",
+        "Musée du Greco · ⚠️ tarif et jour de fermeture à vérifier"
+      ]
+    },
+    {
+      "titre": "Spécialités — Tolède",
+      "lignes": [
+        "massepain · carcamusas · perdrix à la tolédane"
+      ]
+    }
+  ]
+}

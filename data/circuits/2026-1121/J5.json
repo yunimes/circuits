@@ -1,0 +1,175 @@
+{
+  "jour": "J5",
+  "date": "Mercredi 25 novembre 2026",
+  "titre": "Cuenca → Valence",
+  "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FCircuit%2FINFORMATION%20CIRCUIT%20Espagne%201121-1128",
+  "abstract": [
+    {
+      "emoji": "🚗",
+      "texte": "Route : Cuenca → Valence ~201 km, ~2h35"
+    },
+    {
+      "emoji": "🏨",
+      "texte": "Nuit : Hotel Valencia Center ★★★★ · check-in dès 15:00 · petit-déj inclus"
+    }
+  ],
+  "hebergement": "hotel-valencia-center",
+  "hebergement_details": [
+    "Remplace le SH Valencia Palace : programme IMES reçu le 09/11 et vouchers",
+    "Réf. client IMES : couple KIM B1126PETDL · singles B1126QQYH4",
+    "Réf. fournisseur : couple KIM 102-21571688 · singles Y2744H",
+    "Chambres : couple KIM 1 × Standard Double or Twin · singles 3 × Standard Single Use : ZO Yun, KIM Heeyoung, JANG Youngjin",
+    "Dates : 25/11 → 26/11 (1 nuit) · petit-déjeuner continental inclus",
+    "Check-in : à partir de 15:00 · Check-out : avant 12:00 · pièce d'identité à l'arrivée (voucher du couple)"
+  ],
+  "creneaux": [
+    {
+      "heure": "Matin",
+      "type": "etape",
+      "emoji": "☕",
+      "titre": "Petit-déjeuner : NH Ciudad de Cuenca · inclus"
+    },
+    {
+      "heure": "09:00",
+      "type": "trajet",
+      "titre": "Cuenca → Valence",
+      "duree": "~2h35",
+      "km": "~201",
+      "lignes": [
+        "N-320 puis A-3 par Motilla del Palancar"
+      ]
+    },
+    {
+      "heure": "11:40",
+      "type": "etape",
+      "emoji": "🅿️",
+      "titre": "Stationnement parking Centro Histórico – Mercado Central",
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Valence — Parking Centro Histórico – Mercado Central (EMT)",
+          "lignes": [
+            "Plaza de la Ciudad de Brujas s/n, 46001 Valence · accès véhicules par la Calle Editor Manuel Aguilar https://www.google.com/maps/search/?api=1&query=Parking+Centro+Hist%C3%B3rico+Mercado+Central%2C+Plaza+Ciudad+de+Brujas%2C+Valencia",
+            "Hauteur max : 3,10 m au niveau -1 · 2,20 m aux niveaux inférieurs",
+            "308 places · 24 h/24 · ~2,30 €/h · Tél : 963 158 574",
+            "À pied : Mercado Central 2 min · cathédrale 5 min · Plaza de la Virgen 5 min"
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "11:45",
+      "type": "visite",
+      "site": "valencia-mercado-central",
+      "titre": "Mercado Central",
+      "visite": {
+        "duree": "~30 min"
+      },
+      "lignes": [
+        "Ouvert le matin ⚠️"
+      ]
+    },
+    {
+      "heure": "12:15",
+      "type": "visite",
+      "site": "llotja-seda",
+      "titre": "Llotja de la Seda",
+      "visite": {
+        "duree": "~30 min"
+      }
+    },
+    {
+      "heure": "12:45",
+      "type": "visite",
+      "site": "valencia-places",
+      "titre": "Plaza de la Virgen, Plaza de la Reina (en passant)",
+      "visite": {
+        "duree": "~30 min"
+      }
+    },
+    {
+      "heure": "13:15",
+      "type": "repas",
+      "titre": "Déjeuner : paella",
+      "duree": "~1h30",
+      "restaurants": [
+        "el-paeller-valencia",
+        "bar-central-valencia"
+      ]
+    },
+    {
+      "heure": "14:45",
+      "type": "visite",
+      "site": "catedral-valencia",
+      "titre": "Cathédrale et chapelle du Saint-Calice",
+      "visite": {
+        "duree": "~1h"
+      },
+      "lignes": [
+        "Lun–ven 10:30–18:30"
+      ]
+    },
+    {
+      "heure": "15:45",
+      "type": "visite",
+      "site": "micalet",
+      "titre": "Micalet, en option (207 marches)",
+      "visite": {
+        "duree": "~30 min"
+      }
+    },
+    {
+      "heure": "16:30",
+      "type": "trajet",
+      "titre": "Parking Mercado Central → hôtel",
+      "duree": "~10 min",
+      "km": "~4,4",
+      "lignes": [
+        "Dépôt du van à l'hôtel"
+      ]
+    },
+    {
+      "heure": "16:45",
+      "type": "visite",
+      "site": "valencia-ciutat-arts",
+      "titre": "Cité des Arts et des Sciences, extérieurs, à pied depuis l'hôtel",
+      "visite": {
+        "duree": "~1h"
+      },
+      "lignes": [
+        "~550 m à vol d'oiseau jusqu'à l'Hemisfèric",
+        "Coucher du soleil 17:40"
+      ]
+    },
+    {
+      "heure": "~18:00",
+      "type": "checkin",
+      "titre": "Check-in · Hotel Valencia Center"
+    },
+    {
+      "heure": "Soir",
+      "type": "repas",
+      "restaurant": {
+        "nom": "Dîner : restaurant de l'hôtel ou alentours",
+        "aide_memoire": [
+          "Restaurant de l'hôtel ou alentours de la Cité des Arts et des Sciences."
+        ]
+      }
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "ℹ️ Tribunal des Eaux",
+      "lignes": [
+        "Il siège le jeudi à 12:00 à la porte des Apôtres de la cathédrale. Le groupe est à Valence le mercredi : non visible, sauf à retarder le départ du jeudi, ce qui paraît difficile à concilier avec Peñíscola et l'arrivée à Barcelone avant 18:30."
+      ]
+    },
+    {
+      "titre": "☑️ Checklist J5",
+      "lignes": [
+        "☐ Réserver El Paeller Valencià (déjeuner)",
+        "☐ Horaires du Mercado Central et tarif du Micalet",
+        "☐ Parking de l'hôtel Valencia Center : hauteur et tarif"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "jour": "J3",
+  "date": "Lundi 23 novembre 2026",
+  "titre": "Ségovie → Ávila → Tolède",
+  "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FCircuit%2FINFORMATION%20CIRCUIT%20Espagne%201121-1128",
+  "abstract": [
+    {
+      "emoji": "🚗",
+      "texte": "Route : Ségovie → Ávila ~68 km, ~1h · Ávila → Tolède ~132 km, ~1h50"
+    },
+    {
+      "emoji": "🏨",
+      "texte": "Nuit : Sercotel Toledo Renacimiento ★★★★ · petit-déj inclus"
+    }
+  ],
+  "warnings": [
+    {
+      "titre": "Fermetures du lundi",
+      "lignes": [
+        "Ávila : chemin de ronde des murailles fermé le lundi en hiver. Restaurant El Almacén fermé.",
+        "Tolède : Synagogue del Tránsito et Alcázar (Museo del Ejército) fermés le lundi."
+      ]
+    }
+  ],
+  "hebergement": "sercotel-toledo-renacimiento",
+  "hebergement_details": [
+    "Remplace l'Eurostars Toledo du programme IMES, confirmé",
+    "Réf. client IMES : couple KIM B1026BMAWR · singles B1026VEBZM",
+    "Réf. fournisseur : couple KIM 3269087 · singles SH31297236",
+    "Chambres : couple KIM 1 × Superior Double · singles 3 × Single (Superior Room) : ZO Yun, KIM Heeyoung, JANG Youngjin",
+    "Dates : 23/11 → 24/11 (1 nuit) · no-show facturé 100 %",
+    "Check-in / check-out : non indiqués sur le voucher ❗️"
+  ],
+  "creneaux": [
+    {
+      "heure": "Matin",
+      "type": "etape",
+      "emoji": "☕",
+      "titre": "Petit-déjeuner : Parador de Segovia · inclus"
+    },
+    {
+      "heure": "09:00",
+      "type": "trajet",
+      "titre": "Ségovie → Ávila",
+      "duree": "~1h",
+      "km": "~68",
+      "lignes": [
+        "N-110 · alt. AP-61/AP-6/AP-51"
+      ],
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Ávila — Mirador de los Cuatro Postes",
+          "lignes": [
+            "Aire de stationnement en surface au mirador · arrêt court ⚠️ https://www.google.com/maps/search/?api=1&query=Mirador+de+los+Cuatro+Postes%2C+%C3%81vila"
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "10:00",
+      "type": "visite",
+      "site": "avila-cuatro-postes",
+      "visite": {
+        "duree": "~20 min"
+      }
+    },
+    {
+      "heure": "10:30",
+      "type": "etape",
+      "emoji": "🅿️",
+      "titre": "Stationnement parking El Grande (sous la Plaza de Santa Teresa)",
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Ávila — Parking El Grande (Telpark)",
+          "lignes": [
+            "Plaza de Santa Teresa de Jesús s/n, 05001 Ávila · souterrain https://www.google.com/maps/search/?api=1&query=Parking+El+Grande%2C+Plaza+de+Santa+Teresa%2C+%C3%81vila",
+            "Hauteur max : 2,25 m",
+            "Accès en semaine par la Calle San Segundo (le week-end par la Calle Bajada del Peregrino)",
+            "Ouvert 24 h/24 · 1,75 € la première heure · maximum 25,15 €/jour",
+            "À pied : cathédrale 2 min · Puerta del Alcázar 5 min"
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "10:30",
+      "type": "visite",
+      "site": "avila-centre",
+      "visite": {
+        "duree": "~1h45"
+      },
+      "lignes": [
+        "Murailles vues de l'extérieur (chemin de ronde fermé le lundi en hiver), cathédrale (~45 min), Plaza et Convento de Santa Teresa (~30 min)"
+      ]
+    },
+    {
+      "heure": "12:15",
+      "type": "repas",
+      "titre": "Déjeuner : Ávila",
+      "duree": "~1h15",
+      "lignes": [
+        "À commander : chuletón de Ávila · judías del Barco · patatas revolconas · yemas de Santa Teresa en dessert (pâtisserie)",
+        "El Almacén (Ctra de Salamanca 6, vue sur les murailles) : fermé le lundi."
+      ],
+      "restaurants": [
+        "las-cancelas-avila",
+        "candiles-avila"
+      ]
+    },
+    {
+      "heure": "13:30",
+      "type": "trajet",
+      "titre": "Ávila → Mirador del Valle (Tolède)",
+      "duree": "~2h",
+      "km": "~140",
+      "lignes": [
+        "N-403 puis A-40 par Maqueda"
+      ],
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Tolède — Mirador del Valle",
+          "lignes": [
+            "Stationnement en bord de route, Carretera de Circunvalación · arrêt court · capacité limitée ⚠️ https://www.google.com/maps/search/?api=1&query=Mirador+del+Valle%2C+Toledo"
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "15:30",
+      "type": "visite",
+      "site": "toledo-mirador-valle",
+      "titre": "Mirador del Valle, vue d'ensemble de la ville",
+      "visite": {
+        "duree": "~20 min"
+      },
+      "lignes": [
+        "Variante : garder le Mirador del Valle pour le coucher du soleil (17:54), au prix d'une visite plus courte de la juiverie."
+      ]
+    },
+    {
+      "heure": "15:50",
+      "type": "trajet",
+      "titre": "Mirador del Valle → parking Safont, puis escalators jusqu'à Zocodover",
+      "duree": "~20 min ⚠️",
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Tolède — Aparcamiento Safont",
+          "lignes": [
+            "Face à la gare routière, au pied de la ville · municipal · gratuit · grande capacité https://www.google.com/maps/search/?api=1&query=Aparcamiento+Safont%2C+Toledo",
+            "Escalators vers la Plaza de Zocodover juste à côté (accès le plus rapide)",
+            "Hauteur et revêtement ❗️ à vérifier",
+            "À éviter avec le Trafic : parking Recaredo (hauteur annoncée 1,90 m, non confirmée) · parking Miradero (2,00 m)."
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "16:10",
+      "type": "visite",
+      "site": "toledo-cathedrale",
+      "titre": "Cathédrale",
+      "visite": {
+        "duree": "~1h10"
+      },
+      "lignes": [
+        "Portes fermées à 18:00"
+      ]
+    },
+    {
+      "heure": "17:20",
+      "type": "visite",
+      "site": "toledo-juderia",
+      "titre": "Juiverie : Santo Tomé, Santa María la Blanca",
+      "visite": {
+        "duree": "~40 min"
+      },
+      "lignes": [
+        "Horaires d'hiver ⚠️"
+      ]
+    },
+    {
+      "heure": "18:00",
+      "type": "trajet",
+      "titre": "Retour au van (~20 min ⚠️) puis hôtel"
+    },
+    {
+      "heure": "Soir",
+      "type": "repas",
+      "titre": "Dîner : Tolède",
+      "lignes": [
+        "À défaut : restaurant de l'hôtel ou alentours."
+      ],
+      "restaurant": "la-orza-toledo"
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "☑️ Checklist J3",
+      "lignes": [
+        "☐ Réserver le déjeuner à Ávila (Las Cancelas ou Candiles)",
+        "☐ Réserver La Orza (dîner) si le groupe le souhaite",
+        "☐ Hauteur et revêtement du parking Safont",
+        "☐ Parking de l'hôtel Sercotel"
+      ]
+    }
+  ]
+}

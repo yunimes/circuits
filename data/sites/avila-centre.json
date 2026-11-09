@@ -1,0 +1,59 @@
+{
+  "id": "avila-centre",
+  "nom": "Ávila — centre historique",
+  "guide": {
+    "nom": "Guide Ávila",
+    "id": "avila"
+  },
+  "points": [
+    {
+      "nom": "Murailles",
+      "emoji": "🧱",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Muralla+de+%C3%81vila",
+      "aide_memoire": [
+        "Chemin de ronde des murailles · 8 €/pers · fermé le lundi en hiver · vue extérieure seulement"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Cathédrale",
+      "emoji": "⛪",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Catedral+de+%C3%81vila",
+      "aide_memoire": [
+        "8 €/pers · ~45 min · cathédrale-forteresse intégrée à l'enceinte · ⚠️ horaire d'hiver du lundi à confirmer"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Convento de Santa Teresa",
+      "emoji": "⛪",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Convento+de+Santa+Teresa%2C+%C3%81vila",
+      "aide_memoire": [
+        "⚠️ ~2 €/pers (musée) · ~30 min avec la Plaza de Santa Teresa"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Plaza de Santa Teresa · Puerta del Alcázar · Puerta del Carmen · ruelles intra-muros"
+      ],
+      "texte_original": []
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "Autres sites — Ávila",
+      "lignes": [
+        "Basílica de San Vicente · ⚠️ tarif à vérifier · ~20 min · roman, hors les murs"
+      ]
+    },
+    {
+      "titre": "Spécialités — Ávila",
+      "lignes": [
+        "chuletón de Ávila · judías del Barco · yemas de Santa Teresa"
+      ]
+    }
+  ]
+}

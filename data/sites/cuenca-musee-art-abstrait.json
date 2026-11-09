@@ -1,0 +1,19 @@
+{
+  "id": "cuenca-musee-art-abstrait",
+  "nom": "Cuenca — Musée d'Art Abstrait Espagnol",
+  "guide": {
+    "nom": "Guide Cuenca",
+    "id": "cuenca"
+  },
+  "points": [
+    {
+      "nom": "Musée d'Art Abstrait Espagnol (dans les maisons suspendues)",
+      "emoji": "🖼️",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Museo+de+Arte+Abstracto+Espa%C3%B1ol%2C+Cuenca",
+      "aide_memoire": [
+        "Gratuit · ~45 min – 1h · mardi 10:00–14:00 et 16:00–18:00 · dernier accès en général 30 min avant la fermeture"
+      ],
+      "texte_original": []
+    }
+  ]
+}

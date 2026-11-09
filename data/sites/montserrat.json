@@ -1,0 +1,48 @@
+{
+  "id": "montserrat",
+  "nom": "Montserrat — Vierge noire et basilique",
+  "guide": {
+    "nom": "Guide Montserrat",
+    "id": "montserrat"
+  },
+  "points": [
+    {
+      "nom": "Trône de la Vierge noire",
+      "emoji": "🖤",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Bas%C3%ADlica+de+Montserrat",
+      "aide_memoire": [
+        "Billet confirmé 14:30 · 12 €/pers · audioguide, basilique et atrium compris",
+        "Validation à l'accès à la Vierge · ~30–45 min selon l'attente ⚠️"
+      ],
+      "texte_original": [],
+      "guide": {
+        "nom": "Guide Basilique de Montserrat",
+        "id": "basilica-montserrat"
+      }
+    },
+    {
+      "nom": "Basilique",
+      "emoji": "⛪",
+      "aide_memoire": [
+        "Comprise dans le billet du Trône · programme IMES"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Plaça de la Creu · Camí de l'Ave Maria · boutique du monastère et produits locaux (miel, fromage) · point de vue sur le massif"
+      ],
+      "texte_original": []
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "Autres sites — Montserrat",
+      "lignes": [
+        "Museu de Montserrat · ⚠️ ~8 €/pers · ~45 min · peu compatible avec le créneau"
+      ]
+    }
+  ]
+}

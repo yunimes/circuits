@@ -1,0 +1,36 @@
+{
+  "id": "sitges",
+  "nom": "Sitges",
+  "guide": {
+    "nom": "Guide Sitges",
+    "id": "sitges"
+  },
+  "points": [
+    {
+      "nom": "Église Sant Bartomeu i Santa Tecla",
+      "emoji": "⛪",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Esgl%C3%A9sia+de+Sant+Bartomeu+i+Santa+Tecla%2C+Sitges",
+      "aide_memoire": [
+        "Extérieur · sur le promontoire au bord de la mer (programme IMES)"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Passeig Marítim",
+      "emoji": "🌴",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Passeig+Mar%C3%ADtim%2C+Sitges",
+      "aide_memoire": [
+        "Gratuit · promenade bordée de palmiers (programme IMES)"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Vieille ville, ruelles blanches fleuries (programme IMES)"
+      ],
+      "texte_original": []
+    }
+  ]
+}

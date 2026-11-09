@@ -1,0 +1,27 @@
+{
+  "id": "valencia-mercado-central",
+  "nom": "Valence — Mercado Central",
+  "guide": {
+    "nom": "Guide Valence",
+    "id": "valencia"
+  },
+  "points": [
+    {
+      "nom": "Mercado Central",
+      "emoji": "🧺",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Mercado+Central+de+Valencia",
+      "aide_memoire": [
+        "Gratuit · ~30 min · ⚠️ ouvert le matin, horaire à vérifier · coupole moderniste (1914–1928) et girouette en perroquet"
+      ],
+      "texte_original": []
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "Spécialités — Valence",
+      "lignes": [
+        "paella valenciana · horchata et fartons · agua de Valencia"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "montjuic-anella-olimpica",
+  "nom": "Montjuïc — Anella Olímpica",
+  "guide": {
+    "nom": "Guide Montjuïc",
+    "id": "montjuic"
+  },
+  "points": [
+    {
+      "nom": "Monument à Hwang Young-cho (황영조 기념비)",
+      "emoji": "🏃",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Monument+a+Hwang+Young-cho%2C+Montju%C3%AFc%2C+Barcelona",
+      "aide_memoire": [
+        "Gratuit · ~10 min · devant le stade olympique · installé en 2001 (sources non officielles)",
+        "Rappelle sa victoire au marathon des Jeux de 1992 (2:13:23), arrivée au stade après la montée de Montjuïc ; il lâche Kōichi Morishita vers le 40e km"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Estadi Olímpic Lluís Companys",
+      "emoji": "🏟️",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Estadi+Ol%C3%ADmpic+Llu%C3%ADs+Companys%2C+Barcelona",
+      "aide_memoire": [
+        "Extérieur · stade des Jeux de 1992"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Tour de télécommunications de Montjuïc (Calatrava) · Palau Sant Jordi",
+      "emoji": "🗼",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Torre+de+Comunicacions+de+Montju%C3%AFc",
+      "aide_memoire": [
+        "Extérieurs"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Museu Olímpic i de l'Esport",
+      "emoji": "🏅",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Museu+Ol%C3%ADmpic+i+de+l%E2%80%99Esport%2C+Av.+de+l%E2%80%99Estadi+60%2C+Barcelona",
+      "aide_memoire": [
+        "Av. de l'Estadi 60, à côté du stade · mar–sam 10:00–18:00 · tarif ❗️ · repli en cas de pluie"
+      ],
+      "texte_original": []
+    }
+  ]
+}

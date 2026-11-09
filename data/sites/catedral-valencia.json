@@ -1,0 +1,19 @@
+{
+  "id": "catedral-valencia",
+  "nom": "Valence — cathédrale",
+  "guide": {
+    "nom": "Guide Cathédrale de Valence",
+    "id": "catedral-valencia"
+  },
+  "points": [
+    {
+      "nom": "Cathédrale",
+      "emoji": "⛪",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Catedral+de+Valencia",
+      "aide_memoire": [
+        "12 €/pers (musée compris) · ~1h · lun–ven 10:30–18:30, dernière entrée 17:30 · chapelle du Saint-Calice (Graal) · audioguide individuel"
+      ],
+      "texte_original": []
+    }
+  ]
+}

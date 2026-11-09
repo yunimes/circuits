@@ -1,0 +1,365 @@
+{
+  "id": "2026-1121",
+  "titre": "Madrid · Ségovie · Tolède · Cuenca · Valence · Barcelone",
+  "sous_titre": "Groupe 4 personnes · 7N/9J · 21–29 novembre 2026 · IMES Europe",
+  "logistique": {
+    "groupe": "4 voyageurs — 김동균 대표님 (KIM DONGGYUN) et 김규림 (KIM GHYURIM), chambre double · 장영진 소장님 (JANG YOUNGJIN), single · 김희영 (KIM HEEYOUNG), single",
+    "vehicule": "Renault Trafic 8 places · hauteur 1,97 m · longueur 5,08 m (L1) ou 5,48 m (L2), version ❗️ · largeur 1,96 m · loué en France (immatriculation française), plaque à obtenir du loueur au plus tôt pour les ZBE de Madrid et de Barcelone ❗️ · lieu et heure de prise en charge et de restitution ❗️ à préciser",
+    "guide": "Yun ZO (조윤) · horaire du guide 09:00 – 18:30"
+  },
+  "transports": [
+    {
+      "type": "🛬",
+      "label": "Arrivée Madrid",
+      "ref": "KE913 Incheon → Madrid",
+      "date": "21/11 Sam",
+      "heure": "12:10 → 19:25",
+      "lieu": "Madrid-Barajas · terminal ❗️"
+    },
+    {
+      "type": "🛫",
+      "label": "Départ Barcelone",
+      "ref": "KE5912 Barcelone → Incheon",
+      "date": "28/11 Sam",
+      "heure": "20:40 → 17:00 (J+1)",
+      "lieu": "Barcelone · terminal ❗️"
+    }
+  ],
+  "alerte_transport": {
+    "titre": "✈️ Vols — horaires et terminaux",
+    "lignes": [
+      "KE913 : vol direct Korean Air, horaire 12:10 → 19:25 vérifié (le programme IMES indique 13:30 → 19:30), terminal d'arrivée ❗️ à confirmer (KE914 partait du T1 en mai).",
+      "KE5912 : vol direct opéré par Asiana Airlines (code KE), terminal ❗️ à confirmer."
+    ]
+  },
+  "hebergements": [
+    {
+      "nuits": "J1 (21–22/11)",
+      "ref": "crowne-plaza-madrid-airport"
+    },
+    {
+      "nuits": "J2 (22–23/11)",
+      "ref": "parador-segovia"
+    },
+    {
+      "nuits": "J3 (23–24/11)",
+      "ref": "sercotel-toledo-renacimiento"
+    },
+    {
+      "nuits": "J4 (24–25/11)",
+      "ref": "nh-ciudad-de-cuenca"
+    },
+    {
+      "nuits": "J5 (25–26/11)",
+      "ref": "hotel-valencia-center"
+    },
+    {
+      "nuits": "J6–J7 (26–28/11)",
+      "ref": "novotel-barcelona-city"
+    }
+  ],
+  "reservations": [
+    {
+      "ok": true,
+      "jour": "J2 · 22/11",
+      "heure": "13:00",
+      "site": "Restaurante José María — Ségovie",
+      "pers": "4 couverts",
+      "ref": "Réservé"
+    },
+    {
+      "ok": true,
+      "jour": "J2 · 22/11",
+      "heure": "16:00",
+      "site": "Alcázar de Ségovie — palais et musée · tour de Juan II 17:00 (même billet)",
+      "pers": "4 billets",
+      "ref": "R: 110850203 · 13,50 €/pers",
+      "pdf": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20AlcazarDeSegovia%5B110850203%5D.pdf"
+    },
+    {
+      "ok": true,
+      "jour": "J7 · 27/11",
+      "heure": "10:00",
+      "site": "Park Güell — entrée jusqu'à 10:30",
+      "pers": "4 billets",
+      "ref": "9322235 (fichier : 93222351) · 18 €/pers",
+      "pdf": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20Park%20Guell%5B93222351%5D.pdf"
+    },
+    {
+      "ok": true,
+      "jour": "J7 · 27/11",
+      "heure": "14:45",
+      "site": "Sagrada Família — entrée carrer de la Marina · pièce d'identité",
+      "pers": "4 billets",
+      "ref": "110849186 · 26 €/pers",
+      "pdf": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20SagradaFamilia%5B110849186%5D.pdf"
+    },
+    {
+      "ok": true,
+      "jour": "J8 · 28/11",
+      "heure": "13:55",
+      "site": "Train à crémaillère A/R Monistrol Vila ↔ Montserrat · retour 15:55 (16:15 au plus tard)",
+      "pers": "5 billets",
+      "ref": "VOL006020027875 · 15 €/pers",
+      "pdf": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FRack%20Railway%20Montserrat%5B006020027875%5D.pdf"
+    },
+    {
+      "ok": true,
+      "jour": "J8 · 28/11",
+      "heure": "14:30",
+      "site": "Trône de la Vierge noire — Montserrat",
+      "pers": "4 billets",
+      "ref": "R-110874706 · Loc. 110874708 · 12 €/pers",
+      "pdf": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20MontserratVisita%5B110874706%5D.pdf"
+    },
+    {
+      "ok": false,
+      "jour": "J2 · 22/11",
+      "heure": "Soir",
+      "site": "Dîner — restaurant du Parador de Segovia",
+      "pers": "—",
+      "ref": "À réserver"
+    },
+    {
+      "ok": false,
+      "jour": "J3 · 23/11",
+      "heure": "12:15",
+      "site": "Déjeuner Ávila — Las Cancelas ou Candiles",
+      "pers": "—",
+      "ref": "À réserver"
+    },
+    {
+      "ok": false,
+      "jour": "J3 · 23/11",
+      "heure": "Soir",
+      "site": "Dîner — La Orza, Tolède",
+      "pers": "—",
+      "ref": "Si le groupe le souhaite"
+    },
+    {
+      "ok": false,
+      "jour": "J4 · 24/11",
+      "heure": "13:50",
+      "site": "Déjeuner — Casa Manzar, Cuenca",
+      "pers": "—",
+      "ref": "À réserver"
+    },
+    {
+      "ok": false,
+      "jour": "J4 · 24/11",
+      "heure": "Soir",
+      "site": "Dîner — Parador de Cuenca",
+      "pers": "—",
+      "ref": "Si le groupe le souhaite"
+    },
+    {
+      "ok": false,
+      "jour": "J5 · 25/11",
+      "heure": "13:15",
+      "site": "Déjeuner — El Paeller Valencià, Valence",
+      "pers": "—",
+      "ref": "À réserver"
+    },
+    {
+      "ok": false,
+      "jour": "J6 · 26/11",
+      "heure": "12:45",
+      "site": "Déjeuner — Casa Dorotea ou Casa Jaime, Peñíscola",
+      "pers": "—",
+      "ref": "À réserver (ouverture en novembre à confirmer)"
+    },
+    {
+      "ok": false,
+      "jour": "J6–J7",
+      "heure": "Soir",
+      "site": "Dîner — Mussol Glòries ou Els Pescadors, Barcelone",
+      "pers": "—",
+      "ref": "Si le groupe le souhaite"
+    },
+    {
+      "ok": false,
+      "jour": "J7 · 27/11",
+      "heure": "12:45",
+      "site": "Déjeuner — Rambla de Catalunya (Anxoita Bodega ou Ciutat Comtal)",
+      "pers": "—",
+      "ref": "À réserver"
+    },
+    {
+      "ok": false,
+      "jour": "J7 · 27/11",
+      "heure": "11:15",
+      "site": "Option B — parking FURGO Casp 83 (Parclick, catégorie « Turismo », forfait illimité)",
+      "pers": "—",
+      "ref": "Si option B"
+    },
+    {
+      "ok": false,
+      "jour": "J8 · 28/11",
+      "heure": "09:45",
+      "site": "Option A — Casa Batlló (4 billets, sans billet guide) et FURGO Casp 83 (Parclick, catégorie « Turismo »)",
+      "pers": "4 billets",
+      "ref": "Si option A du matin"
+    },
+    {
+      "ok": false,
+      "jour": "J8 · 28/11",
+      "heure": "~12:00",
+      "site": "Déjeuner — Bar L'Era, Monistrol Vila (arrivée entre ~11:45 et ~12:20)",
+      "pers": "—",
+      "ref": "À réserver"
+    }
+  ],
+  "jours": [
+    {
+      "id": "J1",
+      "date": "Sam 21/11",
+      "titre": "Arrivée Madrid",
+      "etapes": "KE913 · arrivée Madrid-Barajas 19:25 · check-in vers 20:45",
+      "hebergement": "Crowne Plaza Madrid Airport"
+    },
+    {
+      "id": "J2",
+      "date": "Dim 22/11",
+      "titre": "Madrid → Ségovie",
+      "etapes": "Arrêt express à Madrid (sous réserve) · Ségovie : aqueduc, José María 13:00, cathédrale, Alcázar 16:00, coucher du soleil à la Pradera de San Marcos",
+      "hebergement": "Parador de Segovia"
+    },
+    {
+      "id": "J3",
+      "date": "Lun 23/11",
+      "titre": "Ségovie → Ávila → Tolède",
+      "etapes": "Ávila : Cuatro Postes, centre historique · Tolède : Mirador del Valle, cathédrale, juiverie",
+      "hebergement": "Sercotel Toledo Renacimiento"
+    },
+    {
+      "id": "J4",
+      "date": "Mar 24/11",
+      "titre": "Tolède → Consuegra → Cuenca",
+      "etapes": "Consuegra : moulins et château · Cuenca : cathédrale, Casas Colgadas, Musée d'Art Abstrait, Plaza Mayor",
+      "hebergement": "NH Ciudad de Cuenca"
+    },
+    {
+      "id": "J5",
+      "date": "Mer 25/11",
+      "titre": "Cuenca → Valence",
+      "etapes": "Mercado Central · Llotja de la Seda · cathédrale · Micalet (option) · Cité des Arts et des Sciences",
+      "hebergement": "Hotel Valencia Center"
+    },
+    {
+      "id": "J6",
+      "date": "Jeu 26/11",
+      "titre": "Valence → Peñíscola → Barcelone",
+      "etapes": "Peñíscola : château du Pape Luna, vieille ville · arrivée Barcelone vers 16:45",
+      "hebergement": "Novotel Barcelona City"
+    },
+    {
+      "id": "J7",
+      "date": "Ven 27/11",
+      "titre": "Barcelone",
+      "etapes": "Park Güell 10:00 · Passeig de Gràcia · Sagrada Família 14:45 · La Rambla et Barri Gòtic · option A métro ou B Casp 83",
+      "hebergement": "Novotel Barcelona City"
+    },
+    {
+      "id": "J8",
+      "date": "Sam 28/11",
+      "titre": "Barcelone → Montserrat → aéroport",
+      "etapes": "Matin : A Casa Batlló · B Montjuïc · C Sitges · crémaillère 13:55 · Trône de la Vierge 14:30 · vol KE5912 20:40",
+      "hebergement": "En vol"
+    }
+  ],
+  "alertes": [
+    {
+      "titre": "Hauteur du Trafic : 1,97 m",
+      "lignes": [
+        "Les parkings choisis en mai l'avaient été pour un Jumpy de 1,89 m. Chaque parking (hôtels, centres historiques) doit être revérifié pour une hauteur d'au moins 1,97 m, avec une marge. Hauteurs des parkings d'hôtel non indiquées sur les vouchers ❗️",
+        "Longueur 5,08 m ou 5,48 m selon la version : vérifier aussi l'acceptation des fourgonnettes et la taille des places."
+      ]
+    },
+    {
+      "titre": "Jours courts",
+      "lignes": [
+        "Coucher du soleil entre 17:54 (Tolède, 23/11) et 17:23 (Barcelone, 27–28/11). Les points de vue et les extérieurs sont à placer avant."
+      ]
+    },
+    {
+      "titre": "Repas et inclusions",
+      "lignes": [
+        "Petit-déjeuner continental inclus pour tous, guide compris, sur tous les vouchers reçus (le programme IMES annonce 7 petits-déjeuners).",
+        "Taxe de séjour à payer sur place dans tous les hôtels (2 à 10 €/pers/nuit selon IMES).",
+        "En Espagne, le dîner commence en général vers 20:00. Le guide indique les options chaque jour ; les restaurants d'hôtel restent une solution simple (programme IMES).",
+        "Non inclus : taxe de séjour, déjeuners et dîners, entrées autres que l'Alcázar de Ségovie, la Sagrada Família, le Park Güell et la basilique de Montserrat, assurance individuelle."
+      ]
+    },
+    {
+      "titre": "Trajets et durées de visite",
+      "lignes": [
+        "Trajets : distances et durées de centre à centre (calcul d'itinéraire OSRM), hors trafic, à majorer pour un van. Visites : durées indicatives estimées, à ajuster."
+      ]
+    },
+    {
+      "titre": "Avant le départ — documents IMES et vols",
+      "lignes": [
+        "☑ Voucher Crowne Plaza du couple KIM corrigé au 21/11 (reçu le 09/11)",
+        "☑ Vouchers Hotel Valencia Center (J5) et Novotel Barcelona City (J6–J7)",
+        "☑ Programme IMES mis à jour (reçu le 09/11, hôtel de Tolède corrigé)",
+        "☑ Décision J8 : Montserrat",
+        "☑ IMES prévenu : matinée libre le 28/11",
+        "☑ Horaire de KE913 vérifié : 12:10 → 19:25",
+        "☐ Confirmer le terminal d'arrivée de KE913 à Madrid",
+        "☐ Confirmer le terminal de départ de KE5912 à Barcelone"
+      ]
+    },
+    {
+      "titre": "Avant le départ — logistique véhicule",
+      "lignes": [
+        "☐ Prise en charge du Trafic : lieu, heure, immatriculation, version (L1 5,08 m ou L2 5,48 m)",
+        "☐ Restitution du Trafic après la dépose à l'aéroport de Barcelone et retour du guide",
+        "☐ Europcar : plaque et documents du Trafic (mail envoyé le 09/11) · ou véhicule déjà enregistré, ou enregistrement fait par Europcar",
+        "☐ Enregistrement ZBE de Madrid (zbedistritocentro@madrid.es) : toute la commune, Distrito Centro compris · sinon plan B pour l'arrêt de Madrid",
+        "☐ Registre des véhicules étrangers de l'AMB pour Barcelone (zberegistre.ambmobilitat.cat), jusqu'à 15 jours de vérification",
+        "☐ Madrid 22/11 : Garaje Fermar, longueur admise pour le Trafic (mail)",
+        "☐ Hauteur maximale des parkings : Crowne Plaza, Parador de Segovia, Sercotel Toledo, NH Cuenca (15 €/nuit), Hotel Valencia Center, Novotel Barcelona City",
+        "☐ Hauteur et revêtement : parking Safont (Tolède), parkings de Peñíscola",
+        "☐ Barcelone : taille des places des parkings BSM Travessera de Dalt et Mercat Sagrada Família (service client BSM)",
+        "☐ Parking FURGO Casp 83 (Parclick, catégorie « Turismo ») : J7 si option B (forfait illimité) · J8 si option A du matin",
+        "☐ Vérifier au GPS les itinéraires Ávila → Tolède, Consuegra → Cuenca et Cuenca → Valence",
+        "☐ Consulter l'état du col de Guadarrama si itinéraire alternatif le 22/11"
+      ]
+    },
+    {
+      "titre": "Avant le départ — hôtels, visites, restaurants",
+      "lignes": [
+        "☐ Horaires de check-in / check-out : Crowne Plaza, Parador de Segovia, Sercotel Toledo, Novotel Barcelona City",
+        "☐ Horaires d'hiver et tarifs de Consuegra (château et moulin)",
+        "☐ Horaire du lundi de la cathédrale d'Ávila",
+        "☐ Tarif et horaires 2026 de la cathédrale de Tolède (source non officielle)",
+        "☐ Horaires du Mercado Central de Valence et tarif du Micalet",
+        "☐ Horaires d'hiver du château de Peñíscola (source non officielle)",
+        "☑ Montserrat : billets du train à crémaillère et du Trône de la Vierge (14:30)",
+        "☑ Montserrat : horaires de la crémaillère le 28/11 (13:55 aller, 15:55 retour, 16:15 au plus tard)",
+        "☐ J8 matin : choix de l'option avec le groupe (A Casa Batlló, B Montjuïc, C Sitges) · si A, réserver la Casa Batlló (créneau 09:45) · si B, tarif du Museu Olímpic et du MNAC (repli en cas de pluie)",
+        "☐ Tous les tarifs signalés ⚠️ dans les sites",
+        "☑ Restaurante José María, Ségovie · 22/11 13:00 · réservé",
+        "☐ J2 dîner Parador de Segovia · J3 déjeuner Ávila, dîner La Orza · J4 Casa Manzar, dîner Parador de Cuenca · J5 El Paeller Valencià · J6 Casa Dorotea ou Casa Jaime · J6–J7 dîner (Mussol Glòries ou Els Pescadors, si le groupe le souhaite) · J7 déjeuner Rambla de Catalunya · J8 Bar L'Era",
+        "☐ Coordonnées des hôpitaux de référence"
+      ]
+    },
+    {
+      "titre": "Contacts utiles",
+      "lignes": [
+        "Urgences universelles UE : 112 · Police nationale : 091 · Guardia Civil (routes) : 062 · Urgences sanitaires : 061",
+        "Hôpitaux de référence ❗️ à vérifier : Ségovie — Hospital General de Segovia · Ávila — Hospital Nuestra Señora de Sonsoles · Tolède — Hospital Universitario de Toledo · Cuenca — Hospital Virgen de la Luz · Valence — Hospital Universitari i Politècnic La Fe · Peñíscola — Hospital Comarcal de Vinaròs · Barcelone — Hospital Clínic de Barcelona",
+        "주스페인 대한민국 대사관 (Madrid) : +34 91 353 2000 · 바르셀로나 대한민국 영사관 : +34 934 87 31 53",
+        "Hôtels : Crowne Plaza Madrid Airport +34 912 063 410 · Parador de Segovia +34 921 443 737 · Sercotel Toledo Renacimiento +34 925 284 129 · NH Ciudad de Cuenca +34 969 230 502 · Hotel Valencia Center +34 963 350 700 · Novotel Barcelona City +34 933 262 499",
+        "Alcázar de Ségovie : +34 921 210 515 · atencionalcliente@alcazardesegovia.com",
+        "Garaje Fermar (Madrid) : +34 91 541 36 00 · info@garajefermar.madrid",
+        "Restaurante José María (Ségovie) : +34 921 466 017 · +34 921 460 272",
+        "Cathédrale de Valence : +34 661 90 96 87",
+        "Château de Peñíscola : +34 964 48 00 21 ⚠️",
+        "Park Güell : parkguell@bsmsa.cat · Parkings BSM (service client) : +34 93 409 20 21 (24 h/24)",
+        "Montserrat (Escolania) : +34 93 877 77 77 · Montserrat Visita (Trône) : +34 93 877 77 01 · Train à crémaillère : +34 93 252 14 80 · info@cremallerademontserrat.cat",
+        "IMES (vouchers) : +82 2 776 2682 · Urgence fournisseur hôtels (vouchers) : +39 075 8860001"
+      ]
+    }
+  ]
+}

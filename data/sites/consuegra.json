@@ -1,0 +1,44 @@
+{
+  "id": "consuegra",
+  "nom": "Consuegra — moulins et château",
+  "guide": {
+    "nom": "Guide Consuegra",
+    "id": "consuegra"
+  },
+  "points": [
+    {
+      "nom": "Moulins à vent (cerro Calderico)",
+      "emoji": "🌬️",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Molinos+de+Consuegra%2C+Cerro+Calderico",
+      "aide_memoire": [
+        "Gratuit en extérieur · un moulin aménagé en point d'information (moulin Bolero)"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Château de la Muela",
+      "emoji": "🏰",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Castillo+de+la+Muela%2C+Consuegra",
+      "aide_memoire": [
+        "⚠️ billet combiné moulin, château et musée municipal · visite guidée à heures fixes · horaires d'hiver ❗️ à vérifier"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Panorama sur la plaine de La Mancha · bourg de Consuegra"
+      ],
+      "texte_original": []
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "Spécialités — Consuegra",
+      "lignes": [
+        "fromage manchego · pisto manchego · migas manchegas · safran de La Mancha"
+      ]
+    }
+  ]
+}

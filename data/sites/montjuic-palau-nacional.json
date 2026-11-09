@@ -1,0 +1,36 @@
+{
+  "id": "montjuic-palau-nacional",
+  "nom": "Montjuïc — Palau Nacional",
+  "guide": {
+    "nom": "Guide Montjuïc",
+    "id": "montjuic"
+  },
+  "points": [
+    {
+      "nom": "Mirador du Palau Nacional",
+      "emoji": "🌄",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Mirador+del+Palau+Nacional%2C+Barcelona",
+      "aide_memoire": [
+        "Gratuit, extérieur · ~30 min · vue sur la Plaça d'Espanya, l'avinguda de la Reina Maria Cristina et la ville"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "MNAC",
+      "emoji": "🖼️",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Museu+Nacional+d%E2%80%99Art+de+Catalunya",
+      "aide_memoire": [
+        "Tarif et horaire du samedi ❗️ · terrasses panoramiques sur le toit comprises dans le billet · repli en cas de pluie"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Port Vell · monument à Colomb · Jardins de Miramar · Plaça d'Espanya · tours vénitiennes · Font Màgica · Palau Nacional (Exposition internationale de 1929)"
+      ],
+      "texte_original": []
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "toledo-mirador-valle",
+  "nom": "Tolède — Mirador del Valle",
+  "guide": {
+    "nom": "Guide Tolède",
+    "id": "toledo"
+  },
+  "points": [
+    {
+      "nom": "Mirador del Valle",
+      "emoji": "🌄",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Mirador+del+Valle%2C+Toledo",
+      "aide_memoire": [
+        "Vue d'ensemble, rive opposée du Tage"
+      ],
+      "texte_original": []
+    }
+  ]
+}

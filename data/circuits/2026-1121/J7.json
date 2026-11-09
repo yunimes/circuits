@@ -1,0 +1,418 @@
+{
+  "jour": "J7",
+  "date": "Vendredi 27 novembre 2026",
+  "titre": "Barcelone",
+  "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FCircuit%2FINFORMATION%20CIRCUIT%20Espagne%201121-1128",
+  "abstract": [
+    {
+      "emoji": "🦎",
+      "texte": "Park Güell · 4 billets · entrée jusqu'à 10:30",
+      "heure_cle": "10:00",
+      "ref": "9322235",
+      "billet": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20Park%20Guell%5B93222351%5D.pdf"
+    },
+    {
+      "emoji": "⛪",
+      "texte": "Sagrada Família · 4 billets · pièce d'identité",
+      "heure_cle": "14:45",
+      "ref": "110849186",
+      "billet": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20SagradaFamilia%5B110849186%5D.pdf"
+    },
+    {
+      "emoji": "🚗",
+      "texte": "Route : hôtel → Park Güell ~5 km, ~10–15 min"
+    },
+    {
+      "emoji": "🏨",
+      "texte": "Nuit : Novotel Barcelona City (2e nuit) · petit-déj inclus"
+    }
+  ],
+  "warnings": [
+    {
+      "titre": "Zone à faibles émissions de Barcelone (ZBE)",
+      "lignes": [
+        "Trafic immatriculé en France : inscription au registre des véhicules étrangers de l'AMB (zberegistre.ambmobilitat.cat) à obtenir avant le J6, vérification jusqu'à 15 jours ❗️ Restrictions du lundi au vendredi de 7:00 à 20:00 : concerne ce vendredi."
+      ]
+    },
+    {
+      "titre": "Black Friday",
+      "lignes": [
+        "Le 27/11 est le Black Friday : forte affluence probable dans les rues commerçantes et dans le métro."
+      ]
+    }
+  ],
+  "hebergement": "novotel-barcelona-city",
+  "hebergement_details": [
+    "Réf. client IMES : couple KIM B1126Y0N00 · singles B1126R9HLD",
+    "Réf. fournisseur : couple KIM 5RXGNJ · singles 643375886",
+    "Chambres : couple KIM 1 × Standard Double or Twin (côté rue) · singles 3 × Single (Standard Double room, lit queen) : ZO Yun, KIM Heeyoung, JANG Youngjin",
+    "Dates : 26/11 → 28/11 (2 nuits) · petit-déjeuner continental inclus",
+    "Check-in / check-out : non indiqués sur le voucher ❗️ · check-out le 28/11 avant le départ de 09:00"
+  ],
+  "creneaux": [
+    {
+      "heure": "Matin",
+      "type": "etape",
+      "emoji": "☕",
+      "titre": "Petit-déjeuner : Novotel · inclus"
+    },
+    {
+      "heure": "09:20",
+      "type": "trajet",
+      "titre": "Hôtel → parking BSM Travessera de Dalt",
+      "duree": "~10–15 min (marge pour le trafic)",
+      "km": "~5",
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Park Güell — BSM Travessera de Dalt",
+          "lignes": [
+            "Travessera de Dalt 51, 08024 Barcelone (entrée au n° 49 selon Parclick) https://www.google.com/maps/search/?api=1&query=BSM+Travessera+de+Dalt%2C+Travessera+de+Dalt+51%2C+Barcelona",
+            "Hauteur max : 2,20 m",
+            "Ouvert 24 h/24 · surveillé · lecteur de plaques à la barrière, interphone si elle ne s'ouvre pas · ⚠️ tarif à vérifier (~3–4 €/h)",
+            "Fourgonnettes : aucune restriction dans les règles d'usage BSM · taille des places non publiée ❗️ (service client BSM +34 93 409 20 21, 24 h/24)",
+            "À pied : entrée Carrer d'Olot ~10 min"
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "09:45",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "À pied jusqu'à l'entrée Carrer d'Olot",
+      "duree": "~10 min"
+    },
+    {
+      "heure": "10:00",
+      "type": "visite",
+      "site": "park-guell",
+      "titre": "Park Güell",
+      "visite": {
+        "duree": "~1h15"
+      },
+      "lignes": [
+        "Entrée jusqu'à 10:30"
+      ],
+      "billet": {
+        "ref": "9322235 · 4 billets",
+        "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20Park%20Guell%5B93222351%5D.pdf"
+      }
+    },
+    {
+      "type": "section",
+      "titre": "Option A — Van à la Sagrada Família, métro (recommandée)"
+    },
+    {
+      "heure": "11:15",
+      "type": "trajet",
+      "titre": "Park Güell → parking BSM Mercat Sagrada Família",
+      "duree": "~10–15 min",
+      "km": "~4",
+      "lignes": [
+        "Le van y reste jusqu'au soir"
+      ],
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Sagrada Família — BSM Mercat Sagrada Família",
+          "lignes": [
+            "Carrer de Mallorca 425–433, 08013 Barcelone https://www.google.com/maps/search/?api=1&query=BSM+Mercat+Sagrada+Fam%C3%ADlia%2C+Carrer+de+Mallorca+425%2C+Barcelona",
+            "Hauteur max : 2,40 m",
+            "Ouvert 24 h/24 · surveillé · lecteur de plaques à la barrière, interphone si elle ne s'ouvre pas · tarif ❗️",
+            "Fourgonnettes : aucune restriction dans les règles d'usage BSM · taille des places non publiée ❗️ (service client BSM +34 93 409 20 21, 24 h/24)",
+            "À pied : entrée carrer de la Marina ~5 min · station de métro Sagrada Família (L2, L5) ~5 min ⚠️"
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "11:30",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "À pied jusqu'à la station Sagrada Família",
+      "duree": "~5 min ⚠️"
+    },
+    {
+      "heure": "11:35",
+      "type": "trajet",
+      "emoji": "🚇",
+      "titre": "Métro L5 Sagrada Família → Diagonal (2 arrêts)",
+      "duree": "~15 min ⚠️"
+    },
+    {
+      "heure": "11:50",
+      "type": "visite",
+      "site": "passeig-de-gracia",
+      "titre": "Passeig de Gràcia : Casa Milà, Casa Batlló, extérieurs",
+      "visite": {
+        "duree": "~55 min"
+      }
+    },
+    {
+      "heure": "12:45",
+      "type": "repas",
+      "titre": "Déjeuner : Rambla de Catalunya",
+      "duree": "~1h15",
+      "restaurants": [
+        "anxoita-bodega",
+        "ciutat-comtal"
+      ]
+    },
+    {
+      "heure": "14:00",
+      "type": "trajet",
+      "emoji": "🚇",
+      "titre": "Métro L2 Passeig de Gràcia → Sagrada Família (3 arrêts)",
+      "duree": "~20 min"
+    },
+    {
+      "heure": "14:30",
+      "type": "etape",
+      "emoji": "📍",
+      "titre": "Rendez-vous carrer de la Marina (entrée 14:45 · pièce d'identité)"
+    },
+    {
+      "heure": "14:45",
+      "type": "visite",
+      "site": "sagrada-familia",
+      "titre": "Sagrada Família",
+      "visite": {
+        "duree": "~1h30"
+      },
+      "billet": {
+        "ref": "110849186 · 4 billets",
+        "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20SagradaFamilia%5B110849186%5D.pdf"
+      }
+    },
+    {
+      "heure": "16:15",
+      "type": "trajet",
+      "emoji": "🚇",
+      "titre": "Métro L2 Sagrada Família → Passeig de Gràcia, puis à pied jusqu'à la Plaça de Catalunya",
+      "duree": "~20 min ⚠️"
+    },
+    {
+      "heure": "16:35",
+      "type": "visite",
+      "site": "barcelone-rambla-gotic",
+      "titre": "Boucle à pied : Plaça de Catalunya → La Rambla → Boqueria → Barri Gòtic, cathédrale (extérieur) → avinguda del Portal de l'Àngel",
+      "visite": {
+        "duree": "~1h15"
+      },
+      "lignes": [
+        "Coucher du soleil 17:23"
+      ]
+    },
+    {
+      "heure": "17:50",
+      "type": "trajet",
+      "emoji": "🚇",
+      "titre": "À pied jusqu'à la station Passeig de Gràcia, métro L2 → Sagrada Família",
+      "duree": "~20 min ⚠️"
+    },
+    {
+      "heure": "18:10",
+      "type": "trajet",
+      "titre": "Retour au van (~5 min) puis trajet → hôtel",
+      "duree": "~10 min",
+      "km": "~2,3"
+    },
+    {
+      "type": "section",
+      "titre": "Option B — Parking FURGO Casp 83, sans métro"
+    },
+    {
+      "heure": "11:15",
+      "type": "trajet",
+      "titre": "Park Güell → parking FURGO Casp 83",
+      "duree": "~10–15 min",
+      "km": "~4,3",
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Passeig de Gràcia et Plaça de Catalunya (option B) — Parking FURGO Casp 83",
+          "lignes": [
+            "Carrer de Casp 83, 08013 Barcelone (Fort Pienc) https://www.google.com/maps/search/?api=1&query=Carrer+de+Casp+83%2C+08013+Barcelona",
+            "Hauteur max : 2,45 m · places de 2,5 × 5,8 m",
+            "Fourgonnettes acceptées : réserver sur Parclick l'offre « FURGO CASP 83 » en catégorie « Turismo » (tarif utilitaire) · deux entrées dans la journée : forfait illimité (le forfait simple n'autorise qu'une entrée et une sortie)",
+            "Ouvert 24 h/24 · sans personnel, vidéosurveillance · accès par appel depuis le numéro de téléphone enregistré à la réservation (pas par WhatsApp) · annulation gratuite jusqu'à 1 h avant · tarif ❗️ (affiché à la réservation)",
+            "À pied : Casa Batlló ~1,6 km, ~20 min · Rambla de Catalunya (restaurants) ~1,4 km, ~20 min · Plaça de Catalunya ~1,5 km, ~20 min",
+            "Ne pas confondre avec l'offre « Casp 83 » de Parkimeter : longueur max 4,50 m, largeur 1,80 m, fermée le week-end.",
+            "À éviter avec le Trafic : les parkings Saba du secteur (Plaça de Catalunya, Passeig de Gràcia – Consell de Cent, Rambla de Catalunya, Diputació 286 : 2,00 m · Pau Claris : 1,90 m) · APK2 Centric (1,90–2,00 m) · BSM Moll de la Fusta (1,90–1,95 m) · Diputació 239 (2,30 m mais fourgonnettes refusées) · Aragón 308 (2,10 m, fourgonnettes non confirmées) · Solves, Aragó 325 (fourgonnettes refusées) · NN Còrsega, Còrsega 344 (longueur max 5,00 m)."
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "11:30",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "À pied jusqu'à la Casa Batlló",
+      "duree": "~20 min",
+      "lignes": [
+        "~1,6 km"
+      ]
+    },
+    {
+      "heure": "11:50",
+      "type": "visite",
+      "site": "passeig-de-gracia",
+      "titre": "Passeig de Gràcia : Casa Batlló, Casa Milà, extérieurs",
+      "visite": {
+        "duree": "~55 min"
+      }
+    },
+    {
+      "heure": "12:45",
+      "type": "repas",
+      "titre": "Déjeuner : Rambla de Catalunya",
+      "duree": "~1h",
+      "restaurants": [
+        "anxoita-bodega",
+        "ciutat-comtal"
+      ]
+    },
+    {
+      "heure": "13:45",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "À pied jusqu'au parking",
+      "duree": "~20 min",
+      "lignes": [
+        "~1,4 km"
+      ]
+    },
+    {
+      "heure": "14:05",
+      "type": "trajet",
+      "titre": "→ parking BSM Mercat Sagrada Família",
+      "duree": "~5–10 min",
+      "km": "~1,6",
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Sagrada Família — BSM Mercat Sagrada Família",
+          "lignes": [
+            "Carrer de Mallorca 425–433, 08013 Barcelone https://www.google.com/maps/search/?api=1&query=BSM+Mercat+Sagrada+Fam%C3%ADlia%2C+Carrer+de+Mallorca+425%2C+Barcelona",
+            "Hauteur max : 2,40 m",
+            "Ouvert 24 h/24 · surveillé · lecteur de plaques à la barrière, interphone si elle ne s'ouvre pas · tarif ❗️",
+            "Fourgonnettes : aucune restriction dans les règles d'usage BSM · taille des places non publiée ❗️ (service client BSM +34 93 409 20 21, 24 h/24)",
+            "À pied : entrée carrer de la Marina ~5 min · station de métro Sagrada Família (L2, L5) ~5 min ⚠️"
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "14:15",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "À pied jusqu'à l'entrée carrer de la Marina",
+      "duree": "~5 min",
+      "lignes": [
+        "Entrée 14:45 · pièce d'identité"
+      ]
+    },
+    {
+      "heure": "14:45",
+      "type": "visite",
+      "site": "sagrada-familia",
+      "titre": "Sagrada Família",
+      "visite": {
+        "duree": "~1h30"
+      },
+      "billet": {
+        "ref": "110849186 · 4 billets",
+        "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20SagradaFamilia%5B110849186%5D.pdf"
+      }
+    },
+    {
+      "heure": "16:15",
+      "type": "trajet",
+      "titre": "Retour au van (~5 min) puis trajet → parking FURGO Casp 83",
+      "duree": "~10 min",
+      "km": "~2,4"
+    },
+    {
+      "heure": "16:35",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "À pied jusqu'à la Plaça de Catalunya",
+      "duree": "~20 min",
+      "lignes": [
+        "~1,5 km"
+      ]
+    },
+    {
+      "heure": "16:55",
+      "type": "visite",
+      "site": "barcelone-rambla-gotic",
+      "titre": "Boucle à pied : La Rambla → Boqueria → Barri Gòtic, cathédrale (extérieur) → avinguda del Portal de l'Àngel",
+      "visite": {
+        "duree": "~50 min"
+      },
+      "lignes": [
+        "Coucher du soleil 17:23"
+      ]
+    },
+    {
+      "heure": "17:45",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "Retour à pied au parking",
+      "duree": "~20 min"
+    },
+    {
+      "heure": "18:05",
+      "type": "trajet",
+      "titre": "→ hôtel",
+      "duree": "~10 min",
+      "km": "~2"
+    },
+    {
+      "type": "section",
+      "titre": "Soir"
+    },
+    {
+      "heure": "Soir",
+      "type": "repas",
+      "titre": "Dîner : près de l'hôtel",
+      "restaurants": [
+        "cocina-mercado-novotel-barcelona",
+        "mussol-glories",
+        "els-pescadors"
+      ]
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "🎟️ Réservations du jour",
+      "lignes": [
+        "Park Güell · 10:00 · N° 9322235 (fichier : 93222351) · 4 billets · 18 €/pers",
+        "Sagrada Família · 14:45 · N° 110849186 · 4 billets · 26 €/pers",
+        "Park Güell : entrée valable jusqu'à 10:30 · billets nominatifs · pièce d'identité possible.",
+        "Sagrada Família : entrée carrer de la Marina · billets nominatifs · pièce d'identité officielle obligatoire.",
+        "Pas de billet guide : explications avant l'entrée, visite intérieure libre (programme IMES). Au Park Güell, un guide doit être compté dans la réservation pour entrer."
+      ]
+    },
+    {
+      "titre": "🏛️ Autres sites de Barcelone (hors programme)",
+      "lignes": [
+        "Zone Barceloneta / Port : plage de la Barceloneta · gratuit · L'Aquàrium · ⚠️ tarif à vérifier",
+        "En passant : Port Vell · Port Olímpic · Peix de Frank Gehry",
+        "Zone Montjuïc : MNAC · ⚠️ ~12 €/pers · panorama · Fundació Joan Miró · ⚠️ ~15 €/pers · Château de Montjuïc · ⚠️ ~5 €/pers · Téléphérique de Montjuïc · ⚠️ ~12–15 € A/R",
+        "En passant : Pavillon Mies van der Rohe · Font Màgica (spectacles en soirée)"
+      ]
+    },
+    {
+      "titre": "☑️ Checklist J7",
+      "lignes": [
+        "☑ Trajet hôtel → Park Güell (~5 km, ~10–15 min)",
+        "☐ Choix de l'option : A en métro ou B avec le parking Casp 83",
+        "☐ Parkings BSM Travessera de Dalt et Mercat Sagrada Família : places adaptées à un Trafic de 5,08 ou 5,48 m",
+        "☐ Option A : titres de métro, 4 trajets par personne, guide compris",
+        "☐ Option B : réserver FURGO Casp 83 sur Parclick (catégorie « Turismo », forfait illimité)",
+        "☐ Réserver le déjeuner Rambla de Catalunya",
+        "☐ Pièces d'identité des 4 voyageurs pour la Sagrada Família",
+        "☐ Réserver le dîner (Mussol Glòries ou Els Pescadors) si le groupe le souhaite",
+        "☐ Parking du Novotel : hauteur maximale"
+      ]
+    }
+  ]
+}
