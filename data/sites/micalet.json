@@ -1,0 +1,19 @@
+{
+  "id": "micalet",
+  "nom": "Valence — tour du Micalet",
+  "guide": {
+    "nom": "Guide Cathédrale de Valence",
+    "id": "catedral-valencia"
+  },
+  "points": [
+    {
+      "nom": "Tour du Micalet",
+      "emoji": "🗼",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Torre+del+Micalet%2C+Valencia",
+      "aide_memoire": [
+        "Billet séparé, ⚠️ tarif à vérifier · ~30 min · 10:00–18:45, dernier accès 30 min avant · 207 marches"
+      ],
+      "texte_original": []
+    }
+  ]
+}

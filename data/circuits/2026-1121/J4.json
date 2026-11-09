@@ -1,0 +1,187 @@
+{
+  "jour": "J4",
+  "date": "Mardi 24 novembre 2026",
+  "titre": "Tolède → Consuegra → Cuenca",
+  "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FCircuit%2FINFORMATION%20CIRCUIT%20Espagne%201121-1128",
+  "abstract": [
+    {
+      "emoji": "🚗",
+      "texte": "Route : Tolède → Consuegra ~65 km, ~50 min · Consuegra → Cuenca ~192 km, ~2h15"
+    },
+    {
+      "emoji": "🏨",
+      "texte": "Nuit : NH Ciudad de Cuenca ★★★★ · check-in dès 15:00 · petit-déj inclus"
+    }
+  ],
+  "hebergement": "nh-ciudad-de-cuenca",
+  "hebergement_details": [
+    "Choisi plutôt que le Parador proposé en option",
+    "Réf. client IMES : couple KIM B1026ZZLPU · singles B1026TWZD5",
+    "Réf. fournisseur : couple KIM 102-21386965 · singles HF5KZS",
+    "Chambres : couple KIM 1 × Standard room · singles 3 × Single (Standard Room, 1 Double Bed) : JANG Youngjin, ZO Yun, KIM Heeyoung",
+    "Dates : 24/11 → 25/11 (1 nuit)",
+    "Check-in : 15:00 – 00:00 · Check-out : avant 12:00"
+  ],
+  "creneaux": [
+    {
+      "heure": "Matin",
+      "type": "etape",
+      "emoji": "☕",
+      "titre": "Petit-déjeuner : Sercotel Toledo · inclus"
+    },
+    {
+      "heure": "09:00",
+      "type": "trajet",
+      "titre": "Tolède → Consuegra",
+      "duree": "~50 min",
+      "km": "~65",
+      "lignes": [
+        "CM-42 (autovía de los Viñedos)"
+      ]
+    },
+    {
+      "heure": "09:50",
+      "type": "etape",
+      "emoji": "🅿️",
+      "titre": "Stationnement au pied du cerro Calderico",
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Consuegra — parking au pied du cerro Calderico",
+          "lignes": [
+            "Sur la route qui monte aux moulins, avant la barrière · gratuit · surface · sans contrainte de hauteur https://www.google.com/maps/search/?api=1&query=Cerro+Calderico%2C+Consuegra",
+            "Les voitures ne montent plus jusqu'aux moulins : ~20 min à pied jusqu'au site",
+            "Suivre les panneaux « Molinos » depuis le centre"
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "10:00",
+      "type": "visite",
+      "site": "consuegra",
+      "titre": "Moulins et château",
+      "visite": {
+        "duree": "~1h30"
+      },
+      "lignes": [
+        "Montée et descente à pied comprises (~20 min chaque sens) · horaires d'hiver ❗️"
+      ]
+    },
+    {
+      "heure": "11:30",
+      "type": "trajet",
+      "titre": "Consuegra → Cuenca",
+      "duree": "~2h15",
+      "km": "~192",
+      "lignes": [
+        "Itinéraire par Tarancón ⚠️ à confirmer au GPS"
+      ]
+    },
+    {
+      "heure": "13:45",
+      "type": "etape",
+      "emoji": "🅿️",
+      "titre": "Stationnement parking del Castillo (haut de la vieille ville)",
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Cuenca — Parking del Castillo",
+          "lignes": [
+            "Accès par la Calle Larga, au nord de la vieille ville, en haut du promontoire · gratuit · surface · ~100 places · sans contrainte de hauteur https://www.google.com/maps/search/?api=1&query=Parking+del+Castillo%2C+Calle+Larga%2C+Cuenca",
+            "À pied : cathédrale ~10 min (descente) · vues sur la Hoz del Huécar",
+            "Traversée de la vieille ville par des ruelles étroites : entrer directement par la Calle Larga",
+            "Caméras dans la vieille ville de Cuenca : 30 min maximum de circulation sans stationner dans un parking agréé."
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "13:50",
+      "type": "repas",
+      "duree": "~1h10",
+      "lignes": [
+        "À défaut : menu du jour autour de la Plaza Mayor ou de la Calle San Pedro",
+        "À commander : morteruelo · ajoarriero · gazpacho manchego (ragoût chaud)"
+      ],
+      "restaurant": "casa-manzar-cuenca"
+    },
+    {
+      "heure": "15:00",
+      "type": "visite",
+      "site": "cuenca-cathedrale",
+      "titre": "Cathédrale",
+      "visite": {
+        "duree": "~45 min"
+      },
+      "lignes": [
+        "Mardi jusqu'à 17:30"
+      ]
+    },
+    {
+      "heure": "15:45",
+      "type": "visite",
+      "site": "cuenca-casas-colgadas",
+      "titre": "Casas Colgadas et pont de San Pablo",
+      "visite": {
+        "duree": "~30 min"
+      }
+    },
+    {
+      "heure": "16:15",
+      "type": "visite",
+      "site": "cuenca-musee-art-abstrait",
+      "titre": "Musée d'Art Abstrait",
+      "visite": {
+        "duree": "~45 min – 1h"
+      },
+      "lignes": [
+        "Mardi 16:00–18:00, gratuit"
+      ]
+    },
+    {
+      "heure": "17:15",
+      "type": "visite",
+      "site": "cuenca-plaza-mayor",
+      "titre": "Plaza Mayor, ruelles, point de vue au coucher du soleil (17:45)",
+      "visite": {
+        "duree": "~30 min"
+      }
+    },
+    {
+      "heure": "17:50",
+      "type": "trajet",
+      "titre": "Remontée au parking del Castillo (~10 min) puis trajet vers l'hôtel en ville basse · check-in",
+      "duree": "~10 min ⚠️"
+    },
+    {
+      "heure": "Soir",
+      "type": "repas",
+      "titre": "Dîner : Cuenca",
+      "lignes": [
+        "À défaut : restaurant de l'hôtel ou alentours."
+      ],
+      "restaurant": "parador-cuenca-restaurant"
+    },
+    {
+      "type": "section",
+      "titre": "Option matinée à Tolède",
+      "texte": "Pour les sites fermés la veille : Synagogue del Tránsito 09:30–10:15 (~45 min, ouverture 09:30 ⚠️), départ 10:30, Consuegra 11:20–12:50, déjeuner rapide à Consuegra, arrivée à Cuenca vers 16:15. Conséquence : Cuenca réduite à environ 1h30, cathédrale à voir avant 17:30."
+    },
+    {
+      "heure": "Option",
+      "type": "repas",
+      "titre": "Si option matinée à Tolède : déjeuner rapide à Consuegra",
+      "restaurant": "taperia-gaudy-consuegra"
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "☑️ Checklist J4",
+      "lignes": [
+        "☐ Horaires d'hiver du château et du moulin de Consuegra",
+        "☐ Réserver Casa Manzar (déjeuner)",
+        "☐ Réserver le Parador de Cuenca (dîner) si le groupe le souhaite",
+        "☐ Hauteur du parking de l'hôtel NH"
+      ]
+    }
+  ]
+}

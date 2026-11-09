@@ -1,0 +1,13 @@
+{
+  "id": "els-pescadors",
+  "nom": "Els Pescadors",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Els+Pescadors%2C+Pla%C3%A7a+de+Prim+1%2C+Barcelona",
+  "adresse": "Plaça de Prim 1, Poblenou · ~1,7 km (23 min à pied, ~5 min en taxi)",
+  "tel": "+34 93 225 20 18",
+  "aide_memoire": [
+    "Cuisine catalane et marinière, dans une ancienne maison de repas",
+    "Tous les jours, dîner 20:00–23:00 (guia.barcelona.cat ; 19:45–22:30 selon Time Out)",
+    "À commander : arroz de pescadores (riz des pêcheurs), plats mijotés"
+  ],
+  "prix_indicatif": "prix 3 sur 4 (Time Out)"
+}

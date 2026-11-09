@@ -1,0 +1,38 @@
+{
+  "id": "valencia-places",
+  "nom": "Valence — Plaza de la Virgen, Plaza de la Reina",
+  "guides": [
+    {
+      "nom": "Guide Valence",
+      "id": "valencia"
+    },
+    {
+      "nom": "Guide Tribunal des Eaux",
+      "id": "tribunal-aguas"
+    }
+  ],
+  "points": [
+    {
+      "nom": "Plaza de la Virgen",
+      "emoji": "⛲",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Plaza+de+la+Virgen%2C+Valencia",
+      "aide_memoire": [],
+      "texte_original": []
+    },
+    {
+      "nom": "Plaza de la Reina",
+      "emoji": "🏛️",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Plaza+de+la+Reina%2C+Valencia",
+      "aide_memoire": [],
+      "texte_original": []
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Plaza de la Virgen · Plaza de la Reina · Palau de la Generalitat · porte des Apôtres de la cathédrale"
+      ],
+      "texte_original": []
+    }
+  ]
+}

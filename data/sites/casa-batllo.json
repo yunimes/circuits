@@ -1,0 +1,31 @@
+{
+  "id": "casa-batllo",
+  "nom": "Casa Batlló — visite intérieure",
+  "guide": {
+    "nom": "Guide Casa Batlló",
+    "id": "casa-batllo"
+  },
+  "points": [
+    {
+      "nom": "Casa Batlló",
+      "emoji": "🐉",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Casa+Batll%C3%B3%2C+Passeig+de+Gr%C3%A0cia+43%2C+Barcelona",
+      "aide_memoire": [
+        "Passeig de Gràcia 43",
+        "Visite générale à partir de 29 €/pers (tarif variable selon la date et la formule Blue, Silver, Gold ou Platinum) · non incluse par IMES",
+        "~1h (Blue) à 1h15 · visite générale de 09:00 à 19:15",
+        "Créneau obligatoire, 15 min de tolérance · audioguide en coréen · pas de consigne pour les bagages",
+        "Pas de billet guide : explications avant l'entrée, visite libre du groupe (l'entrée gratuite d'un guide ne concerne que les groupes à partir de 11 personnes, selon la FAQ)"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Casa Amatller · Casa Lleó Morera (Mansana de la Discòrdia)"
+      ],
+      "texte_original": []
+    }
+  ]
+}

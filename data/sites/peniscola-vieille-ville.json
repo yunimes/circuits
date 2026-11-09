@@ -1,0 +1,35 @@
+{
+  "id": "peniscola-vieille-ville",
+  "nom": "Peñíscola — vieille ville",
+  "guide": {
+    "nom": "Guide Peñíscola",
+    "id": "peniscola"
+  },
+  "points": [
+    {
+      "nom": "Plage nord",
+      "emoji": "🏖️",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Playa+Norte%2C+Pe%C3%B1%C3%ADscola",
+      "aide_memoire": [
+        "Gratuit"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Remparts · Portal de Sant Pere · ruelles blanches de la vieille ville · Bufador (cavité marine)"
+      ],
+      "texte_original": []
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "Spécialités — Peñíscola",
+      "lignes": [
+        "riz à la marinière · langostinos de Vinaròs"
+      ]
+    }
+  ]
+}

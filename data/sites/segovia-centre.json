@@ -1,0 +1,45 @@
+{
+  "id": "segovia-centre",
+  "nom": "Ségovie — aqueduc, Calle Real, Plaza Mayor",
+  "guide": {
+    "nom": "Guide Ségovie",
+    "id": "segovia"
+  },
+  "points": [
+    {
+      "nom": "Aqueduc romain",
+      "emoji": "🏛️",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Acueducto+de+Segovia",
+      "aide_memoire": [
+        "Gratuit · programme IMES · ~20 min"
+      ],
+      "texte_original": [],
+      "guide": {
+        "nom": "Guide Aqueduc",
+        "id": "acueducto-segovia"
+      }
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Plaza del Azoguejo · Calle Real · Casa de los Picos · Iglesia de San Martín · Plaza Mayor · ancienne juiverie · point de vue sur l'Alcázar depuis la Pradera de San Marcos"
+      ],
+      "texte_original": []
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "Autres sites — Ségovie",
+      "lignes": [
+        "Real Casa de Moneda · ⚠️ tarif à vérifier · dimanche 10:00–14:30 · fermée lundi et mardi"
+      ]
+    },
+    {
+      "titre": "Spécialités — Ségovie",
+      "lignes": [
+        "cochinillo asado (cochon de lait) · judiones de La Granja · ponche segoviano"
+      ]
+    }
+  ]
+}

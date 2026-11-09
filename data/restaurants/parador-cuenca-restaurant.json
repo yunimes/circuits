@@ -1,0 +1,13 @@
+{
+  "id": "parador-cuenca-restaurant",
+  "nom": "Parador de Cuenca",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Parador+de+Cuenca%2C+Subida+a+San+Pablo%2C+Cuenca",
+  "adresse": "Subida a San Pablo s/n, 16001 Cuenca (ancien couvent face aux Casas Colgadas)",
+  "tel": "+34 969 23 23 20",
+  "aide_memoire": [
+    "Ouvert aux non-résidents, réservation obligatoire",
+    "Taxi depuis l'hôtel ⚠️",
+    "Le cadre prime sur la cuisine selon les avis",
+    "À commander : morteruelo · tocinillo de cielo"
+  ]
+}

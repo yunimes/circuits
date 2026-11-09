@@ -1,0 +1,404 @@
+{
+  "jour": "J8",
+  "date": "Samedi 28 novembre 2026",
+  "titre": "Barcelone → Montserrat → aéroport",
+  "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FCircuit%2FINFORMATION%20CIRCUIT%20Espagne%201121-1128",
+  "abstract": [
+    {
+      "emoji": "🚞",
+      "texte": "Train à crémaillère A/R (5 billets) · aller 13:55, retour 15:55 (16:15 au plus tard)",
+      "heure_cle": "13:55",
+      "ref": "VOL006020027875",
+      "billet": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FRack%20Railway%20Montserrat%5B006020027875%5D.pdf"
+    },
+    {
+      "emoji": "🖤",
+      "texte": "Trône de la Vierge noire · 4 billets",
+      "heure_cle": "14:30",
+      "ref": "R-110874706",
+      "billet": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20MontserratVisita%5B110874706%5D.pdf"
+    },
+    {
+      "emoji": "🌅",
+      "texte": "Matinée : libre (IMES prévenu) · option A Casa Batlló · B Montjuïc · C Sitges, selon le choix du groupe"
+    },
+    {
+      "emoji": "🚗",
+      "texte": "Route : Barcelone → Monistrol Vila ~50–55 km, ~45 min – 1h · Monistrol Vila → aéroport ~53 km, ~50 min"
+    },
+    {
+      "emoji": "✈️",
+      "texte": "Vol KE5912 · BCN 20:40 → ICN 17:00 (J+1) · terminal ❗️ · arrivée à l'aéroport vers 17:40 au plus tard",
+      "heure_cle": "20:40",
+      "alerte": true
+    },
+    {
+      "emoji": "🛏️",
+      "texte": "Nuit : en vol"
+    }
+  ],
+  "warnings": [
+    {
+      "titre": "Retour à l'aéroport",
+      "lignes": [
+        "Crémaillère de 15:55 : départ du van vers 16:20, ~50 min de route hors trafic, arrivée vers 17:10, soit ~30 min de marge. Celle de 16:15 reste le dernier départ possible, sans marge en cas de bouchon un samedi en fin d'après-midi."
+      ]
+    },
+    {
+      "titre": "Bagages dans le van toute la journée",
+      "lignes": [
+        "Après le check-out, les bagages restent à bord le matin à Barcelone puis l'après-midi au parking de Monistrol Vila. Les garder hors de vue ; le matin, préférer des arrêts où le van reste proche."
+      ]
+    }
+  ],
+  "creneaux": [
+    {
+      "heure": "Matin",
+      "type": "etape",
+      "emoji": "☕",
+      "titre": "Petit-déjeuner : Novotel · inclus · check-out et chargement des bagages avant 09:00"
+    },
+    {
+      "type": "section",
+      "titre": "Matin, option A — Casa Batlló, visite intérieure (proposée en premier)",
+      "texte": "Seul intérieur moderniste du séjour ; même rue que la veille (extérieurs du Passeig de Gràcia le 27/11)."
+    },
+    {
+      "heure": "09:00",
+      "type": "trajet",
+      "titre": "Hôtel → parking FURGO Casp 83",
+      "duree": "~10 min",
+      "km": "~2",
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Passeig de Gràcia (option A) — Parking FURGO Casp 83",
+          "lignes": [
+            "Carrer de Casp 83, 08013 Barcelone (Fort Pienc) https://www.google.com/maps/search/?api=1&query=Carrer+de+Casp+83%2C+08013+Barcelona",
+            "Hauteur max : 2,45 m · places de 2,5 × 5,8 m",
+            "Fourgonnettes acceptées : réserver sur Parclick l'offre « FURGO CASP 83 » en catégorie « Turismo » (tarif utilitaire) · une seule entrée : forfait simple",
+            "Ouvert 24 h/24 · sans personnel, vidéosurveillance · accès par appel depuis le numéro de téléphone enregistré à la réservation (pas par WhatsApp) · annulation gratuite jusqu'à 1 h avant · tarif ❗️ (affiché à la réservation)",
+            "À pied : Casa Batlló ~1,6 km, ~20 min",
+            "Ne pas confondre avec l'offre « Casp 83 » de Parkimeter : longueur max 4,50 m, largeur 1,80 m, fermée le week-end.",
+            "À éviter avec le Trafic : les parkings Saba du secteur (Plaça de Catalunya, Passeig de Gràcia – Consell de Cent, Rambla de Catalunya, Diputació 286 : 2,00 m · Pau Claris : 1,90 m) · APK2 Centric (1,90–2,00 m) · Diputació 239 (2,30 m mais fourgonnettes refusées) · Aragón 308 (2,10 m, fourgonnettes non confirmées) · Solves, Aragó 325 (fourgonnettes refusées) · NN Còrsega, Còrsega 344 (longueur max 5,00 m)."
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "09:10",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "À pied jusqu'à la Casa Batlló",
+      "duree": "~20 min",
+      "lignes": [
+        "~1,6 km"
+      ]
+    },
+    {
+      "heure": "09:30",
+      "type": "etape",
+      "emoji": "🗣️",
+      "titre": "Explications avant l'entrée"
+    },
+    {
+      "heure": "09:45",
+      "type": "visite",
+      "site": "casa-batllo",
+      "titre": "Casa Batlló, intérieur avec audioguide en coréen",
+      "visite": {
+        "duree": "~1h – 1h15"
+      },
+      "lignes": [
+        "Créneau à réserver (09:45 conseillé, 15 min de tolérance) · visite libre du groupe sans le guide"
+      ]
+    },
+    {
+      "heure": "11:00",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "Retour à pied au parking",
+      "duree": "~20 min"
+    },
+    {
+      "heure": "11:20",
+      "type": "trajet",
+      "titre": "Casp 83 → Monistrol Vila",
+      "duree": "~55 min",
+      "km": "~51",
+      "lignes": [
+        "Diagonal, B-23, A-2, C-55"
+      ]
+    },
+    {
+      "type": "section",
+      "titre": "Matin, option B — Montjuïc par le port"
+    },
+    {
+      "heure": "09:00",
+      "type": "trajet",
+      "titre": "Hôtel → Port Vell (monument à Colomb) → avinguda de Miramar → Montjuïc",
+      "duree": "~25 min",
+      "km": "~11",
+      "lignes": [
+        "Vue sur le port en passant"
+      ]
+    },
+    {
+      "heure": "09:30",
+      "type": "etape",
+      "emoji": "🅿️",
+      "titre": "Stationnement parking gratuit du MNAC",
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Montjuïc (option B) — Aparcament MNAC",
+          "lignes": [
+            "Avinguda dels Montanyans, à côté du Palau Nacional et de son mirador · en surface, sans contrainte de hauteur · emplacements autocars à côté (OpenStreetMap) https://www.google.com/maps/search/?api=1&query=Avinguda+dels+Montanyans%2C+Montju%C3%AFc%2C+Barcelona",
+            "Gratuit selon barcelona.cat ; une partie des places le long de l'avenue est payante et limitée à 2 h selon OpenStreetMap ⚠️",
+            "À pied : Mirador du Palau Nacional sur place · stade olympique et monument Hwang Young-cho ~400 m, 5–10 min ⚠️",
+            "Samedi 28/11 : concerts le soir seulement (Carolina Durante au Palau Sant Jordi, portes 19:00 ; Chiara Oliver au Sant Jordi Club). L'Ajuntament déconseille la voiture les jours de grands événements ; pas d'effet attendu le matin ⚠️"
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "09:30",
+      "type": "visite",
+      "site": "montjuic-palau-nacional",
+      "titre": "Mirador du Palau Nacional, vue sur la Plaça d'Espanya et la ville",
+      "visite": {
+        "duree": "~30 min"
+      }
+    },
+    {
+      "heure": "10:00",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "À pied Palau Nacional → stade olympique",
+      "duree": "~5–10 min ⚠️",
+      "lignes": [
+        "~400 m"
+      ]
+    },
+    {
+      "heure": "10:05",
+      "type": "visite",
+      "site": "montjuic-anella-olimpica",
+      "titre": "Anella Olímpica : monument à Hwang Young-cho devant le stade, Estadi Olímpic (extérieur), tour de Calatrava, Palau Sant Jordi",
+      "visite": {
+        "duree": "~25 min"
+      }
+    },
+    {
+      "heure": "10:30",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "Retour au van",
+      "duree": "~10 min ⚠️"
+    },
+    {
+      "heure": "10:40",
+      "type": "trajet",
+      "titre": "Montjuïc → Monistrol Vila",
+      "duree": "~1h",
+      "km": "~51",
+      "lignes": [
+        "B-23, A-2, C-55"
+      ]
+    },
+    {
+      "type": "section",
+      "titre": "Matin, option C — Sitges, si le groupe le souhaite",
+      "texte": "~1h45 de route pour ~1h de visite"
+    },
+    {
+      "heure": "09:00",
+      "type": "trajet",
+      "titre": "Hôtel → Sitges",
+      "duree": "~45 min",
+      "km": "~45",
+      "lignes": [
+        "C-32"
+      ],
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Sitges (option C) — Aparcament municipal Sant Honorat",
+          "lignes": [
+            "Carrer de Sant Honorat, au bord de la Carretera de les Costes (« à gauche en passant sous le pont dels Ocells », selon l'office de tourisme) · gratuit · en surface, ~35 places (OpenStreetMap) https://www.google.com/maps/search/?api=1&query=Carrer+de+Sant+Honorat%2C+Sitges",
+            "Pas de contrainte de hauteur dans le parking · pont ferroviaire à l'accès : aucune limite de hauteur enregistrée ⚠️",
+            "À pied : église Sant Bartomeu i Santa Tecla ~600 m, ~8 min · Passeig de la Ribera ~1 km, ~13 min",
+            "Repli sans pont : parking municipal gratuit de l'Avinguda de Ronda (office de tourisme) · église ~1,2 km, ~16 min",
+            "À éviter avec le Trafic : Continental – Plaça Espanya : 2,00 m (donnée non vérifiée) · parkings souterrains du centre (Jornet, Plaça Espanya, Avda. Sofia) : hauteurs non publiées"
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "09:50",
+      "type": "visite",
+      "site": "sitges",
+      "titre": "Passeig Marítim, église Sant Bartomeu i Santa Tecla (extérieur), ruelles de la vieille ville",
+      "visite": {
+        "duree": "~1h"
+      }
+    },
+    {
+      "heure": "10:50",
+      "type": "trajet",
+      "titre": "Sitges → Monistrol Vila",
+      "duree": "~1h",
+      "km": "~68",
+      "lignes": [
+        "C-32, C-15, AP-7, A-2, C-55"
+      ]
+    },
+    {
+      "type": "section",
+      "titre": "Montserrat (commun aux trois options)"
+    },
+    {
+      "heure": "~11:40",
+      "type": "etape",
+      "emoji": "🅿️",
+      "titre": "Stationnement parking de la gare de Monistrol Vila (selon l'option du matin)",
+      "duree": "~11:40 – 12:15",
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Montserrat — parking de la gare de Monistrol Vila",
+          "lignes": [
+            "Attenant à la gare du train à crémaillère · 3 niveaux, dont 2 couverts · ~1 000 places voitures et 70 cars · gratuit · pas de limite de hauteur signalée, adapté aux minibus https://www.google.com/maps/search/?api=1&query=Estaci%C3%B3+Monistrol+Vila%2C+Cremallera+de+Montserrat",
+            "Entrée de la gare directement depuis le parking · info : +34 93 204 1041 · info@cremallerademontserrat.cat"
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "~12:00",
+      "type": "repas",
+      "duree": "~1h30, ~1h25 avec l'option A",
+      "lignes": [
+        "Retenu · à 3 min à pied de la gare",
+        "Réservation : arrivée entre ~11:45 et ~12:20 selon l'option du matin, départ impératif 13:45 pour la crémaillère de 13:55 · repas léger avant la visite"
+      ],
+      "restaurant": "bar-lera-monistrol"
+    },
+    {
+      "heure": "13:55",
+      "type": "trajet",
+      "emoji": "🚞",
+      "titre": "Train à crémaillère Monistrol Vila → Montserrat",
+      "duree": "13:55 – 14:08",
+      "lignes": [
+        "Billet électronique, accès direct au quai",
+        "Billets A/R confirmés · ~15 min · un départ toutes les 20 min · le 28/11 : aller 13:55, retour 15:55 (16:15 au plus tard)"
+      ]
+    },
+    {
+      "heure": "14:08",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "À pied gare supérieure → basilique (~5 min) · explications avant l'entrée"
+    },
+    {
+      "heure": "14:30",
+      "type": "visite",
+      "site": "montserrat",
+      "titre": "Trône de la Vierge noire (créneau réservé), puis basilique",
+      "visite": {
+        "duree": "~45 min"
+      },
+      "lignes": [
+        "Audioguide compris · sans billet guide",
+        "L'Escolania ne chante pas le samedi. Le samedi, l'accès à la basilique entre 10:30 et 12:00 est réservé à la messe conventuelle (billet) : sans effet sur le créneau de 14:30."
+      ],
+      "billet": {
+        "ref": "R-110874706 · 4 billets",
+        "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20MontserratVisita%5B110874706%5D.pdf"
+      }
+    },
+    {
+      "heure": "15:15",
+      "type": "etape",
+      "emoji": "🛍️",
+      "titre": "Visite libre : point de vue sur le massif, boutique et produits locaux",
+      "duree": "~25 min"
+    },
+    {
+      "heure": "15:40",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "Retour à la gare supérieure"
+    },
+    {
+      "heure": "15:55",
+      "type": "trajet",
+      "emoji": "🚞",
+      "titre": "Train à crémaillère Montserrat → Monistrol Vila",
+      "duree": "~15–17 min",
+      "lignes": [
+        "Arrivée vers 16:12 ⚠️"
+      ]
+    },
+    {
+      "heure": "16:12",
+      "type": "etape",
+      "emoji": "🚐",
+      "titre": "Retour au van"
+    },
+    {
+      "heure": "16:20",
+      "type": "trajet",
+      "titre": "Monistrol Vila → aéroport",
+      "duree": "~50 min hors trafic",
+      "km": "~53",
+      "lignes": [
+        "C-55, A-2, B-22"
+      ]
+    },
+    {
+      "heure": "~17:10",
+      "type": "etape",
+      "emoji": "✈️",
+      "titre": "Dépose à l'aéroport (terminal ❗️) · ~30 min de marge",
+      "lignes": [
+        "Repli : crémaillère de 16:15 (arrivée 16:32), dernier départ compatible avec le vol, sans marge.",
+        "Arrivée à l'aéroport vers 17:40 au plus tard. Après la dépose : plein, restitution du Trafic et retour du guide ❗️ à préciser."
+      ]
+    },
+    {
+      "heure": "20:40",
+      "type": "etape",
+      "emoji": "✈️",
+      "titre": "Vol KE5912 · BCN 20:40 → ICN 17:00 (J+1)",
+      "lignes": [
+        "Dîner : en vol",
+        "J9 — Dim 29/11 : KE5912 · arrivée à Incheon 17:00 · fin du circuit."
+      ]
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "🎟️ Réservations du jour",
+      "lignes": [
+        "Train à crémaillère A/R · 13:55 · retour 15:55 (16:15 max) · VOL006020027875 · 5 billets · 15 €/pers",
+        "Trône de la Vierge noire · 14:30 · R-110874706 · Loc. 110874708 · 4 billets · 12 €/pers",
+        "Crémaillère : billet électronique sans horaire fixe, accès direct au quai sans passer au guichet, pas de priorité à l'embarquement · valable jusqu'au 30/11/2026 · annulation gratuite avant usage et dans les 15 jours suivant l'achat · service client +34 93 252 14 80.",
+        "Trône : 4 billets, sans billet guide ; le guide explique avant l'entrée. Audioguide sur l'application Montserrat Visita (e-mail et numéro de réservation) · assistance +34 93 877 77 01."
+      ]
+    },
+    {
+      "titre": "☑️ Checklist J8",
+      "lignes": [
+        "☑ Décision : Montserrat",
+        "☑ Billets du train à crémaillère et du Trône de la Vierge",
+        "☑ Horaires de la crémaillère le 28/11 : 13:55 aller, 15:55 retour (16:15 au plus tard)",
+        "☑ IMES prévenu : matinée libre",
+        "☐ Choix du matin avec le groupe : A Casa Batlló, B Montjuïc ou C Sitges",
+        "☐ Option A : réserver la Casa Batlló (créneau 09:45, 4 billets, sans billet guide) et FURGO Casp 83 sur Parclick (catégorie « Turismo »)",
+        "☐ Réserver le Bar L'Era (samedi midi, arrivée entre ~11:45 et ~12:20)",
+        "☑ Option B : agenda du 28/11 à Montjuïc (concerts le soir seulement) · option C : parking à Sitges",
+        "☐ Terminal de départ de KE5912",
+        "☐ Restitution du Trafic et retour du guide"
+      ]
+    }
+  ]
+}

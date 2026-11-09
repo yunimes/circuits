@@ -1,0 +1,12 @@
+{
+  "id": "cocina-mercado-novotel-barcelona",
+  "nom": "Restaurant de l'hôtel (Cocina de Mercado by Novotel Barcelona City)",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Novotel+Barcelona+City%2C+Avinguda+Diagonal+201%2C+Barcelona",
+  "tel": "+34 933 262 499",
+  "aide_memoire": [
+    "Cuisine méditerranéenne",
+    "Tous les jours 13:00–16:00 et 19:30–23:00",
+    "Bar sur le toit (IMES)"
+  ],
+  "prix_indicatif": "~30 €/pers (TheFork)"
+}

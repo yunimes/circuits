@@ -1,0 +1,19 @@
+{
+  "id": "llotja-seda",
+  "nom": "Valence — Llotja de la Seda",
+  "guide": {
+    "nom": "Guide Llotja de la Seda",
+    "id": "llotja-seda"
+  },
+  "points": [
+    {
+      "nom": "Llotja de la Seda (UNESCO)",
+      "emoji": "🏛️",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Lonja+de+la+Seda%2C+Valencia",
+      "aide_memoire": [
+        "⚠️ ~2 €/pers · ~30 min"
+      ],
+      "texte_original": []
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "alcazar-segovia",
+  "nom": "Alcázar de Ségovie",
+  "guide": {
+    "nom": "Guide Alcázar",
+    "id": "alcazar-segovia"
+  },
+  "points": [
+    {
+      "nom": "Palais et musée",
+      "emoji": "🏰",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Alc%C3%A1zar+de+Segovia",
+      "aide_memoire": [
+        "Billet confirmé · programme IMES · ~1h",
+        "Horaires d'hiver 10:00–18:00, dernier accès 30 min avant",
+        "Billetterie et contrôle dans le bâtiment de gauche (Archivo Militar), face au jardin de la Plaza Reina Victoria Eugenia",
+        "Audioguide sur smartphone compris dans le billet, langues ❗️ à vérifier"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Tour de Juan II",
+      "emoji": "🗼",
+      "aide_memoire": [
+        "~30 min"
+      ],
+      "texte_original": []
+    }
+  ]
+}

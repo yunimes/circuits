@@ -1,0 +1,85 @@
+{
+  "jour": "J1",
+  "date": "Samedi 21 novembre 2026",
+  "titre": "Arrivée Madrid",
+  "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FCircuit%2FINFORMATION%20CIRCUIT%20Espagne%201121-1128",
+  "abstract": [
+    {
+      "emoji": "✈️",
+      "texte": "Vol KE913 · ICN 12:10 → MAD 19:25 · terminal ❗️",
+      "heure_cle": "19:25"
+    },
+    {
+      "emoji": "🏨",
+      "texte": "Nuit : Crowne Plaza Madrid Airport ★★★★ · petit-déj inclus"
+    }
+  ],
+  "warnings": [
+    {
+      "titre": "ZBE de Madrid",
+      "lignes": [
+        "Toute la commune de Madrid est en zone à faibles émissions, aéroport et hôtel compris. La DGT ne délivre pas de vignette environnementale aux véhicules immatriculés à l'étranger : le Trafic, immatriculé en France, doit être enregistré au préalable auprès de la ville (documents du véhicule à envoyer à zbedistritocentro@madrid.es). Sans cela, risque d'amende de 200 € ❗️ Documents à obtenir d'Europcar."
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "nom": "Espagne — partie 1",
+      "id": "espagne-1"
+    },
+    {
+      "nom": "Espagne — partie 2",
+      "id": "espagne-2"
+    },
+    {
+      "nom": "Espagne — partie 3",
+      "id": "espagne-3"
+    },
+    {
+      "nom": "Espagne — partie 4",
+      "id": "espagne-4"
+    }
+  ],
+  "hebergement": "crowne-plaza-madrid-airport",
+  "hebergement_details": [
+    "Réf. client IMES : couple KIM B11261XU9U · singles B10260R1XY",
+    "Réf. fournisseur : couple KIM SH31653198 · singles 843KB7",
+    "Chambres : couple KIM 1 × Double or Twin (Twin room) · singles 3 × Single (1 King Standard) : ZO Yun, KIM Heeyoung, JANG Youngjin",
+    "Dates : 21/11 → 22/11 (1 nuit) · voucher du couple KIM corrigé (émis le 09/11)",
+    "Check-in / check-out : non indiqués sur le voucher ❗️"
+  ],
+  "creneaux": [
+    {
+      "heure": "19:25",
+      "type": "etape",
+      "emoji": "✈️",
+      "titre": "Arrivée KE913 à Madrid-Barajas (terminal ❗️)"
+    },
+    {
+      "heure": "19:25",
+      "type": "etape",
+      "emoji": "🛂",
+      "titre": "Immigration, bagages, accueil du groupe",
+      "duree": "~1h ⚠️"
+    },
+    {
+      "heure": "20:25",
+      "type": "trajet",
+      "titre": "Aéroport → hôtel",
+      "duree": "~15 min ⚠️",
+      "km": "~7–8"
+    },
+    {
+      "heure": "~20:45",
+      "type": "checkin",
+      "titre": "Check-in · Crowne Plaza Madrid Airport"
+    },
+    {
+      "heure": "Soir",
+      "type": "repas",
+      "restaurant": {
+        "nom": "Dîner : libre — restaurant de l'hôtel conseillé"
+      }
+    }
+  ]
+}

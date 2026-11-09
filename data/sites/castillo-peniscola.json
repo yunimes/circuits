@@ -1,0 +1,19 @@
+{
+  "id": "castillo-peniscola",
+  "nom": "Peñíscola — château du Pape Luna",
+  "guide": {
+    "nom": "Guide Château du Pape Luna",
+    "id": "castillo-papaluna"
+  },
+  "points": [
+    {
+      "nom": "Château du Pape Luna",
+      "emoji": "🏰",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Castillo+de+Pe%C3%B1%C3%ADscola",
+      "aide_memoire": [
+        "⚠️ 5 €/pers · ~1h · hiver 10:30–17:30 (source non officielle) · lieu de tournage du film El Cid (1961), cité par IMES"
+      ],
+      "texte_original": []
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "jour": "J2",
+  "date": "Dimanche 22 novembre 2026",
+  "titre": "Madrid → Ségovie",
+  "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FCircuit%2FINFORMATION%20CIRCUIT%20Espagne%201121-1128",
+  "abstract": [
+    {
+      "emoji": "🍽️",
+      "texte": "Restaurante José María (Ségovie) · réservé · 4 couverts",
+      "heure_cle": "13:00"
+    },
+    {
+      "emoji": "🏰",
+      "texte": "Alcázar de Ségovie · palais 16:00, tour 17:00",
+      "heure_cle": "16:00",
+      "ref": "R: 110850203",
+      "billet": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20AlcazarDeSegovia%5B110850203%5D.pdf"
+    },
+    {
+      "emoji": "🚗",
+      "texte": "Route : hôtel → Ópera ~21 km, ~25 min · Madrid → Ségovie ~91 km, ~1h15"
+    },
+    {
+      "emoji": "🏨",
+      "texte": "Nuit : Parador de Segovia ★★★★ · petit-déj inclus"
+    }
+  ],
+  "warnings": [
+    {
+      "titre": "Madrid — ZBE Distrito Centro",
+      "lignes": [
+        "Le Garaje Fermar est dans la ZBE Distrito Centro. Pour un véhicule étiqueté 0, ECO, B ou C, le garage gère l'autorisation d'entrée et de sortie (Parkimeter).",
+        "Un véhicule immatriculé à l'étranger doit d'abord être enregistré dans le système d'accès de la ZBE (permis de circulation et fiche technique). Selon sede.madrid.es, les documents peuvent être déposés en ligne ; sinon bureau Calle Bustamante 16, rendez-vous obligatoire. Sans cela, risque d'amende (200 € pour une étiquette B selon le RACE).",
+        "Trafic loué en France : la DGT ne délivre pas de vignette aux véhicules immatriculés à l'étranger. Enregistrement auprès de la ville par e-mail à zbedistritocentro@madrid.es (fiche technique, certificat d'immatriculation, justificatif de détention ; pour une location, documents à obtenir d'Europcar) ❗️ À envoyer le plus tôt possible : délai non publié.",
+        "Plan B : rejoindre Ségovie directement (arrivée vers 10:30) et allonger la visite du centre historique avant le déjeuner."
+      ]
+    },
+    {
+      "titre": "Ségovie — horaires du dimanche",
+      "lignes": [
+        "Cathédrale : visite touristique de 13:30 à 18:30 seulement. Fermeture de l'Alcázar à 18:00."
+      ]
+    }
+  ],
+  "hebergement": "parador-segovia",
+  "hebergement_details": [
+    "Réf. client IMES : couple KIM B1026951AA · singles B1026NGTQD",
+    "Réf. fournisseur : couple KIM 4R80X2MW · singles 34201624",
+    "Chambres : couple KIM 1 × Standard Double · singles 3 × Single (Standard Double or Twin Bed) : JANG Youngjin, ZO Yun, KIM Heeyoung",
+    "Dates : 22/11 → 23/11 (1 nuit)",
+    "Check-in / check-out : non indiqués sur le voucher ❗️"
+  ],
+  "creneaux": [
+    {
+      "heure": "Matin",
+      "type": "etape",
+      "emoji": "☕",
+      "titre": "Petit-déjeuner : Crowne Plaza · inclus"
+    },
+    {
+      "heure": "09:00",
+      "type": "trajet",
+      "titre": "Hôtel → Garaje Fermar (Ópera)",
+      "duree": "~25 min",
+      "km": "~21",
+      "parkings": [
+        {
+          "nom": "Garaje Fermar",
+          "maps": "https://www.google.com/maps/search/?api=1&query=Garaje+Fermar%2C+Calle+de+la+Escalinata+1%2C+Madrid"
+        }
+      ],
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Madrid — Garaje Fermar",
+          "lignes": [
+            "C/ Mesón de Paños 11, entre la Calle Mayor et la Plaza de Isabel II · entrée par la Calle de la Escalinata 1 (Parclick)",
+            "Hauteur max : 2,40 m (site du garage ; 2,50 m selon Parclick et Parkimeter)",
+            "Fourgonnettes acceptées (tarif « furgoneta ») · longueur max 5,00 m selon Parkimeter, pour un Trafic de 5,08 ou 5,48 m ❗️ confirmation demandée au garage",
+            "Dimanche 08:00–24:00 · parking gardé, clés laissées au personnel · ~3,65 € la première heure en fourgonnette (Parkimeter)",
+            "ZBE Distrito Centro : voir avertissement en tête de journée ❗️",
+            "À pied : Plaza de Oriente ~6 min · Plaza Mayor ~8 min · Puerta del Sol ~8 min",
+            "Contact : +34 91 541 36 00 · info@garajefermar.madrid",
+            "À éviter avec le Trafic : APK2 Plaza de Oriente (2,00 m, 3 cm de marge) · Palacio de los Duques (1,85 m) · Plaza Santo Domingo (1,80 m) · SABA Plaza Mostenses (1,85 m) · APK2 Gran Vía – Isabel la Católica (2,00 m)."
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "09:30",
+      "type": "boucle",
+      "site": "madrid-centre",
+      "visite": {
+        "duree": "~50 min"
+      },
+      "lignes": [
+        "Boucle à pied Ópera → Plaza de Oriente → Calle Mayor → Plaza Mayor → Puerta del Sol → Calle del Arenal → Ópera · ~2 km",
+        "Sous réserve de la ZBE et de la longueur admise au garage ❗️"
+      ]
+    },
+    {
+      "heure": "10:30",
+      "type": "trajet",
+      "titre": "Madrid → Ségovie",
+      "duree": "~1h15",
+      "km": "~91",
+      "lignes": [
+        "A-6 puis AP-6/AP-61 (tunnel de Guadarrama)",
+        "Alt. N-VI par le col de Guadarrama puis N-603, plus long, enneigement possible fin novembre ⚠️"
+      ]
+    },
+    {
+      "heure": "11:45",
+      "type": "etape",
+      "emoji": "🅿️",
+      "titre": "Stationnement Paseo Ezequiel González (côté sud de l'aqueduc)",
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Ségovie, matin — Paseo Ezequiel González",
+          "lignes": [
+            "Côté sud de l'aqueduc · gratuit · surface non revêtue · sans contrainte de hauteur https://www.google.com/maps/search/?api=1&query=Paseo+Ezequiel+Gonz%C3%A1lez%2C+Segovia",
+            "À pied : aqueduc ~5–10 min ⚠️ · Alcázar ~1,5 km, 20–25 min avec montée",
+            "Ne pas entrer dans le centre historique de Ségovie en van (ZBE, fiche de mai)."
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "11:55",
+      "type": "visite",
+      "site": "segovia-centre",
+      "titre": "Ségovie — aqueduc → Calle Real → Plaza Mayor",
+      "visite": {
+        "duree": "~1h"
+      }
+    },
+    {
+      "heure": "13:00",
+      "type": "repas",
+      "duree": "~1h30",
+      "reservation": {
+        "statut": "Réservé · 4 couverts",
+        "heure": "13:00"
+      },
+      "restaurant": "jose-maria-segovia"
+    },
+    {
+      "heure": "14:30",
+      "type": "visite",
+      "site": "catedral-segovia",
+      "visite": {
+        "duree": "~45 min – 1h"
+      },
+      "lignes": [
+        "Ouverte le dimanche à partir de 13:30"
+      ]
+    },
+    {
+      "heure": "15:30",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "À pied cathédrale → Alcázar",
+      "duree": "~15 min ⚠️",
+      "lignes": [
+        "~800 m"
+      ]
+    },
+    {
+      "heure": "16:00",
+      "type": "visite",
+      "site": "alcazar-segovia",
+      "titre": "Alcázar — palais et musée",
+      "visite": {
+        "duree": "~1h"
+      },
+      "lignes": [
+        "Pendant ce temps, le guide déplace le van vers la Pradera de San Marcos (stationnement ci-dessous)"
+      ],
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Ségovie, fin de journée — Mirador de la Pradera de San Marcos",
+          "lignes": [
+            "Calle de San Marcos 19, 40003 Ségovie (voie sans issue, côté nord de l'Alcázar) https://www.google.com/maps/search/?api=1&query=Calle+de+San+Marcos+19%2C+40003+Segovia",
+            "Gratuit · surface · sans contrainte de hauteur · hors ZBE",
+            "À pied : mirador 1 min · entrée de l'Alcázar 15–20 min de montée",
+            "Capacité modeste (~20–30 voitures)",
+            "Organisation proposée : pendant la visite du palais (sans billet guide), le guide rejoint le van à pied (~20–25 min) et le déplace vers la Pradera de San Marcos (~10 min ⚠️), puis remonte retrouver le groupe à la sortie de la tour. Descente ensemble vers le mirador pour le coucher du soleil, le van est sur place."
+          ]
+        }
+      ],
+      "billet": {
+        "ref": "R: 110850203 · 4 billets",
+        "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FTickets%2FTickets%20-%20AlcazarDeSegovia%5B110850203%5D.pdf"
+      }
+    },
+    {
+      "heure": "17:00",
+      "type": "etape",
+      "emoji": "🗼",
+      "titre": "Visite tour de Juan II",
+      "duree": "~30 min"
+    },
+    {
+      "heure": "17:30",
+      "type": "etape",
+      "emoji": "🚶",
+      "titre": "À pied Alcázar → Pradera de San Marcos",
+      "duree": "~15–20 min de descente"
+    },
+    {
+      "heure": "17:50",
+      "type": "etape",
+      "emoji": "🌅",
+      "titre": "Point de vue sur l'Alcázar (coucher du soleil 17:52)"
+    },
+    {
+      "heure": "18:00",
+      "type": "trajet",
+      "titre": "Pradera de San Marcos → Parador · check-in",
+      "duree": "~10 min ⚠️"
+    },
+    {
+      "heure": "Soir",
+      "type": "repas",
+      "restaurant": "restaurant-parador-segovia"
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "🎟️ Réservations du jour",
+      "lignes": [
+        "Restaurante José María · 13:00 · 4 couverts",
+        "Alcázar — palais et musée · 16:00 · R: 110850203 · 4 billets · 13,50 €/pers (audioguide sur smartphone compris)",
+        "Alcázar — tour de Juan II · 17:00 · même billet · 4 billets",
+        "Palais : 30 min de tolérance. Tour : être au point de rendez-vous 5 min avant.",
+        "Billets aux noms des voyageurs, sans billet guide : explications avant l'entrée, visite intérieure libre (programme IMES)."
+      ]
+    },
+    {
+      "titre": "☑️ Checklist J2",
+      "lignes": [
+        "☐ Plaque du Trafic (loueur) et enregistrement ZBE de Madrid → décision Madrid ou plan B",
+        "☐ Garaje Fermar : longueur admise pour le Trafic (réponse au mail)",
+        "☐ Réserver le dîner au Parador",
+        "☐ Langues de l'audioguide de l'Alcázar"
+      ]
+    }
+  ]
+}

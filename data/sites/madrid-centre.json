@@ -1,0 +1,56 @@
+{
+  "id": "madrid-centre",
+  "nom": "Madrid — Ópera, Plaza Mayor, Puerta del Sol",
+  "guides": [
+    {
+      "nom": "Guide Madrid — partie 1",
+      "id": "madrid-1"
+    },
+    {
+      "nom": "Guide Madrid — partie 2",
+      "id": "madrid-2"
+    }
+  ],
+  "boucle": {
+    "distance_m": 2000,
+    "marche_min": 50,
+    "itineraire_maps": "https://www.google.com/maps/dir/?api=1&origin=Plaza+de+Isabel+II%2C+Madrid&destination=Plaza+de+Isabel+II%2C+Madrid&waypoints=Plaza+de+Oriente%2C+Madrid%7CPlaza+Mayor%2C+Madrid%7CPuerta+del+Sol%2C+Madrid%7CCalle+del+Arenal%2C+Madrid&travelmode=walking",
+    "points": [
+      {
+        "nom": "Palais royal",
+        "emoji": "🏰",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Palacio+Real%2C+Madrid",
+        "aide_memoire": [
+          "Extérieur seulement"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Plaza Mayor",
+        "emoji": "🏛️",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Plaza+Mayor%2C+Madrid",
+        "aide_memoire": [
+          "Gratuit"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "Puerta del Sol",
+        "emoji": "📍",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Puerta+del+Sol%2C+Madrid",
+        "aide_memoire": [
+          "Gratuit · kilomètre zéro des routes espagnoles"
+        ],
+        "texte_original": []
+      },
+      {
+        "nom": "En passant",
+        "emoji": "👀",
+        "aide_memoire": [
+          "Plaza de Oriente · cathédrale de la Almudena (extérieur) · Calle Mayor · Calle del Arenal · Plaza de Isabel II (Ópera) · Teatro Real"
+        ],
+        "texte_original": []
+      }
+    ]
+  }
+}

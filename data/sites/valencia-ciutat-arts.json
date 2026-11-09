@@ -1,0 +1,54 @@
+{
+  "id": "valencia-ciutat-arts",
+  "nom": "Valence — Cité des Arts et des Sciences",
+  "guide": {
+    "nom": "Guide Valence",
+    "id": "valencia"
+  },
+  "points": [
+    {
+      "nom": "L'Hemisfèric",
+      "emoji": "🔭",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Hemisf%C3%A8ric%2C+Valencia",
+      "aide_memoire": [
+        "⚠️ ~10–12 €/pers"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "Museu de les Ciències",
+      "emoji": "🔬",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Museu+de+les+Ci%C3%A8ncies%2C+Valencia",
+      "aide_memoire": [
+        "⚠️ ~12 €/pers"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "L'Oceanogràfic",
+      "emoji": "🐬",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Oceanogr%C3%A0fic%2C+Valencia",
+      "aide_memoire": [
+        "⚠️ ~32 €/pers"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "L'Umbracle / Pont de l'Assut de l'Or",
+      "emoji": "🌉",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Umbracle%2C+Valencia",
+      "aide_memoire": [
+        "Gratuit"
+      ],
+      "texte_original": []
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Ensemble de Calatrava · Jardins du Turia (ancien lit du fleuve)"
+      ],
+      "texte_original": []
+    }
+  ]
+}

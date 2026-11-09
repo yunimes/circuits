@@ -1,0 +1,33 @@
+{
+  "id": "cuenca-plaza-mayor",
+  "nom": "Cuenca — Plaza Mayor et ruelles",
+  "guide": {
+    "nom": "Guide Cuenca",
+    "id": "cuenca"
+  },
+  "points": [
+    {
+      "nom": "Plaza Mayor",
+      "emoji": "🏛️",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Plaza+Mayor%2C+Cuenca",
+      "aide_memoire": [],
+      "texte_original": []
+    },
+    {
+      "nom": "En passant",
+      "emoji": "👀",
+      "aide_memoire": [
+        "Plaza Mayor · Calle Alfonso VIII · Mirador de la Hoz del Júcar · ruelles médiévales · façades éclairées le soir"
+      ],
+      "texte_original": []
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "Spécialités — Cuenca",
+      "lignes": [
+        "morteruelo · zarajos · ajoarriero · alajú (pâtisserie au miel)"
+      ]
+    }
+  ]
+}

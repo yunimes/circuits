@@ -1,0 +1,19 @@
+{
+  "id": "avila-cuatro-postes",
+  "nom": "Ávila — Mirador de los Cuatro Postes",
+  "guide": {
+    "nom": "Guide Ávila",
+    "id": "avila"
+  },
+  "points": [
+    {
+      "nom": "Mirador de los Cuatro Postes",
+      "emoji": "🌄",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Mirador+de+los+Cuatro+Postes%2C+%C3%81vila",
+      "aide_memoire": [
+        "Gratuit · ~20 min · panorama sur la ville fortifiée · anecdote de Thérèse enfant"
+      ],
+      "texte_original": []
+    }
+  ]
+}

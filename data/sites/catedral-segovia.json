@@ -1,0 +1,21 @@
+{
+  "id": "catedral-segovia",
+  "nom": "Cathédrale de Ségovie",
+  "guide": {
+    "nom": "Guide Cathédrale de Ségovie",
+    "id": "catedral-segovia"
+  },
+  "points": [
+    {
+      "nom": "Cathédrale",
+      "emoji": "⛪",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Catedral+de+Segovia",
+      "aide_memoire": [
+        "4 €/pers · programme IMES · ~45 min – 1h",
+        "Dimanche : visite touristique de 13:30 à 18:30 seulement (entrée libre à l'église seule de 9:00 à 10:00)",
+        "Gratuite le mercredi non férié"
+      ],
+      "texte_original": []
+    }
+  ]
+}

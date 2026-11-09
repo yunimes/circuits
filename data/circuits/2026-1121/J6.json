@@ -1,0 +1,146 @@
+{
+  "jour": "J6",
+  "date": "Jeudi 26 novembre 2026",
+  "titre": "Valence → Peñíscola → Barcelone",
+  "obsidian": "obsidian://open?vault=Guide&file=Circuits%2F2026%2F1121-1128%20Mad-Bar%204p%2FCircuit%2FINFORMATION%20CIRCUIT%20Espagne%201121-1128",
+  "abstract": [
+    {
+      "emoji": "🚗",
+      "texte": "Route : Valence → Peñíscola ~144 km, ~1h45 · Peñíscola → Barcelone ~227 km, ~2h40 · AP-7"
+    },
+    {
+      "emoji": "🏨",
+      "texte": "Nuit : Novotel Barcelona City ★★★★ · petit-déj inclus"
+    }
+  ],
+  "warnings": [
+    {
+      "titre": "Longue conduite",
+      "lignes": [
+        "~366 km, ~4h25 de route hors arrêts, dans la plage 09:00–18:30."
+      ]
+    },
+    {
+      "titre": "Zone à faibles émissions de Barcelone (ZBE)",
+      "lignes": [
+        "En mai, une autorisation ZBE avait été obtenue pour le Jumpy. Démarche à refaire pour le Trafic, immatriculé en France : inscription au registre des véhicules étrangers de l'AMB (zberegistre.ambmobilitat.cat), vérification pouvant prendre jusqu'à 15 jours ❗️ Restrictions du lundi au vendredi de 7:00 à 20:00 : concerne le J6 et le J7."
+      ]
+    }
+  ],
+  "hebergement": "novotel-barcelona-city",
+  "hebergement_details": [
+    "Réf. client IMES : couple KIM B1126Y0N00 · singles B1126R9HLD",
+    "Réf. fournisseur : couple KIM 5RXGNJ · singles 643375886",
+    "Chambres : couple KIM 1 × Standard Double or Twin (côté rue) · singles 3 × Single (Standard Double room, lit queen) : ZO Yun, KIM Heeyoung, JANG Youngjin",
+    "Dates : 26/11 → 28/11 (2 nuits) · petit-déjeuner continental inclus",
+    "Check-in / check-out : non indiqués sur le voucher ❗️ · check-out le 28/11 avant le départ de 09:00"
+  ],
+  "creneaux": [
+    {
+      "heure": "Matin",
+      "type": "etape",
+      "emoji": "☕",
+      "titre": "Petit-déjeuner : Hotel Valencia Center · inclus"
+    },
+    {
+      "heure": "09:00",
+      "type": "trajet",
+      "titre": "Valence → Peñíscola",
+      "duree": "~1h45",
+      "km": "~144",
+      "lignes": [
+        "AP-7"
+      ]
+    },
+    {
+      "heure": "10:45",
+      "type": "etape",
+      "emoji": "🅿️",
+      "titre": "Stationnement près de la vieille ville",
+      "notes_pratiques": [
+        {
+          "titre": "🅿️ Peñíscola — Parking del Castillo",
+          "lignes": [
+            "Près de la forteresse · payant, ~2 €/h · revêtement et hauteur ❗️ à vérifier https://www.google.com/maps/search/?api=1&query=Parking+del+Castillo%2C+Pe%C3%B1%C3%ADscola"
+          ]
+        },
+        {
+          "titre": "🅿️ Peñíscola — Aparcamiento del Puerto",
+          "lignes": [
+            "Au pied de la vieille ville, près du port · zone bleue, ~1,50 €/h · revêtement et hauteur ❗️ à vérifier https://www.google.com/maps/search/?api=1&query=Aparcamiento+del+Puerto%2C+Pe%C3%B1%C3%ADscola",
+            "Horaires de zone bleue publiés du 1er mars au 31 octobre (lun–ven 9:00–14:00 et 17:00–21:00, sam 9:00–14:00) : régime de novembre ⚠️ à vérifier sur place."
+          ]
+        }
+      ]
+    },
+    {
+      "heure": "10:50",
+      "type": "visite",
+      "site": "castillo-peniscola",
+      "titre": "Château du Pape Luna",
+      "visite": {
+        "duree": "~1h"
+      },
+      "lignes": [
+        "Hiver 10:30–17:30 ⚠️"
+      ]
+    },
+    {
+      "heure": "11:50",
+      "type": "visite",
+      "site": "peniscola-vieille-ville",
+      "titre": "Vieille ville, remparts, Bufador",
+      "visite": {
+        "duree": "~55 min"
+      }
+    },
+    {
+      "heure": "12:45",
+      "type": "repas",
+      "titre": "Déjeuner : Peñíscola",
+      "duree": "~1h15",
+      "restaurants": [
+        "casa-dorotea-peniscola",
+        "casa-jaime-peniscola"
+      ]
+    },
+    {
+      "heure": "14:00",
+      "type": "trajet",
+      "titre": "Peñíscola → Novotel Barcelona City",
+      "duree": "~2h40",
+      "km": "~227",
+      "lignes": [
+        "AP-7 (ne pas prendre la C-32 du Garraf, à péage)",
+        "Trafic d'entrée dans Barcelone ⚠️"
+      ]
+    },
+    {
+      "heure": "~16:45",
+      "type": "checkin",
+      "titre": "Check-in Novotel Barcelona City"
+    },
+    {
+      "heure": "Soir",
+      "type": "repas",
+      "titre": "Dîner : près de l'hôtel",
+      "restaurants": [
+        "cocina-mercado-novotel-barcelona",
+        "mussol-glories",
+        "els-pescadors"
+      ]
+    }
+  ],
+  "notes_pratiques": [
+    {
+      "titre": "☑️ Checklist J6",
+      "lignes": [
+        "☐ Parkings de Peñíscola : hauteur et régime de novembre",
+        "☐ Réserver Casa Dorotea ou Casa Jaime (ouverture en novembre)",
+        "☐ Inscription du Trafic au registre des véhicules étrangers de l'AMB",
+        "☐ Parking du Novotel : hauteur maximale",
+        "☐ Réserver le dîner (Mussol Glòries ou Els Pescadors) si le groupe le souhaite"
+      ]
+    }
+  ]
+}

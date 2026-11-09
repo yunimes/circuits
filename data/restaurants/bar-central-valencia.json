@@ -1,0 +1,12 @@
+{
+  "id": "bar-central-valencia",
+  "nom": "Mercado Central, Bar Central",
+  "maps": "https://www.google.com/maps/search/?api=1&query=Central+Bar%2C+Mercado+Central%2C+Valencia",
+  "adresse": "Au centre de la halle du Mercado Central",
+  "aide_memoire": [
+    "Sans réservation",
+    "Tapas, montaditos, jamón ibérico, jus d'orange pressé",
+    "Étals fermés vers 15:00"
+  ],
+  "prix_indicatif": "12–18 €/pers"
+}
